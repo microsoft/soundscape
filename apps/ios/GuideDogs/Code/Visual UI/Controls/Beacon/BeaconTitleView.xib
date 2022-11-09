@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BeaconTitleViewController" customModule="Soundscape" customModuleProvider="target">
+            <connections>
+                <outlet property="beaconLabel" destination="eCO-fh-mgr" id="6k1-qu-yyA"/>
+                <outlet property="subtitleContainerView" destination="3qX-jH-wOf" id="Yiu-0d-52M"/>
+                <outlet property="subtitleImageView" destination="Jz8-nX-OlQ" id="mB7-8z-Ilk"/>
+                <outlet property="subtitleLabel" destination="XfQ-EL-xOA" id="yOd-it-Ks5"/>
+                <outlet property="titleLabel" destination="1Hs-0Y-fmh" id="KQO-tq-I6i"/>
+                <outlet property="view" destination="iN0-l3-epB" id="isK-GU-BtC"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="BeaconTitleContentView" customModule="Soundscape" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" text="" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Hs-0Y-fmh">
+                    <rect key="frame" x="0.0" y="44" width="414" height="0.0"/>
+                    <accessibility key="accessibilityConfiguration">
+                        <bool key="isElement" value="NO"/>
+                    </accessibility>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" verticalHuggingPriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="3qX-jH-wOf">
+                    <rect key="frame" x="0.0" y="44" width="414" height="0.0"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jz8-nX-OlQ">
+                            <rect key="frame" x="0.0" y="0.0" width="408" height="0.0"/>
+                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="1000" text="" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XfQ-EL-xOA">
+                            <rect key="frame" x="414" y="0.0" width="0.0" height="0.0"/>
+                            <accessibility key="accessibilityConfiguration">
+                                <bool key="isElement" value="NO"/>
+                            </accessibility>
+                            <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Jz8-nX-OlQ" secondAttribute="bottom" id="2Ap-uN-hbs"/>
+                        <constraint firstItem="XfQ-EL-xOA" firstAttribute="top" secondItem="3qX-jH-wOf" secondAttribute="top" id="3Xk-7Z-6pL"/>
+                        <constraint firstAttribute="trailing" secondItem="XfQ-EL-xOA" secondAttribute="trailing" id="HoF-Cr-3sW"/>
+                        <constraint firstItem="Jz8-nX-OlQ" firstAttribute="top" relation="greaterThanOrEqual" secondItem="3qX-jH-wOf" secondAttribute="top" id="NqK-9F-whc"/>
+                        <constraint firstItem="Jz8-nX-OlQ" firstAttribute="leading" secondItem="3qX-jH-wOf" secondAttribute="leading" id="h8N-8O-RrQ"/>
+                        <constraint firstAttribute="bottom" secondItem="XfQ-EL-xOA" secondAttribute="bottom" id="hAu-4x-SHm"/>
+                        <constraint firstItem="Jz8-nX-OlQ" firstAttribute="centerY" secondItem="3qX-jH-wOf" secondAttribute="centerY" id="snG-71-a2u"/>
+                        <constraint firstItem="XfQ-EL-xOA" firstAttribute="leading" secondItem="Jz8-nX-OlQ" secondAttribute="trailing" constant="6" id="xWP-6f-6lV"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="999" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" text="" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eCO-fh-mgr">
+                    <rect key="frame" x="0.0" y="44" width="414" height="0.0"/>
+                    <accessibility key="accessibilityConfiguration">
+                        <bool key="isElement" value="NO"/>
+                    </accessibility>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <accessibility key="accessibilityConfiguration">
+                <bool key="isElement" value="YES"/>
+            </accessibility>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="eCO-fh-mgr" secondAttribute="trailing" id="M4b-04-cnr"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="eCO-fh-mgr" secondAttribute="bottom" id="MpD-tI-bEE"/>
+                <constraint firstItem="1Hs-0Y-fmh" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="Pz8-IX-YKH"/>
+                <constraint firstItem="eCO-fh-mgr" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Uro-cH-ixY"/>
+                <constraint firstItem="3qX-jH-wOf" firstAttribute="bottom" secondItem="eCO-fh-mgr" secondAttribute="top" id="it9-c7-x1r"/>
+                <constraint firstItem="3qX-jH-wOf" firstAttribute="top" secondItem="1Hs-0Y-fmh" secondAttribute="bottom" id="kuV-pr-keS"/>
+                <constraint firstItem="1Hs-0Y-fmh" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="olO-Jh-xlu"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="3qX-jH-wOf" secondAttribute="trailing" id="qxy-tC-c27"/>
+                <constraint firstItem="3qX-jH-wOf" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="rpf-eX-3It"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="1Hs-0Y-fmh" secondAttribute="trailing" id="yxO-eS-yV2"/>
+            </constraints>
+            <point key="canvasLocation" x="81" y="62"/>
+        </view>
+    </objects>
+</document>

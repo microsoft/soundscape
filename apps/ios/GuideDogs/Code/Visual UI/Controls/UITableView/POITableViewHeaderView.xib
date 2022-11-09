@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="POITableViewHeaderView" customModule="Soundscape" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YxT-Zn-Vln">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aka-Y9-Ufa">
+                            <rect key="frame" x="16" y="16" width="343" height="12"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.14400663969999999" green="0.24137306210000001" blue="0.38318216799999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="Aka-Y9-Ufa" secondAttribute="bottom" constant="16" id="6MP-RI-TyE"/>
+                        <constraint firstItem="Aka-Y9-Ufa" firstAttribute="top" secondItem="YxT-Zn-Vln" secondAttribute="top" constant="16" id="Dy2-C2-ASa"/>
+                        <constraint firstAttribute="trailing" secondItem="Aka-Y9-Ufa" secondAttribute="trailing" constant="16" id="Kth-ed-sfA"/>
+                        <constraint firstItem="Aka-Y9-Ufa" firstAttribute="leading" secondItem="YxT-Zn-Vln" secondAttribute="leading" constant="16" id="ZlJ-Vz-Ek5"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="YxT-Zn-Vln" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="C9l-zl-qOS"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="YxT-Zn-Vln" secondAttribute="trailing" id="GH5-6G-1Yd"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="top" secondItem="YxT-Zn-Vln" secondAttribute="top" id="gnV-uL-3rD"/>
+                <constraint firstItem="YxT-Zn-Vln" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="weH-WA-dtj"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="titleLabel" destination="Aka-Y9-Ufa" id="Eco-Rz-QYQ"/>
+            </connections>
+        </view>
+    </objects>
+</document>

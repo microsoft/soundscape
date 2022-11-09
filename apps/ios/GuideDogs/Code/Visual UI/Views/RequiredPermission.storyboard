@@ -1,0 +1,570 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Authorize Locations View Controller-->
+        <scene sceneID="Omm-CN-HYw">
+            <objects>
+                <viewController storyboardIdentifier="authorizeLocationServices" id="RS3-PK-ADb" customClass="AuthorizeLocationsViewController" customModule="Soundscape" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="mpm-o4-3tW"/>
+                        <viewControllerLayoutGuide type="bottom" id="t8E-d2-f6I"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="YxV-AA-6BE">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" indicatorStyle="white" translatesAutoresizingMaskIntoConstraints="NO" id="cDd-4Q-fd4">
+                                <rect key="frame" x="0.0" y="20" width="600" height="470"/>
+                                <subviews>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" image="map-marker-radius" translatesAutoresizingMaskIntoConstraints="NO" id="POH-W6-YIw" userLabel="Icon">
+                                        <rect key="frame" x="250" y="20" width="100" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="pKP-YQ-Uza"/>
+                                            <constraint firstAttribute="width" constant="100" id="xlG-SM-yOC"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Authorize Location Services" textAlignment="center" lineBreakMode="middleTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Fo0-lE-zW9" userLabel="Title">
+                                        <rect key="frame" x="20" y="140" width="560" height="33.666666666666657"/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <accessibilityTraits key="traits" staticText="YES" header="YES"/>
+                                        </accessibility>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="localization" value="general.error.location_services.authorize.title"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4RJ-f3-DYr" userLabel="Description">
+                                        <rect key="frame" x="20" y="193.66666666666666" width="560" height="64.333333333333343"/>
+                                        <string key="text">AppName uses your location to find and tell you about the places and things around you. The app needs your permission to use Location Services.</string>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="localization" value="general.error.location_services.authorize.description"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eEB-YU-a4w" userLabel="Instructions">
+                                        <rect key="frame" x="20" y="277.66666666666669" width="560" height="64.333333333333314"/>
+                                        <string key="text">1. Open the Settings app below
+2. Select "Location"
+3. Select "Always" or "While Using the App"</string>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="localization" value="general.error.location_services.authorize.instructions"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Fo0-lE-zW9" firstAttribute="leading" secondItem="cDd-4Q-fd4" secondAttribute="leading" id="0ag-iU-GS4"/>
+                                    <constraint firstAttribute="trailing" secondItem="Fo0-lE-zW9" secondAttribute="trailing" id="D72-gC-qe3"/>
+                                    <constraint firstItem="Fo0-lE-zW9" firstAttribute="top" secondItem="POH-W6-YIw" secondAttribute="bottom" constant="20" id="Fdz-hf-zAR"/>
+                                    <constraint firstItem="POH-W6-YIw" firstAttribute="centerX" secondItem="cDd-4Q-fd4" secondAttribute="centerX" id="GOc-ss-95j"/>
+                                    <constraint firstItem="eEB-YU-a4w" firstAttribute="firstBaseline" secondItem="4RJ-f3-DYr" secondAttribute="baseline" constant="40" id="LGW-qU-VQf"/>
+                                    <constraint firstItem="4RJ-f3-DYr" firstAttribute="top" secondItem="Fo0-lE-zW9" secondAttribute="bottom" constant="20" id="Sny-a5-5EM"/>
+                                    <constraint firstItem="POH-W6-YIw" firstAttribute="top" secondItem="cDd-4Q-fd4" secondAttribute="top" constant="20" id="WZf-xn-fQq"/>
+                                    <constraint firstAttribute="bottom" secondItem="eEB-YU-a4w" secondAttribute="bottom" constant="20" id="b4A-ID-4rW"/>
+                                </constraints>
+                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fN9-1O-Mes" customClass="RoundedSolidButton" customModule="Soundscape" customModuleProvider="target">
+                                <rect key="frame" x="20" y="510" width="560" height="50"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="9eZ-wg-iA8"/>
+                                </constraints>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.098039215686274508" green="0.098039215686274508" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <state key="selected">
+                                    <color key="titleColor" red="0.14117647058823529" green="0.22745098039215686" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" red="0.14117647058823529" green="0.22745098039215686" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="accLabelLocalization" value="general.alert.open_settings"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="onEnableButtonTouchUp:" destination="RS3-PK-ADb" eventType="touchUpInside" id="fld-7Y-NbW"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="Open Settings" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="udt-35-gNg">
+                                <rect key="frame" x="32" y="522" width="536" height="26"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <bool key="isElement" value="NO"/>
+                                </accessibility>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="localization" value="general.alert.open_settings"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.14117647058823529" green="0.22745098039215686" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="udt-35-gNg" firstAttribute="top" secondItem="fN9-1O-Mes" secondAttribute="top" constant="12" id="0VQ-5h-Os8"/>
+                            <constraint firstAttribute="trailing" secondItem="cDd-4Q-fd4" secondAttribute="trailing" id="3Pe-X5-Qdk"/>
+                            <constraint firstItem="Fo0-lE-zW9" firstAttribute="leading" secondItem="YxV-AA-6BE" secondAttribute="leadingMargin" id="DMx-yn-mzI"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Fo0-lE-zW9" secondAttribute="trailing" id="MSt-Xd-gjC"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="eEB-YU-a4w" secondAttribute="trailing" id="TNR-Le-OcR"/>
+                            <constraint firstItem="t8E-d2-f6I" firstAttribute="top" secondItem="fN9-1O-Mes" secondAttribute="bottom" constant="40" id="Uqc-Rc-VWa"/>
+                            <constraint firstItem="fN9-1O-Mes" firstAttribute="leading" secondItem="YxV-AA-6BE" secondAttribute="leadingMargin" id="Yr9-xT-r9m"/>
+                            <constraint firstItem="4RJ-f3-DYr" firstAttribute="leading" secondItem="YxV-AA-6BE" secondAttribute="leadingMargin" id="b3b-d9-Gyl"/>
+                            <constraint firstItem="udt-35-gNg" firstAttribute="trailing" secondItem="fN9-1O-Mes" secondAttribute="trailing" constant="-12" id="bZx-3L-W76"/>
+                            <constraint firstItem="eEB-YU-a4w" firstAttribute="leading" secondItem="YxV-AA-6BE" secondAttribute="leadingMargin" id="bzt-ra-nl8"/>
+                            <constraint firstItem="fN9-1O-Mes" firstAttribute="top" secondItem="cDd-4Q-fd4" secondAttribute="bottom" constant="20" id="co8-OD-8iA"/>
+                            <constraint firstItem="fN9-1O-Mes" firstAttribute="trailing" secondItem="YxV-AA-6BE" secondAttribute="trailingMargin" id="eIJ-Zu-0x0"/>
+                            <constraint firstItem="udt-35-gNg" firstAttribute="leading" secondItem="fN9-1O-Mes" secondAttribute="leading" constant="12" id="jR6-xy-uK6"/>
+                            <constraint firstItem="cDd-4Q-fd4" firstAttribute="top" secondItem="mpm-o4-3tW" secondAttribute="bottom" constant="20" id="mQR-DF-5Pb"/>
+                            <constraint firstItem="cDd-4Q-fd4" firstAttribute="leading" secondItem="YxV-AA-6BE" secondAttribute="leading" id="s9L-c9-ymf"/>
+                            <constraint firstItem="udt-35-gNg" firstAttribute="bottom" secondItem="fN9-1O-Mes" secondAttribute="bottom" constant="-12" id="swI-nz-syp"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="4RJ-f3-DYr" secondAttribute="trailing" id="tiW-Sm-SCS"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="enableButton" destination="fN9-1O-Mes" id="fMU-Sd-AiU"/>
+                        <outlet property="instructionsLabel" destination="eEB-YU-a4w" id="dP5-vF-xWO"/>
+                        <segue destination="R8i-cf-EFy" kind="unwind" identifier="unwindFromAuthorize" unwindAction="unwindToHomeWithSegue:" id="9mO-Hn-J44"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cZ7-xf-1vQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="R8i-cf-EFy" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="705" y="-137"/>
+        </scene>
+        <!--Authorize Motion Fitness View Controller-->
+        <scene sceneID="6ta-A9-CB3">
+            <objects>
+                <viewController storyboardIdentifier="authorizeMotionFitness" id="yzn-WA-4qz" customClass="AuthorizeMotionFitnessViewController" customModule="Soundscape" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0kD-u3-PiS"/>
+                        <viewControllerLayoutGuide type="bottom" id="Paj-N3-kPl"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="YO8-vh-Ls3">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" indicatorStyle="white" translatesAutoresizingMaskIntoConstraints="NO" id="ZFC-Lu-uiS">
+                                <rect key="frame" x="0.0" y="20" width="600" height="470"/>
+                                <subviews>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" image="map-marker-radius" translatesAutoresizingMaskIntoConstraints="NO" id="ROK-lQ-fex" userLabel="Icon">
+                                        <rect key="frame" x="250" y="20" width="100" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="fIM-UN-mlf"/>
+                                            <constraint firstAttribute="height" constant="100" id="reL-62-slC"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Authorize Motion &amp; Fitness Tracking" textAlignment="center" lineBreakMode="middleTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2UI-s7-mRC" userLabel="Title">
+                                        <rect key="frame" x="20" y="140" width="560" height="33.666666666666657"/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <accessibilityTraits key="traits" staticText="YES" header="YES"/>
+                                        </accessibility>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="localization" value="device_motion.authorize.title"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BUh-Ps-VHA" userLabel="Description">
+                                        <rect key="frame" x="20" y="193.66666666666666" width="560" height="108.33333333333334"/>
+                                        <string key="text">This allows AppName to improve your experience based on whether you are walking, in a vehicle, or standing still. The app needs your permission to use Motion &amp; Fitness. Before you authorize Soundscape to use this permission, you may need to enable Fitness Tracking under Settings → Privacy → Motion &amp; Fitness.</string>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="localization" value="device_motion.authorize.description"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hKa-0R-hUh" userLabel="Instructions">
+                                        <rect key="frame" x="20" y="321.66666666666669" width="560" height="42.333333333333314"/>
+                                        <string key="text">1. Open the Settings app below
+2. Turn on Motion &amp; Fitness Tracking</string>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="localization" value="device_motion.authorize.instructions"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="hKa-0R-hUh" secondAttribute="bottom" constant="20" id="8iJ-M6-cG9"/>
+                                    <constraint firstItem="ROK-lQ-fex" firstAttribute="top" secondItem="ZFC-Lu-uiS" secondAttribute="top" constant="20" id="AAs-M5-Tgq"/>
+                                    <constraint firstItem="BUh-Ps-VHA" firstAttribute="top" secondItem="2UI-s7-mRC" secondAttribute="bottom" constant="20" id="AlZ-NU-vow"/>
+                                    <constraint firstItem="2UI-s7-mRC" firstAttribute="leading" secondItem="ZFC-Lu-uiS" secondAttribute="leading" id="LcI-yY-3ZK"/>
+                                    <constraint firstItem="hKa-0R-hUh" firstAttribute="firstBaseline" secondItem="BUh-Ps-VHA" secondAttribute="baseline" constant="40" id="OWa-se-NQT"/>
+                                    <constraint firstAttribute="trailing" secondItem="2UI-s7-mRC" secondAttribute="trailing" id="b1K-VC-uwr"/>
+                                    <constraint firstItem="2UI-s7-mRC" firstAttribute="top" secondItem="ROK-lQ-fex" secondAttribute="bottom" constant="20" id="kul-DV-5JI"/>
+                                    <constraint firstItem="ROK-lQ-fex" firstAttribute="centerX" secondItem="ZFC-Lu-uiS" secondAttribute="centerX" id="pGX-co-Lxp"/>
+                                </constraints>
+                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a8A-YS-zSC" customClass="RoundedSolidButton" customModule="Soundscape" customModuleProvider="target">
+                                <rect key="frame" x="20" y="510" width="560" height="50"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="w2T-kE-hTU"/>
+                                </constraints>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.098039215690000001" green="0.098039215690000001" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <state key="selected">
+                                    <color key="titleColor" red="0.14117647059999999" green="0.2274509804" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" red="0.14117647059999999" green="0.2274509804" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="accLabelLocalization" value="general.alert.open_settings"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="onEnableButtonTouchUp:" destination="yzn-WA-4qz" eventType="touchUpInside" id="K6M-0F-eh2"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="Open Settings" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8L0-7N-gG8">
+                                <rect key="frame" x="32" y="522" width="536" height="26"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <bool key="isElement" value="NO"/>
+                                </accessibility>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="localization" value="general.alert.open_settings"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.14117647059999999" green="0.2274509804" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="8L0-7N-gG8" firstAttribute="top" secondItem="a8A-YS-zSC" secondAttribute="top" constant="12" id="2hB-mz-oSl"/>
+                            <constraint firstItem="hKa-0R-hUh" firstAttribute="leading" secondItem="YO8-vh-Ls3" secondAttribute="leadingMargin" id="4yL-6R-N96"/>
+                            <constraint firstAttribute="trailing" secondItem="ZFC-Lu-uiS" secondAttribute="trailing" id="8Ya-R2-U8s"/>
+                            <constraint firstItem="8L0-7N-gG8" firstAttribute="trailing" secondItem="a8A-YS-zSC" secondAttribute="trailing" constant="-12" id="Byp-NF-alV"/>
+                            <constraint firstItem="Paj-N3-kPl" firstAttribute="top" secondItem="a8A-YS-zSC" secondAttribute="bottom" constant="40" id="EcK-VP-FRy"/>
+                            <constraint firstItem="ZFC-Lu-uiS" firstAttribute="leading" secondItem="YO8-vh-Ls3" secondAttribute="leading" id="GNz-wb-sxb"/>
+                            <constraint firstItem="ZFC-Lu-uiS" firstAttribute="top" secondItem="0kD-u3-PiS" secondAttribute="bottom" constant="20" id="KAy-jM-77r"/>
+                            <constraint firstItem="8L0-7N-gG8" firstAttribute="leading" secondItem="a8A-YS-zSC" secondAttribute="leading" constant="12" id="P3X-xX-Fbn"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="BUh-Ps-VHA" secondAttribute="trailing" id="fQ7-44-s9Y"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="2UI-s7-mRC" secondAttribute="trailing" id="gYD-Xy-y11"/>
+                            <constraint firstItem="8L0-7N-gG8" firstAttribute="bottom" secondItem="a8A-YS-zSC" secondAttribute="bottom" constant="-12" id="gra-aX-HBP"/>
+                            <constraint firstItem="a8A-YS-zSC" firstAttribute="top" secondItem="ZFC-Lu-uiS" secondAttribute="bottom" constant="20" id="mdm-pT-TzE"/>
+                            <constraint firstItem="2UI-s7-mRC" firstAttribute="leading" secondItem="YO8-vh-Ls3" secondAttribute="leadingMargin" id="oOG-rA-wWa"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="hKa-0R-hUh" secondAttribute="trailing" id="w8O-3j-pQM"/>
+                            <constraint firstItem="a8A-YS-zSC" firstAttribute="trailing" secondItem="YO8-vh-Ls3" secondAttribute="trailingMargin" id="xuX-na-tCQ"/>
+                            <constraint firstItem="a8A-YS-zSC" firstAttribute="leading" secondItem="YO8-vh-Ls3" secondAttribute="leadingMargin" id="zXO-VE-WeA"/>
+                            <constraint firstItem="BUh-Ps-VHA" firstAttribute="leading" secondItem="YO8-vh-Ls3" secondAttribute="leadingMargin" id="zqe-Dw-3aC"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="enableButton" destination="a8A-YS-zSC" id="FHz-YD-8OX"/>
+                        <segue destination="VfW-o7-3Vp" kind="unwind" identifier="unwindFromAuthorizeMotionFitness" unwindAction="unwindToHomeWithSegue:" id="9aC-n8-lzf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GVQ-Z8-I2u" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="VfW-o7-3Vp" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="-17" y="-138"/>
+        </scene>
+        <!--main-->
+        <scene sceneID="XE4-Cw-rI3">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="mainref" storyboardName="main" id="ohK-RI-FDj" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bGj-bK-kdK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="704" y="-592"/>
+        </scene>
+        <!--Enable Location Services View Controller-->
+        <scene sceneID="NeP-F8-TzE">
+            <objects>
+                <viewController storyboardIdentifier="enableLocationServices" id="OrM-2I-v7n" customClass="EnableLocationServicesViewController" customModule="Soundscape" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="edZ-G1-x2O"/>
+                        <viewControllerLayoutGuide type="bottom" id="Pf7-hT-kow"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="WyO-Aw-EFg">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AOg-a4-zp2">
+                                <rect key="frame" x="0.0" y="20" width="600" height="470"/>
+                                <subviews>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" image="map-marker-radius" translatesAutoresizingMaskIntoConstraints="NO" id="07i-rg-k6y" userLabel="Icon">
+                                        <rect key="frame" x="250" y="20" width="100" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="Sq9-D9-va2"/>
+                                            <constraint firstAttribute="height" constant="100" id="Ztk-8D-Yqv"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enable Location Services" textAlignment="center" lineBreakMode="middleTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fds-X1-n1L" userLabel="Title">
+                                        <rect key="frame" x="20" y="140" width="560" height="33.666666666666657"/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <accessibilityTraits key="traits" staticText="YES" header="YES"/>
+                                        </accessibility>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="localization" value="general.error.location_services_enable"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location Services are currently disabled. AppName cannot work when Location Services are turned off." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vOC-0w-niP" userLabel="Description">
+                                        <rect key="frame" x="20" y="193.66666666666666" width="560" height="42.333333333333343"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="localization" value="general.error.location_services_enable_description"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bNY-SV-DMH" userLabel="Instructions">
+                                        <rect key="frame" x="20" y="255.66666666666669" width="560" height="130.33333333333331"/>
+                                        <string key="text">Turn Location Services On in the Settings app to continue.
+1. Press Open Settings
+2. Press the back button (titled Setting)
+3. Select Privacy
+4. Select Location Services
+5. Turn On Location Services</string>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="localization" value="general.error.location_services_enable_instructions.2"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="07i-rg-k6y" firstAttribute="centerX" secondItem="AOg-a4-zp2" secondAttribute="centerX" id="B5Z-kL-M7e"/>
+                                    <constraint firstAttribute="bottom" secondItem="bNY-SV-DMH" secondAttribute="bottom" constant="20" id="EZR-eH-ZCk"/>
+                                    <constraint firstItem="bNY-SV-DMH" firstAttribute="firstBaseline" secondItem="vOC-0w-niP" secondAttribute="baseline" constant="40" id="Gz6-kB-9Kd"/>
+                                    <constraint firstAttribute="trailing" secondItem="fds-X1-n1L" secondAttribute="trailing" id="Us7-h6-pSs"/>
+                                    <constraint firstItem="vOC-0w-niP" firstAttribute="top" secondItem="fds-X1-n1L" secondAttribute="bottom" constant="20" id="VWg-xP-M9Z"/>
+                                    <constraint firstItem="07i-rg-k6y" firstAttribute="top" secondItem="AOg-a4-zp2" secondAttribute="top" constant="20" id="gYE-Hc-2R7"/>
+                                    <constraint firstItem="fds-X1-n1L" firstAttribute="top" secondItem="07i-rg-k6y" secondAttribute="bottom" constant="20" id="kHH-uU-2aB"/>
+                                    <constraint firstItem="fds-X1-n1L" firstAttribute="leading" secondItem="AOg-a4-zp2" secondAttribute="leading" id="u9Y-GQ-T0S"/>
+                                </constraints>
+                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H9U-Iu-rkZ" customClass="RoundedSolidButton" customModule="Soundscape" customModuleProvider="target">
+                                <rect key="frame" x="20" y="510" width="560" height="50"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="01y-KG-3sa"/>
+                                </constraints>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.098039215686274508" green="0.098039215686274508" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <state key="selected">
+                                    <color key="titleColor" red="0.14117647058823529" green="0.22745098039215686" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" red="0.14117647058823529" green="0.22745098039215686" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="accLabelLocalization" value="general.alert.open_settings"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="onEnableButtonTouchUp:" destination="OrM-2I-v7n" eventType="touchUpInside" id="RI6-5H-azn"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="Open Settings" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jwn-Kz-9ly">
+                                <rect key="frame" x="32" y="522" width="536" height="26"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <bool key="isElement" value="NO"/>
+                                </accessibility>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="localization" value="general.alert.open_settings"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.14117647058823529" green="0.22745098039215686" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Pf7-hT-kow" firstAttribute="top" secondItem="H9U-Iu-rkZ" secondAttribute="bottom" constant="40" id="8U5-GG-jWf"/>
+                            <constraint firstItem="Jwn-Kz-9ly" firstAttribute="bottom" secondItem="H9U-Iu-rkZ" secondAttribute="bottom" constant="-12" id="8eu-ah-uQ9"/>
+                            <constraint firstItem="H9U-Iu-rkZ" firstAttribute="top" secondItem="AOg-a4-zp2" secondAttribute="bottom" constant="20" id="A2N-Fp-wcV"/>
+                            <constraint firstItem="Jwn-Kz-9ly" firstAttribute="leading" secondItem="H9U-Iu-rkZ" secondAttribute="leading" constant="12" id="GOW-Lw-sMA"/>
+                            <constraint firstItem="AOg-a4-zp2" firstAttribute="leading" secondItem="WyO-Aw-EFg" secondAttribute="leading" id="GdI-Tt-tJW"/>
+                            <constraint firstItem="AOg-a4-zp2" firstAttribute="top" secondItem="edZ-G1-x2O" secondAttribute="bottom" constant="20" id="Nqz-K9-GSB"/>
+                            <constraint firstItem="fds-X1-n1L" firstAttribute="leading" secondItem="WyO-Aw-EFg" secondAttribute="leadingMargin" id="P8e-cS-clO"/>
+                            <constraint firstItem="H9U-Iu-rkZ" firstAttribute="leading" secondItem="WyO-Aw-EFg" secondAttribute="leadingMargin" id="Rbc-Hk-2Vb"/>
+                            <constraint firstItem="Jwn-Kz-9ly" firstAttribute="trailing" secondItem="H9U-Iu-rkZ" secondAttribute="trailing" constant="-12" id="Ue2-hr-gXU"/>
+                            <constraint firstItem="H9U-Iu-rkZ" firstAttribute="trailing" secondItem="WyO-Aw-EFg" secondAttribute="trailingMargin" id="VCQ-Pk-9cR"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="vOC-0w-niP" secondAttribute="trailing" id="ZE7-5p-VYz"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="bNY-SV-DMH" secondAttribute="trailing" id="b8c-2y-njL"/>
+                            <constraint firstItem="vOC-0w-niP" firstAttribute="leading" secondItem="WyO-Aw-EFg" secondAttribute="leadingMargin" id="e18-xA-gLQ"/>
+                            <constraint firstItem="Jwn-Kz-9ly" firstAttribute="top" secondItem="H9U-Iu-rkZ" secondAttribute="top" constant="12" id="fSm-le-t7W"/>
+                            <constraint firstItem="bNY-SV-DMH" firstAttribute="leading" secondItem="WyO-Aw-EFg" secondAttribute="leadingMargin" id="gF1-T5-FwE"/>
+                            <constraint firstAttribute="trailing" secondItem="AOg-a4-zp2" secondAttribute="trailing" id="hgJ-bM-vTf"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="fds-X1-n1L" secondAttribute="trailing" id="ku8-3v-9Pi"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="enableButton" destination="H9U-Iu-rkZ" id="CZT-u6-Xdh"/>
+                        <segue destination="nAe-rc-yhM" kind="unwind" identifier="unwindFromEnable" unwindAction="unwindToHomeWithSegue:" id="YQZ-u9-6gG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aO4-0Z-Tc2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="nAe-rc-yhM" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1482" y="-138"/>
+        </scene>
+        <!--Enable Motion Fitness View Controller-->
+        <scene sceneID="9bw-Bz-BRk">
+            <objects>
+                <viewController storyboardIdentifier="enableMotionFitness" id="QwB-gc-J1o" customClass="EnableMotionFitnessViewController" customModule="Soundscape" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="oc6-MY-NGn"/>
+                        <viewControllerLayoutGuide type="bottom" id="z0j-Ta-sUe"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="weH-cJ-iig">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TwR-L5-PdH">
+                                <rect key="frame" x="0.0" y="20" width="600" height="470"/>
+                                <subviews>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" image="map-marker-radius" translatesAutoresizingMaskIntoConstraints="NO" id="3pn-m0-v3Y" userLabel="Icon">
+                                        <rect key="frame" x="250" y="20" width="100" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="eh2-Sl-1HH"/>
+                                            <constraint firstAttribute="width" constant="100" id="oz3-9G-ukD"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enable Motion &amp; Fitness Tracking" textAlignment="center" lineBreakMode="middleTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2b3-mC-CL2" userLabel="Title">
+                                        <rect key="frame" x="20" y="140" width="560" height="33.666666666666657"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="localization" value="device_motion.enable.title"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Motion &amp; Fitness tracking is currently disabled. AppName cannot work when Motion &amp; Fitness tracking is turned off." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r4G-D9-w4A" userLabel="Description">
+                                        <rect key="frame" x="20" y="193.66666666666666" width="560" height="42.333333333333343"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="localization" value="device_motion.enable.description"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DHr-Gt-qhT" userLabel="Instructions">
+                                        <rect key="frame" x="20" y="255.66666666666669" width="560" height="152.33333333333331"/>
+                                        <string key="text">Turn On Fitness Tracking in the Settings app to continue.
+
+1. Press the Back button (titled Settings)
+2. Select Privacy
+3. Select Motion &amp; Fitness
+4. Turn on Fitness Tracking
+5. Restart Soundscape</string>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="localization" value="device_motion.enable.instructions"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="2b3-mC-CL2" secondAttribute="trailing" id="18c-yp-2mL"/>
+                                    <constraint firstAttribute="bottom" secondItem="DHr-Gt-qhT" secondAttribute="bottom" constant="20" id="T02-KL-TbJ"/>
+                                    <constraint firstItem="2b3-mC-CL2" firstAttribute="top" secondItem="3pn-m0-v3Y" secondAttribute="bottom" constant="20" id="ZsQ-a8-T3k"/>
+                                    <constraint firstItem="r4G-D9-w4A" firstAttribute="top" secondItem="2b3-mC-CL2" secondAttribute="bottom" constant="20" id="orG-7u-e72"/>
+                                    <constraint firstItem="DHr-Gt-qhT" firstAttribute="firstBaseline" secondItem="r4G-D9-w4A" secondAttribute="baseline" constant="40" id="rw7-T7-q5j"/>
+                                    <constraint firstItem="3pn-m0-v3Y" firstAttribute="top" secondItem="TwR-L5-PdH" secondAttribute="top" constant="20" id="uVc-nN-5pH"/>
+                                    <constraint firstItem="2b3-mC-CL2" firstAttribute="leading" secondItem="TwR-L5-PdH" secondAttribute="leading" constant="160" id="vAB-rl-Ywm"/>
+                                    <constraint firstItem="3pn-m0-v3Y" firstAttribute="centerX" secondItem="TwR-L5-PdH" secondAttribute="centerX" id="yCV-id-vLp"/>
+                                </constraints>
+                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c3z-4d-20Q" customClass="RoundedSolidButton" customModule="Soundscape" customModuleProvider="target">
+                                <rect key="frame" x="20" y="510" width="560" height="50"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="G3c-fD-jyC"/>
+                                </constraints>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.098039215690000001" green="0.098039215690000001" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <state key="selected">
+                                    <color key="titleColor" red="0.14117647059999999" green="0.2274509804" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" red="0.14117647059999999" green="0.2274509804" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="accLabelLocalization" value="general.alert.open_settings"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="onEnableButtonTouchUp:" destination="QwB-gc-J1o" eventType="touchUpInside" id="fmz-nY-eIS"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="Open Settings" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OEy-tn-3IO">
+                                <rect key="frame" x="32" y="522" width="536" height="26"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <bool key="isElement" value="NO"/>
+                                </accessibility>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="localization" value="general.alert.open_settings"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.14117647059999999" green="0.2274509804" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="OEy-tn-3IO" firstAttribute="top" secondItem="c3z-4d-20Q" secondAttribute="top" constant="12" id="0b9-Qx-3n3"/>
+                            <constraint firstItem="TwR-L5-PdH" firstAttribute="top" secondItem="oc6-MY-NGn" secondAttribute="bottom" constant="20" id="3na-RH-2Vh"/>
+                            <constraint firstItem="OEy-tn-3IO" firstAttribute="bottom" secondItem="c3z-4d-20Q" secondAttribute="bottom" constant="-12" id="7iU-La-eOx"/>
+                            <constraint firstItem="z0j-Ta-sUe" firstAttribute="top" secondItem="c3z-4d-20Q" secondAttribute="bottom" constant="40" id="9sx-5M-fly"/>
+                            <constraint firstItem="c3z-4d-20Q" firstAttribute="top" secondItem="TwR-L5-PdH" secondAttribute="bottom" constant="20" id="FPR-FU-aWj"/>
+                            <constraint firstItem="TwR-L5-PdH" firstAttribute="leading" secondItem="weH-cJ-iig" secondAttribute="leading" id="Pum-ai-mEV"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="DHr-Gt-qhT" secondAttribute="trailing" id="S6A-6L-wne"/>
+                            <constraint firstItem="r4G-D9-w4A" firstAttribute="leading" secondItem="weH-cJ-iig" secondAttribute="leadingMargin" id="dfC-ep-ygq"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="2b3-mC-CL2" secondAttribute="trailing" id="hqg-sf-8OE"/>
+                            <constraint firstAttribute="trailing" secondItem="TwR-L5-PdH" secondAttribute="trailing" id="jkd-iw-5ND"/>
+                            <constraint firstItem="2b3-mC-CL2" firstAttribute="leading" secondItem="weH-cJ-iig" secondAttribute="leadingMargin" id="mPk-Ln-7XQ"/>
+                            <constraint firstItem="c3z-4d-20Q" firstAttribute="trailing" secondItem="weH-cJ-iig" secondAttribute="trailingMargin" id="n8c-ka-oct"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="r4G-D9-w4A" secondAttribute="trailing" id="pdB-uy-FOk"/>
+                            <constraint firstItem="OEy-tn-3IO" firstAttribute="trailing" secondItem="c3z-4d-20Q" secondAttribute="trailing" constant="-12" id="rBX-fS-PAV"/>
+                            <constraint firstItem="DHr-Gt-qhT" firstAttribute="leading" secondItem="weH-cJ-iig" secondAttribute="leadingMargin" id="tyw-zk-sMG"/>
+                            <constraint firstItem="c3z-4d-20Q" firstAttribute="leading" secondItem="weH-cJ-iig" secondAttribute="leadingMargin" id="vRo-DH-UaC"/>
+                            <constraint firstItem="OEy-tn-3IO" firstAttribute="leading" secondItem="c3z-4d-20Q" secondAttribute="leading" constant="12" id="w2O-2g-QBb"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="enableButton" destination="c3z-4d-20Q" id="aqs-tK-BkQ"/>
+                        <segue destination="fmj-6E-ndw" kind="unwind" identifier="unwindFromEnableMotionFitness" unwindAction="unwindToHomeWithSegue:" id="Tod-zI-Lbt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Eo7-eT-3Sq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="fmj-6E-ndw" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="-762" y="-137"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="map-marker-radius" width="100" height="100"/>
+    </resources>
+</document>

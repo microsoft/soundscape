@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xFP-CC-VXd">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--AR Headset-->
+        <scene sceneID="UOv-s9-7pD">
+            <objects>
+                <viewController storyboardIdentifier="manageDevices" extendedLayoutIncludesOpaqueBars="YES" id="xFP-CC-VXd" customClass="DevicesViewController" customModule="Soundscape" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="faC-Gy-18I">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" indicatorStyle="white" translatesAutoresizingMaskIntoConstraints="NO" id="dBj-mn-c8v">
+                                <rect key="frame" x="0.0" y="47" width="375" height="599"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NoDevice" translatesAutoresizingMaskIntoConstraints="NO" id="MfV-QW-HWZ">
+                                        <rect key="frame" x="0.0" y="12" width="375" height="350"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="350" id="yNy-Z8-CjW"/>
+                                        </constraints>
+                                    </imageView>
+                                    <view hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tyi-Gq-mpl" customClass="RoundedView" customModule="Soundscape" customModuleProvider="target">
+                                        <rect key="frame" x="113.66666666666669" y="113" width="148" height="148"/>
+                                        <subviews>
+                                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="W5L-0s-YEY">
+                                                <rect key="frame" x="0.0" y="0.0" width="148" height="148"/>
+                                            </imageView>
+                                            <sceneKitView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wKZ-gX-4YU">
+                                                <rect key="frame" x="0.0" y="0.0" width="148" height="148"/>
+                                                <color key="backgroundColor" name="Clear Color"/>
+                                            </sceneKitView>
+                                        </subviews>
+                                        <color key="backgroundColor" name="Foreground 1"/>
+                                        <constraints>
+                                            <constraint firstItem="W5L-0s-YEY" firstAttribute="leading" secondItem="tyi-Gq-mpl" secondAttribute="leading" id="6fn-yP-1Yj"/>
+                                            <constraint firstItem="wKZ-gX-4YU" firstAttribute="top" secondItem="tyi-Gq-mpl" secondAttribute="top" id="FNa-Qm-4K5"/>
+                                            <constraint firstAttribute="trailing" secondItem="W5L-0s-YEY" secondAttribute="trailing" id="H7G-PO-ZeW"/>
+                                            <constraint firstAttribute="bottom" secondItem="wKZ-gX-4YU" secondAttribute="bottom" id="Q4Q-hp-Bny"/>
+                                            <constraint firstItem="W5L-0s-YEY" firstAttribute="top" secondItem="tyi-Gq-mpl" secondAttribute="top" id="TDE-yY-eT4"/>
+                                            <constraint firstAttribute="trailing" secondItem="wKZ-gX-4YU" secondAttribute="trailing" id="bW4-lB-56N"/>
+                                            <constraint firstAttribute="width" secondItem="tyi-Gq-mpl" secondAttribute="height" multiplier="1:1" id="nuP-pj-lKF"/>
+                                            <constraint firstAttribute="bottom" secondItem="W5L-0s-YEY" secondAttribute="bottom" id="qGA-8Z-crG"/>
+                                            <constraint firstItem="wKZ-gX-4YU" firstAttribute="leading" secondItem="tyi-Gq-mpl" secondAttribute="leading" id="vRL-0l-8N8"/>
+                                            <constraint firstAttribute="height" constant="148" id="zHH-1T-NgC"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="74"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8JZ-Yh-2fH">
+                                        <rect key="frame" x="12" y="374" width="351" height="152.33333333333337"/>
+                                        <string key="text">Augmented reality headsets are special Bluetooth headphones that tell Soundscape about where you are looking. This helps Soundscape to improve your audio experience as you move around.
+
+Tap the button below to connect to a device.</string>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                        <color key="textColor" name="Foreground 1"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="localization" value="devices.explain_ar.disconnected"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="8JZ-Yh-2fH" secondAttribute="bottom" constant="12" id="Fbx-IE-fld"/>
+                                    <constraint firstItem="MfV-QW-HWZ" firstAttribute="top" secondItem="dBj-mn-c8v" secondAttribute="top" constant="12" id="HC5-LL-dlh"/>
+                                    <constraint firstItem="tyi-Gq-mpl" firstAttribute="centerX" secondItem="MfV-QW-HWZ" secondAttribute="centerX" id="UFB-9h-nnS"/>
+                                    <constraint firstItem="MfV-QW-HWZ" firstAttribute="centerX" secondItem="dBj-mn-c8v" secondAttribute="centerX" id="Uvx-0u-nb4"/>
+                                    <constraint firstItem="8JZ-Yh-2fH" firstAttribute="top" secondItem="MfV-QW-HWZ" secondAttribute="bottom" constant="12" id="rI5-0o-BtX"/>
+                                    <constraint firstItem="8JZ-Yh-2fH" firstAttribute="leading" secondItem="dBj-mn-c8v" secondAttribute="leading" constant="12" id="sc9-tB-p0x"/>
+                                    <constraint firstItem="tyi-Gq-mpl" firstAttribute="centerY" secondItem="MfV-QW-HWZ" secondAttribute="centerY" id="vhn-gx-xKm"/>
+                                    <constraint firstAttribute="trailing" secondItem="8JZ-Yh-2fH" secondAttribute="trailing" constant="12" id="yKX-Zx-Qy7"/>
+                                </constraints>
+                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a8P-EO-E8X" userLabel="Secondary Button" customClass="RoundedSolidButton" customModule="Soundscape" customModuleProvider="target">
+                                <rect key="frame" x="12" y="658" width="351" height="50"/>
+                                <color key="backgroundColor" name="Foreground 1"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="0Zi-N4-VnQ"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="accLabelLocalization" value="devices.connect_headset.completed.test"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="onSecondaryBtnTouchUpInside" destination="xFP-CC-VXd" eventType="touchUpInside" id="ue9-kf-Sfm"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Test with a Beacon" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="04M-hf-k02" userLabel="Secondary Btn Label">
+                                <rect key="frame" x="12" y="658" width="351" height="50"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <bool key="isElement" value="NO"/>
+                                </accessibility>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <color key="textColor" name="Background 2"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="localization" value="devices.connect_headset.completed.test"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AAv-p0-FLS" customClass="RoundedSolidButton" customModule="Soundscape" customModuleProvider="target">
+                                <rect key="frame" x="12" y="716" width="351" height="50"/>
+                                <color key="backgroundColor" name="Foreground 1"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="xjO-qd-mEg"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="accLabelLocalization" value="devices.connect_headset"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="onPrimaryBtnTouchUpInside" destination="xFP-CC-VXd" eventType="touchUpInside" id="8Hp-p1-uGC"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Connect AR Headset" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8rX-Qq-MQt">
+                                <rect key="frame" x="12" y="716" width="351" height="50"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <bool key="isElement" value="NO"/>
+                                </accessibility>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <color key="textColor" name="Background 2"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="localization" value="devices.connect_headset"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Ul9-YX-sNs"/>
+                        <color key="backgroundColor" name="Background 1"/>
+                        <constraints>
+                            <constraint firstItem="AAv-p0-FLS" firstAttribute="leading" secondItem="Ul9-YX-sNs" secondAttribute="leading" constant="12" id="00x-iY-eoR"/>
+                            <constraint firstItem="a8P-EO-E8X" firstAttribute="leading" secondItem="Ul9-YX-sNs" secondAttribute="leading" constant="12" id="6RB-wt-m3Y"/>
+                            <constraint firstItem="Ul9-YX-sNs" firstAttribute="trailing" secondItem="a8P-EO-E8X" secondAttribute="trailing" constant="12" id="DFk-6D-yR6"/>
+                            <constraint firstItem="Ul9-YX-sNs" firstAttribute="trailing" secondItem="8JZ-Yh-2fH" secondAttribute="trailing" constant="12" id="IbO-8t-Xag"/>
+                            <constraint firstItem="8rX-Qq-MQt" firstAttribute="bottom" secondItem="AAv-p0-FLS" secondAttribute="bottom" id="LEP-l0-Z4E"/>
+                            <constraint firstItem="8JZ-Yh-2fH" firstAttribute="leading" secondItem="Ul9-YX-sNs" secondAttribute="leading" constant="12" id="MWz-bA-AWG"/>
+                            <constraint firstItem="AAv-p0-FLS" firstAttribute="top" secondItem="a8P-EO-E8X" secondAttribute="bottom" constant="8" id="PWm-gd-3ET"/>
+                            <constraint firstItem="AAv-p0-FLS" firstAttribute="top" secondItem="dBj-mn-c8v" secondAttribute="bottom" priority="750" constant="12" id="Sik-Gt-751"/>
+                            <constraint firstItem="8rX-Qq-MQt" firstAttribute="leading" secondItem="AAv-p0-FLS" secondAttribute="leading" id="UCw-kz-GcH"/>
+                            <constraint firstItem="04M-hf-k02" firstAttribute="bottom" secondItem="a8P-EO-E8X" secondAttribute="bottom" id="VVU-u0-bgY"/>
+                            <constraint firstItem="Ul9-YX-sNs" firstAttribute="bottom" secondItem="AAv-p0-FLS" secondAttribute="bottom" constant="12" id="WTM-Oj-5OE"/>
+                            <constraint firstItem="04M-hf-k02" firstAttribute="trailing" secondItem="a8P-EO-E8X" secondAttribute="trailing" id="c1f-pY-Eub"/>
+                            <constraint firstItem="04M-hf-k02" firstAttribute="top" secondItem="a8P-EO-E8X" secondAttribute="top" id="d2M-ZR-MnL"/>
+                            <constraint firstItem="04M-hf-k02" firstAttribute="leading" secondItem="a8P-EO-E8X" secondAttribute="leading" id="emw-8d-cIv"/>
+                            <constraint firstItem="8rX-Qq-MQt" firstAttribute="trailing" secondItem="AAv-p0-FLS" secondAttribute="trailing" id="esf-Yt-QoF"/>
+                            <constraint firstItem="dBj-mn-c8v" firstAttribute="leading" secondItem="Ul9-YX-sNs" secondAttribute="leading" id="qdQ-8d-Rpz"/>
+                            <constraint firstItem="Ul9-YX-sNs" firstAttribute="trailing" secondItem="dBj-mn-c8v" secondAttribute="trailing" id="rZC-FT-xyE"/>
+                            <constraint firstItem="Ul9-YX-sNs" firstAttribute="trailing" secondItem="AAv-p0-FLS" secondAttribute="trailing" constant="12" id="xkw-11-MfN"/>
+                            <constraint firstItem="8rX-Qq-MQt" firstAttribute="top" secondItem="AAv-p0-FLS" secondAttribute="top" id="xm2-kn-PIn"/>
+                            <constraint firstItem="a8P-EO-E8X" firstAttribute="top" secondItem="dBj-mn-c8v" secondAttribute="bottom" constant="12" id="yhv-oS-05i"/>
+                            <constraint firstItem="dBj-mn-c8v" firstAttribute="top" secondItem="Ul9-YX-sNs" secondAttribute="top" id="ypQ-BE-5KC"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="accessibilityIgnoresInvertColors" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <navigationItem key="navigationItem" title="AR Headset" id="qhb-if-FDT">
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="localization" value="menu.devices"/>
+                        </userDefinedRuntimeAttributes>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="deviceImageView" destination="W5L-0s-YEY" id="K00-6m-CDd"/>
+                        <outlet property="headsetView" destination="wKZ-gX-4YU" id="JI2-Or-FRb"/>
+                        <outlet property="headsetViewContainer" destination="tyi-Gq-mpl" id="UME-6o-3ia"/>
+                        <outlet property="imageView" destination="MfV-QW-HWZ" id="iTD-h7-hIH"/>
+                        <outlet property="primaryBtn" destination="AAv-p0-FLS" id="Pwx-Kw-dvt"/>
+                        <outlet property="primaryBtnLabel" destination="8rX-Qq-MQt" id="yQ3-qS-oon"/>
+                        <outlet property="secondaryBtn" destination="a8P-EO-E8X" id="lO3-Za-47u"/>
+                        <outlet property="secondaryBtnLabel" destination="04M-hf-k02" id="UP6-f0-mCb"/>
+                        <outlet property="text" destination="8JZ-Yh-2fH" id="PHP-fe-06y"/>
+                        <outletCollection property="primaryBtnConstraints" destination="Sik-Gt-751" collectionClass="NSMutableArray" id="2VC-ja-J0b"/>
+                        <outletCollection property="secondaryBtnConstraints" destination="yhv-oS-05i" collectionClass="NSMutableArray" id="L9H-IT-8Kt"/>
+                        <outletCollection property="secondaryBtnConstraints" destination="PWm-gd-3ET" collectionClass="NSMutableArray" id="eBN-8e-HxU"/>
+                        <segue destination="I5A-MO-P64" kind="unwind" identifier="UnwindToHomeSegue" unwindAction="unwindToHomeWithSegue:" id="m81-Uf-Iao"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PYy-u3-cBw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="I5A-MO-P64" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="-564" y="167"/>
+        </scene>
+        <!--Troubleshooting-->
+        <scene sceneID="IGt-xM-nWP">
+            <objects>
+                <tableViewController storyboardIdentifier="troubleshooting" id="y4e-vK-RHp" customClass="StatusTableViewController" customModule="Soundscape" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" indicatorStyle="white" dataMode="prototypes" style="grouped" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="fjd-Qo-aqS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="721"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" name="Background Base"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="GPSStatus" textLabel="GHs-JS-weH" rowHeight="60" style="IBUITableViewCellStyleDefault" id="BvS-4B-s4e" userLabel="GPSStatus">
+                                <rect key="frame" x="0.0" y="55.333332061767578" width="375" height="60"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="BvS-4B-s4e" id="8Tc-Vc-gYs">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="±15 meters" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" id="GHs-JS-weH">
+                                            <rect key="frame" x="20" y="0.0" width="335" height="60"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                            <color key="textColor" name="Foreground 1"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" name="Background 2"/>
+                            </tableViewCell>
+                        </prototypes>
+                        <sections/>
+                        <connections>
+                            <outlet property="dataSource" destination="y4e-vK-RHp" id="Hst-G4-dId"/>
+                            <outlet property="delegate" destination="y4e-vK-RHp" id="O6O-SW-UT9"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Troubleshooting" id="BJu-J3-bXM">
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="localization" value="settings.section.troubleshooting"/>
+                        </userDefinedRuntimeAttributes>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" translucent="NO" prompted="NO"/>
+                    <connections>
+                        <segue destination="oX7-W4-RUK" kind="presentation" identifier="ShowLoadingModalSegue" modalPresentationStyle="overCurrentContext" modalTransitionStyle="crossDissolve" id="059-rI-b8n"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="H0d-WB-u9x" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1988" y="166.99507389162562"/>
+        </scene>
+        <!--Loading Modal View Controller-->
+        <scene sceneID="RSY-n4-xM7">
+            <objects>
+                <viewController storyboardIdentifier="LoadingModal" id="oX7-W4-RUK" customClass="LoadingModalViewController" customModule="Soundscape" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vKz-3g-vh1"/>
+                        <viewControllerLayoutGuide type="bottom" id="Bd6-l3-EC5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Hci-cE-v2d">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="ahF-iR-rOx">
+                                <rect key="frame" x="169" y="387.66666666666669" width="37" height="37"/>
+                                <color key="color" name="Foreground 1"/>
+                            </activityIndicatorView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading Message..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fPm-1h-yCu">
+                                <rect key="frame" x="0.0" y="424.66666666666674" width="375" height="353.33333333333326"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
+                                <color key="textColor" name="Foreground 1"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="YSu-Dm-z6H"/>
+                        <color key="backgroundColor" name="Background Shadow"/>
+                        <constraints>
+                            <constraint firstItem="fPm-1h-yCu" firstAttribute="top" secondItem="ahF-iR-rOx" secondAttribute="bottom" id="1bj-iL-qbp"/>
+                            <constraint firstAttribute="trailing" secondItem="fPm-1h-yCu" secondAttribute="trailing" id="352-gu-Iaa"/>
+                            <constraint firstItem="fPm-1h-yCu" firstAttribute="leading" secondItem="Hci-cE-v2d" secondAttribute="leading" id="9N1-1y-75N"/>
+                            <constraint firstItem="YSu-Dm-z6H" firstAttribute="bottom" secondItem="fPm-1h-yCu" secondAttribute="bottom" id="AQj-Hv-akL"/>
+                            <constraint firstItem="ahF-iR-rOx" firstAttribute="centerX" secondItem="Hci-cE-v2d" secondAttribute="centerX" id="J4t-Te-qYA"/>
+                            <constraint firstItem="ahF-iR-rOx" firstAttribute="centerY" secondItem="Hci-cE-v2d" secondAttribute="centerY" id="gYf-jq-TOj"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="activityIndicatorView" destination="ahF-iR-rOx" id="22x-6B-YOP"/>
+                        <outlet property="loadingMessageLabel" destination="fPm-1h-yCu" id="CVg-uH-yYD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UQY-5B-vBI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2820" y="166.99507389162562"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="AAv-p0-FLS">
+            <size key="intrinsicContentSize" width="30" height="30"/>
+        </designable>
+        <designable name="a8P-EO-E8X">
+            <size key="intrinsicContentSize" width="30" height="30"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="NoDevice" width="375" height="280"/>
+        <namedColor name="Background 1">
+            <color red="0.21600000560283661" green="0.29399999976158142" blue="0.46700000762939453" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="Background 2">
+            <color red="0.14499999582767487" green="0.23899999260902405" blue="0.38400000333786011" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Background Base">
+            <color red="0.097999997437000275" green="0.097999997437000275" blue="0.14900000393390656" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="Background Shadow">
+            <color red="0.0" green="0.0" blue="0.0" alpha="0.75" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Clear Color">
+            <color red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Foreground 1">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+    </resources>
+</document>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="FirstLaunchVoiceCell" id="Bm3-Kx-4mG" customClass="VoiceTableViewCell" customModule="Soundscape" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="52.5"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Bm3-Kx-4mG" id="7gN-wZ-1jo">
+                <rect key="frame" x="0.0" y="0.0" width="341" height="52"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Qv3-kf-obl">
+                        <rect key="frame" x="16" y="7.5" width="309" height="36.5"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Inh-qF-ECT">
+                                <rect key="frame" x="0.0" y="6.5" width="24" height="24"/>
+                                <accessibility key="accessibilityConfiguration" label="Preview"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="24" id="Ake-x5-DFk"/>
+                                    <constraint firstAttribute="width" secondItem="Inh-qF-ECT" secondAttribute="height" multiplier="1:1" id="Hez-No-gw5"/>
+                                </constraints>
+                                <state key="normal" image="ic_play_arrow_white"/>
+                                <connections>
+                                    <action selector="onPreviewButtonTouchUpInside" destination="Bm3-Kx-4mG" eventType="touchUpInside" id="jsL-8m-QdA"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="W8N-lj-JWq">
+                                <rect key="frame" x="40" y="0.0" width="229" height="36.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AyG-S6-tqE">
+                                        <rect key="frame" x="0.0" y="0.0" width="229" height="20.5"/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <bool key="isElement" value="NO"/>
+                                        </accessibility>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subtitle" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AxS-D8-BBk">
+                                        <rect key="frame" x="0.0" y="20.5" width="229" height="16"/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <bool key="isElement" value="NO"/>
+                                        </accessibility>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
+                                        <color key="textColor" red="0.6705882353" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="ZkN-3D-GIe">
+                                <rect key="frame" x="285" y="6.5" width="24" height="24"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rsS-VM-MLU">
+                                        <rect key="frame" x="0.0" y="0.0" width="24" height="24"/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <bool key="isElement" value="NO"/>
+                                        </accessibility>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="rsS-VM-MLU" secondAttribute="height" multiplier="1:1" id="iMu-1u-R03"/>
+                                            <constraint firstAttribute="width" constant="24" id="wvT-qg-1r8"/>
+                                        </constraints>
+                                        <state key="normal" image="baseline_clouse_download"/>
+                                        <state key="disabled" image="baseline_clouse_download"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="Qv3-kf-obl" secondAttribute="trailing" constant="16" id="0bd-yB-SE9"/>
+                    <constraint firstItem="Qv3-kf-obl" firstAttribute="leading" secondItem="7gN-wZ-1jo" secondAttribute="leading" constant="16" id="jfR-Sq-M4B"/>
+                    <constraint firstItem="Qv3-kf-obl" firstAttribute="top" secondItem="7gN-wZ-1jo" secondAttribute="top" constant="8" id="koO-kV-Kpz"/>
+                    <constraint firstAttribute="bottom" secondItem="Qv3-kf-obl" secondAttribute="bottom" constant="8" id="opY-IU-uko"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.14400663969999999" green="0.24137306210000001" blue="0.38318216799999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <accessibility key="accessibilityConfiguration">
+                <bool key="isElement" value="YES"/>
+            </accessibility>
+            <connections>
+                <outlet property="downloadButton" destination="rsS-VM-MLU" id="fvj-XR-Fng"/>
+                <outlet property="subtitleLabel" destination="AxS-D8-BBk" id="H1o-X5-16W"/>
+                <outlet property="titleLabel" destination="AyG-S6-tqE" id="iRh-Jy-qGl"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="baseline_clouse_download" width="24" height="24"/>
+        <image name="ic_play_arrow_white" width="24" height="24"/>
+    </resources>
+</document>

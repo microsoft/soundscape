@@ -1,0 +1,58 @@
+# Copyright (c) Microsoft Corporation.
+# Licensed under the MIT License.
+
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: {{ .Chart.Name }}-ingress
+  annotations:
+    kubernetes.io/ingress.class: nginx
+    nginx.ingress.kubernetes.io/rewrite-target: /$1
+  labels:
+    app: {{ .Chart.Name }}
+    tier: ingress
+    role: ingress-rules
+spec:
+  tls:
+  - hosts:
+    - "*.yourservicesdomain.com"
+    secretName: yourservicesdomain-tls
+  rules:
+  - host: "*.yourservicesdomain.com"
+    http:
+      paths:
+      - path: /tiles/?(.*)
+        pathType: ImplementationSpecific
+        backend:
+          service:
+            name: {{ .Chart.Name }}-tile-service
+            port:
+              number: 80
+      - path: /search/?(.*)
+        pathType: ImplementationSpecific
+        backend:
+          service:
+            name: {{ .Chart.Name }}-search-service
+            port:
+              number: 80
+      - path: /nearby/?(.*)
+        pathType: ImplementationSpecific
+        backend:
+          service:
+            name: {{ .Chart.Name }}-nearby-service
+            port:
+              number: 80
+      - path: /lookup/?(.*)
+        pathType: ImplementationSpecific
+        backend:
+          service:
+            name: {{ .Chart.Name }}-lookup-service
+            port:
+              number: 80
+      - path: /suggest/?(.*)
+        pathType: ImplementationSpecific
+        backend:
+          service:
+            name: {{ .Chart.Name }}-suggest-service
+            port:
+              number: 80

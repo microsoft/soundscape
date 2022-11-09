@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="VoiceCell" id="qks-Ct-dgq" customClass="VoiceTableViewCell" customModule="Soundscape" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="52.5"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qks-Ct-dgq" id="ndc-zS-qym">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="52.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="UUr-IN-3Xl">
+                        <rect key="frame" x="16" y="8" width="343" height="36.5"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_check_white" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IS5-0p-Rk9">
+                                <rect key="frame" x="0.0" y="6.5" width="24" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="IS5-0p-Rk9" secondAttribute="height" multiplier="1:1" id="VeG-3k-Lgn"/>
+                                    <constraint firstAttribute="width" constant="24" id="gFl-SN-f7O"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="mMO-4e-Sgf">
+                                <rect key="frame" x="40" y="0.0" width="263" height="36.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BLK-U2-yR9">
+                                        <rect key="frame" x="0.0" y="0.0" width="263" height="20.5"/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <bool key="isElement" value="NO"/>
+                                        </accessibility>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subtitle" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eAr-SH-3Lg">
+                                        <rect key="frame" x="0.0" y="20.5" width="263" height="16"/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <bool key="isElement" value="NO"/>
+                                        </accessibility>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
+                                        <color key="textColor" red="0.6705882353" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="oDY-Up-Fgq">
+                                <rect key="frame" x="319" y="6.5" width="24" height="24"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QPe-n7-0KL" userLabel="Preview Button">
+                                        <rect key="frame" x="0.0" y="0.0" width="24" height="24"/>
+                                        <accessibility key="accessibilityConfiguration" label="Preview"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="24" id="JVT-kB-81q"/>
+                                            <constraint firstAttribute="width" secondItem="QPe-n7-0KL" secondAttribute="height" multiplier="1:1" id="RFe-vx-Yvf"/>
+                                        </constraints>
+                                        <state key="normal" image="ic_play_arrow_white"/>
+                                        <connections>
+                                            <action selector="onPreviewButtonTouchUpInside" destination="qks-Ct-dgq" eventType="touchUpInside" id="MTr-Nh-LMC"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="mMO-4e-Sgf" firstAttribute="leading" secondItem="UUr-IN-3Xl" secondAttribute="leading" constant="40" id="yLU-Gj-KVN"/>
+                        </constraints>
+                    </stackView>
+                </subviews>
+                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="UUr-IN-3Xl" secondAttribute="bottom" constant="8" id="cxF-hC-Jm7"/>
+                    <constraint firstItem="UUr-IN-3Xl" firstAttribute="top" secondItem="ndc-zS-qym" secondAttribute="top" constant="8" id="dH1-hv-xwC"/>
+                    <constraint firstItem="UUr-IN-3Xl" firstAttribute="leading" secondItem="ndc-zS-qym" secondAttribute="leading" constant="16" id="jsW-Pr-TrF"/>
+                    <constraint firstAttribute="trailing" secondItem="UUr-IN-3Xl" secondAttribute="trailing" constant="16" id="yEq-wq-Gjh"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.18266624209999999" green="0.2984658778" blue="0.47575646640000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <accessibility key="accessibilityConfiguration">
+                <bool key="isElement" value="YES"/>
+            </accessibility>
+            <connections>
+                <outlet property="checkImageView" destination="IS5-0p-Rk9" id="cUs-TU-7WN"/>
+                <outlet property="subtitleLabel" destination="eAr-SH-3Lg" id="Flk-v3-oN5"/>
+                <outlet property="titleLabel" destination="BLK-U2-yR9" id="TCB-Nk-pFk"/>
+            </connections>
+            <point key="canvasLocation" x="140" y="155"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic_check_white" width="24" height="24"/>
+        <image name="ic_play_arrow_white" width="24" height="24"/>
+    </resources>
+</document>

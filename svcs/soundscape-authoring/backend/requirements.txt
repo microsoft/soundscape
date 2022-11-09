@@ -1,0 +1,14 @@
+pip==22.2.2                        # Installing Python packages
+
+django==4.0.8                      # Django framework
+djangorestframework==3.13.1        # REST API support for
+Pillow==9.2.0                      # Required for the ImageField model field
+psycopg2==2.9.3                    # PostgreSQL database adapter
+gpxpy==1.5.0                       # GPX file parser and GPS track manipulation library
+django-storages[azure]===1.13.1    # File database for images and GPX files
+whitenoise==6.2.0                  # Serve static files (also used to serve frontend files)
+
+markdown==3.4.1                    # (optional Django REST) Markdown support for the browsable API 
+Pygments==2.13.0                   # (optional Django REST) Add syntax highlighting to Markdown processing
+django-cors-headers==3.13.0        # For local development, to be able to access API from frontend
+autopep8==1.6.0                    # A tool that automatically formats Python code to conform to the PEP 8 style guide

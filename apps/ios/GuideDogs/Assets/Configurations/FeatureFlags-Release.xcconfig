@@ -1,0 +1,12 @@
+//
+//  FeatureFlags-Release.xcconfig
+//  Soundscape
+//
+//  Copyright (c) Microsoft Corporation.
+//  Licensed under the MIT License.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+// There are no feature flags enabled by default for release configuration

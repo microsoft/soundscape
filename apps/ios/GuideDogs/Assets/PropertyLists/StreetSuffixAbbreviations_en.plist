@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ALY</key>
+	<string>Alley</string>
+	<key>ANX</key>
+	<string>Anex</string>
+	<key>ARC</key>
+	<string>Arcade</string>
+	<key>AVE</key>
+	<string>Avenue</string>
+	<key>AVE E</key>
+	<string>Avenue East</string>
+	<key>AVE N</key>
+	<string>Avenue North</string>
+	<key>AVE S</key>
+	<string>Avenue South</string>
+	<key>AVE W</key>
+	<string>Avenue West</string>
+	<key>BCH</key>
+	<string>Beach</string>
+	<key>BLF</key>
+	<string>Bluff</string>
+	<key>BLFS</key>
+	<string>Bluffs</string>
+	<key>BLVD</key>
+	<string>Boulevard</string>
+	<key>BND</key>
+	<string>Bend</string>
+	<key>BR</key>
+	<string>Branch</string>
+	<key>BRG</key>
+	<string>Bridge</string>
+	<key>BRK</key>
+	<string>Brook</string>
+	<key>BRKS</key>
+	<string>Brooks</string>
+	<key>BTM</key>
+	<string>Bottom</string>
+	<key>BYP</key>
+	<string>Bypass</string>
+	<key>BYU</key>
+	<string>Bayou</string>
+	<key>CIR</key>
+	<string>Circle</string>
+	<key>CIRS</key>
+	<string>Circles</string>
+	<key>CLB</key>
+	<string>Club</string>
+	<key>CLF</key>
+	<string>Cliff</string>
+	<key>CLFS</key>
+	<string>Cliffs</string>
+	<key>CMN</key>
+	<string>Common</string>
+	<key>CMNS</key>
+	<string>Commons</string>
+	<key>COR</key>
+	<string>Corner</string>
+	<key>CORS</key>
+	<string>Corners</string>
+	<key>CP</key>
+	<string>Camp</string>
+	<key>CPE</key>
+	<string>Cape</string>
+	<key>CRES</key>
+	<string>Crescent</string>
+	<key>CRK</key>
+	<string>Creek</string>
+	<key>CRSE</key>
+	<string>Course</string>
+	<key>CRST</key>
+	<string>Crest</string>
+	<key>CSWY</key>
+	<string>Causeway</string>
+	<key>CT</key>
+	<string>Court</string>
+	<key>CTR</key>
+	<string>Center</string>
+	<key>CTRS</key>
+	<string>Centers</string>
+	<key>CTS</key>
+	<string>Courts</string>
+	<key>CURV</key>
+	<string>Curve</string>
+	<key>CV</key>
+	<string>Cove</string>
+	<key>CVS</key>
+	<string>Coves</string>
+	<key>CYN</key>
+	<string>Canyon</string>
+	<key>DL</key>
+	<string>Dale</string>
+	<key>DM</key>
+	<string>Dam</string>
+	<key>DR</key>
+	<string>Drive</string>
+	<key>DRS</key>
+	<string>Drives</string>
+	<key>DV</key>
+	<string>Divide</string>
+	<key>E</key>
+	<string>East</string>
+	<key>E ST</key>
+	<string>East Street</string>
+	<key>ESTS</key>
+	<string>Estates</string>
+	<key>EXPWY</key>
+	<string>Expressway</string>
+	<key>EXPY</key>
+	<string>Expressway</string>
+	<key>EXT</key>
+	<string>Extension</string>
+	<key>EXTS</key>
+	<string>Extensions</string>
+	<key>FALL</key>
+	<string>Fall</string>
+	<key>FLS</key>
+	<string>Falls</string>
+	<key>FRY</key>
+	<string>Ferry</string>
+	<key>FWY</key>
+	<string>Freeway</string>
+	<key>HWY</key>
+	<string>Highway</string>
+	<key>LN</key>
+	<string>Lane</string>
+	<key>N</key>
+	<string>North</string>
+	<key>N ST</key>
+	<string>North Street</string>
+	<key>NE</key>
+	<string>Northeast</string>
+	<key>NW</key>
+	<string>Northwest</string>
+	<key>PKWY</key>
+	<string>Parkway</string>
+	<key>PL</key>
+	<string>Place</string>
+	<key>RD</key>
+	<string>Road</string>
+	<key>S</key>
+	<string>South</string>
+	<key>S ST</key>
+	<string>South Street</string>
+	<key>SE</key>
+	<string>Southeast</string>
+	<key>ST</key>
+	<string>Street</string>
+	<key>SW</key>
+	<string>Southwest</string>
+	<key>TER</key>
+	<string>Terrace</string>
+	<key>TR</key>
+	<string>Trail</string>
+	<key>W</key>
+	<string>West</string>
+	<key>W ST</key>
+	<string>West Street</string>
+	<key>WY</key>
+	<string>Way</string>
+	<key>XING</key>
+	<string>Crossing</string>
+	<key>XRD</key>
+	<string>Crossroad</string>
+	<key>XRDS</key>
+	<string>Crossroads</string>
+</dict>
+</plist>

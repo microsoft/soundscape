@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scheme
+   LastUpgradeVersion = "1320"
+   version = "1.7">
+   <BuildAction
+      parallelizeBuildables = "YES"
+      buildImplicitDependencies = "YES">
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "D3D7CFC71B3D96460020B5E9"
+               BuildableName = "Soundscape.app"
+               BlueprintName = "Soundscape"
+               ReferencedContainer = "container:GuideDogs.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "NO"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "D3D7CFE31B3D96470020B5E9"
+               BuildableName = "SoundscapeUnitTests.xctest"
+               BlueprintName = "SoundscapeUnitTests"
+               ReferencedContainer = "container:GuideDogs.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
+   </BuildAction>
+   <TestAction
+      buildConfiguration = "Debug"
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      shouldUseLaunchSchemeArgsEnv = "NO">
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "D3D7CFC71B3D96460020B5E9"
+            BuildableName = "Soundscape.app"
+            BlueprintName = "Soundscape"
+            ReferencedContainer = "container:GuideDogs.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
+      <CommandLineArguments>
+         <CommandLineArgument
+            argument = "-TESTING"
+            isEnabled = "YES">
+         </CommandLineArgument>
+      </CommandLineArguments>
+      <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "D3D7CFE31B3D96470020B5E9"
+               BuildableName = "SoundscapeUnitTests.xctest"
+               BlueprintName = "SoundscapeUnitTests"
+               ReferencedContainer = "container:GuideDogs.xcodeproj">
+            </BuildableReference>
+            <SkippedTests>
+               <Test
+                  Identifier = "AutomaticCalloutsUnitTests/testDestinationCallout()">
+               </Test>
+               <Test
+                  Identifier = "AutomaticCalloutsUnitTests/testFilteredCategories()">
+               </Test>
+               <Test
+                  Identifier = "AutomaticCalloutsUnitTests/testNearbyCallouts()">
+               </Test>
+               <Test
+                  Identifier = "GuideDogsUnitTests/testAudioQueueingScenario6">
+               </Test>
+               <Test
+                  Identifier = "GuideDogsUnitTests/testFindTheWay">
+               </Test>
+               <Test
+                  Identifier = "GuideDogsUnitTests/testSettingsContextEnglishGBChange">
+               </Test>
+               <Test
+                  Identifier = "GuideDogsUnitTests/testSettingsContextEnglishGBFlipFlop">
+               </Test>
+               <Test
+                  Identifier = "GuideDogsUnitTests/testSoundQueueingScenario1">
+               </Test>
+               <Test
+                  Identifier = "GuideDogsUnitTests/testSoundQueueingScenario2">
+               </Test>
+               <Test
+                  Identifier = "GuideDogsUnitTests/testSoundQueueingScenario3">
+               </Test>
+               <Test
+                  Identifier = "GuideDogsUnitTests/testSoundQueueingScenario4">
+               </Test>
+               <Test
+                  Identifier = "SharedContentUnitTests/testParseGPX()">
+               </Test>
+               <Test
+                  Identifier = "TelemetryUnitTests/testUpload()">
+               </Test>
+            </SkippedTests>
+         </TestableReference>
+      </Testables>
+   </TestAction>
+   <LaunchAction
+      buildConfiguration = "Debug"
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      language = "IDELaunchSchemeLanguageBoundedString"
+      launchStyle = "0"
+      useCustomWorkingDirectory = "NO"
+      ignoresPersistentStateOnLaunch = "NO"
+      debugDocumentVersioning = "YES"
+      debugServiceExtension = "internal"
+      allowLocationSimulation = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "D3D7CFC71B3D96460020B5E9"
+            BuildableName = "Soundscape.app"
+            BlueprintName = "Soundscape"
+            ReferencedContainer = "container:GuideDogs.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
+      <EnvironmentVariables>
+         <EnvironmentVariable
+            key = "OS_ACTIVITY_MODE"
+            value = "disable"
+            isEnabled = "YES">
+         </EnvironmentVariable>
+      </EnvironmentVariables>
+      <LocationScenarioReference
+         identifier = "com.apple.dt.IDEFoundation.CurrentLocationScenarioIdentifier"
+         referenceType = "1">
+      </LocationScenarioReference>
+   </LaunchAction>
+   <ProfileAction
+      buildConfiguration = "Release"
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      savedToolIdentifier = ""
+      useCustomWorkingDirectory = "NO"
+      debugDocumentVersioning = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "D3D7CFC71B3D96460020B5E9"
+            BuildableName = "Soundscape.app"
+            BlueprintName = "Soundscape"
+            ReferencedContainer = "container:GuideDogs.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
+   </ProfileAction>
+   <AnalyzeAction
+      buildConfiguration = "Release">
+   </AnalyzeAction>
+   <ArchiveAction
+      buildConfiguration = "Release"
+      customArchiveName = "Soundscape"
+      revealArchiveInOrganizer = "YES">
+   </ArchiveAction>
+</Scheme>

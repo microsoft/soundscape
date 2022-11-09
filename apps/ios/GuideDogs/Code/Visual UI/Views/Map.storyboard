@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="JuR-oN-4JB">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="ryJ-w4-lv4">
+            <objects>
+                <navigationController storyboardIdentifier="EditableMapNavigation" id="fir-Ic-aC6" customClass="NavigationController" customModule="Soundscape" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="NV3-Mx-FjS"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ikX-41-gQg">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="h69-qw-bYg" kind="relationship" relationship="rootViewController" id="5kh-Mr-XUm"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kOT-NO-vvb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3880" y="65"/>
+        </scene>
+        <!--Expandable Map View Controller-->
+        <scene sceneID="ot1-zY-dX4">
+            <objects>
+                <viewController id="JuR-oN-4JB" customClass="ExpandableMapViewController" customModule="Soundscape" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="IsU-CD-HFn">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NKI-Jr-lpB">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outlet property="delegate" destination="JuR-oN-4JB" id="RmJ-B9-M4H"/>
+                                </connections>
+                            </mapView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nQw-lA-uTI">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="MD7-hn-nil">
+                                <rect key="frame" x="302" y="100" width="100" height="44"/>
+                                <subviews>
+                                    <button opaque="NO" alpha="0.90000000000000002" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nfn-r4-9JV" customClass="RoundedButton" customModule="Soundscape" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="44" height="44"/>
+                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="44" id="HQH-gI-Ekx"/>
+                                            <constraint firstAttribute="width" secondItem="Nfn-r4-9JV" secondAttribute="height" multiplier="1:1" id="rr8-b8-M9t"/>
+                                        </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal">
+                                            <imageReference key="image" image="arrow.triangle.branch" catalog="system" symbolScale="large"/>
+                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="font" scale="large" weight="heavy">
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                            </preferredSymbolConfiguration>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="accLabelLocalization" value="third_party_apps.general.maps"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="accHintLocalization" value="location_detail.action.directions.hint"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="onDirectionsButtonTouchUpInside:" destination="JuR-oN-4JB" eventType="touchUpInside" id="2F0-tp-GRA"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" alpha="0.90000000000000002" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="loU-bV-Vdb" customClass="RoundedButton" customModule="Soundscape" customModuleProvider="target">
+                                        <rect key="frame" x="56" y="0.0" width="44" height="44"/>
+                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="loU-bV-Vdb" secondAttribute="height" multiplier="1:1" id="KP9-Og-CdG"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="44" id="QLV-vn-aUm"/>
+                                        </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal">
+                                            <imageReference key="image" image="arrow.up.left.and.arrow.down.right" catalog="system" symbolScale="large"/>
+                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="font" scale="large" weight="heavy">
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                            </preferredSymbolConfiguration>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="onFullScreenButtonTouchUpInside:" destination="JuR-oN-4JB" eventType="touchUpInside" id="WcL-Mn-OPX"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="YI1-oL-VSf"/>
+                        <color key="backgroundColor" name="Background Base"/>
+                        <constraints>
+                            <constraint firstItem="nQw-lA-uTI" firstAttribute="leading" secondItem="NKI-Jr-lpB" secondAttribute="leading" id="3aU-Ke-AFp"/>
+                            <constraint firstItem="NKI-Jr-lpB" firstAttribute="top" secondItem="YI1-oL-VSf" secondAttribute="top" id="85I-60-bfo"/>
+                            <constraint firstItem="YI1-oL-VSf" firstAttribute="trailing" secondItem="MD7-hn-nil" secondAttribute="trailing" constant="12" id="HW5-B1-z8h"/>
+                            <constraint firstItem="nQw-lA-uTI" firstAttribute="top" secondItem="NKI-Jr-lpB" secondAttribute="top" id="JtM-ud-uJ8"/>
+                            <constraint firstAttribute="bottom" secondItem="NKI-Jr-lpB" secondAttribute="bottom" id="Kdm-mp-1o9"/>
+                            <constraint firstItem="NKI-Jr-lpB" firstAttribute="leading" secondItem="YI1-oL-VSf" secondAttribute="leading" id="Wvf-MV-ah1"/>
+                            <constraint firstItem="YI1-oL-VSf" firstAttribute="trailing" secondItem="NKI-Jr-lpB" secondAttribute="trailing" id="Xfs-uK-Ozy"/>
+                            <constraint firstItem="nQw-lA-uTI" firstAttribute="bottom" secondItem="NKI-Jr-lpB" secondAttribute="bottom" id="Y9p-dO-qT5"/>
+                            <constraint firstItem="MD7-hn-nil" firstAttribute="top" secondItem="YI1-oL-VSf" secondAttribute="top" constant="12" id="fzk-b2-533"/>
+                            <constraint firstItem="nQw-lA-uTI" firstAttribute="trailing" secondItem="NKI-Jr-lpB" secondAttribute="trailing" id="pXI-SH-uQV"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="loP-Fk-Dok">
+                        <barButtonItem key="leftBarButtonItem" title="Item" id="Aja-Vj-qy9">
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="localization" value="general.alert.cancel"/>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="onLeftBarButtonItemSelected:" destination="JuR-oN-4JB" id="oRN-cc-smb"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="accessibilityEditableMapView" destination="nQw-lA-uTI" id="DJ6-ze-jPu"/>
+                        <outlet property="fullScreenButton" destination="loU-bV-Vdb" id="uEn-j8-2d7"/>
+                        <outlet property="mapView" destination="NKI-Jr-lpB" id="IeK-M2-29A"/>
+                        <outlet property="mapsButton" destination="Nfn-r4-9JV" id="Cgd-5b-56r"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6on-EF-Jai" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4803" y="757"/>
+        </scene>
+        <!--Editable Map View Controller-->
+        <scene sceneID="dXi-SC-JI7">
+            <objects>
+                <viewController id="h69-qw-bYg" customClass="EditableMapViewController" customModule="Soundscape" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Rys-cA-z1v">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5PN-4Q-cEu">
+                                <rect key="frame" x="0.0" y="88" width="414" height="33"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Edit to select a new location" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="anF-r1-gR9">
+                                        <rect key="frame" x="8" y="8" width="398" height="17"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                        <color key="textColor" name="Background Base"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" name="Excluded"/>
+                                <constraints>
+                                    <constraint firstItem="anF-r1-gR9" firstAttribute="leading" secondItem="5PN-4Q-cEu" secondAttribute="leading" constant="8" id="AX5-3t-LCT"/>
+                                    <constraint firstAttribute="trailing" secondItem="anF-r1-gR9" secondAttribute="trailing" constant="8" id="GWs-1J-8ko"/>
+                                    <constraint firstItem="anF-r1-gR9" firstAttribute="top" secondItem="5PN-4Q-cEu" secondAttribute="top" constant="8" id="TuJ-QU-stm"/>
+                                    <constraint firstAttribute="bottom" secondItem="anF-r1-gR9" secondAttribute="bottom" constant="8" id="ugq-09-ycs"/>
+                                </constraints>
+                            </view>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bHw-mF-UdJ">
+                                <rect key="frame" x="0.0" y="121" width="414" height="775"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outlet property="delegate" destination="h69-qw-bYg" id="eAc-3h-IGt"/>
+                                </connections>
+                            </mapView>
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="baseline_place_red_36pt" translatesAutoresizingMaskIntoConstraints="NO" id="oOA-g9-RIZ">
+                                <rect key="frame" x="189" y="472.5" width="36" height="36"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="uTr-Jd-jhk"/>
+                        <color key="backgroundColor" name="Background Base"/>
+                        <constraints>
+                            <constraint firstItem="uTr-Jd-jhk" firstAttribute="trailing" secondItem="bHw-mF-UdJ" secondAttribute="trailing" id="3gP-FX-V2O"/>
+                            <constraint firstItem="bHw-mF-UdJ" firstAttribute="top" secondItem="5PN-4Q-cEu" secondAttribute="bottom" id="9N8-hn-rIz"/>
+                            <constraint firstItem="uTr-Jd-jhk" firstAttribute="leading" secondItem="5PN-4Q-cEu" secondAttribute="leading" id="VFi-WR-Skp"/>
+                            <constraint firstItem="oOA-g9-RIZ" firstAttribute="centerX" secondItem="bHw-mF-UdJ" secondAttribute="centerX" id="YFl-yM-bmY"/>
+                            <constraint firstAttribute="bottom" secondItem="bHw-mF-UdJ" secondAttribute="bottom" id="bjB-5e-8QS"/>
+                            <constraint firstItem="5PN-4Q-cEu" firstAttribute="top" secondItem="uTr-Jd-jhk" secondAttribute="top" id="ebi-yd-b7i"/>
+                            <constraint firstItem="oOA-g9-RIZ" firstAttribute="bottom" secondItem="bHw-mF-UdJ" secondAttribute="centerY" id="hFJ-Vh-ZTP"/>
+                            <constraint firstItem="bHw-mF-UdJ" firstAttribute="leading" secondItem="uTr-Jd-jhk" secondAttribute="leading" id="vbu-xL-cCh"/>
+                            <constraint firstItem="uTr-Jd-jhk" firstAttribute="trailing" secondItem="5PN-4Q-cEu" secondAttribute="trailing" id="yXd-mt-2rJ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="2x9-wM-7Qo">
+                        <barButtonItem key="leftBarButtonItem" title="Item" id="ZBs-JR-ckx">
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="localization" value="general.alert.cancel"/>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="onLeftBarButtonItemSelected:" destination="h69-qw-bYg" id="uhF-XL-Krk"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="9iS-1D-thP">
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="localization" value="general.alert.edit"/>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="onRightBarButtonItemSelected:" destination="h69-qw-bYg" id="cwf-kT-dQu"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="annotationImageView" destination="oOA-g9-RIZ" id="cKl-CA-3Dn"/>
+                        <outlet property="label" destination="anF-r1-gR9" id="uyQ-co-uOv"/>
+                        <outlet property="mapView" destination="bHw-mF-UdJ" id="OUd-tv-9On"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qIe-cK-Kwx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4804" y="65"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="3I5-J7-VfA">
+            <objects>
+                <navigationController storyboardIdentifier="ExpandableMapNavigation" id="8bX-rz-fCK" customClass="NavigationController" customModule="Soundscape" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="61c-Hp-utA"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="oAe-4G-nee">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="JuR-oN-4JB" kind="relationship" relationship="rootViewController" id="lpm-Ez-3c1"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9CQ-1e-ud8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3880" y="757"/>
+        </scene>
+        <!--Map View Controller-->
+        <scene sceneID="nc6-0P-sZM">
+            <objects>
+                <viewController storyboardIdentifier="MapViewController" id="EH6-sn-Wrf" customClass="MapViewController" customModule="Soundscape" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Ol1-sh-qBt">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="l85-Yk-Gt6">
+                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outlet property="delegate" destination="EH6-sn-Wrf" id="zPA-KW-PKh"/>
+                                </connections>
+                            </mapView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="hDN-3E-jFa"/>
+                        <color key="backgroundColor" name="Background Base"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="l85-Yk-Gt6" secondAttribute="bottom" id="6v7-89-jR3"/>
+                            <constraint firstItem="l85-Yk-Gt6" firstAttribute="top" secondItem="hDN-3E-jFa" secondAttribute="top" id="8VY-5g-Yu7"/>
+                            <constraint firstItem="hDN-3E-jFa" firstAttribute="trailing" secondItem="l85-Yk-Gt6" secondAttribute="trailing" id="KzK-5g-74a"/>
+                            <constraint firstItem="l85-Yk-Gt6" firstAttribute="leading" secondItem="hDN-3E-jFa" secondAttribute="leading" id="aMG-Mv-tzi"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="mapView" destination="l85-Yk-Gt6" id="k7j-5B-UBs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WVO-mh-Q9h" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5643" y="757"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="Nfn-r4-9JV">
+            <size key="intrinsicContentSize" width="22.5" height="22"/>
+        </designable>
+        <designable name="loU-bV-Vdb">
+            <size key="intrinsicContentSize" width="22.5" height="22.5"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="arrow.triangle.branch" catalog="system" width="128" height="108"/>
+        <image name="arrow.up.left.and.arrow.down.right" catalog="system" width="128" height="115"/>
+        <image name="baseline_place_red_36pt" width="36" height="36"/>
+        <namedColor name="Background Base">
+            <color red="0.097999997437000275" green="0.097999997437000275" blue="0.14900000393390656" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="Excluded">
+            <color red="0.85100001096725464" green="0.86299997568130493" blue="0.83899998664855957" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

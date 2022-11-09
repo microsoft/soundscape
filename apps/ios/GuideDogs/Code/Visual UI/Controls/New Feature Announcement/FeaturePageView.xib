@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FeaturePageViewController">
+            <connections>
+                <outlet property="bodyTextView" destination="VPp-Vx-SCg" id="Jdc-SP-Kyv"/>
+                <outlet property="featureImageView" destination="stj-MY-P57" id="lTL-kf-yBd"/>
+                <outlet property="featureImageViewHeightConstraint" destination="XLd-hj-4Jz" id="SO4-VV-Cfd"/>
+                <outlet property="headerLabel" destination="HLQ-sH-rSs" id="hLG-FD-5Rr"/>
+                <outlet property="textViewHeightConstraint" destination="FZJ-R8-Wib" id="imB-WT-9Aw"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GAU-py-hem">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E5D-g9-bYd">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="557"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="newfeature_ce_en-US" translatesAutoresizingMaskIntoConstraints="NO" id="stj-MY-P57">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="283"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="283" id="XLd-hj-4Jz"/>
+                                    </constraints>
+                                </imageView>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jMV-03-e8C">
+                                    <rect key="frame" x="0.0" y="283" width="375" height="274"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Introducing Recent Callout History" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HLQ-sH-rSs">
+                                            <rect key="frame" x="32" y="24" width="311" height="17"/>
+                                            <accessibility key="accessibilityConfiguration">
+                                                <accessibilityTraits key="traits" staticText="YES" header="YES"/>
+                                            </accessibility>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" contentInsetAdjustmentBehavior="never" editable="NO" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VPp-Vx-SCg">
+                                            <rect key="frame" x="32" y="57" width="311" height="160"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="160" id="FZJ-R8-Wib"/>
+                                            </constraints>
+                                            <string key="text">Expand the new recent history section to view a list of recent callouts. Double tap on a recent callout to repeat it. Swipe up on a recent callout to hear more information, set a beacon on it, and more! </string>
+                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                                            <connections>
+                                                <outlet property="delegate" destination="-1" id="Y2y-qU-3JX"/>
+                                            </connections>
+                                        </textView>
+                                    </subviews>
+                                    <color key="backgroundColor" red="0.12867569919999999" green="0.13345718379999999" blue="0.20067968959999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="HLQ-sH-rSs" secondAttribute="trailing" constant="32" id="JbL-as-ErB"/>
+                                        <constraint firstItem="HLQ-sH-rSs" firstAttribute="leading" secondItem="jMV-03-e8C" secondAttribute="leading" constant="32" id="Per-bs-c4o"/>
+                                        <constraint firstAttribute="trailing" secondItem="VPp-Vx-SCg" secondAttribute="trailing" constant="32" id="QXU-Cd-x3o"/>
+                                        <constraint firstItem="HLQ-sH-rSs" firstAttribute="top" secondItem="jMV-03-e8C" secondAttribute="top" constant="24" id="TLJ-2L-fQj"/>
+                                        <constraint firstItem="VPp-Vx-SCg" firstAttribute="centerY" secondItem="jMV-03-e8C" secondAttribute="centerY" id="alq-xF-jrW"/>
+                                        <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="VPp-Vx-SCg" secondAttribute="bottom" id="eHg-UC-hME"/>
+                                        <constraint firstItem="VPp-Vx-SCg" firstAttribute="top" secondItem="HLQ-sH-rSs" secondAttribute="bottom" constant="16" id="fDs-76-Ocf"/>
+                                        <constraint firstItem="VPp-Vx-SCg" firstAttribute="leading" secondItem="jMV-03-e8C" secondAttribute="leading" constant="32" id="iu2-sP-kah"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="stj-MY-P57" firstAttribute="centerX" secondItem="E5D-g9-bYd" secondAttribute="centerX" id="5t6-Qn-dqo"/>
+                                <constraint firstAttribute="bottom" secondItem="jMV-03-e8C" secondAttribute="bottom" id="EnR-bv-kI1"/>
+                                <constraint firstItem="jMV-03-e8C" firstAttribute="leading" secondItem="E5D-g9-bYd" secondAttribute="leading" id="UCL-2j-i6e"/>
+                                <constraint firstItem="jMV-03-e8C" firstAttribute="top" secondItem="stj-MY-P57" secondAttribute="bottom" id="W5C-am-2qv"/>
+                                <constraint firstAttribute="trailing" secondItem="jMV-03-e8C" secondAttribute="trailing" id="XRV-CG-frm"/>
+                                <constraint firstItem="stj-MY-P57" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="E5D-g9-bYd" secondAttribute="leading" id="XjD-bm-OfU"/>
+                                <constraint firstItem="stj-MY-P57" firstAttribute="top" secondItem="E5D-g9-bYd" secondAttribute="top" id="Zns-iW-dUB"/>
+                                <constraint firstItem="stj-MY-P57" firstAttribute="centerX" secondItem="jMV-03-e8C" secondAttribute="centerX" id="bnq-GJ-lxz"/>
+                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="stj-MY-P57" secondAttribute="trailing" id="xz0-nu-PMG"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="tintColor" red="0.6705882353" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="E5D-g9-bYd" secondAttribute="bottom" id="a4A-rz-NDZ"/>
+                        <constraint firstAttribute="trailing" secondItem="E5D-g9-bYd" secondAttribute="trailing" id="asX-uk-dnp"/>
+                        <constraint firstItem="E5D-g9-bYd" firstAttribute="leading" secondItem="GAU-py-hem" secondAttribute="leading" id="iR1-fv-zlT"/>
+                        <constraint firstItem="E5D-g9-bYd" firstAttribute="top" secondItem="GAU-py-hem" secondAttribute="top" id="uxv-nZ-U4o"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <constraints>
+                <constraint firstItem="GAU-py-hem" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="06R-xs-J0J"/>
+                <constraint firstItem="GAU-py-hem" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="Bx1-gZ-f4v"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="GAU-py-hem" secondAttribute="bottom" id="JtO-1N-Ma8"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="GAU-py-hem" secondAttribute="trailing" id="MMx-HQ-Y8v"/>
+                <constraint firstItem="E5D-g9-bYd" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="fHp-Ug-JMo"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="leading" secondItem="E5D-g9-bYd" secondAttribute="leading" id="wQc-Ip-weq"/>
+            </constraints>
+            <point key="canvasLocation" x="48.5" y="54.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="newfeature_ce_en-US" width="1322" height="1129"/>
+    </resources>
+</document>

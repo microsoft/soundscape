@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="461" id="9kR-IV-yPw" customClass="POITableViewCellEmpty" customModule="Soundscape" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="376" height="461"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="9kR-IV-yPw" id="vLI-nm-JBy">
+                <rect key="frame" x="0.0" y="0.0" width="376" height="460.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Oops!" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yte-FH-Drh">
+                        <rect key="frame" x="32" y="64" width="312" height="31.5"/>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="localization" value="text.oops"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3CG-uN-JHT">
+                        <rect key="frame" x="32" y="111.5" width="312" height="285"/>
+                        <string key="text">It doesn't look like there are any places nearby. If you're looking for a specific place, you can try searching by name or address.</string>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="localization" value="search.no_results_found_error"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" red="0.12867569919999999" green="0.13345718379999999" blue="0.20067968959999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="3CG-uN-JHT" secondAttribute="bottom" constant="64" id="CVk-St-blv"/>
+                    <constraint firstItem="3CG-uN-JHT" firstAttribute="leading" secondItem="vLI-nm-JBy" secondAttribute="leading" constant="32" id="KSo-AX-H1G"/>
+                    <constraint firstAttribute="trailing" secondItem="Yte-FH-Drh" secondAttribute="trailing" constant="32" id="SAp-BX-Opt"/>
+                    <constraint firstItem="3CG-uN-JHT" firstAttribute="top" secondItem="Yte-FH-Drh" secondAttribute="bottom" constant="16" id="Zl1-D9-7eH"/>
+                    <constraint firstAttribute="trailing" secondItem="3CG-uN-JHT" secondAttribute="trailing" constant="32" id="ih9-dW-aN3"/>
+                    <constraint firstItem="Yte-FH-Drh" firstAttribute="top" secondItem="vLI-nm-JBy" secondAttribute="top" constant="64" id="jho-Ga-JtN"/>
+                    <constraint firstItem="Yte-FH-Drh" firstAttribute="leading" secondItem="vLI-nm-JBy" secondAttribute="leading" constant="32" id="pwM-ke-IqK"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="-421" y="-57.5"/>
+        </tableViewCell>
+    </objects>
+</document>

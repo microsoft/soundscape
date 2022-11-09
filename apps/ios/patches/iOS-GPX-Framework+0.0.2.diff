@@ -1,0 +1,2513 @@
+diff --git a/cocoapods-patch-20221103-54518-lfrmhf/iOS-GPX-Framework/GPX/GPX.h b/Pods/iOS-GPX-Framework/GPX/GPX.h
+index 1bb6675c9..8429652af 100644
+--- a/cocoapods-patch-20221103-54518-lfrmhf/iOS-GPX-Framework/GPX/GPX.h
++++ b/Pods/iOS-GPX-Framework/GPX/GPX.h
+@@ -6,6 +6,7 @@
+ //  Copyright (c) 2012 NextBusinessSystem Co., Ltd. All rights reserved.
+ //
+ 
++#import <UIKit/UIKit.h>
+ #import "GPXParser.h"
+ #import "GPXConst.h"
+ #import "GPXType.h"
+diff --git a/cocoapods-patch-20221103-54518-lfrmhf/iOS-GPX-Framework/GPX/GPXBounds.h b/Pods/iOS-GPX-Framework/GPX/GPXBounds.h
+index e3fd09f3b..56baf8f5f 100644
+--- a/cocoapods-patch-20221103-54518-lfrmhf/iOS-GPX-Framework/GPX/GPXBounds.h
++++ b/Pods/iOS-GPX-Framework/GPX/GPXBounds.h
+@@ -7,7 +7,7 @@
+ //
+ 
+ #import "GPXElement.h"
+-
++@import CoreLocation;
+ 
+ /** Two lat/lon pairs defining the extent of an element.
+  */
+@@ -19,16 +19,16 @@
+ /// ---------------------------------
+ 
+ /** The minimum latitude. */
+-@property (nonatomic, assign) CGFloat minLatitude;
++@property (nonatomic) CLLocationDegrees minLatitude;
+ 
+ /** The minimum longitude. */
+-@property (nonatomic, assign) CGFloat minLongitude;
++@property (nonatomic) CLLocationDegrees minLongitude;
+ 
+ /** The maximum latitude. */
+-@property (nonatomic, assign) CGFloat maxLatitude;
++@property (nonatomic) CLLocationDegrees maxLatitude;
+ 
+ /** The maximum longitude. */
+-@property (nonatomic, assign) CGFloat maxLongitude;
++@property (nonatomic) CLLocationDegrees maxLongitude;
+ 
+ 
+ /// ---------------------------------
+@@ -42,6 +42,6 @@
+  @param maxLongitude The maximum longitude.
+  @return A newly created bounds element.
+  */
+-+ (GPXBounds *)boundsWithMinLatitude:(CGFloat)minLatitude minLongitude:(CGFloat)minLongitude maxLatitude:(CGFloat)maxLatitude maxLongitude:(CGFloat)maxLongitude;
+++ (GPXBounds *)boundsWithMinLatitude:(CLLocationDegrees)minLatitude minLongitude:(CLLocationDegrees)minLongitude maxLatitude:(CLLocationDegrees)maxLatitude maxLongitude:(CLLocationDegrees)maxLongitude;
+ 
+ @end
+diff --git a/cocoapods-patch-20221103-54518-lfrmhf/iOS-GPX-Framework/GPX/GPXBounds.m b/Pods/iOS-GPX-Framework/GPX/GPXBounds.m
+index 21c7ad9ad..ebfafa791 100644
+--- a/cocoapods-patch-20221103-54518-lfrmhf/iOS-GPX-Framework/GPX/GPXBounds.m
++++ b/Pods/iOS-GPX-Framework/GPX/GPXBounds.m
+@@ -36,7 +36,7 @@
+     return self;
+ }
+ 
+-+ (GPXBounds *)boundsWithMinLatitude:(CGFloat)minLatitude minLongitude:(CGFloat)minLongitude maxLatitude:(CGFloat)maxLatitude maxLongitude:(CGFloat)maxLongitude
+++ (GPXBounds *)boundsWithMinLatitude:(CLLocationDegrees)minLatitude minLongitude:(CLLocationDegrees)minLongitude maxLatitude:(CLLocationDegrees)maxLatitude maxLongitude:(CLLocationDegrees)maxLongitude
+ {
+     GPXBounds *bounds = [GPXBounds new];
+     bounds.minLatitude = minLatitude;
+@@ -49,42 +49,42 @@
+ 
+ #pragma mark - Public methods
+ 
+-- (CGFloat)minLatitude
++- (CLLocationDegrees)minLatitude
+ {
+     return [GPXType latitude:_minLatitudeValue];
+ }
+ 
+-- (void)setMinLatitude:(CGFloat)minLatitude
++- (void)setMinLatitude:(CLLocationDegrees)minLatitude
+ {
+     _minLatitudeValue = [GPXType valueForLatitude:minLatitude];
+ }
+ 
+-- (CGFloat)minLongitude
++- (CLLocationDegrees)minLongitude
+ {
+     return [GPXType longitude:_minLongitudeValue];
+ }
+ 
+-- (void)setMinLongitude:(CGFloat)minLongitude
++- (void)setMinLongitude:(CLLocationDegrees)minLongitude
+ {
+     _minLongitudeValue = [GPXType valueForLongitude:minLongitude];
+ }
+ 
+-- (CGFloat)maxLatitude
++- (CLLocationDegrees)maxLatitude
+ {
+     return [GPXType latitude:_maxLatitudeValue];
+ }
+ 
+-- (void)setMaxlat:(CGFloat)maxLatitude
++- (void)setMaxLatitude:(CLLocationDegrees)maxLatitude
+ {
+     _maxLatitudeValue = [GPXType valueForLatitude:maxLatitude];
+ }
+ 
+-- (CGFloat)maxLongitude
++- (CLLocationDegrees)maxLongitude
+ {
+     return [GPXType longitude:_maxLongitudeValue];
+ }
+ 
+-- (void)setMaxlon:(CGFloat)maxLongitude
++- (void)setMaxLongitude:(CLLocationDegrees)maxLongitude
+ {
+     _maxLongitudeValue = [GPXType valueForLongitude:maxLongitude];
+ }
+diff --git a/cocoapods-patch-20221103-54518-lfrmhf/iOS-GPX-Framework/GPX/GPXElement.h b/Pods/iOS-GPX-Framework/GPX/GPXElement.h
+index a39f12437..3c9c753bd 100644
+--- a/cocoapods-patch-20221103-54518-lfrmhf/iOS-GPX-Framework/GPX/GPXElement.h
++++ b/Pods/iOS-GPX-Framework/GPX/GPXElement.h
+@@ -20,7 +20,7 @@
+ 
+ /** A parent GPXElement of the receiver.
+  */
+-@property (unsafe_unretained, nonatomic) GPXElement *parent;
++@property (weak, nonatomic) GPXElement *parent;
+ 
+ 
+ /// ---------------------------------
+diff --git a/cocoapods-patch-20221103-54518-lfrmhf/iOS-GPX-Framework/GPX/GPXElement.m b/Pods/iOS-GPX-Framework/GPX/GPXElement.m
+index 1458665ac..27ae7347e 100644
+--- a/cocoapods-patch-20221103-54518-lfrmhf/iOS-GPX-Framework/GPX/GPXElement.m
++++ b/Pods/iOS-GPX-Framework/GPX/GPXElement.m
+@@ -170,7 +170,6 @@
+     }
+ }
+ 
+-
+ #pragma mark - GPX
+ 
+ - (NSString *)gpx {
+diff --git a/cocoapods-patch-20221103-54518-lfrmhf/iOS-GPX-Framework/GPX/GPXElementSubclass.h b/Pods/iOS-GPX-Framework/GPX/GPXElementSubclass.h
+index 8337e5ece..6ebc1d64d 100644
+--- a/cocoapods-patch-20221103-54518-lfrmhf/iOS-GPX-Framework/GPX/GPXElementSubclass.h
++++ b/Pods/iOS-GPX-Framework/GPX/GPXElementSubclass.h
+@@ -7,7 +7,7 @@
+ //
+ 
+ #import "GPXElement.h"
+-#import "TBXML.h"
++#import <TBXML/TBXML.h>
+ 
+ @interface GPXElement ()
+ 
+diff --git a/cocoapods-patch-20221103-54518-lfrmhf/iOS-GPX-Framework/GPX/GPXEmail.h b/Pods/iOS-GPX-Framework/GPX/GPXEmail.h
+index 88d63441f..c1078fc36 100644
+--- a/cocoapods-patch-20221103-54518-lfrmhf/iOS-GPX-Framework/GPX/GPXEmail.h
++++ b/Pods/iOS-GPX-Framework/GPX/GPXEmail.h
+@@ -30,7 +30,7 @@
+ /// ---------------------------------
+ 
+ /** Creates and returns a new email element.
+- @param id half of email address (billgates2004)
++ @param emailID half of email address (billgates2004)
+  @param domain half of email address (hotmail.com)
+  @return A newly created email element.
+  */
+diff --git a/cocoapods-patch-20221103-54518-lfrmhf/iOS-GPX-Framework/GPX/GPXExtensions.h b/Pods/iOS-GPX-Framework/GPX/GPXExtensions.h
+index 0ebc342b8..71873e191 100644
+--- a/cocoapods-patch-20221103-54518-lfrmhf/iOS-GPX-Framework/GPX/GPXExtensions.h
++++ b/Pods/iOS-GPX-Framework/GPX/GPXExtensions.h
+@@ -7,10 +7,32 @@
+ //
+ 
+ #import "GPXElement.h"
++#import "GPXTrackPointExtensions.h"
+ 
++@class GPXTrailsTrackExtensions;
++@class GPXTrailsTrackPointExtensions;
++@class GPXSoundscapeExtensions;
++@class GPXSoundscapeSharedContentExtensions;
++@class GPXSoundscapeAnnotationExtensions;
++@class GPXSoundscapeLinkExtensions;
++@class GPXSoundscapePOIExtensions;
+ 
+ /** You can add extend GPX by adding your own elements from another schema here. 
+  */
+ @interface GPXExtensions : GPXElement
+ 
++@property (strong, nullable) GPXTrackPointExtensions *garminExtensions;
++@property (strong, nullable) GPXTrailsTrackExtensions *trailsTrackExtensions;
++@property (strong, nullable) GPXTrailsTrackPointExtensions *trailsTrackPointExtensions;
++@property (strong, nullable) GPXSoundscapeExtensions *soundscapeExtensions;
++@property (strong, nullable) GPXSoundscapeSharedContentExtensions *soundscapeSCExtensions;
++@property (strong, nullable) GPXSoundscapeAnnotationExtensions * soundscapeAnnotationExtensions;
++@property (strong, nullable) GPXSoundscapeLinkExtensions * soundscapeLinkExtensions;
++@property (strong, nullable) GPXSoundscapePOIExtensions * soundscapePOIExtensions;
++
++/// Backwards compatibility
++/// Speed and course are now in the Garmin TrackPoint extension
++@property (nonatomic, assign) CLLocationSpeed speed;
++@property (nonatomic, assign) CLLocationDirection course;
++
+ @end
+diff --git a/cocoapods-patch-20221103-54518-lfrmhf/iOS-GPX-Framework/GPX/GPXExtensions.m b/Pods/iOS-GPX-Framework/GPX/GPXExtensions.m
+index 7fed5e039..d36b2f391 100644
+--- a/cocoapods-patch-20221103-54518-lfrmhf/iOS-GPX-Framework/GPX/GPXExtensions.m
++++ b/Pods/iOS-GPX-Framework/GPX/GPXExtensions.m
+@@ -8,8 +8,19 @@
+ 
+ #import "GPXExtensions.h"
+ #import "GPXElementSubclass.h"
++#import "GPXTrailsTrackExtensions.h"
++#import "GPXTrailsTrackPointExtensions.h"
++#import "GPXSoundscapeExtensions.h"
++#import "GPXSoundscapeSharedContentExtensions.h"
++#import "GPXSoundscapeRegion.h"
++#import "GPXSoundscapeAnnotationExtensions.h"
++#import "GPXSoundscapeLinkExtensions.h"
++#import "GPXSoundscapePOIExtensions.h"
+ 
+-@implementation GPXExtensions
++@implementation GPXExtensions {
++    NSString *_speedValue;
++    NSString *_courseValue;
++}
+ 
+ #pragma mark - Instance
+ 
+@@ -17,14 +28,48 @@
+ {
+     self = [super initWithXMLElement:element parent:parent];
+     if (self) {
++        self.garminExtensions = (GPXTrackPointExtensions *)[self childElementOfClass:[GPXTrackPointExtensions class] xmlElement:element];
++        self.trailsTrackExtensions = (GPXTrailsTrackExtensions *)[self childElementOfClass:[GPXTrailsTrackExtensions class] xmlElement:element];
++        self.trailsTrackPointExtensions = (GPXTrailsTrackPointExtensions *)[self childElementOfClass:[GPXTrailsTrackPointExtensions class] xmlElement:element];
++        self.soundscapeExtensions = (GPXSoundscapeExtensions *)[self childElementOfClass:[GPXSoundscapeExtensions class] xmlElement:element];
++        self.soundscapeSCExtensions = (GPXSoundscapeSharedContentExtensions *)[self childElementOfClass:[GPXSoundscapeSharedContentExtensions class] xmlElement:element];
++        self.soundscapeAnnotationExtensions = (GPXSoundscapeAnnotationExtensions *)[self childElementOfClass:[GPXSoundscapeAnnotationExtensions class] xmlElement:element];
++        self.soundscapeLinkExtensions = (GPXSoundscapeLinkExtensions *)[self childElementOfClass:[GPXSoundscapeLinkExtensions class] xmlElement:element];
++        self.soundscapePOIExtensions = (GPXSoundscapePOIExtensions *)[self childElementOfClass:[GPXSoundscapePOIExtensions class] xmlElement:element];
++        
++        _speedValue = [self textForSingleChildElementNamed:@"speed" xmlElement:element];
++        _courseValue = [self textForSingleChildElementNamed:@"course" xmlElement:element];
+     }
+     return self;
+ }
+ 
+-
+ #pragma mark - Public methods
+ 
++- (double)speed
++{
++    if (!_speedValue) {
++        return -1;
++    }
++    return [GPXType decimal:_speedValue];
++}
++
++- (void)setSpeed:(double)speed
++{
++    _speedValue = [GPXType valueForDecimal:speed];
++}
++
++- (double)course
++{
++    if (!_courseValue) {
++        return -1;
++    }
++    return [GPXType decimal:_courseValue];
++}
+ 
++- (void)setCourse:(double)course
++{
++    _courseValue = [GPXType valueForDecimal:course];
++}
+ 
+ #pragma mark - tag
+ 
+@@ -40,6 +85,33 @@
+ {
+     [super addChildTagToGpx:gpx indentationLevel:indentationLevel];
+     
++    if (self.garminExtensions) {
++        [self.garminExtensions gpx:gpx indentationLevel:indentationLevel];
++    }
++    
++    if (self.trailsTrackExtensions) {
++        [self.trailsTrackExtensions gpx:gpx indentationLevel:indentationLevel];
++    }
++    
++    if (self.trailsTrackPointExtensions) {
++        [self.trailsTrackPointExtensions gpx:gpx indentationLevel:indentationLevel];
++    }
++    
++    if (self.soundscapeExtensions) {
++        [self.soundscapeExtensions gpx:gpx indentationLevel:indentationLevel];
++    }
++    
++    if (self.soundscapeSCExtensions) {
++        [self.soundscapeSCExtensions gpx:gpx indentationLevel:indentationLevel];
++    }
++    
++    if (self.soundscapeAnnotationExtensions) {
++        [self.soundscapeAnnotationExtensions gpx:gpx indentationLevel:indentationLevel];
++    }
++    
++    if (self.soundscapePOIExtensions) {
++        [self.soundscapePOIExtensions gpx:gpx indentationLevel:indentationLevel];
++    }
+ }
+ 
+ @end
+diff --git a/cocoapods-patch-20221103-54518-lfrmhf/iOS-GPX-Framework/GPX/GPXMetadata.h b/Pods/iOS-GPX-Framework/GPX/GPXMetadata.h
+index 21b1f9bc2..1b8f62547 100644
+--- a/cocoapods-patch-20221103-54518-lfrmhf/iOS-GPX-Framework/GPX/GPXMetadata.h
++++ b/Pods/iOS-GPX-Framework/GPX/GPXMetadata.h
+@@ -44,12 +44,12 @@
+ @property (strong, nonatomic) NSDate *time;
+ 
+ /** Keywords associated with the file. Search engines or databases can use this information to classify the data. */
+-@property (strong, nonatomic) NSString *keyword;
++@property (strong, nonatomic) NSString *keywords;
+ 
+ /** Minimum and maximum coordinates which describe the extent of the coordinates in the file. */
+ @property (strong, nonatomic) GPXBounds *bounds;
+ 
+ /** You can add extend GPX by adding your own elements from another schema here. */
+-@property (strong, nonatomic) GPXExtensions *extensions;
++@property (strong, nonatomic, nullable) GPXExtensions *extensions;
+ 
+ @end
+diff --git a/cocoapods-patch-20221103-54518-lfrmhf/iOS-GPX-Framework/GPX/GPXMetadata.m b/Pods/iOS-GPX-Framework/GPX/GPXMetadata.m
+index cba512922..37415835f 100644
+--- a/cocoapods-patch-20221103-54518-lfrmhf/iOS-GPX-Framework/GPX/GPXMetadata.m
++++ b/Pods/iOS-GPX-Framework/GPX/GPXMetadata.m
+@@ -24,7 +24,7 @@
+ @synthesize copyright = _copyright;
+ @synthesize link = _link;
+ @synthesize time = _time;
+-@synthesize keyword = _keyword;
++@synthesize keywords = _keywords;
+ @synthesize bounds = _bounds;
+ @synthesize extensions = _extensions;
+ 
+@@ -41,7 +41,7 @@
+         _copyright = (GPXCopyright *)[self childElementOfClass:[GPXCopyright class] xmlElement:element];
+         _link = (GPXLink *)[self childElementOfClass:[GPXLink class] xmlElement:element];
+         _timeValue = [self textForSingleChildElementNamed:@"time" xmlElement:element];
+-        _keyword = [self textForSingleChildElementNamed:@"keyword" xmlElement:element];
++        _keywords = [self textForSingleChildElementNamed:@"keywords" xmlElement:element];
+         _bounds = (GPXBounds *)[self childElementOfClass:[GPXBounds class] xmlElement:element];
+         _extensions = (GPXExtensions *)[self childElementOfClass:[GPXExtensions class] xmlElement:element];
+     }
+@@ -92,7 +92,7 @@
+     }
+ 
+     [self gpx:gpx addPropertyForValue:_timeValue defaultValue:@"0" tagName:@"time" indentationLevel:indentationLevel];
+-    [self gpx:gpx addPropertyForValue:_keyword tagName:@"keyword" indentationLevel:indentationLevel];
++    [self gpx:gpx addPropertyForValue:_keywords tagName:@"keywords" indentationLevel:indentationLevel];
+ 
+     if (self.bounds) {
+         [self.bounds gpx:gpx indentationLevel:indentationLevel];
+diff --git a/cocoapods-patch-20221103-54518-lfrmhf/iOS-GPX-Framework/GPX/GPXPoint.h b/Pods/iOS-GPX-Framework/GPX/GPXPoint.h
+index 6783495b4..070160ec6 100644
+--- a/cocoapods-patch-20221103-54518-lfrmhf/iOS-GPX-Framework/GPX/GPXPoint.h
++++ b/Pods/iOS-GPX-Framework/GPX/GPXPoint.h
+@@ -7,6 +7,7 @@
+ //
+ 
+ #import "GPXElement.h"
++@import CoreLocation;
+ 
+ 
+ /** A geographic point with optional elevation and time. Available for use by other schemas.
+@@ -19,16 +20,16 @@
+ /// ---------------------------------
+ 
+ /** The elevation (in meters) of the point. */
+-@property (nonatomic, assign) CGFloat elevation;
++@property (nonatomic) CLLocationDistance elevation;
+ 
+ /** The time that the point was recorded. */
+ @property (strong, nonatomic) NSDate *time;
+ 
+ /** The latitude of the point. Decimal degrees, WGS84 datum */
+-@property (nonatomic, assign) CGFloat latitude;
++@property (nonatomic) CLLocationDegrees latitude;
+ 
+ /** The longitude of the point. Decimal degrees, WGS84 datum. */
+-@property (nonatomic, assign) CGFloat longitude;
++@property (nonatomic) CLLocationDegrees longitude;
+ 
+ 
+ /// ---------------------------------
+@@ -40,6 +41,6 @@
+  @param longitude The longitude of the point.
+  @return A newly created point element.
+  */
+-+ (GPXPoint *)pointWithLatitude:(CGFloat)latitude longitude:(CGFloat)longitude;
+++ (GPXPoint *)pointWithLatitude:(CLLocationDegrees)latitude longitude:(CLLocationDegrees)longitude;
+ 
+ @end
+diff --git a/cocoapods-patch-20221103-54518-lfrmhf/iOS-GPX-Framework/GPX/GPXPoint.m b/Pods/iOS-GPX-Framework/GPX/GPXPoint.m
+index 3e8eb6bf3..141d99956 100644
+--- a/cocoapods-patch-20221103-54518-lfrmhf/iOS-GPX-Framework/GPX/GPXPoint.m
++++ b/Pods/iOS-GPX-Framework/GPX/GPXPoint.m
+@@ -36,7 +36,7 @@
+     return self;
+ }
+ 
+-+ (GPXPoint *)pointWithLatitude:(CGFloat)latitude longitude:(CGFloat)longitude
+++ (GPXPoint *)pointWithLatitude:(CLLocationDegrees)latitude longitude:(CLLocationDegrees)longitude
+ {
+     GPXPoint *point = [GPXPoint new];
+     point.latitude = latitude;
+@@ -47,12 +47,12 @@
+ 
+ #pragma mark - Public methods
+ 
+-- (CGFloat)elevation
++- (CLLocationDistance)elevation
+ {
+     return [GPXType decimal:_elevationValue];
+ }
+ 
+-- (void)setElevation:(CGFloat)elevation
++- (void)setElevation:(CLLocationDistance)elevation
+ {
+     _elevationValue = [GPXType valueForDecimal:elevation];
+ }
+@@ -67,22 +67,22 @@
+     _timeValue = [GPXType valueForDateTime:time];
+ }
+ 
+-- (CGFloat)latitude
++- (CLLocationDegrees)latitude
+ {
+     return [GPXType latitude:_latitudeValue];
+ }
+ 
+-- (void)setLatitude:(CGFloat)latitude
++- (void)setLatitude:(CLLocationDegrees)latitude
+ {
+     _latitudeValue = [GPXType valueForLatitude:latitude];
+ }
+ 
+-- (CGFloat)longitude
++- (CLLocationDegrees)longitude
+ {
+     return [GPXType longitude:_longitudeValue];
+ }
+ 
+-- (void)setLongitude:(CGFloat)longitude
++- (void)setLongitude:(CLLocationDegrees)longitude
+ {
+     _longitudeValue = [GPXType valueForLongitude:longitude];
+ }
+diff --git a/cocoapods-patch-20221103-54518-lfrmhf/iOS-GPX-Framework/GPX/GPXPointSegment.h b/Pods/iOS-GPX-Framework/GPX/GPXPointSegment.h
+index 69376ef1b..6b13e09e2 100644
+--- a/cocoapods-patch-20221103-54518-lfrmhf/iOS-GPX-Framework/GPX/GPXPointSegment.h
++++ b/Pods/iOS-GPX-Framework/GPX/GPXPointSegment.h
+@@ -21,7 +21,7 @@
+ /// ---------------------------------
+ 
+ /** Ordered list of geographic points. */
+-@property (strong, nonatomic, readonly) NSArray *points;
++@property (strong, nonatomic, readonly) NSArray<GPXPoint *> *points;
+ 
+ 
+ /// ---------------------------------
+@@ -48,7 +48,7 @@
+ /** Adds the GPXPoint objects contained in another given array to the end of the point array.
+  @param array An array of GPXPoint objects to add to the end of the point array.
+  */
+-- (void)addPoints:(NSArray *)array;
++- (void)addPoints:(NSArray<GPXPoint *> *)array;
+ 
+ 
+ /// ---------------------------------
+diff --git a/cocoapods-patch-20221103-54518-lfrmhf/iOS-GPX-Framework/GPX/GPXRoot.h b/Pods/iOS-GPX-Framework/GPX/GPXRoot.h
+index 4c47a55fb..4fa2977ac 100644
+--- a/cocoapods-patch-20221103-54518-lfrmhf/iOS-GPX-Framework/GPX/GPXRoot.h
++++ b/Pods/iOS-GPX-Framework/GPX/GPXRoot.h
+@@ -14,6 +14,7 @@
+ @class GPXTrack;
+ @class GPXExtensions;
+ 
++NS_ASSUME_NONNULL_BEGIN
+ 
+ /** GPX is the root element in the XML file.
+     GPX documents contain a metadata header, followed by waypoints, routes, and tracks. 
+@@ -30,26 +31,29 @@
+ @property (strong, nonatomic, readonly) NSString *schema;
+ 
+ /** You must include the version number in your GPX document. */
+-@property (strong, nonatomic) NSString *version;
++@property (strong, nonatomic, readonly) NSString *version;
+ 
+ /** You must include the name or URL of the software that created your GPX document. 
+     This allows others to inform the creator of a GPX instance document that fails to validate. */
+-@property (strong, nonatomic) NSString *creator;
++@property (strong, nonatomic, readonly) NSString *creator;
+ 
+ /** Metadata about the file. */
+-@property (strong, nonatomic) GPXMetadata *metadata;
++@property (strong, nonatomic, nullable) GPXMetadata *metadata;
++
++/** Keywords for indexing the GPX file with search engines. Will be comma separated. */
++@property (strong, nonatomic, nullable, readonly) NSArray<NSString *> *keywords;
+ 
+ /** A list of waypoints. */
+-@property (strong, nonatomic, readonly) NSArray *waypoints;
++@property (strong, nonatomic, readonly) NSArray<GPXWaypoint *> *waypoints;
+ 
+ /** A list of routes. */
+-@property (strong, nonatomic, readonly) NSArray *routes;
++@property (strong, nonatomic, readonly) NSArray<GPXRoute *> *routes;
+ 
+ /** A list of tracks. */
+-@property (strong, nonatomic, readonly) NSArray *tracks;
++@property (strong, nonatomic, readonly) NSArray<GPXTrack *> *tracks;
+ 
+-/** You can add extend GPX by adding your own elements from another schema here. */
+-@property (strong, nonatomic) GPXExtensions *extensions;
++/** You can extend GPX by adding your own elements from another schema here. */
++@property (strong, nonatomic, nullable) GPXExtensions *extensions;
+ 
+ 
+ /// ---------------------------------
+@@ -87,7 +91,7 @@
+ /** Adds the GPXWaypoint objects contained in another given array to the end of the waypoint array.
+  @param array An array of GPXWaypoint objects to add to the end of the waypoint array.
+  */
+-- (void)addWaypoints:(NSArray *)array;
++- (void)addWaypoints:(NSArray<GPXWaypoint *> *)array;
+ 
+ 
+ /// ---------------------------------
+@@ -122,7 +126,7 @@
+ /** Adds the GPXRoute objects contained in another given array to the end of the route array.
+  @param array An array of GPXRoute objects to add to the end of the route array.
+  */
+-- (void)addRoutes:(NSArray *)array;
++- (void)addRoutes:(NSArray<GPXRoute *> *)array;
+ 
+ 
+ /// ---------------------------------
+@@ -157,7 +161,7 @@
+ /** Adds the GPXTrack objects contained in another given array to the end of the track array.
+  @param array An array of GPXTrack objects to add to the end of the track array.
+  */
+-- (void)addTracks:(NSArray *)array;
++- (void)addTracks:(NSArray<GPXTrack *> *)array;
+ 
+ 
+ /// ---------------------------------
+@@ -170,3 +174,5 @@
+ - (void)removeTrack:(GPXTrack *)track;
+ 
+ @end
++
++NS_ASSUME_NONNULL_END
+diff --git a/cocoapods-patch-20221103-54518-lfrmhf/iOS-GPX-Framework/GPX/GPXRoot.m b/Pods/iOS-GPX-Framework/GPX/GPXRoot.m
+index fdccd733c..f28fe71a0 100644
+--- a/cocoapods-patch-20221103-54518-lfrmhf/iOS-GPX-Framework/GPX/GPXRoot.m
++++ b/Pods/iOS-GPX-Framework/GPX/GPXRoot.m
+@@ -14,6 +14,9 @@
+ #import "GPXTrack.h"
+ #import "GPXExtensions.h"
+ 
++@interface GPXRoot ()
++@property (strong, nonatomic, readwrite) NSString *creator;
++@end
+ 
+ @implementation GPXRoot {
+     NSMutableArray *_waypoints;
+@@ -24,6 +27,7 @@
+ @synthesize schema = _schema;
+ @synthesize version = _version;
+ @synthesize creator = _creator;
++@synthesize keywords = _keywords;
+ @synthesize metadata = _metadata;
+ @synthesize waypoints = _waypoints;
+ @synthesize routes = _routes;
+@@ -40,6 +44,7 @@
+     if (self) {
+         _version = @"1.1";
+         _creator = @"http://gpxframework.com";
++        _keywords = nil;
+         _waypoints = [NSMutableArray array];
+         _routes = [NSMutableArray array];
+         _tracks = [NSMutableArray array];
+@@ -51,11 +56,13 @@
+ {
+     self = [super initWithXMLElement:element parent:parent];
+     if (self) {
+-        _version = [self valueOfAttributeNamed:@"version" xmlElement:element required:YES];
+-        _creator = [self valueOfAttributeNamed:@"creator" xmlElement:element required:YES];
+-
++        _version = [self valueOfAttributeNamed:@"version" xmlElement:element required:YES] ?: _version;
++        _creator = [self valueOfAttributeNamed:@"creator" xmlElement:element required:YES] ?: _creator;
+         _metadata = (GPXMetadata *)[self childElementOfClass:[GPXMetadata class] xmlElement:element];
+-        
++        _keywords = [GPXRoot keywordsArrayFromString:[self textForSingleChildElementNamed:@"keywords" xmlElement:element]];
++        if (!_keywords.count && _metadata.keywords.length) {
++            _keywords = [GPXRoot keywordsArrayFromString:_metadata.keywords];
++        }
+         NSMutableArray *array1 = [NSMutableArray array];
+         [self childElementsOfClass:[GPXWaypoint class]
+                         xmlElement:element
+@@ -93,6 +100,24 @@
+     return root;
+ }
+ 
+++ (NSArray<NSString *> *)keywordsArrayFromString:(NSString *)keywordString {
++    if (!keywordString) {
++        // return nil only for nil strings, to differentiate between empty and nil keywords
++        return nil;
++    }
++
++    NSArray *keywords = [keywordString componentsSeparatedByString:@","];
++    if (!keywords.count) {
++        return @[];
++    }
++    NSMutableArray *sanitizedKeyWords = [NSMutableArray arrayWithCapacity:keywords.count];
++    NSCharacterSet *whitespaces = [NSCharacterSet whitespaceAndNewlineCharacterSet];
++    for (NSString *key in keywords) {
++        [sanitizedKeyWords addObject:[key stringByTrimmingCharactersInSet:whitespaces]];
++    }
++
++    return [sanitizedKeyWords copy];
++}
+ 
+ #pragma mark - Public methods
+ 
+diff --git a/cocoapods-patch-20221103-54518-lfrmhf/iOS-GPX-Framework/GPX/GPXRoute.h b/Pods/iOS-GPX-Framework/GPX/GPXRoute.h
+index 513719d61..1cc9864ad 100644
+--- a/cocoapods-patch-20221103-54518-lfrmhf/iOS-GPX-Framework/GPX/GPXRoute.h
++++ b/Pods/iOS-GPX-Framework/GPX/GPXRoute.h
+@@ -35,7 +35,7 @@
+ @property (strong, nonatomic) NSString *source;
+ 
+ /** Links to external information about the route. */
+-@property (strong, nonatomic, readonly) NSArray *links;
++@property (strong, nonatomic, readonly) NSArray<GPXLink *> *links;
+ 
+ /** GPS route number. */
+ @property (nonatomic, assign) NSInteger number;
+@@ -47,7 +47,7 @@
+ @property (strong, nonatomic) GPXExtensions *extensions;
+ 
+ /** A list of route points. */
+-@property (strong, nonatomic, readonly) NSArray *routepoints;
++@property (strong, nonatomic, readonly) NSArray<GPXRoutePoint *> *routepoints;
+ 
+ 
+ /// ---------------------------------
+@@ -73,7 +73,7 @@
+ /** Adds the GPXLink objects contained in another given array to the end of the link array.
+  @param array An array of GPXLink objects to add to the end of the link array.
+  */
+-- (void)addLinks:(NSArray *)array;
++- (void)addLinks:(NSArray<GPXLink *> *)array;
+ 
+ 
+ /// ---------------------------------
+@@ -110,7 +110,7 @@
+ /** Adds the GPXRoutePoint objects contained in another given array to the end of the routepoint array.
+  @param array An array of GPXRoutePoint objects to add to the end of the routepoint array.
+  */
+-- (void)addRoutepoints:(NSArray *)array;
++- (void)addRoutepoints:(NSArray<GPXRoutePoint *> *)array;
+ 
+ 
+ /// ---------------------------------
+diff --git a/Pods/iOS-GPX-Framework/GPX/GPXSoundscapeAnnotation.h b/Pods/iOS-GPX-Framework/GPX/GPXSoundscapeAnnotation.h
+new file mode 100644
+index 000000000..7fd3bf154
+--- /dev/null
++++ b/Pods/iOS-GPX-Framework/GPX/GPXSoundscapeAnnotation.h
+@@ -0,0 +1,21 @@
++//
++//  GPXSoundscapeAnnotation.h
++//  iOS-GPX-Framework
++//
++//
++
++#import "GPXElement.h"
++#import "GPXSoundscapeAnnotation.h"
++
++@interface GPXSoundscapeAnnotation : GPXElement
++
++/** A title for the annotation */
++@property (strong, nonatomic, nullable) NSString * title;
++    
++/** An annotation. */
++@property (strong, nonatomic, nonnull) NSString * content;
++
++/** Type of the annotation. Used for specifying arrival and departure callouts */
++@property (strong, nonatomic, nullable) NSString * type;
++
++@end
+diff --git a/Pods/iOS-GPX-Framework/GPX/GPXSoundscapeAnnotation.m b/Pods/iOS-GPX-Framework/GPX/GPXSoundscapeAnnotation.m
+new file mode 100644
+index 000000000..ef2580429
+--- /dev/null
++++ b/Pods/iOS-GPX-Framework/GPX/GPXSoundscapeAnnotation.m
+@@ -0,0 +1,36 @@
++//
++//  GPXSoundscapeAnnotation.m
++//  iOS-GPX-Framework
++//
++//
++
++#import "GPXSoundscapeAnnotation.h"
++#import "GPXElementSubclass.h"
++
++NSString *const kGPXSoundscapeAnnotationTagName =   @"gpxsc:annotation";
++
++NSString *const kAttributeTitle =    @"title";
++
++NSString *const kAttributeType =    @"type";
++
++@implementation GPXSoundscapeAnnotation
++
++- (id)initWithXMLElement:(TBXMLElement *)element parent:(GPXElement *)parent
++{
++    self = [super initWithXMLElement:element parent:parent];
++    if (self) {
++        self.title = [self valueOfAttributeNamed:kAttributeTitle xmlElement:element required:NO];
++        self.type = [self valueOfAttributeNamed:kAttributeType xmlElement:element required:NO];
++        self.content = [TBXML textForElement:element];
++    }
++    return self;
++}
++
++#pragma mark - tag
++
+++ (NSString *)tagName
++{
++    return kGPXSoundscapeAnnotationTagName;
++}
++
++@end
+diff --git a/Pods/iOS-GPX-Framework/GPX/GPXSoundscapeAnnotationExtensions.h b/Pods/iOS-GPX-Framework/GPX/GPXSoundscapeAnnotationExtensions.h
+new file mode 100644
+index 000000000..1f13ae987
+--- /dev/null
++++ b/Pods/iOS-GPX-Framework/GPX/GPXSoundscapeAnnotationExtensions.h
+@@ -0,0 +1,15 @@
++//
++//  GPXSoundscapeAnnotationExtensions.h
++//  iOS-GPX-Framework
++//
++//
++
++#import "GPXElement.h"
++#import "GPXSoundscapeAnnotation.h"
++
++@interface GPXSoundscapeAnnotationExtensions : GPXElement
++
++/** A list of annotations. */
++@property (strong, nonatomic, nonnull) NSArray<GPXSoundscapeAnnotation *> * annotations;
++
++@end
+diff --git a/Pods/iOS-GPX-Framework/GPX/GPXSoundscapeAnnotationExtensions.m b/Pods/iOS-GPX-Framework/GPX/GPXSoundscapeAnnotationExtensions.m
+new file mode 100644
+index 000000000..e9860e028
+--- /dev/null
++++ b/Pods/iOS-GPX-Framework/GPX/GPXSoundscapeAnnotationExtensions.m
+@@ -0,0 +1,45 @@
++//
++//  GPXSoundscapeAnnotationExtensions.m
++//  iOS-GPX-Framework
++//
++//
++
++#import "GPXSoundscapeAnnotationExtensions.h"
++#import "GPXElementSubclass.h"
++
++NSString *const kGPXSoundscapeAnnotationExtensionTagName =   @"gpxsc:annotations";
++
++@implementation GPXSoundscapeAnnotationExtensions
++
++- (id)init
++{
++    self = [super init];
++    if (self) {
++        _annotations = [NSMutableArray array];
++    }
++    return self;
++}
++
++- (id)initWithXMLElement:(TBXMLElement *)element parent:(GPXElement *)parent
++{
++    self = [super initWithXMLElement:element parent:parent];
++    if (self) {
++        NSMutableArray *array = [NSMutableArray array];
++        [self childElementsOfClass:[GPXSoundscapeAnnotation class]
++                        xmlElement:element
++                         eachBlock:^(GPXElement *element) {
++                             [array addObject:element];
++                         }];
++        _annotations = array;
++    }
++    return self;
++}
++
++#pragma mark - tag
++
+++ (NSString *)tagName
++{
++    return kGPXSoundscapeAnnotationExtensionTagName;
++}
++
++@end
+diff --git a/Pods/iOS-GPX-Framework/GPX/GPXSoundscapeExtensions.h b/Pods/iOS-GPX-Framework/GPX/GPXSoundscapeExtensions.h
+new file mode 100644
+index 000000000..cfbf8ec60
+--- /dev/null
++++ b/Pods/iOS-GPX-Framework/GPX/GPXSoundscapeExtensions.h
+@@ -0,0 +1,26 @@
++//
++//  GPXSoundscapeExtensions.h
++//  iOS-GPX-Framework
++//
++//
++
++#import "GPXElement.h"
++@import CoreLocation;
++
++@interface GPXSoundscapeExtensions : GPXElement
++
++@property (strong, nonatomic, nullable) NSNumber *horizontalAccuracy;
++@property (strong, nonatomic, nullable) NSNumber *verticalAccuracy;
++
++@property (strong, nonatomic, nullable) NSNumber *trueHeading;
++@property (strong, nonatomic, nullable) NSNumber *magneticHeading;
++@property (strong, nonatomic, nullable) NSNumber *headingAccuracy;
++
++@property (strong, nonatomic, nullable) NSNumber *deviceHeading;
++
++@property (strong, nonatomic, nullable) NSNumber *floorLevel;
++
++/// examples: stationary, walking, running, automotive, cycling
++@property (strong, nonatomic, nullable) NSString *activity;
++
++@end
+diff --git a/Pods/iOS-GPX-Framework/GPX/GPXSoundscapeExtensions.m b/Pods/iOS-GPX-Framework/GPX/GPXSoundscapeExtensions.m
+new file mode 100644
+index 000000000..5757d9ec0
+--- /dev/null
++++ b/Pods/iOS-GPX-Framework/GPX/GPXSoundscapeExtensions.m
+@@ -0,0 +1,147 @@
++//
++//  GPXSoundscapeExtensions.m
++//  iOS-GPX-Framework
++//
++//
++
++#import "GPXSoundscapeExtensions.h"
++#import "GPXElementSubclass.h"
++
++NSString *const kGPXSoundscapeExtensionsTagName =   @"gpxgd:TrackPointExtension";
++
++NSString *const kElementHorizontalAccuracy =        @"gpxgd:hor_acc";
++NSString *const kElementVerticalAccuracy =          @"gpxgd:ver_acc";
++
++NSString *const kElementTrueHeading =               @"gpxgd:hdg_tru";
++NSString *const kElementMagneticHeading =           @"gpxgd:hdg_mag";
++NSString *const kElementHeadingAccuracy =           @"gpxgd:hdg_acc";
++
++NSString *const kElementDeviceHeading =             @"gpxgd:hdg_dvc";
++
++NSString *const kElementFloorLevel =                @"gpxgd:flr_lvl";
++
++NSString *const kElementMotionActivity =            @"gpxgd:activity";
++
++@interface GPXSoundscapeExtensions ()
++
++@property (nonatomic, strong) NSString *horizontalAccuracyString;
++@property (nonatomic, strong) NSString *verticalAccuracyString;
++
++@property (nonatomic, strong) NSString *trueHeadingString;
++@property (nonatomic, strong) NSString *magneticHeadingString;
++@property (nonatomic, strong) NSString *headingAccuracyString;
++
++@property (nonatomic, strong) NSString *deviceHeadingString;
++
++@property (nonatomic, strong) NSString *floorLevelString;
++
++@end
++
++@implementation GPXSoundscapeExtensions
++
++- (id)initWithXMLElement:(TBXMLElement *)element parent:(GPXElement *)parent
++{
++    self = [super initWithXMLElement:element parent:parent];
++    if (self) {
++        _horizontalAccuracyString = [self textForSingleChildElementNamed:kElementHorizontalAccuracy xmlElement:element];
++        _verticalAccuracyString = [self textForSingleChildElementNamed:kElementVerticalAccuracy xmlElement:element];
++        
++        _trueHeadingString = [self textForSingleChildElementNamed:kElementTrueHeading xmlElement:element];
++        _magneticHeadingString = [self textForSingleChildElementNamed:kElementMagneticHeading xmlElement:element];
++        _headingAccuracyString = [self textForSingleChildElementNamed:kElementHeadingAccuracy xmlElement:element];
++        
++        _deviceHeadingString = [self textForSingleChildElementNamed:kElementDeviceHeading xmlElement:element];
++        
++        _floorLevelString = [self textForSingleChildElementNamed:kElementFloorLevel xmlElement:element];
++        
++        _activity = [self textForSingleChildElementNamed:kElementMotionActivity xmlElement:element];
++    }
++    return self;
++}
++
++#pragma mark - Public methods
++
++- (void)setHorizontalAccuracy:(NSNumber *)horizontalAccuracy {
++    _horizontalAccuracyString = horizontalAccuracy ? [GPXType valueForDecimal:horizontalAccuracy.doubleValue] : nil;
++}
++
++- (NSNumber *)horizontalAccuracy {
++    return _horizontalAccuracyString.length > 0 ? [NSNumber numberWithDouble:[GPXType decimal:_horizontalAccuracyString]] : nil;
++}
++
++- (void)setVerticalAccuracy:(NSNumber *)verticalAccuracy {
++    _verticalAccuracyString = verticalAccuracy ? [GPXType valueForDecimal:verticalAccuracy.doubleValue] : nil;
++}
++
++- (NSNumber *)verticalAccuracy {
++    return _verticalAccuracyString.length > 0 ? [NSNumber numberWithDouble:[GPXType decimal:_verticalAccuracyString]] : nil;
++}
++
++- (void)setTrueHeading:(NSNumber *)trueHeading {
++    _trueHeadingString = trueHeading ? [GPXType valueForDecimal:trueHeading.doubleValue] : nil;
++}
++
++- (NSNumber *)trueHeading {
++    return _trueHeadingString.length > 0 ? [NSNumber numberWithDouble:[GPXType decimal:_trueHeadingString]] : nil;
++}
++
++- (void)setMagneticHeading:(NSNumber *)magneticHeading {
++    _magneticHeadingString = magneticHeading ? [GPXType valueForDecimal:magneticHeading.doubleValue] : nil;
++}
++
++- (NSNumber *)magneticHeading {
++    return _magneticHeadingString.length > 0 ? [NSNumber numberWithDouble:[GPXType decimal:_magneticHeadingString]] : nil;
++}
++
++- (void)setHeadingAccuracy:(NSNumber *)headingAccuracy {
++    _headingAccuracyString = headingAccuracy ? [GPXType valueForDecimal:headingAccuracy.doubleValue] : nil;
++}
++
++- (NSNumber *)headingAccuracy {
++    return _headingAccuracyString.length > 0 ? [NSNumber numberWithDouble:[GPXType decimal:_headingAccuracyString]] : nil;
++}
++
++- (void)setDeviceHeading:(NSNumber *)deviceHeading {
++    _deviceHeadingString = deviceHeading ? [GPXType valueForDecimal:deviceHeading.doubleValue] : nil;
++}
++
++- (NSNumber *)deviceHeading {
++    return _deviceHeadingString.length > 0 ? [NSNumber numberWithDouble:[GPXType decimal:_deviceHeadingString]] : nil;
++}
++
++- (void)setFloorLevel:(NSNumber *)floorLevel {
++    _floorLevelString = floorLevel ? floorLevel.stringValue : nil;
++}
++
++- (NSNumber *)floorLevel {
++    return _floorLevelString.length > 0 ? [NSNumber numberWithInteger:_floorLevelString.integerValue] : nil;
++}
++
++#pragma mark - tag
++
+++ (NSString *)tagName
++{
++    return kGPXSoundscapeExtensionsTagName;
++}
++
++#pragma mark - GPX
++
++- (void)addChildTagToGpx:(NSMutableString *)gpx indentationLevel:(NSInteger)indentationLevel
++{
++    [super addChildTagToGpx:gpx indentationLevel:indentationLevel];
++    
++    if (_horizontalAccuracyString) [self gpx:gpx addPropertyForValue:_horizontalAccuracyString tagName:kElementHorizontalAccuracy indentationLevel:indentationLevel];
++    if (_verticalAccuracyString) [self gpx:gpx addPropertyForValue:_verticalAccuracyString tagName:kElementVerticalAccuracy indentationLevel:indentationLevel];
++    
++    if (_trueHeadingString) [self gpx:gpx addPropertyForValue:_trueHeadingString tagName:kElementTrueHeading indentationLevel:indentationLevel];
++    if (_magneticHeadingString) [self gpx:gpx addPropertyForValue:_magneticHeadingString tagName:kElementMagneticHeading indentationLevel:indentationLevel];
++    if (_headingAccuracyString) [self gpx:gpx addPropertyForValue:_headingAccuracyString tagName:kElementHeadingAccuracy indentationLevel:indentationLevel];
++    
++    if(_deviceHeadingString) [self gpx:gpx addPropertyForValue:_deviceHeadingString tagName:kElementDeviceHeading indentationLevel:indentationLevel];
++    
++    if (_floorLevelString) [self gpx:gpx addPropertyForValue:_floorLevelString tagName:kElementFloorLevel indentationLevel:indentationLevel];
++    
++    if (_activity) [self gpx:gpx addPropertyForValue:_activity tagName:kElementMotionActivity indentationLevel:indentationLevel];
++}
++
++@end
+diff --git a/Pods/iOS-GPX-Framework/GPX/GPXSoundscapeLinkExtensions.h b/Pods/iOS-GPX-Framework/GPX/GPXSoundscapeLinkExtensions.h
+new file mode 100644
+index 000000000..7ad636d2d
+--- /dev/null
++++ b/Pods/iOS-GPX-Framework/GPX/GPXSoundscapeLinkExtensions.h
+@@ -0,0 +1,19 @@
++//
++//  GPXSoundscapeLinkExtensions.h
++//  Pods
++//
++//
++
++#import "GPXLink.h"
++
++@interface GPXSoundscapeLink : GPXLink
++@end
++
++@interface GPXSoundscapeLinkExtensions : GPXElement
++
++/** A list of annotations. */
++@property (strong, nonatomic, nonnull) NSArray<GPXSoundscapeLink *> * links;
++
++@end
++
++
+diff --git a/Pods/iOS-GPX-Framework/GPX/GPXSoundscapeLinkExtensions.m b/Pods/iOS-GPX-Framework/GPX/GPXSoundscapeLinkExtensions.m
+new file mode 100644
+index 000000000..8ed711e6e
+--- /dev/null
++++ b/Pods/iOS-GPX-Framework/GPX/GPXSoundscapeLinkExtensions.m
+@@ -0,0 +1,55 @@
++//
++//  GPXSoundscapeLinkExtensions.m
++//  iOS-GPX-Framework
++//
++//
++
++#import "GPXSoundscapeLinkExtensions.h"
++#import "GPXElementSubclass.h"
++
++@implementation GPXSoundscapeLink
++
++// Override the tagName
+++ (NSString *)tagName
++{
++    return @"gpxsc:link";
++}
++
++@end
++
++NSString *const kGPXSoundscapeLinksExtensionTagName =   @"gpxsc:links";
++
++@implementation GPXSoundscapeLinkExtensions
++
++- (id)init
++{
++    self = [super init];
++    if (self) {
++        _links = [NSMutableArray array];
++    }
++    return self;
++}
++
++- (id)initWithXMLElement:(TBXMLElement *)element parent:(GPXElement *)parent
++{
++    self = [super initWithXMLElement:element parent:parent];
++    if (self) {
++        NSMutableArray *array = [NSMutableArray array];
++        [self childElementsOfClass:[GPXSoundscapeLink class]
++                        xmlElement:element
++                         eachBlock:^(GPXElement *element) {
++                             [array addObject:element];
++                         }];
++        _links = array;
++    }
++    return self;
++}
++
++#pragma mark - tag
++
+++ (NSString *)tagName
++{
++    return kGPXSoundscapeLinksExtensionTagName;
++}
++
++@end
+diff --git a/Pods/iOS-GPX-Framework/GPX/GPXSoundscapePOIExtensions.h b/Pods/iOS-GPX-Framework/GPX/GPXSoundscapePOIExtensions.h
+new file mode 100644
+index 000000000..baa89c396
+--- /dev/null
++++ b/Pods/iOS-GPX-Framework/GPX/GPXSoundscapePOIExtensions.h
+@@ -0,0 +1,22 @@
++//
++//  GPXSoundscapePOIExtensions.h
++//  iOS-GPX-Framework
++//
++//
++
++#import "GPXElement.h"
++#import "GPXLink.h"
++#import "GPXSoundscapeAnnotationExtensions.h"
++
++@interface GPXSoundscapePOIExtensions : GPXElement
++
++/** Street address of the POI */
++@property (strong, nonatomic, nullable) NSString * streetAddress;
++
++/** The POI's website. */
++@property (strong, nonatomic, nullable) GPXLink * homepage;
++
++/** Phone number of the POI */
++@property (strong, nonatomic, nullable) NSString * phone;
++
++@end
+diff --git a/Pods/iOS-GPX-Framework/GPX/GPXSoundscapePOIExtensions.m b/Pods/iOS-GPX-Framework/GPX/GPXSoundscapePOIExtensions.m
+new file mode 100644
+index 000000000..0dc1f3afd
+--- /dev/null
++++ b/Pods/iOS-GPX-Framework/GPX/GPXSoundscapePOIExtensions.m
+@@ -0,0 +1,45 @@
++//
++//  GPXSoundscapePOIExtensions.h
++//  iOS-GPX-Framework
++//
++//
++
++#import "GPXSoundscapePOIExtensions.h"
++#import "GPXElementSubclass.h"
++
++NSString *const kGPXSoundscapePOIExtensionTagName =   @"gpxsc:poi";
++
++NSString *const kElementStreetAddress = @"gpxsc:street";
++NSString *const kElementPhone = @"gpxsc:phone";
++
++@implementation GPXSoundscapePOIExtensions
++
++- (id)initWithXMLElement:(TBXMLElement *)element parent:(GPXElement *)parent
++{
++    self = [super initWithXMLElement:element parent:parent];
++    if (self) {
++        self.streetAddress = [self textForSingleChildElementNamed:kElementStreetAddress xmlElement:element];
++        self.homepage = [self childElementOfClass:[GPXLink class] xmlElement:element];
++        self.phone = [self textForSingleChildElementNamed:kElementPhone xmlElement:element];
++    }
++    return self;
++}
++
++#pragma mark - tag
++
+++ (NSString *)tagName
++{
++    return kGPXSoundscapePOIExtensionTagName;
++}
++
++#pragma mark - GPX
++
++- (void)addChildTagToGpx:(NSMutableString *)gpx indentationLevel:(NSInteger)indentationLevel
++{
++    [super addChildTagToGpx:gpx indentationLevel:indentationLevel];
++    
++    if (self.streetAddress) [self gpx:gpx addPropertyForValue:self.streetAddress tagName:kElementStreetAddress indentationLevel:indentationLevel];
++    if (self.homepage) [self.homepage gpx:gpx indentationLevel:indentationLevel];
++    if (self.phone) [self gpx:gpx addPropertyForValue:self.phone tagName:kElementPhone indentationLevel:indentationLevel];
++}
++@end
+diff --git a/Pods/iOS-GPX-Framework/GPX/GPXSoundscapeRegion.h b/Pods/iOS-GPX-Framework/GPX/GPXSoundscapeRegion.h
+new file mode 100644
+index 000000000..3b08ea0c4
+--- /dev/null
++++ b/Pods/iOS-GPX-Framework/GPX/GPXSoundscapeRegion.h
+@@ -0,0 +1,15 @@
++//
++//  GPXSoundscapeRegion.h
++//  iOS-GPX-Framework
++//
++//
++
++#import "GPXElement.h"
++@import CoreLocation;
++
++@interface GPXSoundscapeRegion : GPXElement
++
++/** The region in which a shared content experience is available */
++@property (nonnull, nonatomic, strong) CLCircularRegion * region;
++
++@end
+diff --git a/Pods/iOS-GPX-Framework/GPX/GPXSoundscapeRegion.m b/Pods/iOS-GPX-Framework/GPX/GPXSoundscapeRegion.m
+new file mode 100644
+index 000000000..3256cb69f
+--- /dev/null
++++ b/Pods/iOS-GPX-Framework/GPX/GPXSoundscapeRegion.m
+@@ -0,0 +1,70 @@
++//
++//  GPXSoundscapeRegion.m
++//  iOS-GPX-Framework
++//
++//
++
++#import "GPXSoundscapeRegion.h"
++#import "GPXElementSubclass.h"
++
++NSString *const kGPXSoundscapeRegionTagName =   @"gpxsc:region";
++
++NSString *const kAttributeLatitude =    @"lat";
++NSString *const kAttributeLongitude =   @"lon";
++NSString *const kAttributeRadius =      @"radius";
++
++NSString *const kRegionIdentifier = @"SoundscapeExperienceRegion";
++
++@interface GPXSoundscapeRegion ()
++
++/** The latitude of the center of the region. Decimal degrees, WGS84 datum. */
++@property (nonatomic) NSString * latitudeString;
++
++/** The longitude of the center of the region. Decimal degrees, WGS84 datum. */
++@property (nonatomic) NSString * longitudeString;
++
++/** The radius (in meters) of the region surrounding the lat/lon. */
++@property (nonatomic) NSString * radiusString;
++
++@end
++
++@implementation GPXSoundscapeRegion
++
++- (id)initWithXMLElement:(TBXMLElement *)element parent:(GPXElement *)parent
++{
++    self = [super initWithXMLElement:element parent:parent];
++    if (self) {
++        self.latitudeString = [self valueOfAttributeNamed:kAttributeLatitude xmlElement:element required:YES];
++        self.longitudeString = [self valueOfAttributeNamed:kAttributeLongitude xmlElement:element required:YES];
++        self.radiusString = [self valueOfAttributeNamed:kAttributeRadius xmlElement:element required:YES];
++    }
++    return self;
++}
++
++#pragma mark - Public methods
++
++- (CLCircularRegion *)region
++{
++    CLLocationDegrees latitude = [GPXType latitude:self.latitudeString];
++    CLLocationDegrees longitude = [GPXType longitude:self.longitudeString];
++    CLLocationDistance radius = (CLLocationDistance)[GPXType decimal:self.radiusString];
++    
++    return [[CLCircularRegion alloc] initWithCenter:CLLocationCoordinate2DMake(latitude, longitude) radius:radius identifier:kRegionIdentifier];
++}
++
++- (void)setRegion:(CLCircularRegion *)region
++{
++    self.latitudeString = [GPXType valueForLatitude:region.center.latitude];
++    self.longitudeString = [GPXType valueForLongitude:region.center.longitude];
++    self.radiusString = [GPXType valueForDecimal:region.radius];
++}
++
++#pragma mark - tag
++
+++ (NSString *)tagName
++{
++    return kGPXSoundscapeRegionTagName;
++}
++
++@end
++
+diff --git a/Pods/iOS-GPX-Framework/GPX/GPXSoundscapeSharedContentExtensions.h b/Pods/iOS-GPX-Framework/GPX/GPXSoundscapeSharedContentExtensions.h
+new file mode 100644
+index 000000000..0945e225b
+--- /dev/null
++++ b/Pods/iOS-GPX-Framework/GPX/GPXSoundscapeSharedContentExtensions.h
+@@ -0,0 +1,20 @@
++//
++//  GPXSoundscapeSharedContentExtensions.m
++//  iOS-GPX-Framework
++//
++//
++
++#import "GPXElement.h"
++#import "GPXSoundscapeRegion.h"
++
++@interface GPXSoundscapeSharedContentExtensions : GPXElement
++
++@property (nonnull, nonatomic, strong) NSString * identifier;
++@property (nonnull, nonatomic, strong) NSString * behavior;
++@property (nullable, nonatomic, strong) NSString * version;
++@property (nonatomic, strong)          GPXSoundscapeRegion * region;
++@property (nonnull, nonatomic, strong) NSLocale * locale;
++@property (nonnull, nonatomic, strong) NSDateInterval * availability;
++@property (nonatomic) BOOL expires;
++
++@end
+diff --git a/Pods/iOS-GPX-Framework/GPX/GPXSoundscapeSharedContentExtensions.m b/Pods/iOS-GPX-Framework/GPX/GPXSoundscapeSharedContentExtensions.m
+new file mode 100644
+index 000000000..97d53ea66
+--- /dev/null
++++ b/Pods/iOS-GPX-Framework/GPX/GPXSoundscapeSharedContentExtensions.m
+@@ -0,0 +1,169 @@
++//
++//  GPXSoundscapeSharedContentExtensions.m
++//  iOS-GPX-Framework
++//
++//
++
++#import "GPXSoundscapeSharedContentExtensions.h"
++
++#import "GPXElementSubclass.h"
++
++NSString *const kGPXSSSharedContentExtensionsTagName =   @"gpxsc:meta";
++
++// MARK: Experience Meta Tags
++
++NSString *const kElementID =          @"gpxsc:id";
++NSString *const kElementBehavior =    @"gpxsc:behavior";
++NSString *const kElementVersion =     @"gpxsc:version";
++
++// MARK: Experience Tags
++
++NSString *const kElementLocale =      @"gpxsc:locale";
++NSString *const kAttributeStartDate = @"start";
++NSString *const kAttributeEndDate =   @"end";
++NSString *const kAttributeExpires =   @"expires";
++
++@interface GPXSoundscapeSharedContentExtensions ()
++
++@property (nonatomic, strong) NSString * localeString;
++@property (nonatomic, strong) NSString * startDateString;
++@property (nonatomic, strong) NSString * endDateString;
++@property (nullable, nonatomic, strong) NSString * expiresString;
++
++@end
++
++@implementation GPXSoundscapeSharedContentExtensions
++
++- (id)init
++{
++    self = [super init];
++    if (self) {
++        // TODO: Initialize required props
++    }
++    return self;
++}
++
++- (id)initWithXMLElement:(TBXMLElement *)element parent:(GPXElement *)parent
++{
++    self = [super initWithXMLElement:element parent:parent];
++    if (self) {
++        self.identifier = [self textForSingleChildElementNamed:kElementID xmlElement:element required:true];
++        self.behavior = [self textForSingleChildElementNamed:kElementBehavior xmlElement:element required:true];
++        self.version = [self textForSingleChildElementNamed:kElementVersion xmlElement:element];
++        
++        self.region = (GPXSoundscapeRegion *)[self childElementOfClass:[GPXSoundscapeRegion class] xmlElement:element];
++        
++        self.localeString = [self textForSingleChildElementNamed:kElementLocale xmlElement:element required:true];
++        self.startDateString = [self valueOfAttributeNamed:kAttributeStartDate xmlElement:element];
++        self.endDateString = [self valueOfAttributeNamed:kAttributeEndDate xmlElement:element];
++        self.expiresString =  [self valueOfAttributeNamed:kAttributeExpires xmlElement:element];
++    }
++    return self;
++}
++
++#pragma mark - Public methods
++
++- (void)setLocale:(NSLocale *)locale {
++    _localeString = locale ? locale.localeIdentifier : nil;
++}
++
++- (NSLocale *)locale {
++    return self.localeString.length > 0 ? [[NSLocale alloc] initWithLocaleIdentifier:self.localeString] : nil;
++}
++
++- (void)setAvailability:(NSDateInterval *)availability {
++    if (!availability) {
++        _startDateString = nil;
++        _endDateString = nil;
++        return;
++    }
++    
++    if ([[availability startDate] compare:[NSDate distantPast]] == NSOrderedSame) {
++        _startDateString = nil;
++    } else {
++        _startDateString = [GPXType valueForDateTime:[availability startDate]];
++    }
++    
++    if ([[availability endDate] compare:[NSDate distantFuture]] == NSOrderedSame) {
++        _endDateString = nil;
++    } else {
++        _endDateString = [GPXType valueForDateTime:[availability endDate]];
++    }
++}
++
++- (NSDateInterval *)availability {
++    NSDate * start = _startDateString ? [GPXType dateTime:_startDateString] : [NSDate distantPast];
++    NSDate * end = _endDateString ? [GPXType dateTime:_endDateString] : [NSDate distantFuture];
++    
++    // Ensure that if the start or end date have an invalid format, we replace the date with something appropriate
++    if (start == nil) {
++        start = [NSDate distantPast];
++    }
++    
++    if (end == nil) {
++        end = [NSDate distantFuture];
++    }
++    
++    return [[NSDateInterval alloc] initWithStartDate:start endDate:end];
++}
++
++- (void) setExpires:(BOOL)expires {
++    if (expires) {
++        _expiresString = @"true";
++    } else {
++        _expiresString = @"false";
++    }
++}
++
++- (BOOL) expires {
++    if ([_expiresString isEqualToString:@"true"]) {
++        return TRUE;
++    } else {
++        return FALSE;
++    }
++}
++
++#pragma mark - tag
++
+++ (NSString *)tagName
++{
++    return kGPXSSSharedContentExtensionsTagName;
++}
++
++#pragma mark - GPX
++
++- (void)addOpenTagToGpx:(NSMutableString *)gpx indentationLevel:(NSInteger)indentationLevel
++{
++    NSMutableString *attribute = [NSMutableString stringWithString:@""];
++    if (_startDateString) {
++        [attribute appendFormat:@" start=\"%@\"", _startDateString];
++    }
++    if (_endDateString) {
++        [attribute appendFormat:@" end=\"%@\"", _endDateString];
++    }
++    if (_expiresString) {
++        [attribute appendFormat:@" expires=\"%@\"", _expiresString];
++    }
++    
++    [gpx appendString:[NSString stringWithFormat:@"%@<%@%@>\r\n"
++                       , [self indentForIndentationLevel:indentationLevel]
++                       , [[self class] tagName]
++                       , attribute
++                       ]
++     ];
++}
++
++- (void)addChildTagToGpx:(NSMutableString *)gpx indentationLevel:(NSInteger)indentationLevel
++{
++    [super addChildTagToGpx:gpx indentationLevel:indentationLevel];
++    
++    [self gpx:gpx addPropertyForValue:_identifier tagName:kElementID indentationLevel:indentationLevel];
++    [self gpx:gpx addPropertyForValue:_behavior tagName:kElementBehavior indentationLevel:indentationLevel];
++    
++    if (self.region)  [self.region gpx:gpx indentationLevel:indentationLevel];
++    
++    [self gpx:gpx addPropertyForValue:self.localeString tagName:kElementLocale indentationLevel:indentationLevel];
++}
++
++@end
++
+diff --git a/cocoapods-patch-20221103-54518-lfrmhf/iOS-GPX-Framework/GPX/GPXTrack.h b/Pods/iOS-GPX-Framework/GPX/GPXTrack.h
+index 172a308d7..d0a5cb33c 100644
+--- a/cocoapods-patch-20221103-54518-lfrmhf/iOS-GPX-Framework/GPX/GPXTrack.h
++++ b/Pods/iOS-GPX-Framework/GPX/GPXTrack.h
+@@ -36,10 +36,10 @@
+ @property (strong, nonatomic) NSString *source;
+ 
+ /** Links to external information about track. */
+-@property (strong, nonatomic, readonly) NSArray *links;
++@property (strong, nonatomic, readonly) NSArray<GPXLink *> *links;
+ 
+ /** GPS track number. */
+-@property (nonatomic, assign) NSInteger number;
++@property (nonatomic) NSInteger number;
+ 
+ /** Type (classification) of track. */
+ @property (strong, nonatomic) NSString *type;
+@@ -50,7 +50,7 @@
+ /** A Track Segment holds a list of Track Points which are logically connected in order.
+     To represent a single GPS track where GPS reception was lost, or the GPS receiver was turned off, 
+     start a new Track Segment for each continuous span of track data. */
+-@property (strong, nonatomic, readonly) NSArray *tracksegments;
++@property (strong, nonatomic, readonly) NSArray<GPXTrackSegment *> *tracksegments;
+ 
+ 
+ /// ---------------------------------
+@@ -76,7 +76,7 @@
+ /** Adds the GPXLink objects contained in another given array to the end of the link array.
+  @param array An array of GPXLink objects to add to the end of the link array.
+  */
+-- (void)addLinks:(NSArray *)array;
++- (void)addLinks:(NSArray<GPXLink *> *)array;
+ 
+ 
+ /// ---------------------------------
+@@ -111,7 +111,7 @@
+ /** Adds the GPXTrackSegment objects contained in another given array to the end of the tracksegment array.
+  @param array An array of GPXTrackSegment objects to add to the end of the tracksegment array.
+  */
+-- (void)addTracksegments:(NSArray *)array;
++- (void)addTracksegments:(NSArray<GPXTrackSegment *> *)array;
+ 
+ 
+ /// ---------------------------------
+diff --git a/cocoapods-patch-20221103-54518-lfrmhf/iOS-GPX-Framework/GPX/GPXTrackPoint.h b/Pods/iOS-GPX-Framework/GPX/GPXTrackPoint.h
+index 06ddc756a..bcd2f16b2 100644
+--- a/cocoapods-patch-20221103-54518-lfrmhf/iOS-GPX-Framework/GPX/GPXTrackPoint.h
++++ b/Pods/iOS-GPX-Framework/GPX/GPXTrackPoint.h
+@@ -19,6 +19,6 @@
+  @param longitude The longitude of the point.
+  @return A newly created trackpoint element.
+  */
+-+ (GPXTrackPoint *)trackpointWithLatitude:(CGFloat)latitude longitude:(CGFloat)longitude;
+++ (GPXTrackPoint *)trackpointWithLatitude:(CLLocationDegrees)latitude longitude:(CLLocationDegrees)longitude;
+ 
+ @end
+diff --git a/cocoapods-patch-20221103-54518-lfrmhf/iOS-GPX-Framework/GPX/GPXTrackPoint.m b/Pods/iOS-GPX-Framework/GPX/GPXTrackPoint.m
+index 110522c1b..d540d05d8 100644
+--- a/cocoapods-patch-20221103-54518-lfrmhf/iOS-GPX-Framework/GPX/GPXTrackPoint.m
++++ b/Pods/iOS-GPX-Framework/GPX/GPXTrackPoint.m
+@@ -13,7 +13,7 @@
+ 
+ #pragma mark - Instance
+ 
+-+ (GPXTrackPoint *)trackpointWithLatitude:(CGFloat)latitude longitude:(CGFloat)longitude
+++ (GPXTrackPoint *)trackpointWithLatitude:(CLLocationDegrees)latitude longitude:(CLLocationDegrees)longitude
+ {
+     GPXTrackPoint *trackpoint = [GPXTrackPoint new];
+     trackpoint.latitude = latitude;
+diff --git a/Pods/iOS-GPX-Framework/GPX/GPXTrackPointExtensions.h b/Pods/iOS-GPX-Framework/GPX/GPXTrackPointExtensions.h
+new file mode 100644
+index 000000000..3a8980115
+--- /dev/null
++++ b/Pods/iOS-GPX-Framework/GPX/GPXTrackPointExtensions.h
+@@ -0,0 +1,19 @@
++//
++//  GPXTrackPointExtensions.h
++//  GPX
++//
++//  Created by Felix Schneider on 29.09.2014.
++//
++//
++
++#import "GPXElement.h"
++
++@interface GPXTrackPointExtensions : GPXElement
++
++/* see: http://www8.garmin.com/xmlschemas/TrackPointExtensionv2.xsd */
++@property (nonatomic, strong) NSNumber *heartRate;
++@property (nonatomic, strong) NSNumber *cadence;
++@property (nonatomic, strong) NSNumber *speed;
++@property (nonatomic, strong) NSNumber *course;
++
++@end
+diff --git a/Pods/iOS-GPX-Framework/GPX/GPXTrackPointExtensions.m b/Pods/iOS-GPX-Framework/GPX/GPXTrackPointExtensions.m
+new file mode 100644
+index 000000000..92ae44b31
+--- /dev/null
++++ b/Pods/iOS-GPX-Framework/GPX/GPXTrackPointExtensions.m
+@@ -0,0 +1,105 @@
++//
++//  GPXTrackPointExtensions.m
++//  GPX
++//
++//  Created by Felix Schneider on 29.09.2014.
++//
++//
++
++#import "GPXTrackPointExtensions.h"
++#import "GPXElementSubclass.h"
++
++NSString *const kGPXTrackPointExtensionsTagName = @"gpxtpx:TrackPointExtension";
++
++@interface GPXTrackPointExtensions ()
++
++@property (nonatomic, strong) NSString *heartRateString;
++@property (nonatomic, strong) NSString *cadenceString;
++@property (nonatomic, strong) NSString *speedString;
++@property (nonatomic, strong) NSString *courseString;
++
++@end
++
++@implementation GPXTrackPointExtensions
++
++- (id)initWithXMLElement:(TBXMLElement *)element parent:(GPXElement *)parent
++{
++    self = [super initWithXMLElement:element parent:parent];
++    if (self) {
++        _heartRateString = [self textForSingleChildElementNamed:@"gpxtpx:hr" xmlElement:element];
++        _cadenceString = [self textForSingleChildElementNamed:@"gpxtpx:cad" xmlElement:element];
++        _speedString = [self textForSingleChildElementNamed:@"gpxtpx:speed" xmlElement:element];
++        _courseString = [self textForSingleChildElementNamed:@"gpxtpx:course" xmlElement:element];
++    }
++    return self;
++}
++
++#pragma mark - Public methods
++- (void)setHeartRate:(NSNumber *)heartRate
++{
++    _heartRateString = heartRate? [NSString stringWithFormat:@"%ud", [heartRate unsignedIntValue]]: nil;
++}
++
++- (void)setCadence:(NSNumber *)cadence
++{
++    _cadenceString = cadence ? [NSString stringWithFormat:@"%ud", [cadence unsignedIntValue]]: nil;
++}
++
++- (void)setSpeed:(NSNumber *)speed
++{
++    _speedString = speed ? [GPXType valueForDecimal:speed.doubleValue] : nil;
++}
++
++- (void)setCourse:(NSNumber *)course
++{
++    _courseString = course ? [GPXType valueForDecimal:course.doubleValue]: nil;
++}
++
++- (NSNumber *)heartRate {
++    if (!_heartRateString.length) {
++        return nil;
++    }
++    return [NSNumber numberWithDouble:[GPXType decimal:_heartRateString]];
++}
++
++- (NSNumber *)cadence {
++    if (!_cadenceString.length) {
++        return nil;
++    }
++    return [NSNumber numberWithInteger:[GPXType nonNegativeInteger:_cadenceString]];
++}
++
++- (NSNumber *)speed {
++    if (!_speedString.length) {
++        return nil;
++    }
++    return [NSNumber numberWithDouble:[GPXType decimal:_speedString]];
++}
++
++- (NSNumber *)course {
++    if (!_courseString.length) {
++        return nil;
++    }
++    return [NSNumber numberWithDouble:[GPXType decimal:_courseString]];
++}
++
++#pragma mark - tag
++
+++ (NSString *)tagName
++{
++    return kGPXTrackPointExtensionsTagName;
++}
++
++#pragma mark - GPX
++
++- (void)addChildTagToGpx:(NSMutableString *)gpx indentationLevel:(NSInteger)indentationLevel
++{
++    [super addChildTagToGpx:gpx indentationLevel:indentationLevel];
++    [self gpx:gpx addPropertyForValue:_heartRateString tagName:@"gpxtpx:hr" indentationLevel:indentationLevel];
++    [self gpx:gpx addPropertyForValue:_cadenceString tagName:@"gpxtpx:cad" indentationLevel:indentationLevel];
++    [self gpx:gpx addPropertyForValue:_speedString tagName:@"gpxtpx:speed" indentationLevel:indentationLevel];
++    [self gpx:gpx addPropertyForValue:_courseString tagName:@"gpxtpx:course" indentationLevel:indentationLevel];
++}
++
++
++@end
+diff --git a/cocoapods-patch-20221103-54518-lfrmhf/iOS-GPX-Framework/GPX/GPXTrackSegment.h b/Pods/iOS-GPX-Framework/GPX/GPXTrackSegment.h
+index 5c9c91646..054f8e8b9 100644
+--- a/cocoapods-patch-20221103-54518-lfrmhf/iOS-GPX-Framework/GPX/GPXTrackSegment.h
++++ b/Pods/iOS-GPX-Framework/GPX/GPXTrackSegment.h
+@@ -23,7 +23,7 @@
+ /// ---------------------------------
+ 
+ /** A Track Point holds the coordinates, elevation, timestamp, and metadata for a single point in a track. */
+-@property (strong, nonatomic, readonly) NSArray *trackpoints;
++@property (strong, nonatomic, readonly) NSArray<GPXTrackPoint *> *trackpoints;
+ 
+ /** You can add extend GPX by adding your own elements from another schema here. */
+ @property (strong, nonatomic) GPXExtensions *extensions;
+@@ -53,7 +53,7 @@
+ /** Adds the GPXTrackPoint objects contained in another given array to the end of the trackpoint array.
+  @param array An array of GPXTrackPoint objects to add to the end of the trackpoint array.
+  */
+-- (void)addTrackpoints:(NSArray *)array;
++- (void)addTrackpoints:(NSArray<GPXTrackPoint *> *)array;
+ 
+ 
+ /// ---------------------------------
+diff --git a/Pods/iOS-GPX-Framework/GPX/GPXTrailsTrackExtensions.h b/Pods/iOS-GPX-Framework/GPX/GPXTrailsTrackExtensions.h
+new file mode 100644
+index 000000000..eafec5e5c
+--- /dev/null
++++ b/Pods/iOS-GPX-Framework/GPX/GPXTrailsTrackExtensions.h
+@@ -0,0 +1,16 @@
++//
++//  GPXTrailsTrackExtensions.h
++//  GPX
++//
++//  Created by Jan Weitz on 27.04.2015
++//
++//
++
++#import "GPXElement.h"
++
++@interface GPXTrailsTrackExtensions : GPXElement
++
++/* see: https://trails.io/GPX/1/0/trails_1.0.xsd */
++@property (nonatomic) NSString *activityTypeString;
++
++@end
+diff --git a/Pods/iOS-GPX-Framework/GPX/GPXTrailsTrackExtensions.m b/Pods/iOS-GPX-Framework/GPX/GPXTrailsTrackExtensions.m
+new file mode 100644
+index 000000000..3100cc8da
+--- /dev/null
++++ b/Pods/iOS-GPX-Framework/GPX/GPXTrailsTrackExtensions.m
+@@ -0,0 +1,53 @@
++//
++//  GPXTrailsTrackExtensions.m
++//  GPX
++//
++//  Created by Jan Weitz on 27.04.2015
++//
++//
++
++#import "GPXTrailsTrackExtensions.h"
++#import "GPXElementSubclass.h"
++
++NSString *const kElementActivity = @"trailsio:activity";
++NSString *const kTrackExtensionsTagName = @"trailsio:TrackExtension";
++
++@interface GPXTrailsTrackExtensions ()
++
++@end
++
++@implementation GPXTrailsTrackExtensions
++
++- (id)initWithXMLElement:(TBXMLElement *)element parent:(GPXElement *)parent {
++    self = [super initWithXMLElement:element parent:parent];
++    
++    if (self) {
++        _activityTypeString = [self textForSingleChildElementNamed:kElementActivity xmlElement:element];
++    }
++    
++    return self;
++}
++
++#pragma mark - Public methods
++- (NSString *)activityTypeString {
++    if (!_activityTypeString.length) {
++        return nil;
++    }
++    
++    return _activityTypeString;
++}
++
++#pragma mark - tag
++
+++ (NSString *)tagName {
++    return kTrackExtensionsTagName;
++}
++
++#pragma mark - GPX
++
++- (void)addChildTagToGpx:(NSMutableString *)gpx indentationLevel:(NSInteger)indentationLevel {
++    [super addChildTagToGpx:gpx indentationLevel:indentationLevel];
++    [self gpx:gpx addPropertyForValue:_activityTypeString tagName:kElementActivity indentationLevel:indentationLevel];
++}
++
++@end
+diff --git a/Pods/iOS-GPX-Framework/GPX/GPXTrailsTrackPointExtensions.h b/Pods/iOS-GPX-Framework/GPX/GPXTrailsTrackPointExtensions.h
+new file mode 100644
+index 000000000..2822c8728
+--- /dev/null
++++ b/Pods/iOS-GPX-Framework/GPX/GPXTrailsTrackPointExtensions.h
+@@ -0,0 +1,18 @@
++//
++//  GPXTrailsTrackPointExtensions.h
++//  GPX
++//
++//  Created by Jan Weitz on 27.04.2015
++//
++//
++
++#import "GPXElement.h"
++
++@interface GPXTrailsTrackPointExtensions : GPXElement
++
++/* see: https://trails.io/GPX/1/0/trails_1.0.xsd */
++@property (nonatomic) NSNumber *horizontalAccuracy;
++@property (nonatomic) NSNumber *verticalAccuracy;
++@property (nonatomic) NSNumber *stepCount;
++
++@end
+diff --git a/Pods/iOS-GPX-Framework/GPX/GPXTrailsTrackPointExtensions.m b/Pods/iOS-GPX-Framework/GPX/GPXTrailsTrackPointExtensions.m
+new file mode 100644
+index 000000000..054c3ea1b
+--- /dev/null
++++ b/Pods/iOS-GPX-Framework/GPX/GPXTrailsTrackPointExtensions.m
+@@ -0,0 +1,91 @@
++//
++//  GPXTrailsTrackPointExtensions.m
++//  GPX
++//
++//  Created by Jan Weitz on 27.04.2015
++//
++//
++
++#import "GPXTrailsTrackPointExtensions.h"
++#import "GPXElementSubclass.h"
++
++NSString *const kElementHorizontalAcc = @"trailsio:hacc";
++NSString *const kElementVerticalAcc = @"trailsio:vacc";
++NSString *const kElementSteps = @"trailsio:steps";
++NSString *const kTrackPointExtensionsTagName = @"trailsio:TrackPointExtension";
++
++@interface GPXTrailsTrackPointExtensions ()
++
++@property (nonatomic) NSString *horizontalAccuracyString;
++@property (nonatomic) NSString *verticalAccuracyString;
++@property (nonatomic) NSString *stepCountString;
++
++@end
++
++@implementation GPXTrailsTrackPointExtensions
++
++- (id)initWithXMLElement:(TBXMLElement *)element parent:(GPXElement *)parent {
++    self = [super initWithXMLElement:element parent:parent];
++    
++    if (self) {
++        _horizontalAccuracyString = [self textForSingleChildElementNamed:kElementHorizontalAcc xmlElement:element];
++        _verticalAccuracyString = [self textForSingleChildElementNamed:kElementVerticalAcc xmlElement:element];
++        _stepCountString = [self textForSingleChildElementNamed:kElementSteps xmlElement:element];
++    }
++    
++    return self;
++}
++
++#pragma mark - Public methods
++- (void)setHorizontalAccuracy:(NSNumber *)horizontalAccuracy {
++    _horizontalAccuracyString = horizontalAccuracy ? horizontalAccuracy.stringValue : nil;
++}
++
++- (void)setVerticalAccuracy:(NSNumber *)verticalAccuracy {
++    _verticalAccuracyString = verticalAccuracy ? verticalAccuracy.stringValue : nil;
++}
++
++- (void)setStepCount:(NSNumber *)stepCount {
++    _stepCountString = stepCount ? stepCount.stringValue : nil;
++}
++
++- (NSNumber *)horizontalAccuracy {
++    if (!_horizontalAccuracyString.length) {
++        return nil;
++    }
++    
++    return [NSNumber numberWithDouble:[GPXType decimal:_horizontalAccuracyString]];
++}
++
++- (NSNumber *)verticalAccuracy {
++    if (!_verticalAccuracyString.length) {
++        return nil;
++    }
++
++    return [NSNumber numberWithDouble:[GPXType decimal:_verticalAccuracyString]];
++}
++
++- (NSNumber *)stepCount {
++    if (!_stepCountString.length) {
++        return nil;
++    }
++    
++    return [NSNumber numberWithDouble:[GPXType decimal:_stepCountString]];
++}
++
++#pragma mark - tag
++
+++ (NSString *)tagName {
++    return kTrackPointExtensionsTagName;
++}
++
++#pragma mark - GPX
++
++- (void)addChildTagToGpx:(NSMutableString *)gpx indentationLevel:(NSInteger)indentationLevel {
++    [super addChildTagToGpx:gpx indentationLevel:indentationLevel];
++    [self gpx:gpx addPropertyForValue:_horizontalAccuracyString tagName:kElementHorizontalAcc indentationLevel:indentationLevel];
++    [self gpx:gpx addPropertyForValue:_verticalAccuracyString tagName:kElementVerticalAcc indentationLevel:indentationLevel];
++    [self gpx:gpx addPropertyForValue:_stepCountString tagName:kElementSteps indentationLevel:indentationLevel];
++}
++
++@end
+diff --git a/cocoapods-patch-20221103-54518-lfrmhf/iOS-GPX-Framework/GPX/GPXType.h b/Pods/iOS-GPX-Framework/GPX/GPXType.h
+index 6d0c0dfb0..cc24ab754 100644
+--- a/cocoapods-patch-20221103-54518-lfrmhf/iOS-GPX-Framework/GPX/GPXType.h
++++ b/Pods/iOS-GPX-Framework/GPX/GPXType.h
+@@ -14,46 +14,49 @@ typedef NS_ENUM(NSInteger, GPXFix) {
+     GPXFixPps,
+ };
+ 
++@import UIKit;
++@import CoreLocation;
++
+ 
+ /** Convinience methods for GPX Value types.
+  */
+ @interface GPXType : NSObject
+ 
+-/** Return the CGFloat object from a given string.
+- @param value The string which to convert CGFloat. A value ≥−90 and ≤90.
+- @return A CGFloat from a value.
++/** Return the CLLocationDegrees object from a given string.
++ @param value The string which to convert CLLocationDegrees. A value ≥−90 and ≤90.
++ @return A CLLocationDegrees from a value.
+  */
+-+ (CGFloat)latitude:(NSString *)value;
+++ (CLLocationDegrees)latitude:(NSString *)value;
+ 
+-/** Return the NSString object from a given CGFloat.
+- @param latitude The CGFloat which to convert NSString. A value ≥−90 and ≤90.
++/** Return the NSString object from a given CLLocationDegrees.
++ @param latitude The CLLocationDegrees which to convert NSString. A value ≥−90 and ≤90.
+  @return A NSString from a latitude.
+  */
+-+ (NSString *)valueForLatitude:(CGFloat)latitude;
+++ (NSString *)valueForLatitude:(CLLocationDegrees)latitude;
+ 
+-/** Return the CGFloat object from a given string.
++/** Return the CLLocationDegrees object from a given string.
+  @param value The string which to convert CGFloat. A value ≥−180 and ≤180.
+- @return A CGFloat from a value.
++ @return A CLLocationDegrees from a value.
+  */
+-+ (CGFloat)longitude:(NSString *)value;
+++ (CLLocationDegrees)longitude:(NSString *)value;
+ 
+-/** Return the NSString object from a given CGFloat.
+- @param longitude The CGFloat which to convert NSString. A value ≥−180 and ≤180.
++/** Return the NSString object from a given CLLocationDegrees.
++ @param longitude The CLLocationDegrees which to convert NSString. A value ≥−180 and ≤180.
+  @return A NSString from a longitude.
+  */
+-+ (NSString *)valueForLongitude:(CGFloat)longitude;
+++ (NSString *)valueForLongitude:(CLLocationDegrees)longitude;
+ 
+-/** Return the CGFloat object from a given string.
+- @param value The string which to convert CGFloat. A value ≥0 and ≤360.
+- @return A CGFloat from a value.
++/** Return the CLLocationDegrees object from a given string.
++ @param value The string which to convert CLLocationDegrees. A value ≥0 and ≤360.
++ @return A CLLocationDegrees from a value.
+  */
+-+ (CGFloat)degress:(NSString *)value;
+++ (CLLocationDegrees)degress:(NSString *)value;
+ 
+-/** Return the NSString object from a given CGFloat.
+- @param degress The CGFloat which to convert NSString. A value ≥0 and ≤360.
++/** Return the NSString object from a given CLLocationDegrees.
++ @param degress The CLLocationDegrees which to convert NSString. A value ≥0 and ≤360.
+  @return A NSString from a degress.
+  */
+-+ (NSString *)valueForDegress:(CGFloat)degress;
+++ (NSString *)valueForDegress:(CLLocationDegrees)degress;
+ 
+ /** Return the GPXFix from a given string.
+  @param value The string which to convert GPXFix.
+@@ -79,17 +82,17 @@ typedef NS_ENUM(NSInteger, GPXFix) {
+  */
+ + (NSString *)valueForDgpsStation:(NSInteger)dgpsStation;
+ 
+-/** Return the CGFloat object from a given string.
++/** Return the double value from a given string.
+  @param value The string which to convert CGFloat.
+- @return A CGFloat from a value.
++ @return A double from a value.
+  */
+-+ (CGFloat)decimal:(NSString *)value;
+++ (double)decimal:(NSString *)value;
+ 
+-/** Return the NSString object from a given CGFloat.
+- @param decimal The CGFloat which to convert NSString.
++/** Return the NSString object from a given double.
++ @param decimal The double which to convert NSString.
+  @return A NSString from a decimal.
+  */
+-+ (NSString *)valueForDecimal:(CGFloat)decimal;
+++ (NSString *)valueForDecimal:(double)decimal;
+ 
+ /** Return the NSDate object from a given string.
+  
+diff --git a/cocoapods-patch-20221103-54518-lfrmhf/iOS-GPX-Framework/GPX/GPXType.m b/Pods/iOS-GPX-Framework/GPX/GPXType.m
+index b956fcf60..b512be526 100644
+--- a/cocoapods-patch-20221103-54518-lfrmhf/iOS-GPX-Framework/GPX/GPXType.m
++++ b/Pods/iOS-GPX-Framework/GPX/GPXType.m
+@@ -10,21 +10,13 @@
+ 
+ @implementation GPXType
+ 
+-+ (CGFloat)latitude:(NSString *)value
+++ (CLLocationDegrees)latitude:(NSString *)value
+ {
+-    @try {
+-        CGFloat f = [value floatValue];
+-        if (-90.f <= f && f <= 90.f) {
+-            return f;
+-        }
+-    }
+-    @catch (NSException *exception) {
+-    }
+-    
+-    return 0.f;
++    CLLocationDegrees f = [value doubleValue];
++    return f;
+ }
+ 
+-+ (NSString *)valueForLatitude:(CGFloat)latitude
+++ (NSString *)valueForLatitude:(CLLocationDegrees)latitude
+ {
+     if (-90.f <= latitude && latitude <= 90.f) {
+         return [NSString stringWithFormat:@"%f", latitude];
+@@ -33,21 +25,13 @@
+     return @"0";
+ }
+ 
+-+ (CGFloat)longitude:(NSString *)value
+++ (CLLocationDegrees)longitude:(NSString *)value
+ {
+-    @try {
+-        CGFloat f = [value floatValue];
+-        if (-180.f <= f && f <= 180.f) {
+-            return f;
+-        }
+-    }
+-    @catch (NSException *exception) {
+-    }
+-    
+-    return 0.f;
++    CLLocationDegrees f = [value doubleValue];
++    return f;
+ }
+ 
+-+ (NSString *)valueForLongitude:(CGFloat)longitude
+++ (NSString *)valueForLongitude:(CLLocationDegrees)longitude
+ {
+     if (-180.f <= longitude && longitude <= 180.f) {
+         return [NSString stringWithFormat:@"%f", longitude];
+@@ -56,27 +40,19 @@
+     return @"0";
+ }
+ 
+-+ (CGFloat)degress:(NSString *)value
+++ (CLLocationDegrees)degress:(NSString *)value
+ {
+-    @try {
+-        CGFloat f = [value floatValue];
+-        if (0.f <= f && f <= 360.f) {
+-            return f;
+-        }
+-    }
+-    @catch (NSException *exception) {
+-    }
+-    
+-    return 0.f;    
++    CLLocationDegrees f = [value doubleValue];
++    return f;
+ }
+ 
+-+ (NSString *)valueForDegress:(CGFloat)degress
+++ (NSString *)valueForDegress:(CLLocationDegrees)degress
+ {
+     if (0.0f <= degress && degress <= 360.f) {
+         return [NSString stringWithFormat:@"%f", degress];
+     }
+     
+-    return @"0";
++    return @"-1";
+ }
+ 
+ + (GPXFix)fix:(NSString *)value
+@@ -117,16 +93,11 @@
+ 
+ + (NSInteger)dgpsStation:(NSString *)value
+ {
+-    @try {
+-        NSInteger i = [value integerValue];
+-        if (0 <= i && i <= 1023) {
+-            return i;
+-        }
++    NSInteger i = [value integerValue];
++    if (0 <= i && i <= 1023) {
++        return i;
+     }
+-    @catch (NSException *exception) {
+-    }
+-    
+-    return 0;   
++    return 0;
+ }
+ 
+ + (NSString *)valueForDgpsStation:(NSInteger)dgpsStation
+@@ -138,55 +109,84 @@
+     return @"0";
+ }
+ 
+-+ (CGFloat)decimal:(NSString *)value
+++ (double)decimal:(NSString *)value
+ {
+-    @try {
+-        CGFloat f = [value floatValue];
+-        return f;
+-    }
+-    @catch (NSException *exception) {
+-    }
+-    
+-    return 0;
++    double f = [value doubleValue];
++    return f;
+ }
+ 
+-+ (NSString *)valueForDecimal:(CGFloat)decimal
+++ (NSString *)valueForDecimal:(double)decimal
+ {
+-    return [NSString stringWithFormat:@"%f", decimal];
+-    
++    return [NSNumber numberWithDouble:decimal].stringValue;
+ }
+ 
+++ (NSDateFormatter *)newDateFormatterWithFormat:(NSString *)format {
++    if (!format) {
++        return nil;
++    }
++    
++    NSDateFormatter *dateFormatter =  [[NSDateFormatter alloc] init];
++    NSLocale *en_US_POSIX = [[NSLocale alloc] initWithLocaleIdentifier:@"en_US_POSIX"];
++    
++    [dateFormatter setCalendar:[[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian]];
++    [dateFormatter setLocale:en_US_POSIX];
++    [dateFormatter setTimeZone:[NSTimeZone timeZoneForSecondsFromGMT:0]];
++    [dateFormatter setDateFormat:format];
++    return dateFormatter;
++}
+ + (NSDate *)dateTime:(NSString *)value
+ {
+     NSDate *date;
+     
+-    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+-    formatter.timeZone = [NSTimeZone timeZoneForSecondsFromGMT:0];
++    static NSDateFormatter *dateFormatter_ssZ = nil;
++    static dispatch_once_t pred;
++    
++    dispatch_once(&pred, ^{
++        dateFormatter_ssZ =  [self newDateFormatterWithFormat:@"yyyy'-'MM'-'dd'T'HH':'mm':'ss'Z'"];
++    });
+     
++   
+     // dateTime（YYYY-MM-DDThh:mm:ssZ）
+-    formatter.dateFormat = @"yyyy'-'MM'-'dd'T'HH':'mm':'ss'Z'";
+-    date = [formatter dateFromString:value];
++    date = [dateFormatter_ssZ dateFromString:value];
+     if (date) {
+         return date;
+     }
+     
++    static NSDateFormatter *dateFormatter_ss_SSSZ = nil;
++    static dispatch_once_t pred_ss_SSSZ;
++    
++    dispatch_once(&pred_ss_SSSZ, ^{
++        dateFormatter_ss_SSSZ =  [self newDateFormatterWithFormat:@"yyyy'-'MM'-'dd'T'HH':'mm':'ss'.'SSS'Z'"];
++    });
++    
+     // dateTime（YYYY-MM-DDThh:mm:ss.SSSZ）
+-    formatter.dateFormat = @"yyyy'-'MM'-'dd'T'HH':'mm':'ss'.'SSS'Z'";
+-    date = [formatter dateFromString:value];
++    date = [dateFormatter_ss_SSSZ dateFromString:value];
+     if (date) {
+         return date;
+     }
+     
+-    // dateTime（YYYY-MM-DDThh:mm:sszzzzzz）
+-    if (value.length >= 22) {
+-        formatter.dateFormat = @"yyyy'-'MM'-'dd'T'HH':'mm':'sszzzz";
+-        NSString *v = [value stringByReplacingOccurrencesOfString:@":" withString:@"" options:0 range:NSMakeRange(22, 1)];
+-        date = [formatter dateFromString:v];
++
++    // dateTime（YYYY-MM-DDThh:mm:sszzzzzz
++    NSUInteger maxLength = 22;
++    if (value.length >= maxLength) {
++        static NSDateFormatter *dateFormatter_sszzzz = nil;
++        static dispatch_once_t pred_sszzzz;
++        
++        dispatch_once(&pred_sszzzz, ^{
++            dateFormatter_sszzzz =  [self newDateFormatterWithFormat:@"yyyy'-'MM'-'dd'T'HH':'mm':'sszzzz"];
++        });
++        
++        NSUInteger remaining = value.length - maxLength;
++        NSString *v = [value stringByReplacingOccurrencesOfString:@":" withString:@"" options:0 range:NSMakeRange(maxLength, remaining)];
++        date = [dateFormatter_sszzzz dateFromString:v];
+         if (date) {
+             return date;
+         }
+     }
+     
++    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
++    formatter.timeZone = [NSTimeZone timeZoneForSecondsFromGMT:0];
++    
+     // date
+     formatter.dateFormat = @"yyyy'-'MM'-'dd'";
+     date = [formatter dateFromString:value];
+@@ -224,13 +224,9 @@
+ 
+ + (NSInteger)nonNegativeInteger:(NSString *)value
+ {
+-    @try {
+-        NSInteger i = [value integerValue];
+-        if (i >= 0) {
+-            return i;
+-        }
+-    }
+-    @catch (NSException *exception) {
++    NSInteger i = [value integerValue];
++    if (i > 0) {
++        return i;
+     }
+     
+     return 0;
+@@ -241,7 +237,6 @@
+     if (integer >= 0) {
+         return [NSString stringWithFormat:@"%ld", (long)integer];
+     }
+-    
+     return @"0";
+ }
+ 
+diff --git a/cocoapods-patch-20221103-54518-lfrmhf/iOS-GPX-Framework/GPX/GPXWaypoint.h b/Pods/iOS-GPX-Framework/GPX/GPXWaypoint.h
+index 22fc8f019..2cd2d8ed3 100644
+--- a/cocoapods-patch-20221103-54518-lfrmhf/iOS-GPX-Framework/GPX/GPXWaypoint.h
++++ b/Pods/iOS-GPX-Framework/GPX/GPXWaypoint.h
+@@ -22,7 +22,10 @@
+ /// ---------------------------------
+ 
+ /** Elevation (in meters) of the point. */
+-@property (nonatomic, assign) CGFloat elevation;
++@property (nonatomic) CLLocationDistance elevation;
++
++/// Returns nil if elevation is not present in waypoint information.
++@property (nonatomic, readonly) NSNumber *elevationBoxed;
+ 
+ /** Creation/modification timestamp for element. 
+     Date and time in are in Univeral Coordinated Time (UTC), not local time! 
+@@ -31,10 +34,10 @@
+ @property (strong, nonatomic) NSDate *time;
+ 
+ /** Magnetic variation (in degrees) at the point */
+-@property (nonatomic, assign) CGFloat magneticVariation;
++@property (nonatomic) CGFloat magneticVariation;
+ 
+ /** Height (in meters) of geoid (mean sea level) above WGS84 earth ellipsoid. As defined in NMEA GGA message. */
+-@property (nonatomic, assign) CGFloat geoidHeight;
++@property (nonatomic) CLLocationDistance geoidHeight;
+ 
+ /** The GPS name of the waypoint. This field will be transferred to and from the GPS. 
+     GPX does not place restrictions on the length of this field or the characters contained in it. 
+@@ -52,7 +55,7 @@
+ @property (strong, nonatomic) NSString *source;
+ 
+ /** Link to additional information about the waypoint. */
+-@property (strong, nonatomic) NSArray *links;
++@property (strong, nonatomic) NSArray<GPXLink *> *links;
+ 
+ /** Text of GPS symbol name. For interchange with other programs, use the exact spelling of the symbol as displayed on the GPS. 
+     If the GPS abbreviates words, spell them out. */
+@@ -61,35 +64,41 @@
+ /** Type (classification) of the waypoint. */
+ @property (strong, nonatomic) NSString *type;
+ 
++/** Instantaneous speed at the point in m/s. */
++@property (strong, nonatomic) NSNumber *speed;
++
++/** Instantaneous course at the point. */
++@property (strong, nonatomic) NSNumber *course;
++
+ /** Type of GPX fix. */
+-@property (nonatomic, assign) NSInteger fix;
++@property (nonatomic) NSInteger fix;
+ 
+ /** Number of satellites used to calculate the GPX fix. */
+-@property (nonatomic, assign) NSInteger satellites;
++@property (nonatomic) NSInteger satellites;
+ 
+ /** Horizontal dilution of precision. */
+-@property (nonatomic, assign) CGFloat horizontalDilution;
++@property (nonatomic) double horizontalDilution;
+ 
+ /** Vertical dilution of precision. */
+-@property (nonatomic, assign) CGFloat verticalDilution;
++@property (nonatomic) double verticalDilution;
+ 
+ /** Position dilution of precision. */
+-@property (nonatomic, assign) CGFloat positionDilution;
++@property (nonatomic) double positionDilution;
+ 
+ /** Number of seconds since last DGPS update. */
+-@property (nonatomic, assign) CGFloat ageOfDGPSData;
++@property (nonatomic) double ageOfDGPSData;
+ 
+ /** ID of DGPS station used in differential correction. */
+-@property (nonatomic, assign) NSInteger DGPSid;
++@property (nonatomic) NSInteger DGPSid;
+ 
+ /** You can add extend GPX by adding your own elements from another schema here. */
+-@property (strong, nonatomic) GPXExtensions *extensions;
++@property (strong, nonatomic, nullable) GPXExtensions *extensions;
+ 
+ /** The latitude of the point. Decimal degrees, WGS84 datum. */
+-@property (nonatomic, assign) CGFloat latitude;
++@property (nonatomic) CLLocationDegrees latitude;
+ 
+ /** The longitude of the point. Decimal degrees, WGS84 datum. */
+-@property (nonatomic, assign) CGFloat longitude;
++@property (nonatomic) CLLocationDegrees longitude;
+ 
+ 
+ /// ---------------------------------
+@@ -127,7 +136,7 @@
+ /** Adds the GPXLink objects contained in another given array to the end of the link array.
+  @param array An array of GPXLink objects to add to the end of the link array.
+  */
+-- (void)addLinks:(NSArray *)array;
++- (void)addLinks:(NSArray<GPXLink *> *)array;
+ 
+ 
+ /// ---------------------------------
+diff --git a/cocoapods-patch-20221103-54518-lfrmhf/iOS-GPX-Framework/GPX/GPXWaypoint.m b/Pods/iOS-GPX-Framework/GPX/GPXWaypoint.m
+index 6f06aefac..ea261d11e 100644
+--- a/cocoapods-patch-20221103-54518-lfrmhf/iOS-GPX-Framework/GPX/GPXWaypoint.m
++++ b/Pods/iOS-GPX-Framework/GPX/GPXWaypoint.m
+@@ -13,6 +13,8 @@
+ 
+ @implementation GPXWaypoint {
+     NSString *_elevationValue;
++    NSString *_speedValue;
++    NSString *_courseValue;
+     NSString *_timeValue;
+     NSString *_magneticVariationValue;
+     NSString *_geoidHeightValue;
+@@ -65,7 +67,11 @@
+         _comment = [self textForSingleChildElementNamed:@"cmt" xmlElement:element];
+         _desc = [self textForSingleChildElementNamed:@"desc" xmlElement:element];
+         _source = [self textForSingleChildElementNamed:@"src" xmlElement:element];
+-
++        
++        // speed and course may be direct child tags of waypoints according to http://www.topografix.com/gpx_manual.asp
++        _courseValue = [self textForSingleChildElementNamed:@"course" xmlElement:element];
++        _speedValue = [self textForSingleChildElementNamed:@"speed" xmlElement:element];
++        
+         NSMutableArray *array = [NSMutableArray array];
+         [self childElementsOfClass:[GPXLink class]
+                         xmlElement:element
+@@ -103,16 +109,23 @@
+ 
+ #pragma mark - Public methods
+ 
+-- (CGFloat)elevation
++- (CLLocationDistance)elevation
+ {
+     return [GPXType decimal:_elevationValue];
+ }
+ 
+-- (void)setElevation:(CGFloat)elevation
++- (void)setElevation:(CLLocationDistance)elevation
+ {
+     _elevationValue = [GPXType valueForDecimal:elevation];
+ }
+ 
++- (NSNumber *)elevationBoxed {
++    if (!_elevationValue.length) {
++        return nil;
++    }
++    return @([self elevation]);
++}
++
+ - (NSDate *)time
+ {
+     return [GPXType dateTime:_timeValue];
+@@ -123,6 +136,31 @@
+     _timeValue = [GPXType valueForDateTime:time];
+ }
+ 
++- (NSNumber *)speed {
++    if (!_speedValue) {
++        return nil;
++    }
++    
++    return @([_speedValue doubleValue]);
++}
++
++
++- (void)setSpeed:(NSNumber *)speed {
++    _speedValue = [speed stringValue];
++}
++
++- (NSNumber *)course {
++    if (!_courseValue) {
++        return nil;
++    }
++    
++    return @([_courseValue doubleValue]);
++}
++
++- (void)setCourse:(NSNumber *)course {
++    _courseValue = [course stringValue];
++}
++
+ - (CGFloat)magneticVariation
+ {
+     return [GPXType degress:_magneticVariationValue];
+@@ -133,12 +171,12 @@
+     _magneticVariationValue = [GPXType valueForDegress:magneticVariation];
+ }
+ 
+-- (CGFloat)geoidHeight
++- (CLLocationDistance)geoidHeight
+ {
+     return [GPXType decimal:_geoidHeightValue];
+ }
+ 
+-- (void)setGeoidHeight:(CGFloat)geoidHeight
++- (void)setGeoidHeight:(CLLocationDistance)geoidHeight
+ {
+     _geoidHeightValue = [GPXType valueForDecimal:geoidHeight];
+ }
+@@ -197,42 +235,42 @@
+     _satellitesValue = [GPXType valueForNonNegativeInteger:satellites];
+ }
+ 
+-- (CGFloat)horizontalDilution
++- (double)horizontalDilution
+ {
+     return [GPXType decimal:_horizontalDilutionValue];
+ }
+ 
+-- (void)setHorizontalDilution:(CGFloat)horizontalDilution
++- (void)setHorizontalDilution:(double)horizontalDilution
+ {
+     _horizontalDilutionValue = [GPXType valueForDecimal:horizontalDilution];
+ }
+ 
+-- (CGFloat)verticalDilution
++- (double)verticalDilution
+ {
+     return [GPXType decimal:_verticalDilutionValue];
+ }
+ 
+-- (void)setVerticalDilution:(CGFloat)verticalDilution
++- (void)setVerticalDilution:(double)verticalDilution
+ {
+     _verticalDilutionValue = [GPXType valueForDecimal:verticalDilution];
+ }
+ 
+-- (CGFloat)positionDilution
++- (double)positionDilution
+ {
+     return [GPXType decimal:_positionDilutionValue];
+ }
+ 
+-- (void)setPositionDilution:(CGFloat)positionDilution
++- (void)setPositionDilution:(double)positionDilution
+ {
+     _positionDilutionValue = [GPXType valueForDecimal:positionDilution];
+ }
+ 
+-- (CGFloat)ageOfDGPSData
++- (double)ageOfDGPSData
+ {
+     return [GPXType decimal:_ageOfDGPSDataValue];
+ }
+ 
+-- (void)setAgeOfDGPSData:(CGFloat)ageOfDGPSData
++- (void)setAgeOfDGPSData:(double)ageOfDGPSData
+ {
+     _ageOfDGPSDataValue = [GPXType valueForDecimal:ageOfDGPSData];
+ }
+@@ -247,22 +285,22 @@
+     _DGPSidValue = [GPXType valueForDgpsStation:DGPSid];
+ }
+ 
+-- (CGFloat)latitude
++- (CLLocationDegrees)latitude
+ {
+     return [GPXType latitude:_latitudeValue];
+ }
+ 
+-- (void)setLatitude:(CGFloat)latitude
++- (void)setLatitude:(CLLocationDegrees)latitude
+ {
+     _latitudeValue = [GPXType valueForLatitude:latitude];
+ }
+ 
+-- (CGFloat)longitude
++- (CLLocationDegrees)longitude
+ {
+     return [GPXType longitude:_longitudeValue];
+ }
+ 
+-- (void)setLongitude:(CGFloat)longitude
++- (void)setLongitude:(CLLocationDegrees)longitude
+ {
+     _longitudeValue = [GPXType valueForLongitude:longitude];
+ }

@@ -1,0 +1,20 @@
+# Copyright (c) Microsoft Corporation.
+# Licensed under the MIT License.
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{.Chart.Name}}-tile-service
+  labels:
+    app: {{.Chart.Name}}
+    tier: tile-service
+    role: tile-service
+spec:
+  selector:
+    app: {{.Chart.Name}}
+    tier: tile-service
+    role: tile-server
+  ports:
+    - port: 80
+      targetPort: tilesrv-port

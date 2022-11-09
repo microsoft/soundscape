@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="CNG-9K-2vD">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Dynamic Launch View Controller-->
+        <scene sceneID="Bfh-ue-Z2P">
+            <objects>
+                <viewController id="CNG-9K-2vD" customClass="DynamicLaunchViewController" customModule="Soundscape" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KRa-sf-vpA"/>
+                        <viewControllerLayoutGuide type="bottom" id="0jH-Vx-9jw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="APb-ho-u6n">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fhc-av-aVq">
+                                <rect key="frame" x="67.5" y="134.5" width="240" height="318"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="launchScreenLogo" translatesAutoresizingMaskIntoConstraints="NO" id="mpl-79-Tn0">
+                                        <rect key="frame" x="20" y="0.0" width="200" height="200"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </imageView>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="middleTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="I8R-tk-9nf">
+                                        <rect key="frame" x="0.0" y="207" width="240" height="111"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="AppName">
+                                                <attributes>
+                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                    <font key="NSFont" size="38" name="AppleSDGothicNeo-Thin"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="CBp-7L-Ol7"/>
+                                    <constraint firstAttribute="height" constant="318" id="jAg-TW-NWN"/>
+                                </constraints>
+                            </view>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="cuM-rX-RIk">
+                                <rect key="frame" x="169" y="595" width="37" height="37"/>
+                                <color key="color" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.14117647058823529" green="0.22745098039215686" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="0jH-Vx-9jw" firstAttribute="top" secondItem="cuM-rX-RIk" secondAttribute="bottom" constant="35" id="E8A-Um-0oD"/>
+                            <constraint firstItem="fhc-av-aVq" firstAttribute="centerX" secondItem="APb-ho-u6n" secondAttribute="centerX" id="EEM-zf-5rV"/>
+                            <constraint firstItem="cuM-rX-RIk" firstAttribute="centerX" secondItem="APb-ho-u6n" secondAttribute="centerX" id="Nhg-Ro-Pk8"/>
+                            <constraint firstItem="fhc-av-aVq" firstAttribute="centerY" secondItem="APb-ho-u6n" secondAttribute="centerY" constant="-40" id="lXs-aq-ekG"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="accessibilityIgnoresInvertColors" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eVT-GJ-zpP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-95.200000000000003" y="10.344827586206897"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="launchScreenLogo" width="200" height="200"/>
+    </resources>
+</document>

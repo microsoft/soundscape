@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8cj-Eq-hFu">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Marker Tutorial View Controller-->
+        <scene sceneID="X9D-DN-nnP">
+            <objects>
+                <viewController storyboardIdentifier="MarkerTutorialViewController" id="8cj-Eq-hFu" customClass="MarkerTutorialViewController" customModule="Soundscape" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="eGZ-cI-DK0"/>
+                        <viewControllerLayoutGuide type="bottom" id="eA6-2g-xX0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Own-33-eH9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" indicatorStyle="white" translatesAutoresizingMaskIntoConstraints="NO" id="D1T-QM-OOK">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="529"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title Heading" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ciO-hO-4jn">
+                                        <rect key="frame" x="20" y="10" width="335" height="40"/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <accessibilityTraits key="traits" staticText="YES" header="YES"/>
+                                            <bool key="isElement" value="NO"/>
+                                        </accessibility>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="NiP-Cj-sa5"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Markers tutorial - 01" translatesAutoresizingMaskIntoConstraints="NO" id="mnb-v1-Kcg">
+                                        <rect key="frame" x="0.0" y="70" width="375" height="159"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="mnb-v1-Kcg" secondAttribute="height" multiplier="125:53" id="L6b-jt-bN2"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5yN-2R-u3k">
+                                        <rect key="frame" x="20" y="249" width="335" height="150"/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <bool key="isElement" value="NO"/>
+                                        </accessibility>
+                                        <string key="text">When you set a beacon on a location, Soundscape will play a sound coming from the direction of that location. This tutorial will step you through setting a beacon and how to use it.  Press the "Set a Beacon" button below to open a list of nearby places. Choose a location from the list and the tutorial will begin.</string>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="5yN-2R-u3k" firstAttribute="top" secondItem="mnb-v1-Kcg" secondAttribute="bottom" constant="20" id="6IR-FZ-rYu"/>
+                                    <constraint firstItem="mnb-v1-Kcg" firstAttribute="top" secondItem="ciO-hO-4jn" secondAttribute="bottom" constant="20" id="A7n-XC-R5X"/>
+                                    <constraint firstItem="ciO-hO-4jn" firstAttribute="top" secondItem="D1T-QM-OOK" secondAttribute="top" constant="10" id="NEW-m3-FM7"/>
+                                    <constraint firstItem="ciO-hO-4jn" firstAttribute="leading" secondItem="D1T-QM-OOK" secondAttribute="leading" constant="20" id="NO1-sa-PFp"/>
+                                    <constraint firstAttribute="trailing" secondItem="ciO-hO-4jn" secondAttribute="trailing" constant="20" id="TJw-Go-JCs"/>
+                                    <constraint firstAttribute="bottom" secondItem="5yN-2R-u3k" secondAttribute="bottom" constant="20" id="tpV-v4-WeQ"/>
+                                </constraints>
+                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IHj-en-SbY" customClass="RoundedSolidButton" customModule="Soundscape" customModuleProvider="target">
+                                <rect key="frame" x="32" y="549" width="311" height="45"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="45" id="Kpe-1J-jTT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                                <color key="tintColor" red="0.14117647059999999" green="0.2274509804" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="QjK-uf-ngg" kind="show" identifier="showAddMarker" id="HTK-vB-Ik2"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Action Button" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0tL-on-obv">
+                                <rect key="frame" x="44" y="561" width="287" height="21"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <bool key="isElement" value="NO"/>
+                                </accessibility>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <color key="textColor" red="0.14117647059999999" green="0.2274509804" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GxE-Wg-VxM" customClass="RoundedSolidButton" customModule="Soundscape" customModuleProvider="target">
+                                <rect key="frame" x="32" y="614" width="311" height="45"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="45" id="zo4-rX-EvJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                                <state key="normal" title="Exit Tutorial"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="localization" value="tutorial.exit"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="tryExitTutorial" destination="8cj-Eq-hFu" eventType="touchUpInside" id="PQK-ZS-eOv"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="umL-Hu-ayj"/>
+                        <color key="backgroundColor" red="0.14117647059999999" green="0.2274509804" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="0tL-on-obv" firstAttribute="top" secondItem="IHj-en-SbY" secondAttribute="top" constant="12" id="1Q0-bJ-DMq"/>
+                            <constraint firstAttribute="trailing" secondItem="D1T-QM-OOK" secondAttribute="trailing" id="210-d5-weK"/>
+                            <constraint firstAttribute="trailing" secondItem="IHj-en-SbY" secondAttribute="trailing" constant="32" id="2DN-6d-VMd"/>
+                            <constraint firstItem="GxE-Wg-VxM" firstAttribute="leading" secondItem="Own-33-eH9" secondAttribute="leading" constant="32" id="7ID-vj-jDo"/>
+                            <constraint firstItem="IHj-en-SbY" firstAttribute="leading" secondItem="Own-33-eH9" secondAttribute="leading" constant="32" id="8sT-ib-kw2"/>
+                            <constraint firstAttribute="trailing" secondItem="5yN-2R-u3k" secondAttribute="trailing" constant="20" id="A6m-ey-Yjh"/>
+                            <constraint firstItem="umL-Hu-ayj" firstAttribute="bottom" secondItem="GxE-Wg-VxM" secondAttribute="bottom" constant="8" id="AYk-42-8Id"/>
+                            <constraint firstItem="D1T-QM-OOK" firstAttribute="width" secondItem="Own-33-eH9" secondAttribute="width" id="BG9-LB-oIz"/>
+                            <constraint firstItem="mnb-v1-Kcg" firstAttribute="leading" secondItem="Own-33-eH9" secondAttribute="leading" id="Cca-SP-l66"/>
+                            <constraint firstItem="D1T-QM-OOK" firstAttribute="leading" secondItem="Own-33-eH9" secondAttribute="leading" id="Eye-XH-YBB"/>
+                            <constraint firstItem="D1T-QM-OOK" firstAttribute="top" secondItem="umL-Hu-ayj" secondAttribute="top" id="Fxk-Bb-Msn"/>
+                            <constraint firstItem="5yN-2R-u3k" firstAttribute="leading" secondItem="Own-33-eH9" secondAttribute="leading" constant="20" id="LXa-vW-Mwf"/>
+                            <constraint firstAttribute="trailing" secondItem="mnb-v1-Kcg" secondAttribute="trailing" id="Neb-3O-dGK"/>
+                            <constraint firstItem="0tL-on-obv" firstAttribute="leading" secondItem="IHj-en-SbY" secondAttribute="leading" constant="12" id="THl-fk-nLQ"/>
+                            <constraint firstAttribute="trailing" secondItem="GxE-Wg-VxM" secondAttribute="trailing" constant="32" id="biO-nR-Buv"/>
+                            <constraint firstItem="IHj-en-SbY" firstAttribute="top" secondItem="D1T-QM-OOK" secondAttribute="bottom" constant="20" id="djd-hr-lOx"/>
+                            <constraint firstItem="GxE-Wg-VxM" firstAttribute="top" secondItem="IHj-en-SbY" secondAttribute="bottom" constant="20" id="eeU-Cd-VTs"/>
+                            <constraint firstAttribute="trailing" secondItem="ciO-hO-4jn" secondAttribute="trailing" constant="20" id="hfe-93-yre"/>
+                            <constraint firstItem="ciO-hO-4jn" firstAttribute="leading" secondItem="Own-33-eH9" secondAttribute="leading" constant="20" id="iqp-No-glq"/>
+                            <constraint firstItem="0tL-on-obv" firstAttribute="bottom" secondItem="IHj-en-SbY" secondAttribute="bottom" constant="-12" id="uYv-Tn-ya7"/>
+                            <constraint firstItem="0tL-on-obv" firstAttribute="trailing" secondItem="IHj-en-SbY" secondAttribute="trailing" constant="-12" id="yuU-Cr-teY"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="actionButton" destination="IHj-en-SbY" id="oEz-2z-bTH"/>
+                        <outlet property="actionButtonLabel" destination="0tL-on-obv" id="MA2-K4-qDj"/>
+                        <outlet property="exitButton" destination="GxE-Wg-VxM" id="zVv-YI-mw2"/>
+                        <outlet property="headTitle" destination="ciO-hO-4jn" id="uoD-fU-1qZ"/>
+                        <outlet property="imageView" destination="mnb-v1-Kcg" id="L2F-8V-3fg"/>
+                        <outlet property="pageTextLabel" destination="5yN-2R-u3k" id="gza-wP-9gf"/>
+                        <outlet property="scrollView" destination="D1T-QM-OOK" id="ixY-0E-Qfn"/>
+                        <segue destination="fOQ-bb-y5z" kind="unwind" identifier="ExitTutorialSegue" unwindAction="unwindToHomeWithSegue:" id="6LS-M8-kdd"/>
+                        <segue destination="QjK-uf-ngg" kind="show" identifier="showSetAudioBeacon" id="PzJ-YZ-0jD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="s8V-cy-N05" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="fOQ-bb-y5z" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1077.5999999999999" y="-411.544227886057"/>
+        </scene>
+        <!--POITable-->
+        <scene sceneID="0jP-TT-Zco">
+            <objects>
+                <viewControllerPlaceholder storyboardName="POITable" id="QjK-uf-ngg" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ap4-fH-VSQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1738" y="-412"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="IHj-en-SbY">
+            <size key="intrinsicContentSize" width="30" height="28"/>
+        </designable>
+    </designables>
+    <inferredMetricsTieBreakers>
+        <segue reference="PzJ-YZ-0jD"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <image name="Markers tutorial - 01" width="375" height="172"/>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

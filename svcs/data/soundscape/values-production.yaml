@@ -1,0 +1,8 @@
+# Copyright (c) Microsoft Corporation.
+# Licensed under the MIT License.
+
+config:
+  region: world
+  regionStorage: 300Gi
+  tileServerReplicas: 4
+  bingReplicas: 3

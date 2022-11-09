@@ -1,0 +1,11 @@
+platform :ios, '14.1'
+plugin 'cocoapods-patch'
+use_frameworks!
+
+target 'Soundscape' do
+    project 'GuideDogs.xcodeproj'
+    
+    # When `pod install` is called, the 'cocoapods-patch' plugin
+    # will patches the pod with the diff file in `/patches`.
+    pod "iOS-GPX-Framework", '0.0.2'
+end

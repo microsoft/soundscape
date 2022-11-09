@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BannerViewController" customModule="Soundscape" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="NI2-lq-cic" id="ILB-1H-6Pq"/>
+                <outlet property="view" destination="dnb-eX-925" id="xtp-IP-tMU"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="dnb-eX-925">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="58"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="bottom" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pHc-dx-J6k">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="58"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NI2-lq-cic">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="32"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Soundscape is back online." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bjc-Sn-A0j">
+                                    <rect key="frame" x="8" y="8" width="359" height="16"/>
+                                    <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
+                                    <color key="textColor" red="0.12867569919999999" green="0.13345718379999999" blue="0.20067968959999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="localization" value="banner.online.message"/>
+                                    </userDefinedRuntimeAttributes>
+                                </label>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="bjc-Sn-A0j" firstAttribute="leading" secondItem="NI2-lq-cic" secondAttribute="leading" constant="8" id="QMx-W8-024"/>
+                                <constraint firstAttribute="bottom" secondItem="bjc-Sn-A0j" secondAttribute="bottom" constant="8" id="f3C-Ia-Ncg"/>
+                                <constraint firstItem="bjc-Sn-A0j" firstAttribute="top" secondItem="NI2-lq-cic" secondAttribute="top" constant="8" id="nmQ-em-mja"/>
+                                <constraint firstAttribute="trailing" secondItem="bjc-Sn-A0j" secondAttribute="trailing" constant="8" id="pMO-Bx-F0L"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="NI2-lq-cic" secondAttribute="trailing" id="K4c-wp-qk0"/>
+                        <constraint firstItem="NI2-lq-cic" firstAttribute="top" secondItem="pHc-dx-J6k" secondAttribute="top" id="SXu-Kh-Bn6"/>
+                        <constraint firstItem="NI2-lq-cic" firstAttribute="leading" secondItem="pHc-dx-J6k" secondAttribute="leading" id="iJe-sd-6JV"/>
+                        <constraint firstAttribute="bottom" secondItem="NI2-lq-cic" secondAttribute="bottom" id="rdj-We-Nad"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" red="0.22116079926490784" green="0.96314424276351929" blue="0.53760409355163574" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="XLw-pX-byx" firstAttribute="trailing" secondItem="pHc-dx-J6k" secondAttribute="trailing" id="6cI-DI-nBV"/>
+                <constraint firstItem="NI2-lq-cic" firstAttribute="leading" secondItem="XLw-pX-byx" secondAttribute="leading" id="BnS-Xz-4Ge"/>
+                <constraint firstItem="pHc-dx-J6k" firstAttribute="leading" secondItem="XLw-pX-byx" secondAttribute="leading" id="CVh-ZD-wBi"/>
+                <constraint firstItem="pHc-dx-J6k" firstAttribute="top" secondItem="XLw-pX-byx" secondAttribute="top" id="gtU-xf-5VR"/>
+                <constraint firstItem="XLw-pX-byx" firstAttribute="trailing" secondItem="NI2-lq-cic" secondAttribute="trailing" id="jIk-Ap-T0I"/>
+                <constraint firstItem="XLw-pX-byx" firstAttribute="bottom" secondItem="pHc-dx-J6k" secondAttribute="bottom" id="m1Y-9m-mBh"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="XLw-pX-byx"/>
+            <point key="canvasLocation" x="143" y="131"/>
+        </view>
+    </objects>
+</document>

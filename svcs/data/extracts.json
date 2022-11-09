@@ -1,0 +1,97 @@
+[
+    {
+	"name": "washington",
+	"url": "http://download.geofabrik.de/north-america/us/washington-latest.osm.pbf",
+	"bbox": [45.543722544855, -124.836091628339, 49.0312249194317, -116.910090059078]
+    },
+    {
+	"name": "washington-stress",
+	"url": "https://soundscapeassets.blob.core.windows.net/testpbf/washington-latest.osm.pbf",
+	"bbox": [45.543722544855, -124.836091628339, 49.0312249194317, -116.910090059078]
+    },
+    {
+	"name": "north-carolina",
+	"url": "http://download.geofabrik.de/north-america/us/north-carolina-latest.osm.pbf",
+	"bbox" : [33.752878, -84.3218689, 36.5880363, -75.4001189]
+    },
+    {
+	"name": "california",
+	"url": "http://download.geofabrik.de/north-america/us/california-latest.osm.pbf",
+	"bbox": [32.530, -124.482, 42.009, -114.131]
+    },
+    {
+	"name": "england",
+	"url": "http://download.geofabrik.de/europe/great-britain/england-latest.osm.pbf",
+	"bbox" : [49.674, -6.7047493, 55.917, 2.0919117]
+    },
+    {
+	"name": "gb-stress",
+	"url": "https://soundscapeassets.blob.core.windows.net/testpbf/great-britain-latest.osm.pbf",
+	"bbox" : [49.674, -6.7047493, 55.917, 2.0919117]
+    },
+    {
+	"name": "toronto",
+	"url": "http://download.geofabrik.de/north-america/canada/ontario-latest.osm.pbf",
+	"bbox": [43.5326204, -79.7332764, 43.9611906, -78.9642334]
+    },
+    {
+	"name": "singapore",
+	"url": "https://citiesunlockedtiledata.blob.core.windows.net/dev/malaysia-singapore-brunei-latest.osm.pbf",
+	"bbox": [1.1303611, 103.5666667, 1.5131602, 104.5706795]
+    },
+    {
+	"name": "hyderabad",
+	"url": "http://download.geofabrik.de/asia/india-latest.osm.pbf",
+	"bbox": [17.0987922, 78.1539917, 17.6780447, 78.8296509]
+    },
+    {
+	"name": "newdelhi",
+	"url": "http://download.geofabrik.de/asia/india-latest.osm.pbf",
+	"bbox": [28.4566183, 76.9743347, 28.7893252, 77.4824524]
+    },
+    {
+	"name": "vancouver",
+	"url": "http://download.geofabrik.de/north-america/canada/british-columbia-latest.osm.pbf",
+	"bbox": [48.9901305, -123.4506226, 49.4252672, -122.2833252]
+    },
+    {
+	"name": "dubai",
+	"url": "http://download.geofabrik.de/asia/gcc-states-latest.osm.pbf",
+	"bbox": [24.8341042, 54.7242723, 25.6811386, 55.9739671]
+    },
+    {
+	"name": "lille",
+	"url": "http://download.geofabrik.de/europe/france-latest.osm.pbf",
+	"bbox": [50.589776, 2.9759216, 50.6903681, 3.1846619]
+    },
+    {
+	"name": "paris",
+	"url": "http://download.geofabrik.de/europe/france-latest.osm.pbf",
+	"bbox": [48.6927734, 2.0571899, 49.0657686, 2.6724243]
+    },
+    {
+	"name": "mexicocity",
+	"url": "http://download.geofabrik.de/north-america/mexico-latest.osm.pbf",
+	"bbox": [19.2139126, -99.5127869, 19.7188786, -98.7849426]
+    },
+    {
+	"name": "louisville",
+	"url": "http://download.geofabrik.de/north-america/us/kentucky-latest.osm.pbf",
+	"bbox": [37.9971, -85.9470644, 38.3801391, -85.4051]
+    },
+    {
+	"name": "world",
+	"url": "https://ftp.osuosl.org/pub/openstreetmap/pbf/planet-latest.osm.pbf",
+	"bbox": [0.0, 0.0, 0.0, 0.0]
+    },
+    {
+	"name": "world-stress",
+	"url": "https://soundscapeassets.blob.core.windows.net/testpbf/planet-latest.osm.pbf",
+	"bbox": [0.0, 0.0, 0.0, 0.0]
+    },
+    {
+	"name": "north-america",
+	"url": "http://download.geofabrik.de/north-america-latest.osm.pbf",
+	"bbox": [0.0, 0.0, 0.0, 0.0]
+    }
+]

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BannerViewController" customModule="Soundscape" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="xca-Ip-qmb" id="jEY-bh-5WQ"/>
+                <outlet property="view" destination="OMM-db-3EH" id="xFZ-Xl-TA0"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="OMM-db-3EH">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="58"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="bottom" ambiguous="YES" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hlc-Fw-ikg">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="58"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xca-Ip-qmb">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="32"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Soundscape is working offline." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4g7-33-rf2">
+                                    <rect key="frame" x="8" y="8" width="359" height="16"/>
+                                    <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
+                                    <color key="textColor" red="0.12867569919999999" green="0.13345718379999999" blue="0.20067968959999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="localization" value="banner.offline_help.message"/>
+                                    </userDefinedRuntimeAttributes>
+                                </label>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="4g7-33-rf2" secondAttribute="bottom" constant="8" id="15G-gR-jow"/>
+                                <constraint firstItem="4g7-33-rf2" firstAttribute="top" secondItem="xca-Ip-qmb" secondAttribute="top" constant="8" id="2oM-uN-hAn"/>
+                                <constraint firstItem="4g7-33-rf2" firstAttribute="leading" secondItem="xca-Ip-qmb" secondAttribute="leading" constant="8" id="YOA-0Z-ynO"/>
+                                <constraint firstAttribute="trailing" secondItem="4g7-33-rf2" secondAttribute="trailing" constant="8" id="ZOI-PN-ie3"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="xca-Ip-qmb" secondAttribute="trailing" id="9eX-j7-pJt"/>
+                        <constraint firstItem="xca-Ip-qmb" firstAttribute="leading" secondItem="hlc-Fw-ikg" secondAttribute="leading" id="Dlw-bH-Ab4"/>
+                        <constraint firstAttribute="bottom" secondItem="xca-Ip-qmb" secondAttribute="bottom" id="aGt-sN-9Vd"/>
+                        <constraint firstItem="xca-Ip-qmb" firstAttribute="top" secondItem="hlc-Fw-ikg" secondAttribute="top" id="oq6-Qp-P4B"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" red="0.9990509152" green="0.93311840300000004" blue="0.34882542490000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="NL9-4t-O6o" firstAttribute="trailing" secondItem="xca-Ip-qmb" secondAttribute="trailing" id="9Pv-Ke-kme"/>
+                <constraint firstItem="NL9-4t-O6o" firstAttribute="trailing" secondItem="hlc-Fw-ikg" secondAttribute="trailing" id="JlF-wu-yAI"/>
+                <constraint firstItem="hlc-Fw-ikg" firstAttribute="top" secondItem="NL9-4t-O6o" secondAttribute="top" id="KhK-ka-auC"/>
+                <constraint firstItem="hlc-Fw-ikg" firstAttribute="leading" secondItem="NL9-4t-O6o" secondAttribute="leading" id="MIa-Bf-u6e"/>
+                <constraint firstItem="NL9-4t-O6o" firstAttribute="bottom" secondItem="hlc-Fw-ikg" secondAttribute="bottom" id="N9h-Kp-mrM"/>
+                <constraint firstItem="xca-Ip-qmb" firstAttribute="leading" secondItem="NL9-4t-O6o" secondAttribute="leading" id="vfS-yT-U1I"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="NL9-4t-O6o"/>
+            <point key="canvasLocation" x="143" y="131"/>
+        </view>
+    </objects>
+</document>

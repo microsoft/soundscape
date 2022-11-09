@@ -1,0 +1,141 @@
+# Mac OS X
+*.DS_Store
+
+
+# Xcode
+*.pbxuser
+*.mode2v3
+*.mode1v3
+*.perspective
+*.perspectivev3
+*.xcuserstate
+xcuserdata/
+
+## Generic Files To Ignore
+*~
+*.swp
+*.out
+
+# Carthage
+Carthage/Checkouts
+# Carthage/Build
+
+AppStoreBuild
+
+# Ignore MS Office scratch files
+*/~$*
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# Windows shortcuts
+*.lnk
+
+# =========================
+# Operating System Files
+# =========================
+
+# =========================
+# User-specific files
+# =========================
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Visual C++ cache files
+ipch/
+*.aps
+*.ncb
+*.opendb
+*.opensdf
+*.sdf
+*.cachefile
+
+# =========================
+# Build results
+# =========================
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+build/
+bld/
+/*/[Bb]in/
+[Oo]bj/
+
+.vs
+.vscode
+*_i.c
+*_p.c
+*_i.h
+*.ilk
+*.meta
+*.obj
+*.pdb
+*.pgc
+*.pgd
+*.rsp
+*.sbr
+*.tlb
+*.tli
+*.tlh
+*.tmp
+*.tmp_proj
+*.log
+*.vspscc
+*.vssscc
+.builds
+*.pidb
+*.svclog
+*.scc
+*.pfx
+
+packages/*
+publish/
+AppPackages
+
+.DS_Store
+
+node_modules/
+.vscode/
+
+bower_components/
+
+# This is for fixing the 'Include of non-modular header inside framework module'
+# error that appears when building with the Realm library.
+apps/ios/Pods/Headers/Public/Realm
+
+# CLion build subdirectories
+cmake-build-debug/
+
+apps/ios/GuideDogs\.xcworkspace/xcshareddata/IDEWorkspaceChecks\.plist
+
+svcs/data/env/
+
+# =========================
+# Python excludes
+# =========================
+venv/
+.venv/
+__pycache__/
+
+# =========================
+# Security excludes
+# =========================
+private_keys/

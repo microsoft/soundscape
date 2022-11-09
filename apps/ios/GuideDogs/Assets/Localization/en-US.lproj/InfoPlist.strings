@@ -1,0 +1,30 @@
+/* 
+  InfoPlist.strings
+  GuideDogs
+
+  Copyright (c) Microsoft Corporation.
+  Licensed under the MIT License.
+*/
+
+/* A message that tells the user why the app is requesting the ability to connect to Bluetooth peripherals. {NumberedPlaceholder="Soundscape"} */
+"NSBluetoothPeripheralUsageDescription" = "AppName uses Bluetooth LE to connect to accessories.";
+
+/* A message that tells the user why the app is requesting the ability to connect to Bluetooth peripherals. This
+   Permission is new to iOS 13.
+    {NumberedPlaceholder="Soundscape"} */
+"NSBluetoothAlwaysUsageDescription" = "AppName uses Bluetooth LE to connect to accessories.";
+
+/* A message that tells the user why the app is requesting access to the user’s location information at all times. {NumberedPlaceholder="Soundscape"} */
+"NSLocationAlwaysUsageDescription" = "AppName uses your location to provide you with relevant information about your surroundings.";
+
+/* A message that tells the user why the app is requesting access to the user's location at all times in iOS versions earlier than iOS 10.0. {NumberedPlaceholder="Soundscape"} */
+"NSLocationAlwaysAndWhenInUseUsageDescription" = "AppName uses your location to provide you with relevant information about your surroundings.";
+
+/* A message that tells the user why the app is requesting access to the user’s location information while running in the foreground. {NumberedPlaceholder="Soundscape"} */
+"NSLocationWhenInUseUsageDescription" = "AppName uses your location to provide you with relevant information about your surroundings.";
+
+/* A message that tells the user why the app is requesting access to the device’s accelerometer. {NumberedPlaceholder="Soundscape"} */
+"NSMotionUsageDescription" = "AppName uses motion detection to personalize automatic callouts.";
+
+/* A message that tells the user why the app is requesting access to the user’s photo library. {NumberedPlaceholder="Soundscape"} */
+"NSPhotoLibraryUsageDescription" = "AppName uses the photo library for attaching photos to feedback.";

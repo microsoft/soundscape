@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BannerViewController" customModule="Soundscape" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="DDR-AT-LF3" id="dBD-KL-eAd"/>
+                <outlet property="view" destination="ZxT-FB-rH1" id="453-bU-Fvm"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="ZxT-FB-rH1">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="58"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="bottom" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ank-7V-T7l">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="58"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DDR-AT-LF3">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="32"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Soundscape is working offline. Learn more" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jBQ-9Z-5Uu">
+                                    <rect key="frame" x="8" y="8" width="359" height="16"/>
+                                    <accessibility key="accessibilityConfiguration">
+                                        <accessibilityTraits key="traits" staticText="YES"/>
+                                        <bool key="isElement" value="NO"/>
+                                    </accessibility>
+                                    <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
+                                    <color key="textColor" red="0.12867569919999999" green="0.13345718379999999" blue="0.20067968959999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="localization" value="banner.offline_default.message"/>
+                                    </userDefinedRuntimeAttributes>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SJc-al-1EZ">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="32"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="accLabelLocalization" value="banner.offline_default.message"/>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="onTouchUpInside" destination="-1" eventType="touchUpInside" id="xFI-ym-22A"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="jBQ-9Z-5Uu" firstAttribute="leading" secondItem="DDR-AT-LF3" secondAttribute="leading" constant="8" id="Fwb-ld-VUA"/>
+                                <constraint firstItem="SJc-al-1EZ" firstAttribute="top" secondItem="DDR-AT-LF3" secondAttribute="top" id="JKj-Z0-Bjt"/>
+                                <constraint firstAttribute="bottom" secondItem="SJc-al-1EZ" secondAttribute="bottom" id="Uec-Jq-2Iq"/>
+                                <constraint firstAttribute="trailing" secondItem="SJc-al-1EZ" secondAttribute="trailing" id="dmb-bK-TlY"/>
+                                <constraint firstItem="SJc-al-1EZ" firstAttribute="leading" secondItem="DDR-AT-LF3" secondAttribute="leading" id="kFh-s6-AB6"/>
+                                <constraint firstAttribute="trailing" secondItem="jBQ-9Z-5Uu" secondAttribute="trailing" constant="8" id="pqM-Bd-cHw"/>
+                                <constraint firstAttribute="bottom" secondItem="jBQ-9Z-5Uu" secondAttribute="bottom" constant="8" id="sIF-fd-DOG"/>
+                                <constraint firstItem="jBQ-9Z-5Uu" firstAttribute="top" secondItem="DDR-AT-LF3" secondAttribute="top" constant="8" id="wSv-mN-XKw"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="DDR-AT-LF3" firstAttribute="top" secondItem="Ank-7V-T7l" secondAttribute="top" id="06d-pn-hRz"/>
+                        <constraint firstAttribute="bottom" secondItem="DDR-AT-LF3" secondAttribute="bottom" id="WAn-MN-bka"/>
+                        <constraint firstItem="DDR-AT-LF3" firstAttribute="leading" secondItem="Ank-7V-T7l" secondAttribute="leading" id="dGA-1C-38d"/>
+                        <constraint firstAttribute="trailing" secondItem="DDR-AT-LF3" secondAttribute="trailing" id="rYs-nc-akx"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="0.93311840300000004" blue="0.34882542490000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Ank-7V-T7l" firstAttribute="top" secondItem="LJh-HZ-89d" secondAttribute="top" id="IVu-48-gWC"/>
+                <constraint firstItem="LJh-HZ-89d" firstAttribute="trailing" secondItem="Ank-7V-T7l" secondAttribute="trailing" id="Ou1-xK-3NR"/>
+                <constraint firstItem="LJh-HZ-89d" firstAttribute="trailing" secondItem="DDR-AT-LF3" secondAttribute="trailing" id="SDF-Md-55X"/>
+                <constraint firstItem="LJh-HZ-89d" firstAttribute="bottom" secondItem="Ank-7V-T7l" secondAttribute="bottom" id="t9g-oN-UZa"/>
+                <constraint firstItem="Ank-7V-T7l" firstAttribute="leading" secondItem="LJh-HZ-89d" secondAttribute="leading" id="vq1-Bq-d6U"/>
+                <constraint firstItem="DDR-AT-LF3" firstAttribute="leading" secondItem="LJh-HZ-89d" secondAttribute="leading" id="z9a-ma-Gcx"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="LJh-HZ-89d"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BannerViewController" customModule="Soundscape" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="iHe-oU-IgY" id="gRA-UH-Yyx"/>
+                <outlet property="view" destination="icd-jR-app" id="s80-8z-MKG"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="icd-jR-app">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="58"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="bottom" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kYv-mr-s7e">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="58"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iHe-oU-IgY">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="30.5"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The scavenger hunt is active." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kGv-w4-bOd">
+                                    <rect key="frame" x="8" y="8" width="359" height="14.5"/>
+                                    <accessibility key="accessibilityConfiguration">
+                                        <accessibilityTraits key="traits" staticText="YES"/>
+                                        <bool key="isElement" value="NO"/>
+                                    </accessibility>
+                                    <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="localization" value="banner.custom_behavior.scavenger_hunt"/>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="accHintLocalization" value="banner.custom_behavior.scavenger_hunt.hint"/>
+                                    </userDefinedRuntimeAttributes>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u1Z-fe-O6c">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="30.5"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="accLabelLocalization" value="banner.custom_behavior.scavenger_hunt"/>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="onTouchUpInside" destination="-1" eventType="touchUpInside" id="UA0-bo-awV"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="u1Z-fe-O6c" firstAttribute="leading" secondItem="iHe-oU-IgY" secondAttribute="leading" id="7gx-2Y-vw5"/>
+                                <constraint firstItem="kGv-w4-bOd" firstAttribute="top" secondItem="iHe-oU-IgY" secondAttribute="top" constant="8" id="JYH-dF-0if"/>
+                                <constraint firstItem="u1Z-fe-O6c" firstAttribute="top" secondItem="iHe-oU-IgY" secondAttribute="top" id="QfH-7V-P3W"/>
+                                <constraint firstAttribute="bottom" secondItem="kGv-w4-bOd" secondAttribute="bottom" constant="8" id="hre-4F-14P"/>
+                                <constraint firstAttribute="bottom" secondItem="u1Z-fe-O6c" secondAttribute="bottom" id="rxW-Vd-UhY"/>
+                                <constraint firstAttribute="trailing" secondItem="kGv-w4-bOd" secondAttribute="trailing" constant="8" id="s0Q-MU-H9f"/>
+                                <constraint firstAttribute="trailing" secondItem="u1Z-fe-O6c" secondAttribute="trailing" id="z5T-j6-Ysf"/>
+                                <constraint firstItem="kGv-w4-bOd" firstAttribute="leading" secondItem="iHe-oU-IgY" secondAttribute="leading" constant="8" id="zRo-Gh-no9"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="iHe-oU-IgY" secondAttribute="trailing" id="YVM-Q5-SMa"/>
+                        <constraint firstAttribute="bottom" secondItem="iHe-oU-IgY" secondAttribute="bottom" id="flt-IW-bcP"/>
+                        <constraint firstItem="iHe-oU-IgY" firstAttribute="leading" secondItem="kYv-mr-s7e" secondAttribute="leading" id="kXR-lb-KzB"/>
+                        <constraint firstItem="iHe-oU-IgY" firstAttribute="top" secondItem="kYv-mr-s7e" secondAttribute="top" id="z2V-pp-PBW"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="K43-iA-vKc"/>
+            <color key="backgroundColor" red="0.32930833101272583" green="0.43562686443328857" blue="0.59886497259140015" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="K43-iA-vKc" firstAttribute="bottom" secondItem="kYv-mr-s7e" secondAttribute="bottom" id="9Pe-zL-lkZ"/>
+                <constraint firstItem="iHe-oU-IgY" firstAttribute="leading" secondItem="K43-iA-vKc" secondAttribute="leading" id="FeC-iM-H4j"/>
+                <constraint firstItem="K43-iA-vKc" firstAttribute="trailing" secondItem="iHe-oU-IgY" secondAttribute="trailing" id="G5X-aO-oRn"/>
+                <constraint firstItem="kYv-mr-s7e" firstAttribute="top" secondItem="K43-iA-vKc" secondAttribute="top" id="Nk0-EW-dvn"/>
+                <constraint firstItem="kYv-mr-s7e" firstAttribute="leading" secondItem="K43-iA-vKc" secondAttribute="leading" id="hEA-Ep-0qw"/>
+                <constraint firstItem="K43-iA-vKc" firstAttribute="trailing" secondItem="kYv-mr-s7e" secondAttribute="trailing" id="uza-Vo-3Cx"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="54" y="177"/>
+        </view>
+    </objects>
+</document>

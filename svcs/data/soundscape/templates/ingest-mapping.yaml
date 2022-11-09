@@ -1,0 +1,10 @@
+# Copyright (c) Microsoft Corporation.
+# Licensed under the MIT License.
+
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ .Chart.Name }}-ingester-mapping-config
+data:
+  mapping.yml: |
+{{- (.Files.Get "other/mapping.yml") | nindent 4}}

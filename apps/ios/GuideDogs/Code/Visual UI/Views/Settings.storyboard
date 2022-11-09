@@ -1,0 +1,1120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="hMR-GT-OEB">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Settings-->
+        <scene sceneID="npc-o9-OUF">
+            <objects>
+                <tableViewController storyboardIdentifier="settings" title="Settings" id="hMR-GT-OEB" customClass="SettingsViewController" customModule="Soundscape" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" indicatorStyle="white" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="BFu-2Q-wai">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" name="Background Base"/>
+                        <color key="tintColor" name="Foreground 1"/>
+                        <color key="separatorColor" name="Background 3"/>
+                        <view key="tableHeaderView" contentMode="scaleToFill" id="pTk-gU-RHw">
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="0.0"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </view>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="languageAndRegion" textLabel="8kV-aY-9df" imageView="1L7-AG-6Os" style="IBUITableViewCellStyleDefault" id="h6R-SR-cjP" userLabel="Language" customClass="CustomDisclosureTableViewCell" customModule="Soundscape" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="55.333332061767578" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="h6R-SR-cjP" id="tL9-xP-gFp">
+                                    <rect key="frame" x="0.0" y="0.0" width="569.66666666666663" height="44"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Language &amp; Region" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" id="8kV-aY-9df">
+                                            <rect key="frame" x="59" y="0.0" width="502.66666666666663" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="highlightedColor" red="0.1333333333" green="0.25882352939999997" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="localization" value="settings.language.screen_title.2"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </label>
+                                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="globe" catalog="system" id="1L7-AG-6Os" customClass="TintedImageView" customModule="Soundscape" customModuleProvider="target">
+                                            <rect key="frame" x="22.166666666666668" y="12.666666666666664" width="19.666666666666664" height="19"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="normalTintColor">
+                                                    <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="highlightedTintColor">
+                                                    <color key="value" red="0.1333333333" green="0.25882352939999997" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </imageView>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" name="Background 1"/>
+                                <color key="tintColor" name="Foreground 1"/>
+                                <connections>
+                                    <segue destination="Vrs-lu-RFH" kind="show" id="jYE-W9-nCa"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="manageDevices" textLabel="Ilj-13-m1r" imageView="ozz-CI-zQP" style="IBUITableViewCellStyleDefault" id="vbJ-8r-cPx" userLabel="Audio AR Headset" customClass="CustomDisclosureTableViewCell" customModule="Soundscape" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="99.333332061767578" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="vbJ-8r-cPx" id="Pwh-Zw-7fP">
+                                    <rect key="frame" x="0.0" y="0.0" width="569.66666666666663" height="44"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Audio AR Headset" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" id="Ilj-13-m1r">
+                                            <rect key="frame" x="59" y="0.0" width="502.66666666666663" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="highlightedColor" red="0.1333333333" green="0.25882352939999997" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="localization" value="menu.devices"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </label>
+                                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="headphones" catalog="system" id="ozz-CI-zQP" customClass="TintedImageView" customModule="Soundscape" customModuleProvider="target">
+                                            <rect key="frame" x="21.5" y="12" width="21" height="20"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="normalTintColor">
+                                                    <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="highlightedTintColor">
+                                                    <color key="value" red="0.1333333333" green="0.25882352939999997" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </imageView>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" name="Background 1"/>
+                                <color key="tintColor" name="Foreground 1"/>
+                                <connections>
+                                    <segue destination="Q8l-ec-KoY" kind="show" id="EHG-UP-klt"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="voice" textLabel="l5i-2z-ikk" imageView="cya-42-Jaj" style="IBUITableViewCellStyleDefault" id="iMA-de-gu6" userLabel="Voice" customClass="CustomDisclosureTableViewCell" customModule="Soundscape" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="143.33333206176758" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="iMA-de-gu6" id="7Hu-Fk-yP8">
+                                    <rect key="frame" x="0.0" y="0.0" width="569.66666666666663" height="44"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Voice" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" id="l5i-2z-ikk">
+                                            <rect key="frame" x="60.333333333333343" y="0.0" width="501.33333333333331" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="highlightedColor" red="0.1333333333" green="0.25882352939999997" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="localization" value="settings.general.voice"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </label>
+                                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="person.2.fill" catalog="system" id="cya-42-Jaj" customClass="TintedImageView" customModule="Soundscape" customModuleProvider="target">
+                                            <rect key="frame" x="18.666666666666664" y="13.666666666666664" width="26.666666666666668" height="17"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="normalTintColor">
+                                                    <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="highlightedTintColor">
+                                                    <color key="value" red="0.1333333333" green="0.25882352939999997" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </imageView>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" name="Background 1"/>
+                                <color key="tintColor" name="Foreground 1"/>
+                                <connections>
+                                    <segue destination="vbs-qw-GY9" kind="show" id="63S-we-Nd6"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="siriShortcuts" textLabel="otp-Yg-No4" imageView="k5P-R0-5zU" style="IBUITableViewCellStyleDefault" id="89u-6v-FlZ" userLabel="Siri Shortcuts" customClass="CustomDisclosureTableViewCell" customModule="Soundscape" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="187.33333206176758" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="89u-6v-FlZ" id="MmT-Ai-pSs">
+                                    <rect key="frame" x="0.0" y="0.0" width="569.66666666666663" height="44"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Siri Shortcuts" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" id="otp-Yg-No4">
+                                            <rect key="frame" x="59" y="0.0" width="502.66666666666663" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="highlightedColor" red="0.1333333333" green="0.25882352939999997" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="localization" value="siri_shortcuts.title.beta"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </label>
+                                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="waveform" catalog="system" id="k5P-R0-5zU" customClass="TintedImageView" customModule="Soundscape" customModuleProvider="target">
+                                            <rect key="frame" x="22.333333333333336" y="12.000000000000002" width="19.333333333333332" height="19.666666666666668"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="normalTintColor">
+                                                    <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="highlightedTintColor">
+                                                    <color key="value" red="0.1333333333" green="0.25882352939999997" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </imageView>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" name="Background 1"/>
+                                <color key="tintColor" name="Foreground 1"/>
+                                <connections>
+                                    <segue destination="Vfw-dV-xPd" kind="show" id="n26-vs-Lw9"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="allCallouts" editingAccessoryType="checkmark" textLabel="9jI-k3-z6U" detailTextLabel="BWT-10-yK4" style="IBUITableViewCellStyleSubtitle" id="pKE-k8-Jgm" userLabel="Allow Callouts" customClass="CalloutSettingsCellView" customModule="Soundscape" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="231.33333206176758" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="pKE-k8-Jgm" id="lOs-JD-M54">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Allow callouts" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" id="9jI-k3-z6U">
+                                            <rect key="frame" x="19.999999999999993" y="5" width="104.33333333333333" height="20.333333333333332"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="highlightedColor" red="0.1333333333" green="0.25882352939999997" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="localization" value="callouts.allow_callouts"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Turn all callouts on or off" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" id="BWT-10-yK4">
+                                            <rect key="frame" x="20" y="25.333333333333332" width="140.66666666666666" height="14.333333333333334"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                                            <color key="textColor" red="0.6705882353" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="highlightedColor" red="0.1333333333" green="0.25882352939999997" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="localization" value="callouts.turn_on_off"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </label>
+                                        <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Joi-GH-MSh">
+                                            <rect key="frame" x="525" y="6" width="59" height="31"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                                            <accessibility key="accessibilityConfiguration" label="Streets and Places"/>
+                                            <color key="onTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="thumbTintColor" red="0.098039215690000001" green="0.18823529410000001" blue="0.29803921570000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <connections>
+                                                <action selector="onSettingValueChanged:" destination="pKE-k8-Jgm" eventType="valueChanged" id="gct-mn-9yi"/>
+                                            </connections>
+                                        </switch>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" name="Background 1"/>
+                                <color key="tintColor" name="Foreground 1"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" button="YES"/>
+                                </accessibility>
+                                <connections>
+                                    <outlet property="accessoryView" destination="Joi-GH-MSh" id="5NO-ey-9se"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="poiCallouts" editingAccessoryType="checkmark" textLabel="ndE-PI-sQS" detailTextLabel="9Lc-d4-ht0" style="IBUITableViewCellStyleSubtitle" id="x9l-HI-zcb" userLabel="Places" customClass="CalloutSettingsCellView" customModule="Soundscape" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="275.33333206176758" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="x9l-HI-zcb" id="gQF-rd-1q8">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Places and Landmarks" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" id="ndE-PI-sQS">
+                                            <rect key="frame" x="20" y="5" width="171.33333333333334" height="20.333333333333332"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="highlightedColor" red="0.1333333333" green="0.25882352939999997" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="localization" value="callouts.places_and_landmarks"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Nearby places like shops and restaurants" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" id="9Lc-d4-ht0">
+                                            <rect key="frame" x="19.999999999999986" y="25.333333333333332" width="232.66666666666666" height="14.333333333333334"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                                            <color key="textColor" red="0.6705882353" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="highlightedColor" red="0.1333333333" green="0.25882352939999997" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="localization" value="callouts.places_and_landmarks.info"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </label>
+                                        <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cq8-ZT-iXp">
+                                            <rect key="frame" x="525" y="6" width="59" height="31"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                                            <accessibility key="accessibilityConfiguration" label="Streets and Places"/>
+                                            <color key="onTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="thumbTintColor" red="0.098039215690000001" green="0.18823529410000001" blue="0.29803921570000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <connections>
+                                                <action selector="onSettingValueChanged:" destination="x9l-HI-zcb" eventType="valueChanged" id="nya-75-hly"/>
+                                            </connections>
+                                        </switch>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" name="Background 1"/>
+                                <color key="tintColor" name="Foreground 1"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" button="YES"/>
+                                </accessibility>
+                                <connections>
+                                    <outlet property="accessoryView" destination="cq8-ZT-iXp" id="YNv-9o-je7"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="mobilityCallouts" editingAccessoryType="checkmark" textLabel="BUf-rt-u8S" detailTextLabel="mMk-Pn-ghc" style="IBUITableViewCellStyleSubtitle" id="PFG-O4-CfA" userLabel="Mobility" customClass="CalloutSettingsCellView" customModule="Soundscape" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="319.33333206176758" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="PFG-O4-CfA" id="vyl-El-TO5">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Mobility" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" id="BUf-rt-u8S">
+                                            <rect key="frame" x="20" y="5" width="60" height="20.333333333333332"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="highlightedColor" red="0.1333333333" green="0.25882352939999997" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="localization" value="callouts.mobility"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Intersection and transportation info" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" id="mMk-Pn-ghc">
+                                            <rect key="frame" x="20" y="25.333333333333332" width="200" height="14.333333333333334"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                                            <color key="textColor" red="0.6705882353" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="highlightedColor" red="0.1333333333" green="0.25882352939999997" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="localization" value="callouts.mobility.info"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </label>
+                                        <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LEO-Ou-dfU">
+                                            <rect key="frame" x="525" y="6" width="59" height="31"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                                            <accessibility key="accessibilityConfiguration" label="Streets and Places"/>
+                                            <color key="onTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="thumbTintColor" red="0.098039215690000001" green="0.18823529410000001" blue="0.29803921570000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <connections>
+                                                <action selector="onSettingValueChanged:" destination="PFG-O4-CfA" eventType="valueChanged" id="QBq-yQ-FpO"/>
+                                            </connections>
+                                        </switch>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" name="Background 1"/>
+                                <color key="tintColor" name="Foreground 1"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" button="YES"/>
+                                </accessibility>
+                                <connections>
+                                    <outlet property="accessoryView" destination="LEO-Ou-dfU" id="MEf-JX-bUu"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="beaconCallouts" editingAccessoryType="checkmark" textLabel="ExI-qt-25c" detailTextLabel="sNf-y6-Ghm" style="IBUITableViewCellStyleSubtitle" id="Pjb-ed-VL9" userLabel="Beacons" customClass="CalloutSettingsCellView" customModule="Soundscape" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="363.33333206176758" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Pjb-ed-VL9" id="9qv-cW-LAt">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Audio Beacon Distance" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" id="ExI-qt-25c">
+                                            <rect key="frame" x="20" y="5" width="176" height="20.333333333333332"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="highlightedColor" red="0.1333333333" green="0.25882352939999997" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="localization" value="callouts.audio_beacon"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Updates about distance to the audio beacon when it's set" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" id="sNf-y6-Ghm">
+                                            <rect key="frame" x="20" y="25.333333333333332" width="326" height="14.333333333333334"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                                            <color key="textColor" red="0.6705882353" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="highlightedColor" red="0.1333333333" green="0.25882352939999997" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="localization" value="callouts.audio_beacon.info"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </label>
+                                        <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hdw-ra-Y3J">
+                                            <rect key="frame" x="525" y="6" width="59" height="31"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                                            <accessibility key="accessibilityConfiguration" label="Streets and Places"/>
+                                            <color key="onTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="thumbTintColor" red="0.098039215690000001" green="0.18823529410000001" blue="0.29803921570000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <connections>
+                                                <action selector="onSettingValueChanged:" destination="Pjb-ed-VL9" eventType="valueChanged" id="PDh-Xv-iI1"/>
+                                            </connections>
+                                        </switch>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" name="Background 1"/>
+                                <color key="tintColor" name="Foreground 1"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" button="YES"/>
+                                </accessibility>
+                                <connections>
+                                    <outlet property="accessoryView" destination="Hdw-ra-Y3J" id="2aN-Jo-teb"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="about" textLabel="4jD-Eh-I4W" imageView="5Pf-JY-3ZO" style="IBUITableViewCellStyleDefault" id="4hw-Ia-IJj" userLabel="About" customClass="CustomDisclosureTableViewCell" customModule="Soundscape" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="407.33333206176758" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4hw-Ia-IJj" id="UmA-RW-nwe">
+                                    <rect key="frame" x="0.0" y="0.0" width="569.66666666666663" height="44"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="About AppName" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" id="4jD-Eh-I4W">
+                                            <rect key="frame" x="59" y="0.0" width="502.66666666666663" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="highlightedColor" red="0.1333333333" green="0.25882352939999997" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="localization" value="settings.about_app"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </label>
+                                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="info.circle" catalog="system" id="5Pf-JY-3ZO" customClass="TintedImageView" customModule="Soundscape" customModuleProvider="target">
+                                            <rect key="frame" x="22.166666666666668" y="12.666666666666664" width="19.666666666666664" height="19"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="normalTintColor">
+                                                    <color key="value" name="Foreground 1"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="highlightedTintColor">
+                                                    <color key="value" name="Background 1"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </imageView>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" name="Background 1"/>
+                                <color key="tintColor" name="Foreground 1"/>
+                                <connections>
+                                    <segue destination="Cga-sE-k8S" kind="show" id="yOK-1p-anq"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="telemetry" textLabel="C8r-O8-QXY" imageView="Y3m-JJ-WMK" style="IBUITableViewCellStyleDefault" id="a9k-U3-Iyd" userLabel="Share Data" customClass="TelemetrySettingsTableViewCell" customModule="Soundscape" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="451.33333206176758" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="a9k-U3-Iyd" id="db8-8d-Qy1">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Share Usage Data" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" id="C8r-O8-QXY">
+                                            <rect key="frame" x="59.5" y="0.0" width="520.5" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <gestureRecognizers/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="highlightedColor" red="0.1333333333" green="0.25882352939999997" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="localization" value="settings.section.share_usage_data"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </label>
+                                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="chart.bar.fill" catalog="system" id="Y3m-JJ-WMK" customClass="TintedImageView" customModule="Soundscape" customModuleProvider="target">
+                                            <rect key="frame" x="19.5" y="13.000000000000002" width="25" height="17.666666666666668"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="normalTintColor">
+                                                    <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="highlightedTintColor">
+                                                    <color key="value" red="0.1333333333" green="0.25882352939999997" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </imageView>
+                                        <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Fiv-nb-HfL">
+                                            <rect key="frame" x="525" y="6" width="59" height="31"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                                            <accessibility key="accessibilityConfiguration" label="Streets and Places"/>
+                                            <color key="onTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="thumbTintColor" red="0.098039215690000001" green="0.18823529410000001" blue="0.29803921570000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <connections>
+                                                <action selector="onSettingValueChanged:" destination="a9k-U3-Iyd" eventType="valueChanged" id="peY-jr-Qo8"/>
+                                            </connections>
+                                        </switch>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" name="Background 1"/>
+                                <color key="tintColor" name="Foreground 1"/>
+                                <connections>
+                                    <outlet property="accessoryView" destination="Fiv-nb-HfL" id="qoG-Mb-mDK"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="troubleshooting" textLabel="lWL-Wh-uVK" imageView="do3-Rk-BTw" style="IBUITableViewCellStyleDefault" id="2qG-e0-MGw" userLabel="Troubleshooting" customClass="CustomDisclosureTableViewCell" customModule="Soundscape" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="495.33333206176758" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2qG-e0-MGw" id="X6Q-Og-Scl">
+                                    <rect key="frame" x="0.0" y="0.0" width="569.66666666666663" height="44"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Troubleshooting" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" id="lWL-Wh-uVK">
+                                            <rect key="frame" x="59" y="0.0" width="502.66666666666663" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <gestureRecognizers/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="highlightedColor" red="0.1333333333" green="0.25882352939999997" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="localization" value="settings.section.troubleshooting"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </label>
+                                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="questionmark.circle" catalog="system" id="do3-Rk-BTw" customClass="TintedImageView" customModule="Soundscape" customModuleProvider="target">
+                                            <rect key="frame" x="22.166666666666668" y="12.666666666666664" width="19.666666666666664" height="19"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="normalTintColor">
+                                                    <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="highlightedTintColor">
+                                                    <color key="value" red="0.1333333333" green="0.25882352939999997" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </imageView>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" name="Background 1"/>
+                                <color key="tintColor" name="Foreground 1"/>
+                                <connections>
+                                    <segue destination="ilN-VT-6ar" kind="show" id="8J4-3h-skw"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="beaconSettings" textLabel="gNJ-Te-dEJ" imageView="Llf-5z-Yrv" style="IBUITableViewCellStyleDefault" id="2Ur-c0-1v1" userLabel="Beacon Settings" customClass="CustomDisclosureTableViewCell" customModule="Soundscape" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="539.33333206176758" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2Ur-c0-1v1" id="kV2-5F-HF2">
+                                    <rect key="frame" x="0.0" y="0.0" width="569.66666666666663" height="44"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Beacons" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" id="gNJ-Te-dEJ">
+                                            <rect key="frame" x="59" y="0.0" width="502.66666666666663" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="highlightedColor" red="0.1333333333" green="0.25882352939999997" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="localization" value="beacon.audio_beacon"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </label>
+                                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" image="dot.radiowaves.right" catalog="system" id="Llf-5z-Yrv" customClass="TintedImageView" customModule="Soundscape" customModuleProvider="target">
+                                            <rect key="frame" x="23.833333333333336" y="12.666666666666666" width="16.333333333333332" height="18.666666666666668"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="normalTintColor">
+                                                    <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="highlightedTintColor">
+                                                    <color key="value" red="0.1333333333" green="0.25882352939999997" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </imageView>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" name="Background 1"/>
+                                <color key="tintColor" name="Foreground 1"/>
+                                <connections>
+                                    <segue destination="kgF-3B-POU" kind="show" id="SXd-bE-aWf"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="volumeSettings" textLabel="M9z-tj-Jqd" imageView="Y2O-sy-jp9" style="IBUITableViewCellStyleDefault" id="tzH-RS-Fsb" userLabel="Volume Settings" customClass="CustomDisclosureTableViewCell" customModule="Soundscape" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="583.33333206176758" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="tzH-RS-Fsb" id="BfF-Pt-9uy">
+                                    <rect key="frame" x="0.0" y="0.0" width="569.66666666666663" height="44"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Volume" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" id="M9z-tj-Jqd">
+                                            <rect key="frame" x="59" y="0.0" width="502.66666666666663" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="highlightedColor" red="0.1333333333" green="0.25882352939999997" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="localization" value="general.volume"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </label>
+                                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" image="speaker.wave.2" catalog="system" id="Y2O-sy-jp9" customClass="TintedImageView" customModule="Soundscape" customModuleProvider="target">
+                                            <rect key="frame" x="20" y="13.666666666666668" width="24" height="16.666666666666664"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="normalTintColor">
+                                                    <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="highlightedTintColor">
+                                                    <color key="value" red="0.1333333333" green="0.25882352939999997" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </imageView>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" name="Background 1"/>
+                                <color key="tintColor" name="Foreground 1"/>
+                                <connections>
+                                    <segue destination="OAh-w7-42k" kind="show" id="got-C1-sUM"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="streetPreview" textLabel="Hfo-h2-3QF" imageView="V7c-Jp-nJI" style="IBUITableViewCellStyleDefault" id="9db-e2-GB6" customClass="StreetPreviewRoadsCell" customModule="Soundscape" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="627.33333206176758" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="9db-e2-GB6" id="BW2-Ds-l4Y">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" ambiguous="YES" text="Include Unnamed Roads" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" id="Hfo-h2-3QF">
+                                            <rect key="frame" x="47" y="0.0" width="713" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="localization" value="preview.include_unnamed_roads.title"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </label>
+                                        <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="R58-yg-AlH">
+                                            <rect key="frame" x="242" y="6" width="56" height="31"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                                            <accessibility key="accessibilityConfiguration" label="Streets and Places"/>
+                                            <color key="onTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="thumbTintColor" red="0.098039215690000001" green="0.18823529410000001" blue="0.29803921570000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <connections>
+                                                <action selector="onSettingValueChanged:" destination="9db-e2-GB6" eventType="valueChanged" id="boc-Bi-1Qn"/>
+                                            </connections>
+                                        </switch>
+                                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" image="point.topleft.down.curvedto.point.bottomright.up" catalog="system" id="V7c-Jp-nJI" customClass="TintedImageView" customModule="Soundscape" customModuleProvider="target">
+                                            <rect key="frame" x="10.666666666666666" y="12" width="18.666666666666668" height="20"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="normalTintColor">
+                                                    <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="highlightedTintColor">
+                                                    <color key="value" red="0.1333333333" green="0.25882352939999997" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </imageView>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" name="Background 1"/>
+                                <color key="tintColor" name="Foreground 1"/>
+                                <connections>
+                                    <outlet property="accessoryView" destination="R58-yg-AlH" id="dY7-f1-Ca6"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="mixAudio" textLabel="VSq-h5-uRj" imageView="43Y-tn-4fp" style="IBUITableViewCellStyleDefault" id="lEG-3Q-zvI" userLabel="Mix Audio" customClass="MixAudioSettingCell" customModule="Soundscape" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="671.33333206176758" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="lEG-3Q-zvI" id="v7s-vg-gnP">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" ambiguous="YES" text="Mix with Other Apps" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" id="VSq-h5-uRj">
+                                            <rect key="frame" x="47" y="0.0" width="713" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="localization" value="settings.audio.mix_with_others.title"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </label>
+                                        <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xAo-Ds-vYv">
+                                            <rect key="frame" x="242" y="6" width="56" height="31"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                                            <accessibility key="accessibilityConfiguration" label="Streets and Places"/>
+                                            <color key="onTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="thumbTintColor" red="0.098039215690000001" green="0.18823529410000001" blue="0.29803921570000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <connections>
+                                                <action selector="onSettingValueChanged:" destination="lEG-3Q-zvI" eventType="valueChanged" id="cbr-pf-xAk"/>
+                                            </connections>
+                                        </switch>
+                                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" image="play.circle" catalog="system" id="43Y-tn-4fp" customClass="TintedImageView" customModule="Soundscape" customModuleProvider="target">
+                                            <rect key="frame" x="10.166666666666668" y="12.666666666666664" width="19.666666666666664" height="19"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="normalTintColor">
+                                                    <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="highlightedTintColor">
+                                                    <color key="value" red="0.1333333333" green="0.25882352939999997" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </imageView>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" name="Background 1"/>
+                                <color key="tintColor" name="Foreground 1"/>
+                                <connections>
+                                    <outlet property="accessoryView" destination="xAo-Ds-vYv" id="tDE-kY-xHC"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <sections/>
+                        <connections>
+                            <outlet property="dataSource" destination="hMR-GT-OEB" id="rXx-mO-TzE"/>
+                            <outlet property="delegate" destination="hMR-GT-OEB" id="RYF-Ih-ARk"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Settings" id="BAj-Gj-99B">
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="localization" value="settings.screen_title"/>
+                        </userDefinedRuntimeAttributes>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" translucent="NO" prompted="NO"/>
+                    <connections>
+                        <outlet property="largeBannerContainerView" destination="pTk-gU-RHw" id="tYG-qc-yH1"/>
+                        <segue destination="WVo-7a-Sqp" kind="presentation" identifier="ShowLoadingModalSegue" modalPresentationStyle="overCurrentContext" modalTransitionStyle="crossDissolve" id="lEf-wm-yda"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="E13-7d-Sce" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="PXb-fe-V46">
+                    <connections>
+                        <action selector="showFeedbackViewController" destination="hMR-GT-OEB" id="wmE-Sd-vgi"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="30" y="-244"/>
+        </scene>
+        <!--Loading Modal View Controller-->
+        <scene sceneID="YDZ-Pz-eIS">
+            <objects>
+                <viewController storyboardIdentifier="LoadingModal" id="WVo-7a-Sqp" customClass="LoadingModalViewController" customModule="Soundscape" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="NP6-96-KIg"/>
+                        <viewControllerLayoutGuide type="bottom" id="Xih-jG-70G"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Igh-fv-NSB">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="S3t-Sg-ASl">
+                                <rect key="frame" x="281.66666666666669" y="281.66666666666669" width="37" height="37"/>
+                            </activityIndicatorView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading Message..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kuo-JQ-xyD">
+                                <rect key="frame" x="0.0" y="318.66666666666674" width="600" height="281.33333333333326"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.75" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Xih-jG-70G" firstAttribute="top" secondItem="kuo-JQ-xyD" secondAttribute="bottom" id="5NX-KI-bU4"/>
+                            <constraint firstItem="S3t-Sg-ASl" firstAttribute="centerX" secondItem="Igh-fv-NSB" secondAttribute="centerX" id="7Vo-pC-qmi"/>
+                            <constraint firstItem="kuo-JQ-xyD" firstAttribute="top" secondItem="S3t-Sg-ASl" secondAttribute="bottom" id="ORL-ip-qbZ"/>
+                            <constraint firstItem="kuo-JQ-xyD" firstAttribute="leading" secondItem="Igh-fv-NSB" secondAttribute="leading" id="jUj-VI-4pL"/>
+                            <constraint firstItem="S3t-Sg-ASl" firstAttribute="centerY" secondItem="Igh-fv-NSB" secondAttribute="centerY" id="obz-1k-v8S"/>
+                            <constraint firstAttribute="trailing" secondItem="kuo-JQ-xyD" secondAttribute="trailing" id="wNS-hJ-1OA"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="activityIndicatorView" destination="S3t-Sg-ASl" id="nzE-FL-uLt"/>
+                        <outlet property="loadingMessageLabel" destination="kuo-JQ-xyD" id="oea-Mx-fP2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jHW-u0-0Y0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-716" y="509"/>
+        </scene>
+        <!--VoiceSettings-->
+        <scene sceneID="i4f-8a-4ht">
+            <objects>
+                <viewControllerPlaceholder storyboardName="VoiceSettings" id="vbs-qw-GY9" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fGS-2N-MXC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="707" y="-289"/>
+        </scene>
+        <!--troubleshooting-->
+        <scene sceneID="U2t-nO-poO">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Devices" referencedIdentifier="troubleshooting" id="ilN-VT-6ar" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vxR-Bi-JU3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="717" y="-228"/>
+        </scene>
+        <!--Volume Controls Host View Controller-->
+        <scene sceneID="Qwy-H2-O8i">
+            <objects>
+                <hostingController id="OAh-w7-42k" customClass="VolumeControlsHostViewController" customModule="Soundscape" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="ooD-Zm-Bae"/>
+                </hostingController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Usb-JF-dSm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="765" y="509"/>
+        </scene>
+        <!--Beacon Selection Host View Controller-->
+        <scene sceneID="Oww-yq-9BS">
+            <objects>
+                <hostingController id="kgF-3B-POU" customClass="BeaconSelectionHostViewController" customModule="Soundscape" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="TbY-4W-rKW"/>
+                </hostingController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bAk-yc-0ko" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="29" y="509"/>
+        </scene>
+        <!--About-->
+        <scene sceneID="cTW-0T-CTz">
+            <objects>
+                <tableViewController title="About" id="Cga-sE-k8S" customClass="AboutApplicationViewController" customModule="Soundscape" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" indicatorStyle="white" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="0i1-ZR-Y6A">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" name="Background Base"/>
+                        <color key="tintColor" name="Foreground 1"/>
+                        <color key="separatorColor" name="Background 3"/>
+                        <view key="tableHeaderView" contentMode="scaleToFill" id="XDA-Md-TsG">
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="0.0"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </view>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="AboutHeaderCellPrototype" rowHeight="220" id="0k3-yX-3bv" customClass="AboutHeaderCell" customModule="Soundscape" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="50" width="600" height="220"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0k3-yX-3bv" id="oZ4-Dg-47z">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="220"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launchScreenLogo" translatesAutoresizingMaskIntoConstraints="NO" id="o2V-ys-ava">
+                                            <rect key="frame" x="250" y="24" width="100" height="100"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="100" id="7f0-Nk-Nrm"/>
+                                                <constraint firstAttribute="width" constant="100" id="vgy-qJ-Tz7"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AppName" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e5G-LK-lvD">
+                                            <rect key="frame" x="32" y="138" width="536" height="20.333333333333343"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Version X.x.x (build)" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SsT-2X-tjR">
+                                            <rect key="frame" x="32" y="160" width="536" height="18"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" red="0.098039215690000001" green="0.098039215690000001" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="SsT-2X-tjR" secondAttribute="bottom" constant="24" id="51Z-sG-ue0"/>
+                                        <constraint firstItem="o2V-ys-ava" firstAttribute="centerX" secondItem="oZ4-Dg-47z" secondAttribute="centerX" id="IQX-r7-2XP"/>
+                                        <constraint firstItem="SsT-2X-tjR" firstAttribute="leading" secondItem="oZ4-Dg-47z" secondAttribute="leading" constant="32" id="LJF-ru-8Oo"/>
+                                        <constraint firstAttribute="trailing" secondItem="SsT-2X-tjR" secondAttribute="trailing" constant="32" id="T90-1E-ItR"/>
+                                        <constraint firstItem="SsT-2X-tjR" firstAttribute="firstBaseline" secondItem="e5G-LK-lvD" secondAttribute="baseline" constant="20" symbolType="layoutAnchor" id="dh8-KC-m7h"/>
+                                        <constraint firstItem="o2V-ys-ava" firstAttribute="top" secondItem="oZ4-Dg-47z" secondAttribute="top" constant="24" id="kLG-Ev-sX8"/>
+                                        <constraint firstItem="e5G-LK-lvD" firstAttribute="leading" secondItem="oZ4-Dg-47z" secondAttribute="leading" constant="32" id="qkO-UP-wXQ"/>
+                                        <constraint firstItem="e5G-LK-lvD" firstAttribute="top" secondItem="o2V-ys-ava" secondAttribute="bottom" constant="14" id="sKf-Tw-iXV"/>
+                                        <constraint firstAttribute="trailing" secondItem="e5G-LK-lvD" secondAttribute="trailing" constant="32" id="ttw-Jl-VTF"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" name="Background 1"/>
+                                <connections>
+                                    <outlet property="versionLabel" destination="SsT-2X-tjR" id="kA7-nU-RBl"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="AboutLinkCellPrototype" textLabel="d1n-JS-YdZ" style="IBUITableViewCellStyleDefault" id="tvI-f8-Wtk" customClass="CustomDisclosureTableViewCell" customModule="Soundscape" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="270" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="tvI-f8-Wtk" id="hOu-u2-94G">
+                                    <rect key="frame" x="0.0" y="0.0" width="569.66666666666663" height="44"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="About Link Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" id="d1n-JS-YdZ">
+                                            <rect key="frame" x="20" y="0.0" width="541.66666666666663" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="highlightedColor" red="0.1333333333" green="0.25882352939999997" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" name="Background 1"/>
+                            </tableViewCell>
+                        </prototypes>
+                        <sections/>
+                        <connections>
+                            <outlet property="dataSource" destination="Cga-sE-k8S" id="q7c-dB-rYf"/>
+                            <outlet property="delegate" destination="Cga-sE-k8S" id="JXd-Kb-f0T"/>
+                        </connections>
+                    </tableView>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="localization" value="settings.section.about"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="largeBannerContainerView" destination="XDA-Md-TsG" id="jtY-ng-N06"/>
+                        <segue destination="7G3-p5-R5o" kind="show" identifier="ShowThirdPartyNoticesSegue" id="SPW-UB-0Ho"/>
+                        <segue destination="cV6-tJ-Lov" kind="show" identifier="ShowVersionHistorySegue" id="kWb-2C-vBK"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OYr-S2-Tgw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1044" y="-943"/>
+        </scene>
+        <!--AboutApplicationViewController-->
+        <scene sceneID="ha6-OQ-NQt">
+            <objects>
+                <viewController id="7G3-p5-R5o" userLabel="AboutApplicationViewController" customClass="ThirdPartyNoticesViewController" customModule="Soundscape" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wRM-yS-Wqu"/>
+                        <viewControllerLayoutGuide type="bottom" id="yhW-wL-uJU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" misplaced="YES" id="Eay-la-zqJ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dgf-C8-XhY">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="0.0"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" id="VBM-M1-0oA"/>
+                                </constraints>
+                            </view>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZGZ-hV-5o6">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="550"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <color key="backgroundColor" name="Background Base"/>
+                        <color key="tintColor" name="Foreground 1"/>
+                        <constraints>
+                            <constraint firstItem="ZGZ-hV-5o6" firstAttribute="leading" secondItem="Eay-la-zqJ" secondAttribute="leading" id="64l-xt-rnz"/>
+                            <constraint firstItem="ZGZ-hV-5o6" firstAttribute="top" secondItem="Dgf-C8-XhY" secondAttribute="bottom" id="6Ma-zF-TeH"/>
+                            <constraint firstAttribute="trailing" secondItem="Dgf-C8-XhY" secondAttribute="trailing" id="QOk-XQ-BS5"/>
+                            <constraint firstItem="yhW-wL-uJU" firstAttribute="top" secondItem="ZGZ-hV-5o6" secondAttribute="bottom" id="S6s-hO-nXA"/>
+                            <constraint firstAttribute="trailing" secondItem="ZGZ-hV-5o6" secondAttribute="trailing" id="lKU-lJ-Lpu"/>
+                            <constraint firstItem="Dgf-C8-XhY" firstAttribute="top" secondItem="wRM-yS-Wqu" secondAttribute="bottom" id="s52-UX-U61"/>
+                            <constraint firstItem="Dgf-C8-XhY" firstAttribute="leading" secondItem="Eay-la-zqJ" secondAttribute="leading" id="wgr-Vm-Pyi"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Third Party Notices" id="rpD-K2-j5x">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="w2t-7L-djt"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="localization" value="settings.about.title.third_party"/>
+                        </userDefinedRuntimeAttributes>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="largeBannerContainerHeightConstraint" destination="VBM-M1-0oA" id="lvb-GP-98q"/>
+                        <outlet property="largeBannerContainerView" destination="Dgf-C8-XhY" id="JTV-em-MF1"/>
+                        <outlet property="webview" destination="ZGZ-hV-5o6" id="M5a-fu-TNq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jmh-jh-7dt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1848" y="-1428"/>
+        </scene>
+        <!--What's New?-->
+        <scene sceneID="spE-BA-iWA">
+            <objects>
+                <tableViewController title="What's New?" id="cV6-tJ-Lov" customClass="VersionHistoryTableViewController" customModule="Soundscape" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" indicatorStyle="white" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="60" sectionHeaderHeight="18" sectionFooterHeight="18" id="Ghn-Zm-Bk2">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" name="Background Base"/>
+                        <color key="tintColor" name="Foreground 1"/>
+                        <color key="separatorColor" name="Background 3"/>
+                        <view key="tableHeaderView" contentMode="scaleToFill" id="fPr-HR-cw1">
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="0.0"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </view>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="featureCell" textLabel="6W8-aG-Pww" detailTextLabel="2Ol-y1-OWm" rowHeight="80" style="IBUITableViewCellStyleSubtitle" id="f4k-Z5-6Nh">
+                                <rect key="frame" x="0.0" y="55.333332061767578" width="600" height="80"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="f4k-Z5-6Nh" id="Wkm-BY-Ohz">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="80"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Feature Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" id="6W8-aG-Pww">
+                                            <rect key="frame" x="19.999999999999993" y="19" width="95.333333333333329" height="20.333333333333332"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="highlightedColor" red="0.1333333333" green="0.25882352939999997" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Feature description" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="2Ol-y1-OWm">
+                                            <rect key="frame" x="20.000000000000007" y="42.333333333333329" width="117.66666666666667" height="15.666666666666666"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
+                                            <color key="textColor" red="0.6705882353" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="highlightedColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" name="Background 1"/>
+                            </tableViewCell>
+                        </prototypes>
+                        <sections/>
+                        <connections>
+                            <outlet property="dataSource" destination="cV6-tJ-Lov" id="GVL-Bu-L7Z"/>
+                            <outlet property="delegate" destination="cV6-tJ-Lov" id="ti8-fb-HQq"/>
+                        </connections>
+                    </tableView>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="localization" value="settings.about.title.whats_new"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="largeBannerContainerView" destination="fPr-HR-cw1" id="K1Z-Eh-Rsr"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VA5-t3-Nbb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1848" y="-746"/>
+        </scene>
+        <!--Language-->
+        <scene sceneID="WAD-hi-Ul7">
+            <objects>
+                <tableViewController title="Language" id="Vrs-lu-RFH" customClass="LanguageTableViewController" customModule="Soundscape" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" indicatorStyle="white" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="60" sectionHeaderHeight="18" sectionFooterHeight="18" id="jo0-AK-0oI">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" name="Background Base"/>
+                        <color key="tintColor" name="Foreground 1"/>
+                        <color key="separatorColor" name="Background 3"/>
+                        <view key="tableHeaderView" contentMode="scaleToFill" id="OwD-aa-xRl">
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="0.0"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </view>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="languageCell" textLabel="n32-Wb-j2m" detailTextLabel="Oyq-Vq-Agq" style="IBUITableViewCellStyleSubtitle" id="KSY-Yd-c89">
+                                <rect key="frame" x="0.0" y="55.333332061767578" width="600" height="60"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KSY-Yd-c89" id="rFU-a9-9Og">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="60"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Language (Native)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" id="n32-Wb-j2m">
+                                            <rect key="frame" x="20" y="8.9999999999999982" width="140.33333333333334" height="20.333333333333332"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="highlightedColor" red="0.1333333333" green="0.25882352939999997" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Language (Current)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Oyq-Vq-Agq">
+                                            <rect key="frame" x="20" y="32.333333333333329" width="119" height="15.666666666666666"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
+                                            <color key="textColor" red="0.6705882353" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="highlightedColor" red="0.14117647059999999" green="0.2274509804" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" name="Background 1"/>
+                            </tableViewCell>
+                        </prototypes>
+                        <sections/>
+                        <connections>
+                            <outlet property="dataSource" destination="Vrs-lu-RFH" id="6Mg-3D-r7h"/>
+                            <outlet property="delegate" destination="Vrs-lu-RFH" id="k3h-dx-eP1"/>
+                        </connections>
+                    </tableView>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="localization" value="settings.language.screen_title"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="largeBannerContainerView" destination="OwD-aa-xRl" id="NFz-Lw-bk2"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6i8-gi-CLe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="29" y="-944"/>
+        </scene>
+        <!--manageDevices-->
+        <scene sceneID="Xxu-RM-vaK">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Devices" referencedIdentifier="manageDevices" id="Q8l-ec-KoY" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ich-n6-e3u" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="717" y="-347"/>
+        </scene>
+        <!--Siri Shortcuts-->
+        <scene sceneID="mKt-MV-7kg">
+            <objects>
+                <tableViewController title="Siri Shortcuts" id="Vfw-dV-xPd" customClass="SiriShortcutsTableViewController" customModule="Soundscape" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" indicatorStyle="white" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="60" sectionHeaderHeight="18" sectionFooterHeight="18" id="J74-qC-McB">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" name="Background Base"/>
+                        <color key="tintColor" name="Foreground 1"/>
+                        <color key="separatorColor" name="Background 3"/>
+                        <view key="tableHeaderView" contentMode="scaleToFill" id="gbk-8S-LVP">
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="0.0"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </view>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="siriShortcutCell" textLabel="UFA-eZ-k5g" detailTextLabel="zyZ-pB-R3f" style="IBUITableViewCellStyleValue1" id="GaJ-cu-8bJ">
+                                <rect key="frame" x="0.0" y="55.333332061767578" width="600" height="60"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="GaJ-cu-8bJ" id="LjI-Wg-PY0">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="60"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="User Action" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" id="UFA-eZ-k5g">
+                                            <rect key="frame" x="20.000000000000007" y="20" width="88.666666666666671" height="20.333333333333332"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="highlightedColor" red="0.1333333333" green="0.25882352939999997" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Add" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="zyZ-pB-R3f">
+                                            <rect key="frame" x="549.33333333333337" y="20" width="30.666666666666668" height="20.333333333333332"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                            <color key="textColor" red="0.6705882353" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="highlightedColor" red="0.14117647059999999" green="0.2274509804" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" name="Background 1"/>
+                            </tableViewCell>
+                        </prototypes>
+                        <sections/>
+                        <connections>
+                            <outlet property="dataSource" destination="Vfw-dV-xPd" id="CyT-pU-eAc"/>
+                            <outlet property="delegate" destination="Vfw-dV-xPd" id="Cvi-Kh-mx7"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="C8r-30-eFo"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="localization" value="siri_shortcuts.title.beta"/>
+                    </userDefinedRuntimeAttributes>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="50j-zC-LbD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1155" y="-214"/>
+        </scene>
+    </scenes>
+    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+    <resources>
+        <image name="chart.bar.fill" catalog="system" width="128" height="90"/>
+        <image name="dot.radiowaves.right" catalog="system" width="111" height="128"/>
+        <image name="globe" catalog="system" width="128" height="123"/>
+        <image name="headphones" catalog="system" width="128" height="121"/>
+        <image name="info.circle" catalog="system" width="128" height="123"/>
+        <image name="launchScreenLogo" width="200" height="200"/>
+        <image name="person.2.fill" catalog="system" width="128" height="81"/>
+        <image name="play.circle" catalog="system" width="128" height="123"/>
+        <image name="point.topleft.down.curvedto.point.bottomright.up" catalog="system" width="119" height="128"/>
+        <image name="questionmark.circle" catalog="system" width="128" height="123"/>
+        <image name="speaker.wave.2" catalog="system" width="128" height="88"/>
+        <image name="waveform" catalog="system" width="125" height="128"/>
+        <namedColor name="Background 1">
+            <color red="0.21600000560283661" green="0.29399999976158142" blue="0.46700000762939453" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="Background 3">
+            <color red="0.10199999809265137" green="0.14900000393390656" blue="0.25099998712539673" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="Background Base">
+            <color red="0.097999997437000275" green="0.097999997437000275" blue="0.14900000393390656" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="Foreground 1">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+    </resources>
+</document>

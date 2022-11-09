@@ -1,0 +1,15 @@
+//
+//  Debug.xcconfig
+//  Soundscape
+//
+//  Copyright (c) Microsoft Corporation.
+//  Licensed under the MIT License.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+#include "FeatureFlags-Debug.xcconfig"
+
+// `$(inherited)` - Feature flags defined in `FeatureFlags-Debug.xcconfig`
+OTHER_SWIFT_FLAGS = $(inherited)

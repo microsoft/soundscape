@@ -1,0 +1,12 @@
+# Copyright (c) Microsoft Corporation.
+# Licensed under the MIT License.
+
+semver==2.13.0
+kubernetes==12.0.1
+fire==0.4.0
+azure-identity==1.7.1
+azure-mgmt-resource==19.0.0
+azure-mgmt-containerregistry==8.1.0
+azure.mgmt.authorization==1.0.0
+azure.graphrbac==0.61.1
+flake8

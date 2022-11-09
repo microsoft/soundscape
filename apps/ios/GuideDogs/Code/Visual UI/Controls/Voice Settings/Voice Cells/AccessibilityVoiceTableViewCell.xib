@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="AccessibilityVoiceCell" id="V1d-AQ-FJs" customClass="VoiceTableViewCell" customModule="Soundscape" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="92.5"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="V1d-AQ-FJs" id="owX-U9-Ucd">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="92.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jkI-I6-9WO">
+                        <rect key="frame" x="16" y="8" width="343" height="76.5"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="1000" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="XfR-c4-8Ya">
+                                <rect key="frame" x="0.0" y="0.0" width="343" height="40.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kes-vO-oUF">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="20.5"/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <bool key="isElement" value="NO"/>
+                                        </accessibility>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subtitle" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jhs-NO-5Pe">
+                                        <rect key="frame" x="0.0" y="24.5" width="343" height="16"/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <bool key="isElement" value="NO"/>
+                                        </accessibility>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
+                                        <color key="textColor" red="0.6705882353" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <view contentMode="scaleToFill" verticalHuggingPriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="vo5-Aw-mY0">
+                                <rect key="frame" x="0.0" y="52.5" width="343" height="24"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="1000" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="GmE-XF-IMS">
+                                        <rect key="frame" x="0.0" y="0.0" width="88" height="24"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VBQ-Pe-ij3">
+                                                <rect key="frame" x="0.0" y="0.0" width="24" height="24"/>
+                                                <accessibility key="accessibilityConfiguration" label="Preview"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="VBQ-Pe-ij3" secondAttribute="height" multiplier="1:1" id="pPX-dq-itp"/>
+                                                </constraints>
+                                                <state key="normal" image="ic_play_arrow_white"/>
+                                                <connections>
+                                                    <action selector="onPreviewButtonTouchUpInside" destination="V1d-AQ-FJs" eventType="touchUpInside" id="X9f-Yz-wWv"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8d8-ak-piq">
+                                                <rect key="frame" x="32" y="0.0" width="24" height="24"/>
+                                                <accessibility key="accessibilityConfiguration">
+                                                    <bool key="isElement" value="NO"/>
+                                                </accessibility>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="8d8-ak-piq" secondAttribute="height" multiplier="1:1" id="H67-Fv-OOl"/>
+                                                </constraints>
+                                                <state key="normal" image="ic_delete_sweep_white"/>
+                                                <connections>
+                                                    <action selector="onDeleteButtonTouchUpInside" destination="V1d-AQ-FJs" eventType="touchUpInside" id="q7w-aU-Zhd"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t10-0L-Quz">
+                                                <rect key="frame" x="64" y="0.0" width="24" height="24"/>
+                                                <accessibility key="accessibilityConfiguration">
+                                                    <bool key="isElement" value="NO"/>
+                                                </accessibility>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="t10-0L-Quz" secondAttribute="height" multiplier="1:1" id="hO9-AP-RHt"/>
+                                                </constraints>
+                                                <state key="normal" image="baseline_clouse_download"/>
+                                                <state key="disabled" image="baseline_clouse_download"/>
+                                                <connections>
+                                                    <action selector="onDownloadButtonTouchUpInside" destination="V1d-AQ-FJs" eventType="touchUpInside" id="I1j-yx-8Kf"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" verticalCompressionResistancePriority="1000" image="ic_check_white" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JtE-Qm-nrj">
+                                        <rect key="frame" x="319" y="0.0" width="24" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="JtE-Qm-nrj" secondAttribute="height" multiplier="1:1" id="Yt4-Iy-jwX"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="JtE-Qm-nrj" firstAttribute="top" secondItem="vo5-Aw-mY0" secondAttribute="top" id="4za-dQ-cX5"/>
+                                    <constraint firstAttribute="bottom" secondItem="GmE-XF-IMS" secondAttribute="bottom" id="D3n-7r-yjn"/>
+                                    <constraint firstAttribute="bottom" secondItem="JtE-Qm-nrj" secondAttribute="bottom" id="JeI-7r-F2I"/>
+                                    <constraint firstItem="JtE-Qm-nrj" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="GmE-XF-IMS" secondAttribute="trailing" constant="24" id="LJS-Wo-ney"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="24" id="LSl-MN-ckz"/>
+                                    <constraint firstItem="GmE-XF-IMS" firstAttribute="top" secondItem="vo5-Aw-mY0" secondAttribute="top" id="RcN-TI-qKr"/>
+                                    <constraint firstAttribute="trailing" secondItem="JtE-Qm-nrj" secondAttribute="trailing" id="V0c-dX-JBU"/>
+                                    <constraint firstItem="GmE-XF-IMS" firstAttribute="leading" secondItem="vo5-Aw-mY0" secondAttribute="leading" id="u9D-Xv-vlS"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="XfR-c4-8Ya" secondAttribute="trailing" id="2a8-ph-XKo"/>
+                            <constraint firstAttribute="bottom" secondItem="vo5-Aw-mY0" secondAttribute="bottom" id="EOm-nM-scD"/>
+                            <constraint firstAttribute="trailing" secondItem="vo5-Aw-mY0" secondAttribute="trailing" id="VSN-Tu-g8B"/>
+                            <constraint firstItem="XfR-c4-8Ya" firstAttribute="top" secondItem="jkI-I6-9WO" secondAttribute="top" id="bTB-Bx-eLS"/>
+                            <constraint firstItem="XfR-c4-8Ya" firstAttribute="leading" secondItem="jkI-I6-9WO" secondAttribute="leading" id="dqu-y3-04p"/>
+                            <constraint firstItem="vo5-Aw-mY0" firstAttribute="top" relation="greaterThanOrEqual" secondItem="XfR-c4-8Ya" secondAttribute="bottom" constant="4" id="mue-QU-7pP"/>
+                            <constraint firstItem="vo5-Aw-mY0" firstAttribute="leading" secondItem="jkI-I6-9WO" secondAttribute="leading" id="z03-6G-9wj"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="jkI-I6-9WO" firstAttribute="leading" secondItem="owX-U9-Ucd" secondAttribute="leading" constant="16" id="4dJ-It-BjX"/>
+                    <constraint firstAttribute="trailing" secondItem="jkI-I6-9WO" secondAttribute="trailing" constant="16" id="Hth-p5-p8Y"/>
+                    <constraint firstAttribute="bottom" secondItem="jkI-I6-9WO" secondAttribute="bottom" constant="8" id="c4Z-Td-khx"/>
+                    <constraint firstItem="jkI-I6-9WO" firstAttribute="top" secondItem="owX-U9-Ucd" secondAttribute="top" constant="8" id="eIz-LV-hLg"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.18266624209999999" green="0.2984658778" blue="0.47575646640000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <accessibility key="accessibilityConfiguration">
+                <bool key="isElement" value="YES"/>
+            </accessibility>
+            <connections>
+                <outlet property="checkImageView" destination="JtE-Qm-nrj" id="dgB-7S-BBS"/>
+                <outlet property="subtitleLabel" destination="jhs-NO-5Pe" id="QEl-jO-lwV"/>
+                <outlet property="titleLabel" destination="Kes-vO-oUF" id="hSk-bZ-xKN"/>
+            </connections>
+            <point key="canvasLocation" x="33.5" y="53.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic_check_white" width="24" height="24"/>
+        <image name="ic_play_arrow_white" width="24" height="24"/>
+    </resources>
+</document>

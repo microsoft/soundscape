@@ -1,0 +1,66 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  background-color: white;
+}
+
+/* Disables scrollbars */
+body {
+  overflow: hidden;
+}
+
+#root {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  background-color: white;
+}
+
+.App {
+  height: 100%;
+}
+
+.navbar {
+  background-color: #253d62;
+}
+
+.main {
+  height: 100%;
+  padding-bottom: 112px; /* For the navigation bar and footer heights  */
+}
+
+.main-row {
+  height: 100%;
+}
+
+#primary,
+#secondary {
+  position: relative;
+  float: left;
+  height: 100%;
+  overflow-y: auto;
+}
+
+#primary {
+  background-color: rgb(249, 244, 244);
+}
+
+#secondary {
+  background-color: white;
+}
+
+.footer {
+  background-color: #253d62;
+  color: darkgray;
+}
+
+.footer > div > a {
+  color: darkgray;
+  text-decoration: none;
+}
+
+.footer > div > a:hover {
+  text-decoration: underline;
+}

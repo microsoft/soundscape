@@ -1,0 +1,330 @@
+[
+    {
+        "id": "com.apple.ttsbundle.Tom-premium",
+        "filter": {
+            "globalGain": 0.0,
+            "bandParameters": [
+                {
+                    "bandwidth": 0.67,
+                    "bypass": false,
+                    "filterType": "parametric",
+                    "frequency": 150.0,
+                    "gain": 3.0
+                },
+                {
+                    "bandwidth": 0.02,
+                    "bypass": false,
+                    "filterType": "parametric",
+                    "frequency": 300.0,
+                    "gain": -2.5
+                },
+                {
+                    "bandwidth": 0.400,
+                    "bypass": false,
+                    "filterType": "parametric",
+                    "frequency": 4000.0,
+                    "gain": 2.5
+                }
+            ]
+        }
+    },
+    {
+        "id": "com.apple.ttsbundle.Samantha-premium",
+        "filter": {
+            "globalGain": 0.0,
+            "bandParameters": [
+                {
+                    "bandwidth": 0.4,
+                    "bypass": false,
+                    "filterType": "parametric",
+                    "frequency": 175.0,
+                    "gain": 5.0
+                },
+                {
+                    "bandwidth": 0.02,
+                    "bypass": false,
+                    "filterType": "parametric",
+                    "frequency": 365.0,
+                    "gain": -3.0
+                },
+                {
+                    "bandwidth": 0.400,
+                    "bypass": false,
+                    "filterType": "parametric",
+                    "frequency": 4000.0,
+                    "gain": 2.5
+                }
+            ]
+        }
+    },
+    {
+        "id": "com.apple.ttsbundle.siri_male_en-US_compact",
+        "filter": {
+            "globalGain": 0.0,
+            "bandParameters": [
+                {
+                    "bandwidth": 0.267,
+                    "bypass": false,
+                    "filterType": "parametric",
+                    "frequency": 150.0,
+                    "gain": 3.0
+                },
+                {
+                    "bandwidth": 0.02,
+                    "bypass": false,
+                    "filterType": "parametric",
+                    "frequency": 300.0,
+                    "gain": -2.5
+                },
+                {
+                    "bandwidth": 0.400,
+                    "bypass": false,
+                    "filterType": "parametric",
+                    "frequency": 4000.0,
+                    "gain": 2.5
+                }
+            ]
+        }
+    },
+    {
+        "id": "com.apple.ttsbundle.siri_female_en-US_compact",
+        "filter": {
+            "globalGain": 0.0,
+            "bandParameters": [
+                {
+                    "bandwidth": 0.22,
+                    "bypass": false,
+                    "filterType": "parametric",
+                    "frequency": 190.0,
+                    "gain": 4.0
+                },
+                {
+                    "bandwidth": 0.400,
+                    "bypass": false,
+                    "filterType": "parametric",
+                    "frequency": 4000.0,
+                    "gain": 2.5
+                }
+            ]
+        }
+    },
+    {
+        "id": "com.apple.speech.voice.Alex",
+        "filter": {
+            "globalGain": 0.0,
+            "bandParameters": [
+                {
+                    "bandwidth": 0.22,
+                    "bypass": false,
+                    "filterType": "parametric",
+                    "frequency": 190.0,
+                    "gain": 4.0
+                },
+                {
+                    "bandwidth": 0.400,
+                    "bypass": false,
+                    "filterType": "parametric",
+                    "frequency": 4000.0,
+                    "gain": 2.5
+                }
+            ]
+        }
+    },
+    {
+        "id": "com.apple.ttsbundle.siri_female_en-AU_compact",
+        "filter": {
+            "globalGain": 0.0,
+            "bandParameters": [
+                {
+                    "bandwidth": 0.22,
+                    "bypass": false,
+                    "filterType": "parametric",
+                    "frequency": 190.0,
+                    "gain": 2.8
+                },
+                {
+                    "bandwidth": 0.400,
+                    "bypass": false,
+                    "filterType": "parametric",
+                    "frequency": 4000.0,
+                    "gain": 2.5
+                }
+            ]
+        }
+    },
+    {
+        "id": "com.apple.ttsbundle.siri_male_en-AU_compact",
+        "filter": {
+            "globalGain": 0.0,
+            "bandParameters": [
+                {
+                    "bandwidth": 0.22,
+                    "bypass": false,
+                    "filterType": "parametric",
+                    "frequency": 150.0,
+                    "gain": 3.0
+                },
+                {
+                    "bandwidth": 0.02,
+                    "bypass": false,
+                    "filterType": "parametric",
+                    "frequency": 300.0,
+                    "gain": -2.5
+                },
+                {
+                    "bandwidth": 0.400,
+                    "bypass": false,
+                    "filterType": "parametric",
+                    "frequency": 4000.0,
+                    "gain": 2.0
+                }
+            ]
+        }
+    },
+    {
+        "id": "com.apple.ttsbundle.siri_male_en-GB_compact",
+        "filter": {
+            "globalGain": 0.0,
+            "bandParameters": [
+                {
+                    "bandwidth": 0.22,
+                    "bypass": false,
+                    "filterType": "parametric",
+                    "frequency": 150.0,
+                    "gain": 3.0
+                },
+                {
+                    "bandwidth": 0.02,
+                    "bypass": false,
+                    "filterType": "parametric",
+                    "frequency": 300.0,
+                    "gain": -2.5
+                },
+                {
+                    "bandwidth": 0.400,
+                    "bypass": false,
+                    "filterType": "parametric",
+                    "frequency": 4000.0,
+                    "gain": 2.5
+                }
+            ]
+        }
+    },
+    {
+        "id": "com.apple.ttsbundle.siri_female_en-GB_compact",
+        "filter": {
+            "globalGain": 0.0,
+            "bandParameters": [
+                {
+                    "bandwidth": 0.22,
+                    "bypass": false,
+                    "filterType": "parametric",
+                    "frequency": 200.0,
+                    "gain": 3.0
+                },
+                {
+                    "bandwidth": 0.400,
+                    "bypass": false,
+                    "filterType": "parametric",
+                    "frequency": 4000.0,
+                    "gain": 2.0
+                }
+            ]
+        }
+    },
+    {
+        "id": "com.apple.ttsbundle.Moira-compact",
+        "filter": {
+            "globalGain": 0.0,
+            "bandParameters": [
+                {
+                    "bandwidth": 0.22,
+                    "bypass": false,
+                    "filterType": "parametric",
+                    "frequency": 200.0,
+                    "gain": 4.0
+                },
+                {
+                    "bandwidth": 0.400,
+                    "bypass": false,
+                    "filterType": "parametric",
+                    "frequency": 4000.0,
+                    "gain": 2.5
+                }
+            ]
+        }
+    },
+    {
+        "id": "com.apple.ttsbundle.Rishi-compact",
+        "filter": {
+            "globalGain": 0.0,
+            "bandParameters": [
+                {
+                    "bandwidth": 0.22,
+                    "bypass": false,
+                    "filterType": "parametric",
+                    "frequency": 150.0,
+                    "gain": 2.0
+                },
+                {
+                    "bandwidth": 0.02,
+                    "bypass": false,
+                    "filterType": "parametric",
+                    "frequency": 300.0,
+                    "gain": -2.5
+                },
+                {
+                    "bandwidth": 0.400,
+                    "bypass": false,
+                    "filterType": "parametric",
+                    "frequency": 4000.0,
+                    "gain": 3.0
+                }
+            ]
+        }
+    },
+    {
+        "id": "com.apple.ttsbundle.Alva-compact",
+        "filter": {
+            "globalGain": 0.0,
+            "bandParameters": [
+                {
+                    "bandwidth": 0.22,
+                    "bypass": false,
+                    "filterType": "parametric",
+                    "frequency": 175.0,
+                    "gain": 3.0
+                },
+                {
+                    "bandwidth": 0.400,
+                    "bypass": false,
+                    "filterType": "parametric",
+                    "frequency": 4000.0,
+                    "gain": 2.5
+                }
+            ]
+        }
+    },
+    {
+        "id": "com.apple.ttsbundle.Joana-compact",
+        "filter": {
+            "globalGain": 0.0,
+            "bandParameters": [
+                {
+                    "bandwidth": 0.22,
+                    "bypass": false,
+                    "filterType": "parametric",
+                    "frequency": 200.0,
+                    "gain": 2.0
+                },
+                {
+                    "bandwidth": 0.400,
+                    "bypass": false,
+                    "filterType": "parametric",
+                    "frequency": 4000.0,
+                    "gain": 2.5
+                }
+            ]
+        }
+    }
+]

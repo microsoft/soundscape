@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Nec-v8-XN7" customClass="FilterTableViewHeaderView" customModule="Soundscape" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5aL-1J-3Q7">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="h42-00-p0w">
+                            <rect key="frame" x="16" y="16" width="343" height="12"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DHS-bk-HDj">
+                                    <rect key="frame" x="0.0" y="0.0" width="167.5" height="12"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Aj2-ue-HPm">
+                                    <rect key="frame" x="294" y="0.0" width="49" height="12"/>
+                                    <accessibility key="accessibilityConfiguration">
+                                        <bool key="isElement" value="NO"/>
+                                    </accessibility>
+                                    <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                                    <state key="normal" title="Button">
+                                        <color key="titleColor" red="0.6705882353" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="onActionButtonTouchUpInside" destination="Nec-v8-XN7" eventType="touchUpInside" id="l9I-me-EGl"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.14400663969999999" green="0.24137306210000001" blue="0.38318216799999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="h42-00-p0w" firstAttribute="leading" secondItem="5aL-1J-3Q7" secondAttribute="leading" constant="16" id="F8h-d6-fXB"/>
+                        <constraint firstAttribute="bottom" secondItem="h42-00-p0w" secondAttribute="bottom" constant="16" id="LSw-nH-ytk"/>
+                        <constraint firstItem="h42-00-p0w" firstAttribute="top" secondItem="5aL-1J-3Q7" secondAttribute="top" constant="16" id="MLC-rQ-0px"/>
+                        <constraint firstAttribute="trailing" secondItem="h42-00-p0w" secondAttribute="trailing" constant="16" id="oaA-fI-frA"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <accessibility key="accessibilityConfiguration">
+                <accessibilityTraits key="traits" header="YES"/>
+            </accessibility>
+            <constraints>
+                <constraint firstItem="5aL-1J-3Q7" firstAttribute="leading" secondItem="GGa-qi-Mc5" secondAttribute="leading" id="7rv-xn-KLZ"/>
+                <constraint firstItem="GGa-qi-Mc5" firstAttribute="top" secondItem="5aL-1J-3Q7" secondAttribute="top" id="RbR-rF-o6Z"/>
+                <constraint firstItem="GGa-qi-Mc5" firstAttribute="trailing" secondItem="5aL-1J-3Q7" secondAttribute="trailing" id="Txo-gU-eAU"/>
+                <constraint firstItem="5aL-1J-3Q7" firstAttribute="bottom" secondItem="GGa-qi-Mc5" secondAttribute="bottom" id="mDu-cS-jeX"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="GGa-qi-Mc5"/>
+            <connections>
+                <outlet property="actionButton" destination="Aj2-ue-HPm" id="PM3-0T-5R2"/>
+                <outlet property="titleLabel" destination="DHS-bk-HDj" id="bFl-CQ-xXH"/>
+            </connections>
+            <point key="canvasLocation" x="140" y="129"/>
+        </view>
+    </objects>
+</document>

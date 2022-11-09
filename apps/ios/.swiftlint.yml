@@ -1,0 +1,66 @@
+disabled_rules:
+  - force_cast
+  - line_length
+  - function_body_length
+  - type_body_length
+  - file_length
+  - cyclomatic_complexity
+  - implicit_getter
+  - valid_ibinspectable
+  - todo
+excluded:
+  - Pods/*
+  - Carthage/*
+  - RLMSupport.swift
+
+large_tuple:
+  warning: 3
+  error: 4
+trailing_whitespace:
+  ignores_empty_lines: true
+identifier_name:
+  excluded: # excluded via string array
+    - id
+    - db
+    - to
+    - on
+    - On
+    - of
+    - ui
+    - i
+    - j
+    - k
+    - x
+    - y
+    - z
+    - w
+    - a
+    - b
+    - aX
+    - aY
+    - bX
+    - bY
+    - cX
+    - cY
+    - vc
+    - pt
+    - ln
+    - at
+    - en
+    - ih
+
+custom_rules:
+  nslocalizedstring_usage:
+    included: ".*\\.swift"
+    name: "NSLocalizedString Usage"
+    regex: "(NSLocalizedString)"
+    match_kinds:
+      - identifier
+    message: "Consider using GDLocalizedString."
+    severity: error
+  gdlocalizedstring_empty_usage:
+    included: ".*\\.swift"
+    name: "GDLocalizedString Empty Usage"
+    regex: "(GDLocalizedString\\(\"\"\\))"
+    message: "Consider using GDLocalizationUnnecessary(\"\")."
+    severity: error

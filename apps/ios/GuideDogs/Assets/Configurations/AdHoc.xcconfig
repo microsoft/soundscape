@@ -1,0 +1,16 @@
+//
+//  AdHoc.xcconfig
+//  Soundscape
+//
+//  Copyright (c) Microsoft Corporation.
+//  Licensed under the MIT License.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+#include "FeatureFlags-AdHoc.xcconfig"
+
+// `$(inherited)` - Feature flags defined in `FeatureFlags-AdHoc.xcconfig`
+OTHER_SWIFT_FLAGS = $(inherited)
+

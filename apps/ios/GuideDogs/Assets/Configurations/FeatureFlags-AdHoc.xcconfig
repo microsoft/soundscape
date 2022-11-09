@@ -1,0 +1,13 @@
+//
+//  Feature-Flags-AdHoc.xcconfig
+//  Soundscape
+//
+//  Copyright (c) Microsoft Corporation.
+//  Licensed under the MIT License.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+// Default feature flags for ad hoc configuration
+OTHER_SWIFT_FLAGS = -D FF_DEVELOPER_TOOLS -D FF_EXPERIMENT_CONFIG

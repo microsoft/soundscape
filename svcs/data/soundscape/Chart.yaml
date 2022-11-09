@@ -1,0 +1,7 @@
+# Copyright (c) Microsoft Corporation.
+# Licensed under the MIT License.
+
+apiVersion: v1
+description: Soundscape chart
+name: soundscape
+version: 0.1.0

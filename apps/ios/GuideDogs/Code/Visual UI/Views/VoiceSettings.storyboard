@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qVI-UV-Sh8">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Voice-->
+        <scene sceneID="SBS-b1-UDt">
+            <objects>
+                <tableViewController title="Voice" id="qVI-UV-Sh8" customClass="VoiceSettingsTableViewController" customModule="Soundscape" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" indicatorStyle="white" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="ZVg-8B-oRT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" name="Background Base"/>
+                        <view key="tableHeaderView" contentMode="scaleToFill" id="SDc-sn-oTB">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="0.0"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </view>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="SpeakingRateCell" id="uZ5-LJ-IJn" customClass="SpeakingRateTableViewCell" customModule="Soundscape" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="49" width="375" height="43.333332061767578"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="uZ5-LJ-IJn" id="rKf-ZO-TGv">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.333332061767578"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" minimumValueImage="tortoise" catalog="system" maximumValueImage="hare" translatesAutoresizingMaskIntoConstraints="NO" id="9OJ-dl-VzK">
+                                            <rect key="frame" x="13" y="6.9999999999999982" width="349" height="31.333333333333329"/>
+                                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="accLabelLocalization" value="voice.settings.speaking_rate"/>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="onSpeakingRateSliderValueChanged" destination="uZ5-LJ-IJn" eventType="valueChanged" id="iwa-Ed-CT2"/>
+                                            </connections>
+                                        </slider>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="9OJ-dl-VzK" secondAttribute="bottom" constant="6" id="9KA-Ne-h3t"/>
+                                        <constraint firstAttribute="trailing" secondItem="9OJ-dl-VzK" secondAttribute="trailing" constant="15" id="p0M-IM-T5C"/>
+                                        <constraint firstItem="9OJ-dl-VzK" firstAttribute="leading" secondItem="rKf-ZO-TGv" secondAttribute="leading" constant="15" id="uTZ-ob-bZd"/>
+                                        <constraint firstItem="9OJ-dl-VzK" firstAttribute="top" secondItem="rKf-ZO-TGv" secondAttribute="top" constant="7" id="xWe-SF-umK"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" name="Background 1"/>
+                                <color key="tintColor" name="Foreground 1"/>
+                                <connections>
+                                    <outlet property="speakingRateSlider" destination="9OJ-dl-VzK" id="p3P-V4-DBm"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="VoiceInstructionsCell" textLabel="tfV-NW-qPT" rowHeight="120" style="IBUITableViewCellStyleDefault" id="47P-DS-YEw" userLabel="VoiceInstructionsCell" customClass="SpeakingRateTableViewCell" customModule="Soundscape" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="92.333332061767578" width="375" height="120"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="47P-DS-YEw" id="uFM-Vy-2MB">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="120"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" id="tfV-NW-qPT">
+                                            <rect key="frame" x="16" y="0.0" width="343" height="120"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <string key="text">Additional voices, including some great enhanced quality voices, can be downloaded in the iOS accessibility Settings under the section "Spoken Content"</string>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                            <color key="textColor" name="Foreground 1"/>
+                                            <nil key="highlightedColor"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="localization" value="whats_new.3_2_0.2.description"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" name="Background 1"/>
+                                <color key="tintColor" name="Foreground 1"/>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="checkmark" indentationWidth="10" reuseIdentifier="VoiceCell" textLabel="VVA-Iv-n9S" detailTextLabel="Jys-kc-y6t" style="IBUITableViewCellStyleSubtitle" id="zsK-EV-Xbb">
+                                <rect key="frame" x="0.0" y="212.33333206176758" width="375" height="49.666667938232422"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zsK-EV-Xbb" id="1mZ-N5-cAe">
+                                    <rect key="frame" x="0.0" y="0.0" width="338.33333333333331" height="49.666667938232422"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" id="VVA-Iv-n9S">
+                                            <rect key="frame" x="15.999999999999998" y="7.6666666666666643" width="28.333333333333332" height="17"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                            <color key="textColor" name="Foreground 1"/>
+                                            <color key="highlightedColor" name="Background 1"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" id="Jys-kc-y6t">
+                                            <rect key="frame" x="15.999999999999996" y="26.999999999999996" width="40.666666666666664" height="13.333333333333334"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                                            <color key="textColor" name="Foreground 2"/>
+                                            <color key="highlightedColor" name="Background 3"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" name="Background 1"/>
+                                <color key="tintColor" name="Foreground 1"/>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="qVI-UV-Sh8" id="R6d-kC-XlX"/>
+                            <outlet property="delegate" destination="qVI-UV-Sh8" id="x0z-Ab-O1C"/>
+                        </connections>
+                    </tableView>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" translucent="NO" prompted="NO"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="localization" value="settings.general.voice"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="largeBannerContainerView" destination="SDc-sn-oTB" id="MUE-oE-z7n"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Yt-ek-6cc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="341.60000000000002" y="-156.65024630541873"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="hare" catalog="system" width="128" height="92"/>
+        <image name="tortoise" catalog="system" width="128" height="68"/>
+        <namedColor name="Background 1">
+            <color red="0.21600000560283661" green="0.29399999976158142" blue="0.46700000762939453" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="Background 3">
+            <color red="0.10199999809265137" green="0.14900000393390656" blue="0.25099998712539673" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="Background Base">
+            <color red="0.097999997437000275" green="0.097999997437000275" blue="0.14900000393390656" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="Foreground 1">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="Foreground 2">
+            <color red="0.67100000381469727" green="0.96100002527236938" blue="0.96100002527236938" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+    </resources>
+</document>

@@ -1,0 +1,55 @@
+# Copyright (c) Microsoft Corporation.
+# Licensed under the MIT License.
+
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name:  {{ .Chart.Name }}-ts-deployment
+  labels:
+    app: {{ .Chart.Name }}
+    tier: tile-service
+    role: tile-server
+spec:
+  replicas: {{ .Values.config.tileServerReplicas }}
+  selector:
+    matchLabels:
+      app: {{ .Chart.Name }}
+      tier: tile-service
+      role: tile-server
+  template:
+    metadata:
+      labels:
+        app: {{ .Chart.Name }}
+        tier: tile-service
+        role: tile-server
+    spec:
+      securityContext:
+        runAsUser: 1000
+      containers:
+      - name: {{ .Chart.Name }}-tilesrv
+        image: {{ .Values.containerRegistry }}/{{ .Values.tilesrvImage }}:{{ required "A valid .Values.soundscapeImageVersion entry required!" .Values.soundscapeImageVersion }}
+        securityContext:
+          allowPrivilegeEscalation: false
+        ports:
+        - containerPort: 8080
+          name: tilesrv-port
+        env:
+        - name: DSN
+          valueFrom:
+            secretKeyRef:
+              name: soundscape-database
+              key: dsn2
+        args: ["--dsn", "$(DSN)", "--server", "8080"]
+        livenessProbe:
+          httpGet:
+            path: /probe/alive
+            port: tilesrv-port
+          initialDelaySeconds: 5
+        readinessProbe:
+          httpGet:
+            path: /16/10532/22878.json
+            port: tilesrv-port
+          initialDelaySeconds: 5
+          timeoutSeconds: 60
+          periodSeconds: 120

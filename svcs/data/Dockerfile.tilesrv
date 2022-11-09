@@ -1,0 +1,21 @@
+# Copyright (c) Microsoft Corporation.
+# Licensed under the MIT License.
+
+FROM mcr.microsoft.com/cbl-mariner/base/core:2.0 as installer
+
+RUN tdnf -y update \
+ && tdnf install -y dnf \
+ && mkdir /staging \
+ && dnf install -y --release=2.0 --installroot /staging prebuilt-ca-certificates python3 python3-pip
+
+FROM mcr.microsoft.com/cbl-mariner/distroless/base:2.0 as final
+
+COPY --from=installer /staging/ /
+
+ENV PYTHONUNBUFFERED=true TILESRV=/tilesrv
+
+COPY requirements.txt gentiles.py $TILESRV/
+
+RUN pip3 install -r $TILESRV/requirements.txt
+
+ENTRYPOINT ["python3", "/tilesrv/gentiles.py", "--verbose"]

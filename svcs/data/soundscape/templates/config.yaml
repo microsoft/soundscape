@@ -1,0 +1,12 @@
+# Copyright (c) Microsoft Corporation.
+# Licensed under the MIT License.
+
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ .Chart.Name }}-config
+data:
+  region: {{ .Values.config.region }}
+  loopInterval: "{{ .Values.config.loopInterval }}"
+  ingestFlags: "{{ .Values.config.ingestFlags }}"
