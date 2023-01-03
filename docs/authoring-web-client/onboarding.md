@@ -129,3 +129,5 @@ In order to view and add emails to the allowlist, do the following:
 2. **Important!** Make sure to build the frontend (React) application before uploading.
 3. Select the Azure extension in VSCode, select App Service, press the "Deploy to Web App" button and select the App Service destination.
 4. When complete, wait a couple of minutes and access the webpage to see if the changes are live.
+
+## [Exporting from the Authoring Web App](./exporting.md)
