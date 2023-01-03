@@ -6,7 +6,11 @@ In order to download the media item, the GPX file can be opened with a text edit
 
 For example, when downloading an activity named `my_activity.gpx`, to find all media links via macOS terminal:
 
-```bashgrep -E -o 'href=".+"' ./my_activity.gpx
-```To download a media file:
-```bashwget {LINK}
+```bash
+grep -E -o 'href=".+"' ./my_activity.gpx
+```
+
+To download a media file:
+```bash
+wget {LINK}
 ```
