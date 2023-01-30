@@ -30,8 +30,6 @@ The core elements of the  service eg. the OSM ingester via [imposm3](https://git
 
 Microsoft is committed to supporting this open source offering.  Please use the [Issues](https://github.com/microsoft/soundscape/issues) section to ask questions.
 
-* experience 
-
 # Contents
 
 The open source project contains three components:
