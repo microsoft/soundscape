@@ -18,6 +18,20 @@ Additional app features include:
 * **Background Use** - The ability to run in the background while you use other apps.
 * **Current Location** - Quickly hear your current location and direction of travel.
 
+# Expectations
+
+This open source project is not a turnkey equivalent of the Microsoft Soundscape product offering.  The sources have been modified to remove branding and IP.  References to the production resources were also altered.  Further elements too specific to Microsoft's internal environmen were omitted.
+
+To bring this up this open source project, you'll need:
+* iOS experience -- Apple developer account, experience with Swift, Xcode, AppStore processes, etc.
+* Cloud experience -- The services ran in the the Azure Cloud, though could be adapted to run elsewhere. In particular, note that no automation has been included to provision the required resources and services.
+
+The core elements of the  service eg. the OSM ingester via [imposm3](https://github.com/omniscale/imposm3) and serving the ingested data as GeoJSON are provided and packaged as containers in svcs/data.
+
+Microsoft is committed to supporting this open source offering.  Please use the [Issues](https://github.com/microsoft/soundscape/issues) section to ask questions.
+
+* experience 
+
 # Contents
 
 The open source project contains three components:
