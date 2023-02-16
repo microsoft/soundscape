@@ -1,0 +1,77 @@
+# Copyright (c) Microsoft Corporation.
+# Licensed under the MIT License.
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ .Chart.Name }}-ingester-service
+  labels:
+    app: {{ .Chart.Name }}
+    tier: ingestion
+    role: ingester-service
+spec:
+  selector:
+    app: {{ .Chart.Name }}
+    tier: ingestion
+    role: ingester
+  clusterIP: None
+---
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: {{ .Chart.Name}}-ingester
+spec:
+  serviceName: {{ .Chart.Name }}-ingester-service
+  replicas: 1
+  selector:
+    matchLabels:
+      app: {{ .Chart.Name }}
+      tier: ingestion
+      role: ingester
+  template:
+    metadata:
+      labels:
+        app: {{ .Chart.Name }}
+        tier: ingestion
+        role: ingester
+    spec:
+      serviceAccountName: {{ .Chart.Name}}-ingester-serviceaccount
+      securityContext:
+        runAsUser: 1000
+        runAsGroup: 1000
+        fsGroup: 1000
+      containers:
+        - name: {{ .Chart.Name }}-ingester
+          image: {{ .Values.containerRegistry }}/{{ .Values.ingesterImage }}:{{ required "A valid .Values.soundscapeImageVersion entry required!" .Values.soundscapeImageVersion }}
+          command: ["/tools/osmingester"]
+          args: ["--osm2pgsql", "/tools/osm2pgsql", "--pbf", "/config/pbf", "--mapper", "/config/soundscape.lua", "--provision-sql", "/config/provision.sql", "--provision-sql", "/config/postgis-vt-util.sql", "--provision-sql", "/config/tilefunc.sql", "--work", "/work", "--dsn", "/secret/dsn2"]
+          securityContext:
+            allowPrivilegeEscalation: false
+          volumeMounts:
+            - mountPath: /work
+              name: {{ .Chart.Name }}-ingester-volume
+            - mountPath: /config
+              name: {{ .Chart.Name }}-ingester-config-volume
+              readOnly: true
+            - mountPath: /secret
+              name: {{ .Chart.Name }}-database-volume
+              readOnly: true
+      volumes:
+        - name: {{ .Chart.Name }}-ingester-config-volume
+          configMap:
+            name: {{ .Chart.Name }}-ingester-config
+        - name: {{ .Chart.Name }}-database-volume
+          secret:
+            secretName: {{ .Chart.Name }}-database
+  updateStrategy:
+    type: RollingUpdate
+  volumeClaimTemplates:
+    - metadata:
+        name: {{ .Chart.Name }}-ingester-volume
+      spec:
+        accessModes: ["ReadWriteOnce"]
+        storageClassName: {{ .Chart.Name }}-sc
+        resources:
+          requests:
+            storage: {{ .Values.config.ingester.workingStorage }}

@@ -1,0 +1,43 @@
+# Copyright (c) Microsoft Corporation.
+# Licensed under the MIT License.
+
+FROM mcr.microsoft.com/cbl-mariner/base/core:2.0 as builder
+
+ENV OSM2PGSQL_VERSION=1.6.0
+
+RUN tdnf repolist --refresh
+RUN tdnf install -y ca-certificates-microsoft wget tar gzip
+RUN tdnf install -y build-essential cmake boost-devel expat-devel \
+    bzip2-devel postgresql-devel lua-devel glibc
+
+RUN mkdir /osm2pgsql && wget -q -O -  https://github.com/openstreetmap/osm2pgsql/archive/refs/tags/$OSM2PGSQL_VERSION.tar.gz | tar -xvz --strip-components=1 -C /osm2pgsql
+
+RUN mkdir /osm2pgsql/build
+WORKDIR /osm2pgsql/build
+
+RUN cmake ..
+RUN make
+RUN make install
+
+FROM mcr.microsoft.com/cbl-mariner/base/core:2.0 as rustbuilder
+
+RUN tdnf repolist --refresh
+RUN tdnf install -y ca-certificates-microsoft build-essential
+RUN tdnf install -y rust openssl-devel
+
+RUN mkdir /build /build/osmingester /build/osmingester/src
+COPY Cargo.toml Cargo.lock /build/
+COPY osmingester/Cargo.toml /build/osmingester
+COPY osmingester/src/main.rs /build/osmingester/src
+WORKDIR /build
+RUN cargo build --release
+
+FROM mcr.microsoft.com/cbl-mariner/base/core:2.0 as final
+
+RUN tdnf install -y ca-certificates boost-devel expat-devel \
+  bzip2-devel postgresql-libs lua lua-devel gdb
+RUN mkdir /tools
+
+COPY --from=builder /usr/local/bin/osm2pgsql /usr/local/bin/osm2pgsql-replication /tools/
+COPY --from=rustbuilder /build/target/release/osmingester /tools
+WORKDIR /work

@@ -1,0 +1,20 @@
+# Copyright (c) Microsoft Corporation.
+# Licensed under the MIT License.
+
+[package]
+name = "osmingester"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = "1"
+clap = { version="3", features = ["derive"] }
+env_logger = "0"
+itertools = "0"
+log = "0"
+openssl = "0"
+postgres = "0"
+postgres-openssl = "0"
+reqwest = { version = "0", features = ["blocking", "stream"] }
