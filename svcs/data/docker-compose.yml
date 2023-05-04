@@ -1,0 +1,29 @@
+# docker-compose --build up
+version: '3.8'
+services:
+  postgis:
+    image: postgis/postgis
+    environment:
+      - POSTGRES_PASSWORD=secret
+    ports:
+      - "5432:5432"
+  ingest:
+    image: ingest
+    build:
+      dockerfile: Dockerfile.ingest
+    environment:
+      - GEN_REGIONS=district-of-columbia
+      - LOOP_TIME=14400
+      - NAMESPACE=soundscape
+    depends_on:
+      - postgis
+  tilesrv:
+    image: tilesrv
+    build:
+      dockerfile: Dockerfile.tilesrv
+    environment:
+      - DSN="host=postgis port=5432 dbname=osm user=postgres password=secret"
+    ports:
+      - "8080:8080"
+    depends_on:
+      - postgis

@@ -18,4 +18,4 @@ COPY requirements.txt gentiles.py $TILESRV/
 
 RUN pip3 install -r $TILESRV/requirements.txt
 
-ENTRYPOINT ["python3", "/tilesrv/gentiles.py", "--verbose"]
+ENTRYPOINT python3 /tilesrv/gentiles.py --verbose --dsn "$DSN"
