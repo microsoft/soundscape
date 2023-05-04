@@ -222,7 +222,7 @@ def execute_kube_updatemodel_provision_and_import(config, updated):
 
         try:
             logger.info('Importing to "{0}"'.format(d['name']))
-            args.dsn = kube.get_url_dsn(d['dsn2']) + '?sslmode=require'
+            args.dsn = kube.get_url_dsn(d['dsn2']) #+ '?sslmode=require'
             import_write(config, False)
             import_rotate(config, False)
             provision_database_soundscape(d['dsn2'])
