@@ -1,5 +1,6 @@
 # docker-compose up --build
 version: '3.8'
+
 services:
   postgis:
     image: postgis/postgis
@@ -8,7 +9,7 @@ services:
       - POSTGRES_PASSWORD=secret
       - PGUSER=postgres
     volumes:
-      - ./volumes/postgres:/var/lib/postgresql
+      - postgis:/var/lib/postgresql
     ports:
       - "5432:5432"
     healthcheck:
@@ -16,6 +17,7 @@ services:
       interval: 10s
       timeout: 5s
       retries: 5
+
   ingest:
     image: soundscape/ingest
     build:
@@ -24,11 +26,17 @@ services:
       - GEN_REGIONS=district-of-columbia
       - LOOP_TIME=14400
       - NAMESPACE=soundscape
+      - POSTGIS_HOST=postgis
+      - POSTGIS_PORT=5432
+      - POSTGIS_USER=postgres
+      - POSTGIS_PASSWORD=secret
+      - POSTGIS_DBNAME=osm
     volumes:
-      - ./volumes/tiles:/tiles
+      - tiles:/tiles
     depends_on:
       postgis:
         condition: service_healthy
+
   tilesrv:
     image: soundscape/tilesrv
     build:
@@ -40,3 +48,7 @@ services:
     depends_on:
       postgis:
         condition: service_healthy
+
+volumes:
+  postgis:
+  tiles:

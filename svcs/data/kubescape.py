@@ -1,15 +1,22 @@
 """
 This is a minimal shim to replace missing code referenced by ingest.py.
 """
+import os
 from psycopg2.extensions import make_dsn, parse_dsn
 
 class SoundscapeKube:
     def __init__(self, arg1, arg2):
         self.databases = {
             'osm': {
-                'dbstatus': None,
                 'name': 'osm',
-                'dsn2': make_dsn(host="postgis", port=5432, dbname="osm", user="postgres", password="secret"),
+                'dsn2': make_dsn(
+                    user=os.environ['POSTGIS_USER'],
+                    password=os.environ['POSTGIS_PASSWORD'],
+                    host=os.environ['POSTGIS_HOST'],
+                    port=os.environ['POSTGIS_PORT'],
+                    dbname=os.environ['POSTGIS_DBNAME'],
+                ),
+                'dbstatus': None,
             }
         }
 
