@@ -1,5 +1,20 @@
-# docker-compose up --build
+# This container setup provisions a PostGIS server, downloads and ingests OSM
+# data for Washington, DC, and runs a Soundscape GeoJSON tile server.
+#
+# To run:
+#   $ docker-compose up --build
+#
+# Once all three components are running (PostGIS server, ingest service, tile
+# server), test by fetching a tile in your browser, e.g.:
+#   http://localhost:8080/16/18745/25070.json
+#
+# Helpful tool for finding other tile coordinates (the last two numbers in the
+# above URL): http://bboxfinder.com/
 version: '3.8'
+
+volumes:
+  postgis:
+  tiles:
 
 services:
   postgis:
@@ -42,13 +57,9 @@ services:
     build:
       dockerfile: Dockerfile.tilesrv
     environment:
-      - DSN="host=postgis port=5432 dbname=osm user=postgres password=secret"
+      - DSN=host=postgis port=5432 dbname=osm user=postgres password=secret
     ports:
       - "8080:8080"
     depends_on:
       postgis:
         condition: service_healthy
-
-volumes:
-  postgis:
-  tiles:
