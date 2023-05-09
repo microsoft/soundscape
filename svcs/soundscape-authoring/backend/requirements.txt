@@ -1,6 +1,6 @@
 pip==22.2.2                        # Installing Python packages
 
-django==4.0.8                      # Django framework
+django==4.1.9                      # Django framework
 djangorestframework==3.13.1        # REST API support for
 Pillow==9.3.0                      # Required for the ImageField model field
 psycopg2==2.9.3                    # PostgreSQL database adapter
