@@ -38,6 +38,8 @@ services:
     build:
       dockerfile: Dockerfile.ingest
     environment:
+      # set this to any location listed in extracts.json, or add new ones
+      # from the available downloads at http://download.geofabrik.de/
       - GEN_REGIONS=district-of-columbia
       - LOOP_TIME=14400
       - NAMESPACE=soundscape
