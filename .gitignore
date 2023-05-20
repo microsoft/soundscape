@@ -10,6 +10,7 @@
 *.perspectivev3
 *.xcuserstate
 xcuserdata/
+.build
 
 ## Generic Files To Ignore
 *~

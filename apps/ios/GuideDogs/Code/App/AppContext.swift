@@ -376,16 +376,16 @@ extension AppContext {
     
     struct Links {
         static func privacyPolicyURL(for locale: Locale) -> URL {
-            return URL(string: "INSERT PRIVACY POLICY URL HERE")!
+            return URL(string: "https://mur.org.uk")!
         }
         
         static func servicesAgreementURL(for locale: Locale) -> URL {
-            return URL(string: "INSERT SERVICES AGREEMENT URL HERE")!
+            return URL(string: "https://mur.org.uk/")!
         }
     
-        static let companySupportURL = URL(string: "INSERT SUPPORT URL HERE")!
+        static let companySupportURL = URL(string: "https://mur.org.uk/")!
         
-        static let accessibilityFrance = URL(string: "INSERT ACCESSIBILITY STATEMENT URL HERE")!
+        static let accessibilityFrance = URL(string: "https://mur.org.uk/")!
     }
     
 }
