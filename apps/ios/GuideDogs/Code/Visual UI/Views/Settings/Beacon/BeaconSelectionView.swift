@@ -63,7 +63,7 @@ struct BeaconSelectionView: View {
                         }
                     }
                     
-                    if let beacons = BeaconOption.allAvailableCases(for: .haptic), !beacons.isEmpty {
+                    if let beacons = BeaconOption.allAvailableCases(for: .haptic) as? [BeaconOption], !beacons.isEmpty {
                         TableHeaderCell(text: GDLocalizedString("beacon.settings.style.haptic"))
                         
                         HStack(spacing: 0) {
