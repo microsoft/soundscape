@@ -25,10 +25,9 @@ RUN tdnf repolist --refresh
 RUN tdnf install -y ca-certificates-microsoft build-essential
 RUN tdnf install -y rust openssl-devel
 
-RUN mkdir /build /build/osmingester /build/osmingester/src
-COPY Cargo.toml Cargo.lock /build/
-COPY osmingester/Cargo.toml /build/osmingester
-COPY osmingester/src/main.rs /build/osmingester/src
+RUN mkdir /build /build/src
+COPY Cargo.toml /build
+COPY main.rs /build/src
 WORKDIR /build
 RUN cargo build --release
 

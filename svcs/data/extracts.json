@@ -1,5 +1,10 @@
 [
     {
+	"name": "district-of-columbia",
+	"url": "http://download.geofabrik.de/north-america/us/district-of-columbia-latest.osm.pbf",
+	"bbox": [38.755422, -77.243156, 39.008247, -76.842155]
+	},
+    {
 	"name": "washington",
 	"url": "http://download.geofabrik.de/north-america/us/washington-latest.osm.pbf",
 	"bbox": [45.543722544855, -124.836091628339, 49.0312249194317, -116.910090059078]
