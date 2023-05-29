@@ -90,6 +90,7 @@ GEM
     zeitwerk (2.6.4)
 
 PLATFORMS
+  arm64-darwin-21
   x86_64-darwin-22
 
 DEPENDENCIES
@@ -97,4 +98,4 @@ DEPENDENCIES
   cocoapods-patch (= 1.0.2)
 
 BUNDLED WITH
-   2.3.25
+   2.4.11
