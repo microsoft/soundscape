@@ -27,3 +27,6 @@ AppStoreBuild
 
 # Ignore CocoaPods
 Pods/
+
+.bundle/
+ruby/

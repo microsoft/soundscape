@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="SKe-a6-Z8X">
-    <device id="retina4_7" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="SKe-a6-Z8X">
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -16,14 +14,14 @@
                         <viewControllerLayoutGuide type="bottom" id="hbQ-Mk-BuJ"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="pqG-Vv-c6O">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" indicatorStyle="white" translatesAutoresizingMaskIntoConstraints="NO" id="jms-Sa-E4o">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <subviews>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Terms of Use" textAlignment="center" lineBreakMode="middleTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="twL-2e-ZWU" userLabel="Header">
-                                        <rect key="frame" x="32" y="16" width="311" height="33.5"/>
+                                        <rect key="frame" x="32" y="15.999999999999996" width="536" height="33.666666666666657"/>
                                         <accessibility key="accessibilityConfiguration">
                                             <accessibilityTraits key="traits" staticText="YES" header="YES"/>
                                         </accessibility>
@@ -35,9 +33,9 @@
                                         </userDefinedRuntimeAttributes>
                                     </label>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" indicatorStyle="white" editable="NO" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wpe-rU-LYI" userLabel="Terms of Use" customClass="RoundedTextView" customModule="Soundscape" customModuleProvider="target">
-                                        <rect key="frame" x="32" y="77.5" width="311" height="333.5"/>
+                                        <rect key="frame" x="32" y="77.666666666666686" width="536" height="300"/>
                                         <color key="backgroundColor" red="0.1019607843" green="0.14901960780000001" blue="0.25098039220000001" alpha="1" colorSpace="calibratedRGB"/>
-                                        <string key="text">Your use of AppName is subject to the terms of the Company Services Agreement. Please check the box below to agree and continue.</string>
+                                        <string key="text">Your use of Openscape is subject to the terms of the Company Services Agreement. Please check the box below to agree and continue.</string>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -55,14 +53,14 @@
                                         </userDefinedRuntimeAttributes>
                                     </textView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_check_box_outline_blank_white" translatesAutoresizingMaskIntoConstraints="NO" id="7ku-Xj-JdJ">
-                                        <rect key="frame" x="28" y="448.5" width="36" height="36"/>
+                                        <rect key="frame" x="28" y="415" width="36" height="36"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="36" id="UMB-RL-8cC"/>
                                             <constraint firstAttribute="width" constant="36" id="xNx-1W-pSi"/>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Accept Terms of Use" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J1n-YN-EcN" userLabel="Accept Label">
-                                        <rect key="frame" x="80" y="456" width="263" height="20.5"/>
+                                        <rect key="frame" x="80" y="422.66666666666669" width="488" height="20.333333333333314"/>
                                         <accessibility key="accessibilityConfiguration">
                                             <bool key="isElement" value="NO"/>
                                         </accessibility>
@@ -74,7 +72,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4VC-CC-mKm" userLabel="Terms of Use Button">
-                                        <rect key="frame" x="28" y="446" width="315" height="40.5"/>
+                                        <rect key="frame" x="28" y="412.66666666666669" width="540" height="40.333333333333314"/>
                                         <accessibility key="accessibilityConfiguration" hint="Double tap to check the \&quot;accept the terms of use\&quot; checkbox" label="Accept Terms of Use"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="string" keyPath="accLabelLocalization" value="terms_of_use.accept_checkbox.acc_label"/>
@@ -85,7 +83,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JPX-Dl-x02" customClass="RoundedSolidButton" customModule="Soundscape" customModuleProvider="target">
-                                        <rect key="frame" x="32" y="521.5" width="311" height="45"/>
+                                        <rect key="frame" x="32" y="488" width="536" height="45"/>
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="45" id="W01-cF-5zB"/>
@@ -108,7 +106,7 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Next" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L3y-RA-xLy">
-                                        <rect key="frame" x="32" y="521.5" width="311" height="45"/>
+                                        <rect key="frame" x="32" y="488" width="536" height="45"/>
                                         <accessibility key="accessibilityConfiguration">
                                             <bool key="isElement" value="NO"/>
                                         </accessibility>
@@ -191,11 +189,11 @@
                         <viewControllerLayoutGuide type="bottom" id="QfL-6n-YYP"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="DUe-2e-Op7">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="i6W-1a-Meu">
-                                <rect key="frame" x="169" y="315" width="37" height="37"/>
+                                <rect key="frame" x="281.66666666666669" y="281.66666666666669" width="37" height="37"/>
                             </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" red="0.12867569919999999" green="0.13345718379999999" blue="0.20067968959999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -223,6 +221,7 @@
                 <navigationController navigationBarHidden="YES" id="SKe-a6-Z8X" sceneMemberID="viewController">
                     <nil key="simulatedTopBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="PQs-yu-UxM">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <userDefinedRuntimeAttributes>
@@ -245,14 +244,14 @@
                         <viewControllerLayoutGuide type="bottom" id="HfM-2k-2i8"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="lv4-dC-RRl">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" indicatorStyle="white" translatesAutoresizingMaskIntoConstraints="NO" id="zyB-d4-tJr">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="561"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="494"/>
                                 <subviews>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location" textAlignment="center" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1dJ-8V-tOj" userLabel="Heading">
-                                        <rect key="frame" x="32" y="16" width="311" height="33.5"/>
+                                        <rect key="frame" x="32" y="15.999999999999996" width="536" height="33.666666666666657"/>
                                         <accessibility key="accessibilityConfiguration">
                                             <accessibilityTraits key="traits" staticText="YES" header="YES"/>
                                         </accessibility>
@@ -264,13 +263,13 @@
                                         </userDefinedRuntimeAttributes>
                                     </label>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="permissions-location" translatesAutoresizingMaskIntoConstraints="NO" id="mol-S8-f1K">
-                                        <rect key="frame" x="0.0" y="66.5" width="375" height="172"/>
+                                        <rect key="frame" x="0.0" y="66.666666666666686" width="600" height="275"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="mol-S8-f1K" secondAttribute="height" multiplier="375:172" id="5tW-MW-lgr"/>
                                         </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AppName is a location-based app. We use your location to find and call out things around you." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="frC-1Z-Paz" userLabel="Description">
-                                        <rect key="frame" x="32" y="286.5" width="311" height="64.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Openscape is a location-based app. We use your location to find and call out things around you." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="frC-1Z-Paz" userLabel="Description">
+                                        <rect key="frame" x="32" y="389.66666666666669" width="536" height="42.333333333333314"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -279,7 +278,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This permission is required." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xTI-8V-z97" userLabel="Required">
-                                        <rect key="frame" x="32" y="383" width="311" height="14.5"/>
+                                        <rect key="frame" x="32" y="464" width="536" height="14.333333333333314"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -305,7 +304,7 @@
                                 </constraints>
                             </scrollView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pGU-6E-1Jv" customClass="RoundedSolidButton" customModule="Soundscape" customModuleProvider="target">
-                                <rect key="frame" x="32" y="577" width="311" height="45"/>
+                                <rect key="frame" x="32" y="510" width="536" height="45"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="45" id="DXB-zS-9W3"/>
@@ -325,7 +324,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enable Location" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.40000000000000002" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vN2-rR-aTP">
-                                <rect key="frame" x="32" y="577" width="311" height="45"/>
+                                <rect key="frame" x="32" y="510" width="536" height="45"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <bool key="isElement" value="NO"/>
                                 </accessibility>
@@ -378,14 +377,14 @@
                         <viewControllerLayoutGuide type="bottom" id="YPT-jG-2jI"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Sq0-qP-7YV">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" indicatorStyle="white" translatesAutoresizingMaskIntoConstraints="NO" id="khh-OM-Ghv">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="561"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="494"/>
                                 <subviews>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Device Motion" textAlignment="center" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3dD-YQ-5WX" userLabel="Heading">
-                                        <rect key="frame" x="32" y="16" width="311" height="33.5"/>
+                                        <rect key="frame" x="32" y="15.999999999999996" width="536" height="33.666666666666657"/>
                                         <accessibility key="accessibilityConfiguration">
                                             <accessibilityTraits key="traits" staticText="YES" header="YES"/>
                                         </accessibility>
@@ -397,13 +396,13 @@
                                         </userDefinedRuntimeAttributes>
                                     </label>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="permissions-device" translatesAutoresizingMaskIntoConstraints="NO" id="HY3-8h-0SH">
-                                        <rect key="frame" x="0.0" y="66.5" width="375" height="172"/>
+                                        <rect key="frame" x="0.0" y="66.666666666666686" width="600" height="275"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="HY3-8h-0SH" secondAttribute="height" multiplier="375:172" id="Ir6-2q-E2x"/>
                                         </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This allows AppName to improve your experience based on whether you are walking, in a vehicle, or standing still." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yO5-9y-xDk" userLabel="Description">
-                                        <rect key="frame" x="32" y="286.5" width="311" height="64.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This allows Openscape to improve your experience based on whether you are walking, in a vehicle, or standing still." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yO5-9y-xDk" userLabel="Description">
+                                        <rect key="frame" x="32" y="389.66666666666669" width="536" height="42.333333333333314"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -412,7 +411,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This permission is required." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XkJ-is-KCs" userLabel="Required">
-                                        <rect key="frame" x="32" y="383" width="311" height="14.5"/>
+                                        <rect key="frame" x="32" y="464" width="536" height="14.333333333333314"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -438,7 +437,7 @@
                                 </constraints>
                             </scrollView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2i8-rP-UDC" customClass="RoundedSolidButton" customModule="Soundscape" customModuleProvider="target">
-                                <rect key="frame" x="32" y="577" width="311" height="45"/>
+                                <rect key="frame" x="32" y="510" width="536" height="45"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="45" id="YeZ-lJ-QCE"/>
@@ -458,7 +457,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enable Motion &amp; Fitness Activity" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.40000000000000002" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1gT-GG-B8b">
-                                <rect key="frame" x="32" y="577" width="311" height="45"/>
+                                <rect key="frame" x="32" y="510" width="536" height="45"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <bool key="isElement" value="NO"/>
                                 </accessibility>
@@ -503,17 +502,6 @@
             <point key="canvasLocation" x="-634" y="-260"/>
         </scene>
     </scenes>
-    <designables>
-        <designable name="2i8-rP-UDC">
-            <size key="intrinsicContentSize" width="30" height="30"/>
-        </designable>
-        <designable name="JPX-Dl-x02">
-            <size key="intrinsicContentSize" width="30" height="30"/>
-        </designable>
-        <designable name="pGU-6E-1Jv">
-            <size key="intrinsicContentSize" width="30" height="30"/>
-        </designable>
-    </designables>
     <resources>
         <image name="ic_check_box_outline_blank_white" width="24" height="24"/>
         <image name="permissions-device" width="375" height="172"/>

@@ -69,7 +69,7 @@
 	<key>NSMotionUsageDescription</key>
 	<string>AppName uses motion detection to personalize automatic callouts.</string>
 	<key>NSPhotoLibraryUsageDescription</key>
-	<string>AppName uses the photo library for attaching photos to feedback.</string>
+	<string>Openscape uses the photo library for attaching photos to feedback.</string>
 	<key>NSUserActivityTypes</key>
 	<array>
 		<string>$(PRODUCT_BUNDLE_IDENTIFIER).activity.my-location</string>

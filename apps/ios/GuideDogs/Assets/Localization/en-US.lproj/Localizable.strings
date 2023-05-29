@@ -185,16 +185,16 @@
 //------------------------------------------------------------------------------
 
 /* Error message to turn on device location services. "Location Services" is an iOS term that can be found in the Privacy section in the iPhone Settings app. {NumberedPlaceholder="Soundscape"} */
-"general.error.location_services" = "Turn on Location Services to use AppName";
+"general.error.location_services" = "Turn on Location Services to use Openscape";
 
 /* Error message to turn on device precise location services. Ensure "Precise Location" is translated the same as in the iOS Settings app under Maps > Location > Precise Location (this refers to an Apple feature called "Precise Location" in US English). {NumberedPlaceholder="Soundscape"} */
-"general.error.precise_location" = "Turn on Precise Location to use AppName";
+"general.error.precise_location" = "Turn on Precise Location to use Openscape";
 
 /* Error message to authorize location services. "Location Services" is an iOS term that can be found in the Privacy section in the iPhone Settings app. */
 "general.error.location_services.authorize.title" = "Authorize Location Services";
 
 /* Error message to authorize location services. "Location Services" is an iOS term that can be found in the Privacy section in the iPhone Settings app. {NumberedPlaceholder="Soundscape"} */
-"general.error.location_services.authorize.description" = "AppName uses your location to find and tell you about the places and things around you. The app needs your permission to use Location Services.";
+"general.error.location_services.authorize.description" = "Openscape uses your location to find and tell you about the places and things around you. The app needs your permission to use Location Services.";
 
 /* Error message to authorize location services.  Quotes written as \" Keep newlines (\n) between sentences.. {NumberedPlaceholder="\n"} */
 "general.error.location_services.authorize.instructions" = "1. Open the Settings app below\n2. Select \"Location\"\n3. Select \"Always\" or \"While Using the App\"";
@@ -203,13 +203,13 @@
 "general.error.location_services.precise_location.instructions" = "1. Open the Settings app below\n2. Select \"Location\"\n3. Turn on \"Precise Location\"";
 
 /* Error message to open Soundscape to resume setting location services. "Location Services" is an iOS term that can be found in the Privacy section in the iPhone Settings app. {NumberedPlaceholder="Soundscape"} */
-"general.error.location_services_resume" = "Open AppName to resume Location Services";
+"general.error.location_services_resume" = "Open Openscape to resume Location Services";
 
 /* Error message to enable device location services. "Location Services" is an iOS term that can be found in the Privacy section in the iPhone Settings app. */
 "general.error.location_services_enable" = "Enable Location Services";
 
 /* Error message to enable location services. "Location Services" is an iOS term that can be found in the Privacy section in the iPhone Settings app. {NumberedPlaceholder="Soundscape"} */
-"general.error.location_services_enable_description" = "Location Services are currently disabled. AppName cannot work when Location Services are turned off.";
+"general.error.location_services_enable_description" = "Location Services are currently disabled. Openscape cannot work when Location Services are turned off.";
 
 /* Error message to turn on location services in Soundscape to continue with instructions on how to do so on device. Keep newlines (\n) between sentences. "Location Services" is an iOS term that can be found in the Privacy section in the iPhone Settings app. {NumberedPlaceholder="\n"} */
 "general.error.location_services_enable_instructions.2" = "Turn Location Services On in the Settings app to continue.\n\n1. Press the back button (titled Settings)\n2. Select Privacy\n3. Select Location Services\n4. Turn On Location Services";
@@ -276,7 +276,7 @@
 "device_motion.enable.title" = "Enable Motion & Fitness Tracking";
 
 /* Notification to enable motion and fitness activity on the device. Ensure that "Motion & Fitness" is translated the same as `device_motion.title`. {NumberedPlaceholder="Soundscape"} */
-"device_motion.enable.description" = "Motion & Fitness tracking is currently disabled. AppName cannot work when Motion & Fitness tracking is turned off.";
+"device_motion.enable.description" = "Motion & Fitness tracking is currently disabled. Openscape cannot work when Motion & Fitness tracking is turned off.";
 
 /* Notification to enable motion and fitness activity on the device. Keep newlines (\n) between sentences. Ensure that "Motion & Fitness" is translated the same as `device_motion.title`. {NumberedPlaceholder="Soundscape"} */
 "device_motion.enable.instructions" = "Turn On Fitness Tracking in the Settings app to continue.\n\n1. Press Open Settings\n2. Press the Back button (titled Settings)\n3. Select Privacy\n4. Select Motion & Fitness\n5. Turn on Fitness Tracking\n6. Restart Soundscape";
@@ -289,7 +289,7 @@
 "device_motion.authorize.title" = "Authorize Motion & Fitness Tracking";
 
 /* Notification to authorize motion and fitness activity on the device. Ensure that "Motion & Fitness" is translated the same as `device_motion.title`. {NumberedPlaceholder="Soundscape"} */
-"device_motion.authorize.description" = "This allows AppName to improve your experience based on whether you are walking, in a vehicle, or standing still. The app needs your permission to use Motion & Fitness. Before you authorize Soundscape to use this permission, you may need to enable Fitness Tracking under Settings → Privacy → Motion & Fitness.";
+"device_motion.authorize.description" = "This allows Openscape to improve your experience based on whether you are walking, in a vehicle, or standing still. The app needs your permission to use Motion & Fitness. Before you authorize Soundscape to use this permission, you may need to enable Fitness Tracking under Settings → Privacy → Motion & Fitness.";
 
 /* Notification to authorize motion and fitness activity on the device. Keep newlines (\n) between sentences. Ensure that "Motion & Fitness" is translated the same as `device_motion.title`. {NumberedPlaceholder="\n"} */
 "device_motion.authorize.instructions" = "1. Open the Settings app below\n2. Turn on Motion & Fitness Tracking";
@@ -305,7 +305,7 @@
 "settings.clear_cache.alert_title" = "Delete Stored Data?";
 
 /* Message, Soundscape stores map data to reduce device data and battery consumption {NumberedPlaceholder="Soundscape"} */
-"settings.clear_cache.alert_message" = "AppName stores map data to reduce data and battery consumption. Deleting stored data will require AppName to re-download the data.";
+"settings.clear_cache.alert_message" = "Openscape stores map data to reduce data and battery consumption. Deleting stored data will require Openscape to re-download the data.";
 
 /* Alert, would you like to keep saved markers */
 "settings.clear_cache.markers.alert_title" = "Keep Markers and Routes?";
@@ -335,7 +335,7 @@
 "settings.version.about.version" = "Version %1$@ (%2$@)";
 
 /* Setting selection to send feedback {NumberedPlaceholder="Soundscape"} */
-"settings.feedback.subject" = "AppName Feedback";
+"settings.feedback.subject" = "Openscape Feedback";
 
 /* Prompt that is asking the user to select an email application from the list of email apps they have installed on their phone. */
 "settings.feedback.choose_email_app" = "Choose a mail app:";
@@ -355,8 +355,8 @@
 /* Settings title, Clear stored map data */
 "settings.clear_data" = "Clear Stored Map Data";
 
-/* Settings title, About AppName {NumberedPlaceholder="Soundscape"} */
-"settings.about_app" = "About AppName";
+/* Settings title, About Openscape {NumberedPlaceholder="Soundscape"} */
+"settings.about_app" = "About Openscape";
 
 /* Settings title,General Settings */
 "settings.section.general" = "General Settings";
@@ -377,7 +377,7 @@
 "settings.section.share_usage_data" = "Share Usage Data";
 
 /* Footer to Telemetry settings selection, help app improve by automatically sending diagnostics and data usage from the user. Personal data not collected {NumberedPlaceholder="Soundscape"} */
-"settings.section.telemetry.footer" = "Help AppName improve by automatically sending diagnostics, error reporting, and usage data. No personal data is collected.";
+"settings.section.telemetry.footer" = "Help Openscape improve by automatically sending diagnostics, error reporting, and usage data. No personal data is collected.";
 
 /* Settings title, Language */
 "settings.language.screen_title" = "Language";
@@ -559,7 +559,7 @@
 "settings.about.title.whats_new" = "What's New?";
 
 /* Settings About Title, Privacy and Cookies */
-"settings.about.title.privacy" = "CompanyName Privacy Statement";
+"settings.about.title.privacy" = "Openscape Community Privacy Statement";
 
 /* Settings About Title, Service Agreement */
 "settings.about.title.service_agreement" = "Services Agreement";
@@ -1275,7 +1275,7 @@
 "url_resource.alert.route.import.title" = "You've received a route: \"%@\"";
 
 /* Message for alert that is displayed when importing a route */
-"url_resource.alert.route.import.message" = "You should only use routes from someone you trust. Routes are not created, shared with or reviewed by CompanyName and may contain errors.";
+"url_resource.alert.route.import.message" = "You should only use routes from someone you trust. Routes are not created, shared with or reviewed by Openscape Community and may contain errors.";
 
 /* Title for alert that is displayed when importing an existing route. */
 "url_resource.alert.route.import_existing.title" = "Route already exists";
@@ -2727,7 +2727,7 @@
 "help.more_help.section_title" = "More Help";
 
 /* Help Tutorial, Link to the Company Support website */
-"help.support" = "CompanyName Support";
+"help.support" = "Openscape Community Support";
 
 //------------------------------------------------------------------------------
 // MARK: - Terms of Use
@@ -2737,13 +2737,13 @@
 "terms_of_use.title" = "Terms of Use";
 
 /* Notification message to accept or decline the terms in the Company Service Agreement, Quotes written as \" */
-"terms_of_use.message" = "Your use of AppName is subject to the terms of the %@ and the terms set out below (together, the \"Terms of Use\").";
+"terms_of_use.message" = "Your use of Openscape is subject to the terms of the %@ and the terms set out below (together, the \"Terms of Use\").";
 
 /* Label used to prompt the user to accept terms of use */
 "terms_of_use.message.prompt" = "Please check the box below to agree and continue.";
 
 /* Title of the link to the Company Services Agreement. This value will be used in the placeholder %@ that appears in the terms_of_use.message string */
-"terms_of_use.service_agreement" = "CompanyName Services Agreement";
+"terms_of_use.service_agreement" = "Openscape Community Services Agreement";
 
 /* Terms of use checkbox accessibility label */
 "terms_of_use.accept_checkbox.acc_label" = "Accept Terms of Use";
@@ -2761,7 +2761,7 @@
 "terms_of_use.accept_checkbox.off.acc_value" = "Unchecked";
 
 /* App's medical device and safety disclaimer, "(1)" and (2)" are used for an inline, numbered list */
-"terms_of_use.medical_safety_disclaimer" = "You acknowledge that AppName (1) is not designed, intended, or made available as a medical device, and (2) is not designed or intended to be a substitute for professional medical advice, diagnosis, treatment, or judgment and should not be used to replace or as a substitute for professional medical advice, diagnosis, treatment, or judgment.\n\nSafety Notice\nSoundscape is a navigation aid and should not be used in lieu of mobility skills, being aware of your surroundings, and good judgement. Use caution when navigating your environment as the mapping data incorporated into the AppName program is captured from a third-party program, and therefore, there may be limitations with the accuracy of the information presented.";
+"terms_of_use.medical_safety_disclaimer" = "You acknowledge that Openscape (1) is not designed, intended, or made available as a medical device, and (2) is not designed or intended to be a substitute for professional medical advice, diagnosis, treatment, or judgment and should not be used to replace or as a substitute for professional medical advice, diagnosis, treatment, or judgment.\n\nSafety Notice\nSoundscape is a navigation aid and should not be used in lieu of mobility skills, being aware of your surroundings, and good judgement. Use caution when navigating your environment as the mapping data incorporated into the Openscape program is captured from a third-party program, and therefore, there may be limitations with the accuracy of the information presented.";
 
 /* Label for the accept button that will be displayed as a new feature annoucement to existing users */
 "terms_of_use.accept.new_features" = "Accept";
@@ -2792,7 +2792,7 @@
 "first_launch.soundscape_language.text" = "Select the language you would like Soundscape to use. You can always change your selection in the app settings.";
 
 /* Notification, Introduction to app location information {NumberedPlaceholder="Soundscape"} */
-"first_launch.location.text" = "AppName is a location-based app. We use your location to find and call out things around you.";
+"first_launch.location.text" = "Openscape is a location-based app. We use your location to find and call out things around you.";
 
 /* Notification to enable location settings on your device */
 "first_launch.location.enable_location" = "Enable Location";
@@ -2801,7 +2801,7 @@
 "first_launch.device_motion" = "Device Motion";
 
 /* Notification, introductuction to app motion information {NumberedPlaceholder="Soundscape"} */
-"first_launch.device_motion.text" = "This allows AppName to improve your experience based on whether you are walking, in a vehicle, or standing still.";
+"first_launch.device_motion.text" = "This allows Openscape to improve your experience based on whether you are walking, in a vehicle, or standing still.";
 
 /* Notification, Lighting up your way with sound. A marketing tag line for the app. */
 "first_launch.lighting_way_with_sound" = "Lighting up your way with sound";
@@ -2831,7 +2831,7 @@
 "first_launch.welcome.title" = "Welcome!";
 
 /* Accessibility label for the title text for the welcome screen in the first launch experience */
-"first_launch.welcome.title.accessibility_label" = "Welcome to AppName!";
+"first_launch.welcome.title.accessibility_label" = "Welcome to Openscape!";
 
 /* Short description included in the welcome screen in the first launch experience {NumberedPlaceholder="Soundscape"} */
 "first_launch.welcome.description" = "Navigate with confidence using Soundscape spatial audio";

@@ -39,7 +39,7 @@ class AppContext {
     
     static let shared = AppContext()
     
-    static let appDisplayName = "AppName"
+    static let appDisplayName = "Openscape"
     static let appVersion = Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as! String
     static let appBuild = Bundle.main.object(forInfoDictionaryKey: kCFBundleVersionKey as String) as! String
     static let appStoreId = "1240320677"
