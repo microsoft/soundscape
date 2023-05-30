@@ -163,33 +163,6 @@ extension SearchResultsUpdater: UISearchBarDelegate {
         // Fetch search results given search text
         //
 
-        // for fetching JSON data, see Code/Data/Services/OSM/OSMServiceModel
-
-        let callback: (HTTPStatusCode, String?, Error?) -> Void = {
-            status, text, error in
-                if status != HTTPStatusCode.success {
-                    return
-                } //FIXME display error on failure?
-                var pois: [POI] = []
-                if let text = text,
-                   let data = text.data(using: .utf8),
-                   let json = try? JSONSerialization.jsonObject(with: data) as? [String: Any],
-                   let features = json["features"] as? [[String: Any]] {
-                    for feature in features {
-                        guard let properties = feature["properties"] as? [String: Any],
-                              let name = properties["name"] as? String,
-                              let address = properties["country"] as? String,
-                              let geometry = feature["geometry"] as? [String: Any],
-                              let coordinates = geometry["coordinates"] as? [Double] else {
-                            // Skip any results that don't meet data format assumptions
-                            continue
-                        }
-                        pois.append(GenericLocation(lat: CLLocationDegrees(floatLiteral: coordinates[1]), lon: CLLocationDegrees(floatLiteral: coordinates[0]), name: name, address: address))
-                    }
-                }
-                self.delegate?.searchResultsDidUpdate(pois, searchLocation: self.location)
-        }
-
         // construct URL like https://photon.komoot.io/api/?q=foo&lat=38.896&lon=-77.0223&limit=7
         var searchUrl = URLComponents()
         searchUrl.scheme = "https"
@@ -208,7 +181,41 @@ extension SearchResultsUpdater: UISearchBarDelegate {
             searchUrl.queryItems = baseParams
         }
 
-        OSMServiceModel().getDynamicData(dynamicURL: searchUrl.string!, callback: callback)
+        OSMServiceModel().getDynamicData(dynamicURL: searchUrl.string!, callback: searchWithTextCallback)
     }
-    
+
+    private func searchWithTextCallback(status: HTTPStatusCode, text: String?, error: Error?) {
+        // for fetching JSON data, see Code/Data/Services/OSM/OSMServiceModel
+        if status != HTTPStatusCode.success {
+            return
+        } //FIXME display error on failure?
+
+        var pois: [POI] = []
+        if let text = text,
+           let data = text.data(using: .utf8),
+           let json = try? JSONSerialization.jsonObject(with: data) as? [String: Any],
+           let features = json["features"] as? [[String: Any]] {
+            for feature in features {
+                guard let properties = feature["properties"] as? [String: Any],
+                      let name = properties["name"] as? String,
+                      let geometry = feature["geometry"] as? [String: Any],
+                      let coordinates = geometry["coordinates"] as? [Double] else {
+                    // Skip any results that don't have at least a name and lat/lon
+                    continue
+                }
+
+                // Include as specific an address as we can get for this POI
+                var addressParts: [String] = []
+                for key in ["street", "city", "state", "country"] {
+                    if let value = properties[key] as? String {
+                        addressParts.append(value)
+                    }
+                }
+
+                pois.append(GenericLocation(lat: CLLocationDegrees(floatLiteral: coordinates[1]), lon: CLLocationDegrees(floatLiteral: coordinates[0]), name: name, address: addressParts.joined(separator: ", ")))
+            }
+        }
+
+        delegate?.searchResultsDidUpdate(pois, searchLocation: location)
+    }
 }
