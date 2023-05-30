@@ -120,8 +120,11 @@ extension SearchResultsUpdater: UISearchResultsUpdating {
         //
         // Fetch autosuggest results with new search text
         //
+
+        ///FIXME leaving this empty for now
+        /// We can limit the load on the API server by only executing searches when typing is done.
+        /// When "enter" is pressed, the searchWithText method below executes the query.
     }
-    
 }
 
 // MARK: - UISearchBarDelegate
@@ -159,6 +162,53 @@ extension SearchResultsUpdater: UISearchBarDelegate {
         //
         // Fetch search results given search text
         //
+
+        // for fetching JSON data, see Code/Data/Services/OSM/OSMServiceModel
+
+        let callback: (HTTPStatusCode, String?, Error?) -> Void = {
+            status, text, error in
+                if status != HTTPStatusCode.success {
+                    return
+                } //FIXME display error on failure?
+                var pois: [POI] = []
+                if let text = text,
+                   let data = text.data(using: .utf8),
+                   let json = try? JSONSerialization.jsonObject(with: data) as? [String: Any],
+                   let features = json["features"] as? [[String: Any]] {
+                    for feature in features {
+                        guard let properties = feature["properties"] as? [String: Any],
+                              let name = properties["name"] as? String,
+                              let address = properties["country"] as? String,
+                              let geometry = feature["geometry"] as? [String: Any],
+                              let coordinates = geometry["coordinates"] as? [Double] else {
+                            // Skip any results that don't meet data format assumptions
+                            continue
+                        }
+                        pois.append(GenericLocation(lat: CLLocationDegrees(floatLiteral: coordinates[1]), lon: CLLocationDegrees(floatLiteral: coordinates[0]), name: name, address: address))
+                    }
+                }
+                self.delegate?.searchResultsDidUpdate(pois, searchLocation: self.location)
+        }
+
+        // construct URL like https://photon.komoot.io/api/?q=foo&lat=38.896&lon=-77.0223&limit=7
+        var searchUrl = URLComponents()
+        searchUrl.scheme = "https"
+        searchUrl.host = "photon.komoot.io"
+        searchUrl.path = "/api"
+        let baseParams = [
+            URLQueryItem(name: "q", value: searchText),
+            //URLQueryItem(name: "limit", value: "7")
+        ]
+        if let location = self.location {
+            searchUrl.queryItems = baseParams + [
+                URLQueryItem(name: "lat", value: String(format: "%.4f", location.coordinate.latitude)),
+                URLQueryItem(name: "lon", value: String(format: "%.4f", location.coordinate.longitude)),
+            ]
+        } else {
+            searchUrl.queryItems = baseParams
+        }
+
+        OSMServiceModel().getDynamicData(dynamicURL: searchUrl.string!, callback: callback)
     }
     
 }

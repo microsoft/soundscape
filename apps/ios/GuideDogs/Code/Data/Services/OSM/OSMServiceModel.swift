@@ -82,7 +82,8 @@ class OSMServiceModel: OSMServiceModelProtocol {
         
         var request = URLRequest(url: url, cachePolicy: .reloadIgnoringLocalCacheData, timeoutInterval: ServiceModel.requestTimeout)
         request.setValue("plain/text", forHTTPHeaderField: "Accept")
-        
+        request.setValue("Openscape/0.1 (https://github.com/openscape-community/openscape)", forHTTPHeaderField: "User-Agent")
+
         // Some housekeeping: Show the network activity indicator on the status bar, and log the request
         ServiceModel.logNetworkRequest(request)
         
