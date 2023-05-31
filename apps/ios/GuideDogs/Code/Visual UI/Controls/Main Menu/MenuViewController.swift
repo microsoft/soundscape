@@ -10,12 +10,11 @@ import UIKit
 import SafariServices
 
 enum MenuItem {
-    case home, recreation, devices, help, settings, status, feedback, rate, share, learningResources
+    case home, devices, help, settings, status, feedback, rate, share
     
     var localizedString: String {
         switch self {
         case .home:       return GDLocalizedString("ui.menu.close")
-        case .recreation: return GDLocalizedString("menu.events")
         case .devices:    return GDLocalizedString("menu.devices")
         case .help:       return GDLocalizedString("menu.help_and_tutorials")
         case .settings:   return GDLocalizedString("settings.screen_title")
@@ -23,14 +22,12 @@ enum MenuItem {
         case .feedback:   return GDLocalizedString("menu.send_feedback")
         case .rate:       return GDLocalizedString("menu.rate")
         case .share:      return GDLocalizedString("share.title")
-        case .learningResources: return GDLocalizedString("menu.learning_resources")
         }
     }
     
     var accessibilityString: String {
         switch self {
         case .home:       return GDLocalizedString("ui.menu.close")
-        case .recreation: return GDLocalizedString("menu.events")
         case .devices:    return GDLocalizedString("menu.devices")
         case .help:       return GDLocalizedString("menu.help_and_tutorials")
         case .settings:   return GDLocalizedString("settings.screen_title")
@@ -38,14 +35,12 @@ enum MenuItem {
         case .feedback:   return GDLocalizedString("menu.send_feedback")
         case .rate:       return GDLocalizedString("menu.rate")
         case .share:      return GDLocalizedString("share.title")
-        case .learningResources: return GDLocalizedString("menu.learning_resources")
         }
     }
     
     var icon: UIImage? {
         switch self {
         case .home:       return UIImage(named: "ic_chevron_left_28px")
-        case .recreation: return UIImage(named: "nordic_walking_white_28dp")
         case .devices:    return UIImage(named: "baseline-headset-28px")
         case .help:       return UIImage(named: "ic_help_outline_28px")
         case .settings:   return UIImage(named: "ic_settings_28px")
@@ -53,7 +48,6 @@ enum MenuItem {
         case .feedback:   return UIImage(named: "ic_email_28px")
         case .rate:       return UIImage(named: "ic_star_rate_28px")
         case .share:      return UIImage(systemName: "square.and.arrow.up")
-        case .learningResources: return UIImage(named: "school_white_28dp")
         }
     }
 }
@@ -66,11 +60,9 @@ class MenuViewController: UIViewController {
     
     override func loadView() {
         // Build views for menu items
-        menuView.addMenuItem(.recreation)
         menuView.addMenuItem(.devices)
         menuView.addMenuItem(.settings)
         menuView.addMenuItem(.help)
-        menuView.addMenuItem(.learningResources)
         menuView.addMenuItem(.feedback)
         menuView.addMenuItem(.rate)
         menuView.addMenuItem(.share)
@@ -139,16 +131,6 @@ class MenuViewController: UIViewController {
         case .share:
             closeMenu {
                 AppShareHelper.share()
-            }
-        case .learningResources:
-            dismiss(animated: true) {
-                if let rootViewController = AppContext.rootViewController {
-                    let safariVC = SFSafariViewController(url: ServiceModel.learningResourcesWebpage)
-                    safariVC.preferredBarTintColor = Colors.Background.primary
-                    safariVC.preferredControlTintColor = Colors.Foreground.primary
-                    rootViewController.present(safariVC, animated: true, completion: nil)
-                    GDATelemetry.track("learning_resources.webpage.shown", with: ["context": "menu"])
-                }
             }
         default:
             select(item)

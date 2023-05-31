@@ -38,7 +38,6 @@ class HomeViewController: UIViewController {
         /// - Returns: The segue associated with this menu item
         static func segue(for menuItem: MenuItem) -> String? {
             switch menuItem {
-            case .recreation: return Segue.showRecreationActivities
             case .devices:    return Segue.showManageDevices
             case .help:       return Segue.showHelp
             case .settings:   return Segue.showSettings
