@@ -5,7 +5,7 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en_US</string>
 	<key>CFBundleDisplayName</key>
-	<string>Soundscape</string>
+	<string>Openscape</string>
 	<key>CFBundleDocumentTypes</key>
 	<array>
 		<dict>
@@ -21,6 +21,39 @@
 	</array>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
+	<key>CFBundleGetInfoString</key>
+	<string></string>
+	<key>CFBundleIconFile</key>
+	<string></string>
+	<key>CFBundleIconFiles</key>
+	<array>
+		<string></string>
+	</array>
+	<key>CFBundleIcons</key>
+	<dict>
+		<key>CFBundlePrimaryIcon</key>
+		<dict>
+			<key>CFBundleIconFiles</key>
+			<array>
+				<string></string>
+			</array>
+			<key>CFBundleIconName</key>
+			<string></string>
+			<key>UIPrerenderedIcon</key>
+			<false/>
+		</dict>
+		<key>UINewsstandIcon</key>
+		<dict>
+			<key>CFBundleIconFiles</key>
+			<array>
+				<string></string>
+			</array>
+			<key>UINewsstandBindingEdge</key>
+			<string>UINewsstandBindingEdgeLeft</string>
+			<key>UINewsstandBindingType</key>
+			<string>UINewsstandBindingTypeMagazine</string>
+		</dict>
+	</dict>
 	<key>CFBundleIdentifier</key>
 	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
 	<key>CFBundleInfoDictionaryVersion</key>
@@ -52,22 +85,26 @@
 	<string>$(CURRENT_PROJECT_VERSION)</string>
 	<key>ITSAppUsesNonExemptEncryption</key>
 	<false/>
+	<key>LSApplicationCategoryType</key>
+	<string></string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>LSSupportsOpeningDocumentsInPlace</key>
 	<false/>
 	<key>NSBluetoothAlwaysUsageDescription</key>
-	<string>AppName uses Bluetooth LE to connect to accessories.</string>
+	<string>Openscape uses Bluetooth LE to connect to accessories.</string>
 	<key>NSBluetoothPeripheralUsageDescription</key>
-	<string>AppName uses Bluetooth LE to connect to accessories.</string>
+	<string>Openscape uses Bluetooth LE to connect to accessories.</string>
+	<key>NSHumanReadableCopyright</key>
+	<string></string>
 	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
-	<string>AppName uses your location to provide you with relevant information about your surroundings.</string>
+	<string>Openscape uses your location to provide you with relevant information about your surroundings.</string>
 	<key>NSLocationAlwaysUsageDescription</key>
-	<string>AppName uses your location to provide you with relevant information about your surroundings.</string>
+	<string>Openscape uses your location to provide you with relevant information about your surroundings.</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>AppName uses your location to provide you with relevant information about your surroundings.</string>
+	<string>Openscape uses your location to provide you with relevant information about your surroundings.</string>
 	<key>NSMotionUsageDescription</key>
-	<string>AppName uses motion detection to personalize automatic callouts.</string>
+	<string>Openscape uses motion detection to personalize automatic callouts.</string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>Openscape uses the photo library for attaching photos to feedback.</string>
 	<key>NSUserActivityTypes</key>

@@ -6312,6 +6312,7 @@
 					"\"${PODS_ROOT}/Headers/Public/HockeySDK\"",
 				);
 				INFOPLIST_FILE = GuideDogs/Assets/PropertyLists/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Openscape;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -6503,6 +6504,7 @@
 					"\"${PODS_ROOT}/Headers/Public/HockeySDK\"",
 				);
 				INFOPLIST_FILE = GuideDogs/Assets/PropertyLists/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Openscape;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -6562,6 +6564,7 @@
 					"\"${PODS_ROOT}/Headers/Public/HockeySDK\"",
 				);
 				INFOPLIST_FILE = GuideDogs/Assets/PropertyLists/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Openscape;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
