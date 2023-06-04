@@ -6284,7 +6284,7 @@
 			baseConfigurationReference = E1C725071707AF59CE42CF40 /* Pods-Soundscape.adhoc.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon Beta";
-				BUNDLE_SPOKEN_NAME = "Soundscape AdHoc";
+				BUNDLE_SPOKEN_NAME = "Openscape Adhoc";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_STATIC_ANALYZER_MODE = deep;
 				CODE_SIGN_ENTITLEMENTS = GuideDogs/Assets/PropertyLists/SoundscapeDF.entitlements;
@@ -6325,7 +6325,7 @@
 				MARKETING_VERSION = 1.0.0;
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited) -DADHOC";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.companyname.appname-adhoc";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.openscape.openscape-adhoc";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				RUN_CLANG_STATIC_ANALYZER = YES;
@@ -6475,7 +6475,7 @@
 			baseConfigurationReference = 5A99A67E08FC20519550F09D /* Pods-Soundscape.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon Beta";
-				BUNDLE_SPOKEN_NAME = "Soundscape Debug";
+				BUNDLE_SPOKEN_NAME = "Openscape Debug";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_STATIC_ANALYZER_MODE = deep;
 				CODE_SIGN_ENTITLEMENTS = GuideDogs/Assets/PropertyLists/Soundscape.entitlements;
@@ -6517,7 +6517,7 @@
 				MARKETING_VERSION = 1.0.0;
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited) -DDEBUG";
-				PRODUCT_BUNDLE_IDENTIFIER = uk.org.mur.soundscape;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.openscape.openscape-debug";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				RUN_CLANG_STATIC_ANALYZER = YES;
@@ -6537,7 +6537,7 @@
 			baseConfigurationReference = 4947404B8209AB0A5F3B0EB1 /* Pods-Soundscape.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				BUNDLE_SPOKEN_NAME = Soundscape;
+				BUNDLE_SPOKEN_NAME = Openscape;
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_STATIC_ANALYZER_MODE = deep;
 				CODE_SIGN_ENTITLEMENTS = GuideDogs/Assets/PropertyLists/Soundscape.entitlements;
@@ -6577,7 +6577,7 @@
 				MARKETING_VERSION = 1.0.0;
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited) -DRELEASE";
-				PRODUCT_BUNDLE_IDENTIFIER = uk.org.mur.soundscape;
+				PRODUCT_BUNDLE_IDENTIFIER = io.openscape.openscape;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				RUN_CLANG_STATIC_ANALYZER = YES;
