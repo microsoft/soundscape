@@ -1,6 +1,7 @@
 # Openscape, an open source revival of Soundscape
 
-This is an in-progress community project to bring Soundscape, now Openscape, back to blind and visually impaired travelers everywhere.
+This is an in-progress community project to bring Soundscape, now Openscape, back to blind and visually impaired travelers everywhere.  
+Join [our discord server](https://discord.gg/mqzFeAPu6A) to discuss the project, give feedback if you are a tester and help out.
 
 # What is Microsoft Soundscape
 
