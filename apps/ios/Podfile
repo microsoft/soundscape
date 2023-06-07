@@ -2,7 +2,7 @@ platform :ios, '14.1'
 plugin 'cocoapods-patch'
 use_frameworks!
 
-target 'Soundscape' do
+target 'Openscape' do
     project 'GuideDogs.xcodeproj'
     
     # When `pod install` is called, the 'cocoapods-patch' plugin

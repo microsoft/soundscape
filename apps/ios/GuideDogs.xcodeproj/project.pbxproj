@@ -38,7 +38,7 @@
 		281CB8812016B4650059B8C4 /* LocationCallout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281CB8802016B4650059B8C4 /* LocationCallout.swift */; };
 		281CB8842017B4A70059B8C4 /* InsideLocationCallout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281CB8832017B4A70059B8C4 /* InsideLocationCallout.swift */; };
 		281CB8862017B9810059B8C4 /* AlongRoadLocationCallout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281CB8852017B9810059B8C4 /* AlongRoadLocationCallout.swift */; };
-		281D59D11F4765160090F23A /* (null) in Sources */ = {isa = PBXBuildFile; };
+		281D59D11F4765160090F23A /* BuildFile in Sources */ = {isa = PBXBuildFile; };
 		281D59D31F4765880090F23A /* FirstLaunchTermsStepViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281D59D21F4765880090F23A /* FirstLaunchTermsStepViewController.swift */; };
 		28211F22284E620F001A64A4 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28211F21284E620F001A64A4 /* NetworkClient.swift */; };
 		2821F61B220A6D1600D15EFF /* AuthoredActivityLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2821F61A220A6D1600D15EFF /* AuthoredActivityLoader.swift */; };
@@ -604,8 +604,8 @@
 		62A61232243F9542008A8174 /* MPEditAnnotationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A61231243F9542008A8174 /* MPEditAnnotationTableViewCell.swift */; };
 		62B11A3727ACAAC50094FE66 /* RoundedBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B11A3627ACAAC50094FE66 /* RoundedBackground.swift */; };
 		62B11A5927B337650094FE66 /* OnboardingTextStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B11A5827B337650094FE66 /* OnboardingTextStyle.swift */; };
-		62B11A5C27B3398C0094FE66 /* (null) in Sources */ = {isa = PBXBuildFile; };
-		62B11A5E27B43CFA0094FE66 /* (null) in Sources */ = {isa = PBXBuildFile; };
+		62B11A5C27B3398C0094FE66 /* BuildFile in Sources */ = {isa = PBXBuildFile; };
+		62B11A5E27B43CFA0094FE66 /* BuildFile in Sources */ = {isa = PBXBuildFile; };
 		62B11A6827B46C4B0094FE66 /* BeaconOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B11A6727B46C4B0094FE66 /* BeaconOption.swift */; };
 		62B11A6A27B46F6E0094FE66 /* BeaconOption+Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B11A6927B46F6E0094FE66 /* BeaconOption+Style.swift */; };
 		62B11A6C27B46F820094FE66 /* BeaconOption+Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B11A6B27B46F820094FE66 /* BeaconOption+Strings.swift */; };
@@ -662,7 +662,6 @@
 		62EACA2B26697F4300DBDECC /* WaypointDetailAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EACA2A26697F4300DBDECC /* WaypointDetailAnnotationView.swift */; };
 		62F7A30C27B6080900C62390 /* InteractiveBeaconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F7A30B27B6080900C62390 /* InteractiveBeaconView.swift */; };
 		62F7A30E27B6082A00C62390 /* InteractiveBeaconViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F7A30D27B6082A00C62390 /* InteractiveBeaconViewModel.swift */; };
-		B5499F0EEDE32E16F9814457 /* Pods_Soundscape.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAEDD72453A8268FBA604D2F /* Pods_Soundscape.framework */; };
 		B90C27D61EAF81D600007368 /* Sound.swift in Sources */ = {isa = PBXBuildFile; fileRef = B90C27D51EAF81D600007368 /* Sound.swift */; };
 		B918EE9825100FFF00A5354A /* CalloutRangeContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = B918EE9725100FFF00A5354A /* CalloutRangeContext.swift */; };
 		B91D3F6427AB5546004159A8 /* UserAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91D3F6327AB5546004159A8 /* UserAction.swift */; };
@@ -835,7 +834,7 @@
 		C3B331242011615A00CD20F9 /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B331232011615A00CD20F9 /* Address.swift */; };
 		C3B3312A2012B8C600CD20F9 /* Address+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B331292012B8C600CD20F9 /* Address+Extensions.swift */; };
 		C3BB6C121EE08FC500C8D66D /* Launch-Dynamic.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3BB6C111EE08FC500C8D66D /* Launch-Dynamic.storyboard */; };
-		C3BC95D3231F053600B78903 /* (null) in Sources */ = {isa = PBXBuildFile; };
+		C3BC95D3231F053600B78903 /* BuildFile in Sources */ = {isa = PBXBuildFile; };
 		C3BC95D5231F054F00B78903 /* HeadingType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3BC95D4231F054F00B78903 /* HeadingType.swift */; };
 		C3BC95DB2321DA6A00B78903 /* HeadingValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3BC95DA2321DA6A00B78903 /* HeadingValue.swift */; };
 		C3BC95DD2322D6F600B78903 /* RawCourseProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3BC95DC2322D6F600B78903 /* RawCourseProvider.swift */; };
@@ -857,7 +856,7 @@
 		C3F4E4B422EB5F92009C5E70 /* SignificantChangeMonitoringOrigin.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F4E4B322EB5F92009C5E70 /* SignificantChangeMonitoringOrigin.swift */; };
 		C3F6A58C226F746C00C922F7 /* TableViewDataSourcePrefetching.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F6A58B226F746C00C922F7 /* TableViewDataSourcePrefetching.swift */; };
 		C3F6A590226F8DD300C922F7 /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F6A58F226F8DD300C922F7 /* Token.swift */; };
-		C3F93CBF22D40A53009EF801 /* (null) in Sources */ = {isa = PBXBuildFile; };
+		C3F93CBF22D40A53009EF801 /* BuildFile in Sources */ = {isa = PBXBuildFile; };
 		C3F93CFD22D7CA05009EF801 /* GeolocationManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F93CFC22D7CA05009EF801 /* GeolocationManagerProtocol.swift */; };
 		C3FA2EFB236A3A3700ADB8BC /* NotificationContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FA2EFA236A3A3700ADB8BC /* NotificationContainer.swift */; };
 		C3FA2EFD236A3A6A00ADB8BC /* BannerContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FA2EFC236A3A6A00ADB8BC /* BannerContainer.swift */; };
@@ -874,6 +873,7 @@
 		D29832961E4E249700352A5A /* GeoJsonGeometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29832951E4E249700352A5A /* GeoJsonGeometry.swift */; };
 		D30355D31B61401D00E1DDED /* GDAJSONObject.m in Sources */ = {isa = PBXBuildFile; fileRef = D30355D21B61401D00E1DDED /* GDAJSONObject.m */; };
 		D395B0F71B41DA15005A6407 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D395B0F61B41DA15005A6407 /* Images.xcassets */; };
+		FEA7A931A1628AAAADF3067F /* Pods_Openscape.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D0E8328DAB61AC7721C76C9 /* Pods_Openscape.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -889,6 +889,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		236AEDCBBFCF5CE218920644 /* Pods-Openscape.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Openscape.release.xcconfig"; path = "Target Support Files/Pods-Openscape/Pods-Openscape.release.xcconfig"; sourceTree = "<group>"; };
 		2800ABF02654427300B2622F /* AuthoredActivityCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthoredActivityCell.swift; sourceTree = "<group>"; };
 		2800ABF326545F4C00B2622F /* AuthoredActivitiesList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AuthoredActivitiesList.swift; path = "GuideDogs/Code/Visual UI/Views/Authored Activities/AuthoredActivitiesList.swift"; sourceTree = SOURCE_ROOT; };
 		2800ABF6265460C800B2622F /* RouteDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteDetailsView.swift; sourceTree = "<group>"; };
@@ -1237,6 +1238,7 @@
 		28F94F762490425F0010D2B3 /* HapticEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HapticEngine.swift; path = Code/Haptics/HapticEngine.swift; sourceTree = "<group>"; };
 		28FCD314281C93F0007CEFE7 /* HandledEventAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandledEventAction.swift; sourceTree = "<group>"; };
 		28FD0C46206AAC37000FC731 /* NewFeaturesView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = NewFeaturesView.xib; path = "Code/Visual UI/Controls/New Feature Announcement/NewFeaturesView.xib"; sourceTree = "<group>"; };
+		2B33C7E8FC26262D2C908CB6 /* Pods-Openscape.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Openscape.debug.xcconfig"; path = "Target Support Files/Pods-Openscape/Pods-Openscape.debug.xcconfig"; sourceTree = "<group>"; };
 		2F4432FF1D36B5A300CA437D /* licenses.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = licenses.html; sourceTree = "<group>"; };
 		2F4433011D36B5B300CA437D /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AboutViewController.swift; path = "Code/Visual UI/View Controllers/Settings/AboutViewController.swift"; sourceTree = "<group>"; };
 		31013A6420D9ACBE00205D1F /* HomeViewController+RemoteControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "HomeViewController+RemoteControl.swift"; path = "Code/Visual UI/View Controllers/Home/HomeViewController+RemoteControl.swift"; sourceTree = "<group>"; };
@@ -1564,6 +1566,8 @@
 		62EACA2A26697F4300DBDECC /* WaypointDetailAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaypointDetailAnnotationView.swift; sourceTree = "<group>"; };
 		62F7A30B27B6080900C62390 /* InteractiveBeaconView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractiveBeaconView.swift; sourceTree = "<group>"; };
 		62F7A30D27B6082A00C62390 /* InteractiveBeaconViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractiveBeaconViewModel.swift; sourceTree = "<group>"; };
+		7D0E8328DAB61AC7721C76C9 /* Pods_Openscape.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Openscape.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		823631751C541F3D9A0EAF3C /* Pods-Openscape.adhoc.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Openscape.adhoc.xcconfig"; path = "Target Support Files/Pods-Openscape/Pods-Openscape.adhoc.xcconfig"; sourceTree = "<group>"; };
 		B90C27D51EAF81D600007368 /* Sound.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Sound.swift; path = Code/Audio/Protocols/Sound.swift; sourceTree = "<group>"; };
 		B918EE9725100FFF00A5354A /* CalloutRangeContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalloutRangeContext.swift; sourceTree = "<group>"; };
 		B91D3F6327AB5546004159A8 /* UserAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserAction.swift; sourceTree = "<group>"; };
@@ -1795,9 +1799,8 @@
 		D3CE458A1C17377700AC1A25 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		D3CE458C1C17378B00AC1A25 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 		D3CE458E1C1737AE00AC1A25 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
-		D3D7CFC81B3D96470020B5E9 /* Soundscape.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Soundscape.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3D7CFC81B3D96470020B5E9 /* Openscape.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Openscape.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3E2A6361CAD5CA100A5192A /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
-		DAEDD72453A8268FBA604D2F /* Pods_Soundscape.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Soundscape.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1C725071707AF59CE42CF40 /* Pods-Soundscape.adhoc.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Soundscape.adhoc.xcconfig"; path = "Target Support Files/Pods-Soundscape/Pods-Soundscape.adhoc.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -1817,7 +1820,7 @@
 				281BCBFF262638290031298D /* RealmSwift in Frameworks */,
 				28F1ECE2262505DC00E964C0 /* Realm in Frameworks */,
 				2866A7C12625013400EBA2D8 /* DZNEmptyDataSet in Frameworks */,
-				B5499F0EEDE32E16F9814457 /* Pods_Soundscape.framework in Frameworks */,
+				FEA7A931A1628AAAADF3067F /* Pods_Openscape.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2997,7 +3000,7 @@
 				D334CB751B9F682400546BF1 /* MapKit.framework */,
 				D3CE458E1C1737AE00AC1A25 /* MobileCoreServices.framework */,
 				D384DE871B867AD400884DE5 /* ReplayKit.framework */,
-				DAEDD72453A8268FBA604D2F /* Pods_Soundscape.framework */,
+				7D0E8328DAB61AC7721C76C9 /* Pods_Openscape.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -4258,6 +4261,9 @@
 				5A99A67E08FC20519550F09D /* Pods-Soundscape.debug.xcconfig */,
 				4947404B8209AB0A5F3B0EB1 /* Pods-Soundscape.release.xcconfig */,
 				E1C725071707AF59CE42CF40 /* Pods-Soundscape.adhoc.xcconfig */,
+				2B33C7E8FC26262D2C908CB6 /* Pods-Openscape.debug.xcconfig */,
+				236AEDCBBFCF5CE218920644 /* Pods-Openscape.release.xcconfig */,
+				823631751C541F3D9A0EAF3C /* Pods-Openscape.adhoc.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -5097,7 +5103,7 @@
 		D3D7CFC91B3D96470020B5E9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D3D7CFC81B3D96470020B5E9 /* Soundscape.app */,
+				D3D7CFC81B3D96470020B5E9 /* Openscape.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -5115,9 +5121,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D3D7CFC71B3D96460020B5E9 /* Soundscape */ = {
+		D3D7CFC71B3D96460020B5E9 /* Openscape */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D3D7CFEE1B3D96470020B5E9 /* Build configuration list for PBXNativeTarget "Soundscape" */;
+			buildConfigurationList = D3D7CFEE1B3D96470020B5E9 /* Build configuration list for PBXNativeTarget "Openscape" */;
 			buildPhases = (
 				AA3DA63581E438C1AB55C6CC /* [CP] Check Pods Manifest.lock */,
 				D3D7CFC41B3D96460020B5E9 /* Sources */,
@@ -5131,7 +5137,7 @@
 			);
 			dependencies = (
 			);
-			name = Soundscape;
+			name = Openscape;
 			packageProductDependencies = (
 				286F409C2624FF6000C3F80B /* NVActivityIndicatorView */,
 				2866A7C02625013400EBA2D8 /* DZNEmptyDataSet */,
@@ -5146,7 +5152,7 @@
 				283B0306264B03920092F74F /* SDWebImageSwiftUI */,
 			);
 			productName = GuideDogs;
-			productReference = D3D7CFC81B3D96470020B5E9 /* Soundscape.app */;
+			productReference = D3D7CFC81B3D96470020B5E9 /* Openscape.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -5211,7 +5217,7 @@
 				286F409B2624FF6000C3F80B /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */,
 				2866A7BF2625013400EBA2D8 /* XCRemoteSwiftPackageReference "DZNEmptyDataSet" */,
 				2866A7C52625020600EBA2D8 /* XCRemoteSwiftPackageReference "AppCenter-SDK-Apple" */,
-				2866A7CD2625028600EBA2D8 /* XCRemoteSwiftPackageReference "Reachability" */,
+				2866A7CD2625028600EBA2D8 /* XCRemoteSwiftPackageReference "Reachability.swift" */,
 				2866A7D3262502D500EBA2D8 /* XCRemoteSwiftPackageReference "CocoaLumberjack" */,
 				28F1ECE0262505DC00E964C0 /* XCRemoteSwiftPackageReference "realm-cocoa" */,
 				286145E92625099F000E5525 /* XCRemoteSwiftPackageReference "SDWebImage" */,
@@ -5222,7 +5228,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D3D7CFC71B3D96460020B5E9 /* Soundscape */,
+				D3D7CFC71B3D96460020B5E9 /* Openscape */,
 			);
 		};
 /* End PBXProject section */
@@ -5389,7 +5395,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Soundscape/Pods-Soundscape-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-Openscape/Pods-Openscape-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/TBXML/TBXML.framework",
 				"${BUILT_PRODUCTS_DIR}/iOS-GPX-Framework/iOS_GPX_Framework.framework",
 			);
@@ -5400,7 +5406,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Soundscape/Pods-Soundscape-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Openscape/Pods-Openscape-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		AA3DA63581E438C1AB55C6CC /* [CP] Check Pods Manifest.lock */ = {
@@ -5418,7 +5424,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Soundscape-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Openscape-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -5630,7 +5636,7 @@
 				284C9AF623886D3E00CBA392 /* StaticAudioEngineAsset.swift in Sources */,
 				C3FA2EFD236A3A6A00ADB8BC /* BannerContainer.swift in Sources */,
 				C30DDADF2255796B00104085 /* NotificationProtocol.swift in Sources */,
-				281D59D11F4765160090F23A /* (null) in Sources */,
+				281D59D11F4765160090F23A /* BuildFile in Sources */,
 				C34333A6221C8FF500D9CECD /* StaticTableViewDataSource.swift in Sources */,
 				C30DBD2023A2C19400082B27 /* SearchResultsUpdater.swift in Sources */,
 				28DC34C626B8A8D500ADA3C3 /* Samplable.swift in Sources */,
@@ -5705,7 +5711,7 @@
 				B93629B21FCF1C3000BAF3A6 /* GeometryUtils.swift in Sources */,
 				28BCD0C028529FBA00FD2F7D /* GuidedTourWaypointAudioStore.swift in Sources */,
 				627004EC26055A5500FBF5E5 /* HeadphoneMotionReachabilityWrapper.swift in Sources */,
-				62B11A5E27B43CFA0094FE66 /* (null) in Sources */,
+				62B11A5E27B43CFA0094FE66 /* BuildFile in Sources */,
 				620118D124AABB87004B0380 /* LocationDetailLocalizedLabel.swift in Sources */,
 				629F53DB26C724B600796B23 /* TitleTextFieldItem.swift in Sources */,
 				284D48592658291A009001AB /* ViewNavigationHelper.swift in Sources */,
@@ -5761,7 +5767,7 @@
 				6281B51D27110C370092F162 /* WaypointAddListViewModel.swift in Sources */,
 				6249501627068B5F008D842B /* RouteParametersHandler.swift in Sources */,
 				C34333A0221773C600D9CECD /* POITableViewCellConfigurator.swift in Sources */,
-				62B11A5C27B3398C0094FE66 /* (null) in Sources */,
+				62B11A5C27B3398C0094FE66 /* BuildFile in Sources */,
 				C3F06A911FFC41FF00EDDB42 /* Geocoder.swift in Sources */,
 				621628912853EF9900B1FF5B /* DateComponentsFormatter+Extension.swift in Sources */,
 				C324BBED22A1E97B00C83439 /* SuperCategoryPredicate.swift in Sources */,
@@ -5777,7 +5783,7 @@
 				28EB441626B4A27600D5BBE4 /* MarkerCell.swift in Sources */,
 				D30355D31B61401D00E1DDED /* GDAJSONObject.m in Sources */,
 				C30DDAEC2256935F00104085 /* Typeable.swift in Sources */,
-				C3F93CBF22D40A53009EF801 /* (null) in Sources */,
+				C3F93CBF22D40A53009EF801 /* BuildFile in Sources */,
 				C34333AE221CDB2F00D9CECD /* FilterTableViewHeaderView.swift in Sources */,
 				6201428424BF986400F003D5 /* NearbyFilterTableViewController.swift in Sources */,
 				C31BEE252215EA1B00EE9284 /* TableViewDelegate.swift in Sources */,
@@ -6125,7 +6131,7 @@
 				624DF66827BC61DB000A634C /* OnboardingCalloutButton.swift in Sources */,
 				28BA4A7A2655A13F00E1D273 /* Star.swift in Sources */,
 				620118CC24AAB489004B0380 /* LocationActionAlert.swift in Sources */,
-				C3BC95D3231F053600B78903 /* (null) in Sources */,
+				C3BC95D3231F053600B78903 /* BuildFile in Sources */,
 				2872D14C26D83B36000BE465 /* HapticWandBeacon.swift in Sources */,
 				2872D14E26D89C14000BE465 /* HapticBeacon.swift in Sources */,
 				284C9AF923886DA600CBA392 /* AudioEngineAsset.swift in Sources */,
@@ -6281,7 +6287,7 @@
 		};
 		3163C7431DFDB27D00C9E605 /* AdHoc */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E1C725071707AF59CE42CF40 /* Pods-Soundscape.adhoc.xcconfig */;
+			baseConfigurationReference = 823631751C541F3D9A0EAF3C /* Pods-Openscape.adhoc.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon Beta";
 				BUNDLE_SPOKEN_NAME = "Openscape Adhoc";
@@ -6472,7 +6478,7 @@
 		};
 		D3D7CFEF1B3D96470020B5E9 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5A99A67E08FC20519550F09D /* Pods-Soundscape.debug.xcconfig */;
+			baseConfigurationReference = 2B33C7E8FC26262D2C908CB6 /* Pods-Openscape.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon Beta";
 				BUNDLE_SPOKEN_NAME = "Openscape Debug";
@@ -6534,7 +6540,7 @@
 		};
 		D3D7CFF01B3D96470020B5E9 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4947404B8209AB0A5F3B0EB1 /* Pods-Soundscape.release.xcconfig */;
+			baseConfigurationReference = 236AEDCBBFCF5CE218920644 /* Pods-Openscape.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				BUNDLE_SPOKEN_NAME = Openscape;
@@ -6604,7 +6610,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D3D7CFEE1B3D96470020B5E9 /* Build configuration list for PBXNativeTarget "Soundscape" */ = {
+		D3D7CFEE1B3D96470020B5E9 /* Build configuration list for PBXNativeTarget "Openscape" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D3D7CFEF1B3D96470020B5E9 /* Debug */,
@@ -6657,7 +6663,7 @@
 				minimumVersion = 4.4.3;
 			};
 		};
-		2866A7CD2625028600EBA2D8 /* XCRemoteSwiftPackageReference "Reachability" */ = {
+		2866A7CD2625028600EBA2D8 /* XCRemoteSwiftPackageReference "Reachability.swift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/ashleymills/Reachability.swift";
 			requirement = {
@@ -6729,7 +6735,7 @@
 		};
 		2866A7CE2625028600EBA2D8 /* Reachability */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 2866A7CD2625028600EBA2D8 /* XCRemoteSwiftPackageReference "Reachability" */;
+			package = 2866A7CD2625028600EBA2D8 /* XCRemoteSwiftPackageReference "Reachability.swift" */;
 			productName = Reachability;
 		};
 		2866A7D4262502D500EBA2D8 /* CocoaLumberjackSwift */ = {
