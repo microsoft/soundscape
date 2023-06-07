@@ -21,13 +21,13 @@ jobs:
 
     steps:
       - name: Install dependencies
-        run:
-        - apt install osmium imposm
-        - pip install pyrosm
+        run: |
+          apt install osmium imposm
+          pip install pyrosm
       - name: Download pbf
-        run:
-        - python -c "from pyrosm import get_data; fp = get_data('Helsinki'); print(fp)"
-        - osmium fileinfo --bbox /tmp/pyrosm/Helsinki.osm.pbf
+        run: |
+          python -c "from pyrosm import get_data; fp = get_data('Helsinki'); print(fp)"
+          osmium fileinfo --bbox /tmp/pyrosm/Helsinki.osm.pbf
       - name: Import pbf
-        run:
-        - imposm import -mapping config.mapping -write -connection postgresql://postgres@localhost/osm -srid 4326 -cachedir cache/
+        run: |
+          imposm import -mapping config.mapping -write -connection postgresql://postgres@localhost/osm -srid 4326 -cachedir cache/
