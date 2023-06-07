@@ -1,0 +1,33 @@
+# based on https://medium.com/chrisrbailey/github-actions-using-postgres-postgis-and-psql-e920a2aea7e1
+name: Generate JSON tiles
+on:
+  workflow_dispatch:
+jobs:
+  run:
+    name: Generate JSON tiles
+    runs-on: ubuntu-latest
+
+    services:
+      postgres:
+        image: postgis/postgis:10-2.5
+        env:
+          # must specify password for PG Docker container image, see: https://registry.hub.docker.com/_/postgres?tab=description&page=1&name=10
+          POSTGRES_PASSWORD: password
+          POSTGRES_DB: osm
+        ports:
+          - 5432:5432
+        # needed because the postgres container does not provide a healthcheck
+        options: --health-cmd pg_isready --health-interval 10s --health-timeout 5s --health-retries 5
+
+    steps:
+      - name: Install dependencies
+        run:
+        - apt install osmium imposm
+        - pip install pyrosm
+      - name: Download pbf
+        run:
+        - python -c "from pyrosm import get_data; fp = get_data('Helsinki'); print(fp)"
+        - osmium fileinfo --bbox /tmp/pyrosm/Helsinki.osm.pbf
+      - name: Import pbf
+        run:
+        - imposm import -mapping config.mapping -write -connection postgresql://postgres@localhost/osm -srid 4326 -cachedir cache/
