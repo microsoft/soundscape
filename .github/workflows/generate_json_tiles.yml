@@ -23,12 +23,12 @@ jobs:
       - name: Install dependencies
         run: |
           sudo apt install osmium-tool
-          mkdir -p /ingest/imposm3 && wget -q -O - https://github.com/omniscale/imposm3/releases/download/v0.11.1/imposm-0.11.1-linux-x86-64.tar.gz | tar -xz --strip-components=1 -C /ingest/imposm3
+          sudo mkdir -p /ingest/imposm3 && wget -q -O - https://github.com/omniscale/imposm3/releases/download/v0.11.1/imposm-0.11.1-linux-x86-64.tar.gz | tar -xz --strip-components=1 -C /ingest/imposm3
           pip install pyrosm
       - name: Download pbf
         run: |
-          python -c "from pyrosm import get_data; fp = get_data('Helsinki'); print(fp)"
-          osmium fileinfo --bbox /tmp/pyrosm/Helsinki.osm.pbf
+          python -c "from pyrosm import get_data; fp = get_data('Monaco'); print(fp)"
+          osmium fileinfo /tmp/pyrosm/Monaco.osm.pbf
       - name: Import pbf
         run: |
           imposm import -mapping config.mapping -write -connection postgresql://postgres@localhost/osm -srid 4326 -cachedir cache/
