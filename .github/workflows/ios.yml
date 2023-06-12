@@ -17,9 +17,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
       - name: Install CocoaPods
-        run: |
-          bundle install
-          pod install
+        uses: maxim-lobanov/setup-cocoapods@v1
+        with:
+          podfile-path: Podfile.lock
       - name: Set Default Scheme
         run: |
           scheme_list=$(xcodebuild -list -json | tr -d "\n")
