@@ -376,7 +376,7 @@ extension AppContext {
     
     struct Links {
         static func privacyPolicyURL(for locale: Locale) -> URL {
-            return URL(string: "https://mur.org.uk")!
+            return URL(string: "https://openscape.io/privacy-policy")!
         }
         
         static func servicesAgreementURL(for locale: Locale) -> URL {
