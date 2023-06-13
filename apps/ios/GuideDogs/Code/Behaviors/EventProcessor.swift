@@ -1,6 +1,6 @@
 //
 //  EventProcessor.swift
-//  Soundscape
+//  Openscape
 //
 //  Copyright (c) Microsoft Corporation.
 //  Licensed under the MIT License.
@@ -45,12 +45,12 @@ class EventProcessor: CalloutStateMachineDelegate, BehaviorDelegate {
         self.audioEngine = audioEngine
         self.data = data
         
-        // Setup the delegate for the base Soundscape behavior
+        // Setup the delegate for the base openscape behavior
         activeBehavior.delegate = self
         stateMachine.delegate = self
     }
     
-    /// Starts the event processor by activating the default Soundscape behavior. This method
+    /// Starts the event processor by activating the default openscape behavior. This method
     /// should be called after the audio engine is started so that any callouts that are
     /// generated can be played
     func start() {

@@ -1,6 +1,6 @@
 //
 //  Device.swift
-//  Soundscape
+//  Openscape
 //
 //  Copyright (c) Microsoft Corporation.
 //  Licensed under the MIT License.
@@ -38,7 +38,7 @@ extension DeviceType {
     //
     // This protocol will be used to prompt the user to enable
     // head tracking when the device is reachable but not
-    // connected in Soundscape
+    // connected in Openscape
     var reachability: DeviceReachability? {
         switch self {
         case .apple: return HeadphoneMotionManagerReachabilityWrapper()

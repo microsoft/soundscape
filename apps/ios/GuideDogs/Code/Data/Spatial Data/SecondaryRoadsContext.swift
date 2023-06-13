@@ -1,6 +1,6 @@
 //
 //  SecondaryRoadsContext.swift
-//  Soundscape
+//  Openscape
 //
 //  Copyright (c) Microsoft Corporation.
 //  Licensed under the MIT License.
@@ -37,7 +37,7 @@ extension SecondaryRoadsContext {
     private static var strictSecondaryRoadTypes = automotiveSecondaryRoadTypes + ["residential_street",
                                                                                   "pedestrian_street"]
     
-    /// A list of road types Soundscape considers secondary, depending on the context.
+    /// A list of road types openscape considers secondary, depending on the context.
     var secondaryRoadTypes: [String] {
         switch self {
         case .standard:
@@ -49,7 +49,7 @@ extension SecondaryRoadsContext {
         }
     }
     
-    /// A list of localized road names Soundscape considers secondary, depending on the context.
+    /// A list of localized road names openscape considers secondary, depending on the context.
     var localizedSecondaryRoadNames: [String] {
         // Type -> localization key -> localized string
         // "walking_path" -> "osm.tag.walking_path" -> "Walking Path" (en-US)

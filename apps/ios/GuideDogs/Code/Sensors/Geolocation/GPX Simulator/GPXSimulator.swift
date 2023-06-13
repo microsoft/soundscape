@@ -1,6 +1,6 @@
 //
 //  GPXSimulator.swift
-//  Soundscape
+//  Openscape
 //
 //  Copyright (c) Microsoft Corporation.
 //  Licensed under the MIT License.
@@ -83,7 +83,7 @@ class GPXSimulator {
     /// If locations has no course values, they will be generated from the bearing
     /// of every location to the next.
     /// - Note: Course will be synthesize only if there are more than 1 location
-    /// - Note: Course will be synthesize only if locations do not have the Soundscape GPX extention,
+    /// - Note: Course will be synthesize only if locations do not have the openscape GPX extention,
     /// as they already should have the course, even if it's invalid (`-1`).
     private var synthesizeCourse = true
     

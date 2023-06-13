@@ -1,6 +1,6 @@
 //
 //  HelpViewController.swift
-//  Soundscape
+//  Openscape
 //
 //  Copyright (c) Microsoft Corporation.
 //  Licensed under the MIT License.
@@ -208,8 +208,8 @@ class HelpViewController: BaseTableViewController {
         
         // Frequently Asked Questions
         FAQListHelpPage(title: GDLocalizedString("faq.title"),
-                        sections: [FAQSection(heading: GDLocalizedString("faq.section.what_is_soundscape"),
-                                              faqs: [FAQ(GDLocalizedString("faq.when_to_use_soundscape.question"), GDLocalizedString("faq.when_to_use_soundscape.answer")),
+                        sections: [FAQSection(heading: GDLocalizedString("faq.section.what_is"),
+                                              faqs: [FAQ(GDLocalizedString("faq.when_to_use.question"), GDLocalizedString("faq.when_to_use.answer")),
                                                      FAQ(GDLocalizedString("faq.markers_function.question"), GDLocalizedString("faq.markers_function.answer"))]),
                                    FAQSection(heading: GDLocalizedString("faq.section.getting_the_best_experience"),
                                               faqs: [FAQ(GDLocalizedString("faq.what_can_I_set.question"), GDLocalizedString("faq.what_can_I_set.answer")),
@@ -223,7 +223,7 @@ class HelpViewController: BaseTableViewController {
                                                      FAQ(GDLocalizedString("faq.why_not_every_business.question"), GDLocalizedString("faq.why_not_every_business.answer")),
                                                      FAQ(GDLocalizedString("faq.callouts_stopping_in_vehicle.question"), GDLocalizedString("faq.callouts_stopping_in_vehicle.answer")),
                                                      FAQ(GDLocalizedString("faq.miss_a_callout.question"), GDLocalizedString("faq.miss_a_callout.answer"))]),
-                                   FAQSection(heading: GDLocalizedString("faq.section.how_soundscape_works"),
+                                   FAQSection(heading: GDLocalizedString("faq.section.how_works"),
                                               faqs: [FAQ(GDLocalizedString("faq.supported_phones.question"), GDLocalizedString("faq.supported_phones.answer")),
                                                      FAQ(GDLocalizedString("faq.supported_headsets.question"), GDLocalizedString("faq.supported_headsets.answer")),
                                                      FAQ(GDLocalizedString("faq.battery_impact.question"), GDLocalizedString("faq.battery_impact.answer")),

@@ -1,6 +1,6 @@
 //
 //  AppContext.swift
-//  Soundscape
+//  Openscape
 //
 //  Copyright (c) Microsoft Corporation.
 //  Licensed under the MIT License.
@@ -302,7 +302,7 @@ class AppContext {
     
     /// Stops the Spatial Data Context, but does not stop Geolocation Context like sleeping
     /// does. Instead, the geolocation context is put in a low energy state where it only receives
-    /// significant location updates. If the user moves a significant distance, Soundscape will wake
+    /// significant location updates. If the user moves a significant distance, openscape will wake
     /// up automatically.
     func snooze() {
         // The snooze call can trigger a new location update (because the location manager is stopped,

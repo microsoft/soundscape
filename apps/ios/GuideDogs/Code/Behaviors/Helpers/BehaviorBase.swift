@@ -1,6 +1,6 @@
 //
 //  BehaviorBase.swift
-//  Soundscape
+//  Openscape
 //
 //  Copyright (c) Microsoft Corporation.
 //  Licensed under the MIT License.
@@ -31,7 +31,7 @@ class BehaviorBase: Behavior {
     var userLocation: CLLocation?
     
     /// The current verbosity level of the behavior. This property is not currently being
-    /// utilized but will be when Soundscape supports mutiple verbosity levels.
+    /// utilized but will be when openscape supports mutiple verbosity levels.
     var verbosity: Verbosity = .normal
     
     /// Set of automatic generator types in the parent behavior chain that should be blocked when
@@ -49,7 +49,7 @@ class BehaviorBase: Behavior {
     /// should be queued behind any callouts currently playing
     var autoGenerators: [AutomaticGenerator] = []
     
-    /// Reference to the behavior this behavior is layered on top of (e.g. the default Soundscape
+    /// Reference to the behavior this behavior is layered on top of (e.g. the default Openscape
     /// behavior). Custom behaviors must have access to their parent behaviors so they can mediate
     /// the degree to which the parent behaviors still function when they are the active behavior.
     /// Important: This must be a strong reference.

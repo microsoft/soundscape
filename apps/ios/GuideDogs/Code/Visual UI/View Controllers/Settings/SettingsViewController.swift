@@ -1,6 +1,6 @@
 //
 //  SettingsViewController.swift
-//  Soundscape
+//  Openscape
 //
 //  Copyright (c) Microsoft Corporation.
 //  Licensed under the MIT License.
@@ -171,7 +171,7 @@ extension SettingsViewController: MixAudioSettingCellDelegate {
         }
         
         // Otherwise, the user is turning on media controls, so we need to show a warning to make sure
-        // they understand what this change means in terms of how other audio apps will stop Soundscape
+        // they understand what this change means in terms of how other audio apps will stop Openscape
         // from playing. This warning was added based on bug bash feedback on 12/3/20.
         // Show an alert indicating that the user can download an enhanced version of the voice in Settings
         let alert = UIAlertController(title: GDLocalizedString("general.alert.confirmation_title"),

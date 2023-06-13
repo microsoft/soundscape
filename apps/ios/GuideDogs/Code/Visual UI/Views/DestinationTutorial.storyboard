@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="7KP-q4-au9">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="7KP-q4-au9">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -11,7 +11,7 @@
         <!--Destination Tutorial Beacon Page-->
         <scene sceneID="b48-se-ECg">
             <objects>
-                <viewController storyboardIdentifier="beaconDTViewController" id="zA5-5c-FCh" customClass="DestinationTutorialBeaconPage" customModule="Soundscape" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="beaconDTViewController" id="zA5-5c-FCh" customClass="DestinationTutorialBeaconPage" customModule="Openscape" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="8vL-GE-wjX"/>
                         <viewControllerLayoutGuide type="bottom" id="yDj-cs-EYU"/>
@@ -21,7 +21,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" indicatorStyle="white" translatesAutoresizingMaskIntoConstraints="NO" id="NbQ-kr-fMJ">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="667"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Audio Beacon" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hle-zR-bpR">
                                         <rect key="frame" x="20" y="20" width="335" height="65"/>
@@ -45,7 +45,7 @@
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You selected {destination} as the location of your audio beacon." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6ul-IQ-r8d">
-                                        <rect key="frame" x="20" y="348" width="335" height="36"/>
+                                        <rect key="frame" x="20" y="348" width="335" height="42.5"/>
                                         <accessibility key="accessibilityConfiguration">
                                             <bool key="isElement" value="NO"/>
                                         </accessibility>
@@ -94,7 +94,7 @@
         <!--Destination Tutorial Mute Page-->
         <scene sceneID="Q70-ja-Lrb">
             <objects>
-                <viewController storyboardIdentifier="calloutsDTViewController" id="M6P-kj-DC1" customClass="DestinationTutorialMutePage" customModule="Soundscape" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="calloutsDTViewController" id="M6P-kj-DC1" customClass="DestinationTutorialMutePage" customModule="Openscape" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="zap-EA-Wfv"/>
                         <viewControllerLayoutGuide type="bottom" id="aLg-YN-JWZ"/>
@@ -104,7 +104,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" indicatorStyle="white" translatesAutoresizingMaskIntoConstraints="NO" id="PAm-Uo-0Z5">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="667"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Need Some Silence?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3zy-ur-zyJ">
                                         <rect key="frame" x="20" y="20" width="335" height="65"/>
@@ -128,7 +128,7 @@
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NgA-JK-Q0a">
-                                        <rect key="frame" x="20" y="348" width="335" height="131"/>
+                                        <rect key="frame" x="20" y="348" width="335" height="174.5"/>
                                         <accessibility key="accessibilityConfiguration">
                                             <bool key="isElement" value="NO"/>
                                         </accessibility>
@@ -180,7 +180,7 @@
         <!--Destination Tutorial Intro View Controller-->
         <scene sceneID="BuG-iZ-gcH">
             <objects>
-                <viewController storyboardIdentifier="DestinationTutorialIntroViewController" id="7KP-q4-au9" customClass="DestinationTutorialIntroViewController" customModule="Soundscape" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DestinationTutorialIntroViewController" id="7KP-q4-au9" customClass="DestinationTutorialIntroViewController" customModule="Openscape" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="dj6-Zd-Ize"/>
                         <viewControllerLayoutGuide type="bottom" id="1BX-gt-RzN"/>
@@ -190,16 +190,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" indicatorStyle="white" translatesAutoresizingMaskIntoConstraints="NO" id="SPC-Mt-eoG">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="529"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="509"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="destination_graphic01" translatesAutoresizingMaskIntoConstraints="NO" id="6ib-yD-kKQ">
-                                        <rect key="frame" x="0.0" y="60" width="375" height="159"/>
+                                        <rect key="frame" x="0.0" y="62.5" width="375" height="159"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="6ib-yD-kKQ" secondAttribute="height" multiplier="125:53" id="oL9-wm-kJY"/>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Getting Started with Beacons" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lan-bf-Etq">
-                                        <rect key="frame" x="20" y="20" width="335" height="65"/>
+                                        <rect key="frame" x="20" y="20" width="335" height="67.5"/>
                                         <accessibility key="accessibilityConfiguration">
                                             <accessibilityTraits key="traits" staticText="YES" header="YES"/>
                                         </accessibility>
@@ -214,8 +214,8 @@
                                         </userDefinedRuntimeAttributes>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FpU-a8-ZfG">
-                                        <rect key="frame" x="20" y="249" width="335" height="150"/>
-                                        <string key="text">When you set a beacon on a location, Soundscape will play a sound coming from the direction of that location. This tutorial will step you through setting a beacon and how to use it.  Press the "Set a Beacon" button below to open a list of nearby places. Choose a location from the list and the tutorial will begin.</string>
+                                        <rect key="frame" x="20" y="251.5" width="335" height="218.5"/>
+                                        <string key="text">When you set a beacon on a location, openscape will play a sound coming from the direction of that location. This tutorial will step you through setting a beacon and how to use it.  Press the "Set a Beacon" button below to open a list of nearby places. Choose a location from the list and the tutorial will begin.</string>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -233,7 +233,7 @@
                                     <constraint firstItem="FpU-a8-ZfG" firstAttribute="top" secondItem="6ib-yD-kKQ" secondAttribute="bottom" constant="30" id="z6U-22-7h8"/>
                                 </constraints>
                             </scrollView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GPG-FV-LxO" customClass="RoundedSolidButton" customModule="Soundscape" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GPG-FV-LxO" customClass="RoundedSolidButton" customModule="Openscape" customModuleProvider="target">
                                 <rect key="frame" x="32" y="549" width="311" height="45"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -264,7 +264,7 @@
                                     <userDefinedRuntimeAttribute type="string" keyPath="localization" value="location_detail.action.beacon"/>
                                 </userDefinedRuntimeAttributes>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TIL-Gg-vR7" customClass="RoundedSolidButton" customModule="Soundscape" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TIL-Gg-vR7" customClass="RoundedSolidButton" customModule="Openscape" customModuleProvider="target">
                                 <rect key="frame" x="32" y="614" width="311" height="45"/>
                                 <color key="backgroundColor" systemColor="systemRedColor"/>
                                 <constraints>
@@ -333,7 +333,7 @@
         <!--Destination Tutorial Info Page-->
         <scene sceneID="BVS-js-cVM">
             <objects>
-                <viewController storyboardIdentifier="homeDTViewController" id="qh4-hg-MRk" customClass="DestinationTutorialInfoPage" customModule="Soundscape" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="homeDTViewController" id="qh4-hg-MRk" customClass="DestinationTutorialInfoPage" customModule="Openscape" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="MYJ-cT-xNx"/>
                         <viewControllerLayoutGuide type="bottom" id="u64-b0-CZB"/>
@@ -343,10 +343,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" indicatorStyle="white" translatesAutoresizingMaskIntoConstraints="NO" id="6Uv-aX-9rt">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="667"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Great! You Found Your Beacon!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="36C-zb-dle">
-                                        <rect key="frame" x="20" y="20" width="335" height="65"/>
+                                        <rect key="frame" x="20" y="20" width="335" height="67.5"/>
                                         <accessibility key="accessibilityConfiguration">
                                             <bool key="isElement" value="NO"/>
                                         </accessibility>
@@ -361,13 +361,13 @@
                                         </userDefinedRuntimeAttributes>
                                     </label>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="destination_graphic03" translatesAutoresizingMaskIntoConstraints="NO" id="zLx-wz-OjV">
-                                        <rect key="frame" x="0.0" y="114" width="375" height="171"/>
+                                        <rect key="frame" x="0.0" y="116.5" width="375" height="171"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="zLx-wz-OjV" secondAttribute="height" multiplier="125:57" id="Wtw-7Z-byM"/>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nyo-td-XZR">
-                                        <rect key="frame" x="20" y="348" width="335" height="93"/>
+                                        <rect key="frame" x="20" y="350.5" width="335" height="130.5"/>
                                         <accessibility key="accessibilityConfiguration">
                                             <bool key="isElement" value="NO"/>
                                         </accessibility>
@@ -417,7 +417,7 @@
         <!--Destination Tutorial View Controller-->
         <scene sceneID="P0R-hf-Tks">
             <objects>
-                <viewController modalTransitionStyle="crossDissolve" id="waj-t4-HpH" customClass="DestinationTutorialViewController" customModule="Soundscape" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalTransitionStyle="crossDissolve" id="waj-t4-HpH" customClass="DestinationTutorialViewController" customModule="Openscape" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Y5W-R3-HRH"/>
                         <viewControllerLayoutGuide type="bottom" id="a2Z-6u-xAQ"/>
@@ -427,12 +427,12 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D0C-Hv-MVW" userLabel="Welcome Page Container">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="619"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="599"/>
                                 <color key="backgroundColor" red="0.14117647059999999" green="0.2274509804" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                             <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="GVJ-XL-T6k">
-                                <rect key="frame" x="130" y="619" width="115.5" height="40"/>
+                                <rect key="frame" x="129.5" y="619" width="116.5" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="ahN-GT-OFb"/>
                                 </constraints>
@@ -440,7 +440,7 @@
                                     <action selector="pageControlOnValueChanged:" destination="waj-t4-HpH" eventType="valueChanged" id="ynr-Wy-Fe6"/>
                                 </connections>
                             </pageControl>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A2s-1e-di2" customClass="RoundedSolidButton" customModule="Soundscape" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A2s-1e-di2" customClass="RoundedSolidButton" customModule="Openscape" customModuleProvider="target">
                                 <rect key="frame" x="32" y="616.5" width="311" height="45"/>
                                 <color key="backgroundColor" systemColor="systemRedColor"/>
                                 <constraints>
@@ -489,8 +489,14 @@
         </scene>
     </scenes>
     <designables>
+        <designable name="A2s-1e-di2">
+            <size key="intrinsicContentSize" width="85" height="32"/>
+        </designable>
         <designable name="GPG-FV-LxO">
-            <size key="intrinsicContentSize" width="30" height="28"/>
+            <size key="intrinsicContentSize" width="30" height="32"/>
+        </designable>
+        <designable name="TIL-Gg-vR7">
+            <size key="intrinsicContentSize" width="85" height="32"/>
         </designable>
     </designables>
     <resources>

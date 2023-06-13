@@ -1,6 +1,6 @@
 //
 //  Road.swift
-//  Soundscape
+//  Openscape
 //
 //  Copyright (c) Microsoft Corporation.
 //  Licensed under the MIT License.
@@ -81,7 +81,7 @@ extension Road {
 
 extension Road {
     
-    /// Road type (via Soundscape custom tag), such as "walking_path", "service_road", "road", etc.
+    /// Road type (via openscape custom tag), such as "walking_path", "service_road", "road", etc.
     var type: String {
         guard let osmObject = self as? GDASpatialDataResultEntity else { return "road" }
         return osmObject.nameTag
@@ -117,7 +117,7 @@ extension Road {
         }
     }
     
-    /// In OSM, roads can be split to multiple segments. These segments are connected by intersection objects synthesized by Soundscape.
+    /// In OSM, roads can be split to multiple segments. These segments are connected by intersection objects synthesized by Openscape.
     ///
     /// This returns the next road segments for a road at an intersection.
     /// - note: Roads can split into multiple road segments, such as this [OSM node](https://www.openstreetmap.org/node/539666019).

@@ -1,6 +1,6 @@
 //
 //  ServiceModel.swift
-//  Soundscape
+//  Openscape
 //
 //  Copyright (c) Microsoft Corporation.
 //  Licensed under the MIT License.
@@ -28,7 +28,7 @@ class ServiceModel {
     /// Maximum amount of time (in seconds) to let a request live before timing it out
     static let requestTimeout = 20.0
     
-    /// String for identifying errors that originate from Soundscape services
+    /// String for identifying errors that originate from openscape services
     static let errorDomain = "GDAHTTPErrorDomain"
     /// String for identifying errors that originate from Realm
     static let errorRealm = "GDAHTTPErrorRealm"

@@ -2,7 +2,7 @@
 
 //
 //  Localization.swift
-//  Soundscape
+//  Openscape
 //
 //  Copyright (c) Microsoft Corporation.
 //  Licensed under the MIT License.
@@ -750,7 +750,7 @@ codeFiles.forEach { (codeFile) in
 }
 
 if CommandLine.arguments.contains("unused") {
-    // Soundscape has several keys that are constructed and will therefore be detected as unused
+    // openscape has several keys that are constructed and will therefore be detected as unused
     // translations by the code above. We filter out the prefixes for these strings in order to
     // avoid false positives
     let constructedKeyPrefixes = [

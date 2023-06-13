@@ -1,6 +1,6 @@
 //
 //  GPXExtensions.swift
-//  Soundscape
+//  Openscape
 //
 //  Copyright (c) Microsoft Corporation.
 //  Licensed under the MIT License.
@@ -152,12 +152,12 @@ extension GPXWaypoint {
 
         var activity: GPXActivity?
 
-        // Backwards compatibility: previuosly Soundscape used the dilution values for accuracy
+        // Backwards compatibility: previuosly openscape used the dilution values for accuracy
         horizontalAccuracy = horizontalDilution
         verticalAccuracy = verticalDilution
 
         if let extensions = extensions {
-            // Backwards compatibility: previuosly Soundscape used to store speed and course directly in the extensions class
+            // Backwards compatibility: previuosly openscape used to store speed and course directly in the extensions class
             speed = extensions.speed
             course = extensions.course
             

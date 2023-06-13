@@ -1,34 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Authorize Locations View Controller-->
         <scene sceneID="Omm-CN-HYw">
             <objects>
-                <viewController storyboardIdentifier="authorizeLocationServices" id="RS3-PK-ADb" customClass="AuthorizeLocationsViewController" customModule="Soundscape" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="authorizeLocationServices" id="RS3-PK-ADb" customClass="AuthorizeLocationsViewController" customModule="Openscape" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="mpm-o4-3tW"/>
                         <viewControllerLayoutGuide type="bottom" id="t8E-d2-f6I"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="YxV-AA-6BE">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" indicatorStyle="white" translatesAutoresizingMaskIntoConstraints="NO" id="cDd-4Q-fd4">
-                                <rect key="frame" x="0.0" y="20" width="600" height="470"/>
+                                <rect key="frame" x="0.0" y="79" width="393" height="629"/>
                                 <subviews>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" image="map-marker-radius" translatesAutoresizingMaskIntoConstraints="NO" id="POH-W6-YIw" userLabel="Icon">
-                                        <rect key="frame" x="250" y="20" width="100" height="100"/>
+                                        <rect key="frame" x="146.66666666666666" y="20" width="100" height="100"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="100" id="pKP-YQ-Uza"/>
                                             <constraint firstAttribute="width" constant="100" id="xlG-SM-yOC"/>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Authorize Location Services" textAlignment="center" lineBreakMode="middleTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Fo0-lE-zW9" userLabel="Title">
-                                        <rect key="frame" x="20" y="140" width="560" height="33.666666666666657"/>
+                                        <rect key="frame" x="16" y="140" width="361" height="33.666666666666657"/>
                                         <accessibility key="accessibilityConfiguration">
                                             <accessibilityTraits key="traits" staticText="YES" header="YES"/>
                                         </accessibility>
@@ -40,7 +42,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4RJ-f3-DYr" userLabel="Description">
-                                        <rect key="frame" x="20" y="193.66666666666666" width="560" height="64.333333333333343"/>
+                                        <rect key="frame" x="16" y="193.66666666666669" width="361" height="86.333333333333314"/>
                                         <string key="text">Openscape uses your location to find and tell you about the places and things around you. The app needs your permission to use Location Services.</string>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -50,7 +52,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eEB-YU-a4w" userLabel="Instructions">
-                                        <rect key="frame" x="20" y="277.66666666666669" width="560" height="64.333333333333314"/>
+                                        <rect key="frame" x="16" y="299.66666666666669" width="361" height="64.333333333333314"/>
                                         <string key="text">1. Open the Settings app below
 2. Select "Location"
 3. Select "Always" or "While Using the App"</string>
@@ -73,8 +75,8 @@
                                     <constraint firstAttribute="bottom" secondItem="eEB-YU-a4w" secondAttribute="bottom" constant="20" id="b4A-ID-4rW"/>
                                 </constraints>
                             </scrollView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fN9-1O-Mes" customClass="RoundedSolidButton" customModule="Soundscape" customModuleProvider="target">
-                                <rect key="frame" x="20" y="510" width="560" height="50"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fN9-1O-Mes" customClass="RoundedSolidButton" customModule="Openscape" customModuleProvider="target">
+                                <rect key="frame" x="16" y="728" width="361" height="50"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="9eZ-wg-iA8"/>
@@ -99,7 +101,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="Open Settings" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="udt-35-gNg">
-                                <rect key="frame" x="32" y="522" width="536" height="26"/>
+                                <rect key="frame" x="28" y="740" width="337" height="26"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <bool key="isElement" value="NO"/>
                                 </accessibility>
@@ -146,27 +148,27 @@
         <!--Authorize Motion Fitness View Controller-->
         <scene sceneID="6ta-A9-CB3">
             <objects>
-                <viewController storyboardIdentifier="authorizeMotionFitness" id="yzn-WA-4qz" customClass="AuthorizeMotionFitnessViewController" customModule="Soundscape" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="authorizeMotionFitness" id="yzn-WA-4qz" customClass="AuthorizeMotionFitnessViewController" customModule="Openscape" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="0kD-u3-PiS"/>
                         <viewControllerLayoutGuide type="bottom" id="Paj-N3-kPl"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="YO8-vh-Ls3">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" indicatorStyle="white" translatesAutoresizingMaskIntoConstraints="NO" id="ZFC-Lu-uiS">
-                                <rect key="frame" x="0.0" y="20" width="600" height="470"/>
+                                <rect key="frame" x="0.0" y="79" width="393" height="629"/>
                                 <subviews>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" image="map-marker-radius" translatesAutoresizingMaskIntoConstraints="NO" id="ROK-lQ-fex" userLabel="Icon">
-                                        <rect key="frame" x="250" y="20" width="100" height="100"/>
+                                        <rect key="frame" x="146.66666666666666" y="20" width="100" height="100"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="100" id="fIM-UN-mlf"/>
                                             <constraint firstAttribute="height" constant="100" id="reL-62-slC"/>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Authorize Motion &amp; Fitness Tracking" textAlignment="center" lineBreakMode="middleTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2UI-s7-mRC" userLabel="Title">
-                                        <rect key="frame" x="20" y="140" width="560" height="33.666666666666657"/>
+                                        <rect key="frame" x="16" y="140" width="361" height="67.666666666666686"/>
                                         <accessibility key="accessibilityConfiguration">
                                             <accessibilityTraits key="traits" staticText="YES" header="YES"/>
                                         </accessibility>
@@ -178,8 +180,8 @@
                                         </userDefinedRuntimeAttributes>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BUh-Ps-VHA" userLabel="Description">
-                                        <rect key="frame" x="20" y="193.66666666666666" width="560" height="108.33333333333334"/>
-                                        <string key="text">This allows Openscape to improve your experience based on whether you are walking, in a vehicle, or standing still. The app needs your permission to use Motion &amp; Fitness. Before you authorize Soundscape to use this permission, you may need to enable Fitness Tracking under Settings → Privacy → Motion &amp; Fitness.</string>
+                                        <rect key="frame" x="16" y="227.66666666666669" width="361" height="174.33333333333331"/>
+                                        <string key="text">This allows Openscape to improve your experience based on whether you are walking, in a vehicle, or standing still. The app needs your permission to use Motion &amp; Fitness. Before you authorize openscape to use this permission, you may need to enable Fitness Tracking under Settings → Privacy → Motion &amp; Fitness.</string>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -188,7 +190,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hKa-0R-hUh" userLabel="Instructions">
-                                        <rect key="frame" x="20" y="321.66666666666669" width="560" height="42.333333333333314"/>
+                                        <rect key="frame" x="16" y="421.66666666666669" width="361" height="42.333333333333314"/>
                                         <string key="text">1. Open the Settings app below
 2. Turn on Motion &amp; Fitness Tracking</string>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
@@ -210,8 +212,8 @@
                                     <constraint firstItem="ROK-lQ-fex" firstAttribute="centerX" secondItem="ZFC-Lu-uiS" secondAttribute="centerX" id="pGX-co-Lxp"/>
                                 </constraints>
                             </scrollView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a8A-YS-zSC" customClass="RoundedSolidButton" customModule="Soundscape" customModuleProvider="target">
-                                <rect key="frame" x="20" y="510" width="560" height="50"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a8A-YS-zSC" customClass="RoundedSolidButton" customModule="Openscape" customModuleProvider="target">
+                                <rect key="frame" x="16" y="728" width="361" height="50"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="w2T-kE-hTU"/>
@@ -236,7 +238,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="Open Settings" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8L0-7N-gG8">
-                                <rect key="frame" x="32" y="522" width="536" height="26"/>
+                                <rect key="frame" x="28" y="740" width="337" height="26"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <bool key="isElement" value="NO"/>
                                 </accessibility>
@@ -290,27 +292,27 @@
         <!--Enable Location Services View Controller-->
         <scene sceneID="NeP-F8-TzE">
             <objects>
-                <viewController storyboardIdentifier="enableLocationServices" id="OrM-2I-v7n" customClass="EnableLocationServicesViewController" customModule="Soundscape" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="enableLocationServices" id="OrM-2I-v7n" customClass="EnableLocationServicesViewController" customModule="Openscape" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="edZ-G1-x2O"/>
                         <viewControllerLayoutGuide type="bottom" id="Pf7-hT-kow"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="WyO-Aw-EFg">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AOg-a4-zp2">
-                                <rect key="frame" x="0.0" y="20" width="600" height="470"/>
+                                <rect key="frame" x="0.0" y="79" width="393" height="629"/>
                                 <subviews>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" image="map-marker-radius" translatesAutoresizingMaskIntoConstraints="NO" id="07i-rg-k6y" userLabel="Icon">
-                                        <rect key="frame" x="250" y="20" width="100" height="100"/>
+                                        <rect key="frame" x="146.66666666666666" y="20" width="100" height="100"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="100" id="Sq9-D9-va2"/>
                                             <constraint firstAttribute="height" constant="100" id="Ztk-8D-Yqv"/>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enable Location Services" textAlignment="center" lineBreakMode="middleTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fds-X1-n1L" userLabel="Title">
-                                        <rect key="frame" x="20" y="140" width="560" height="33.666666666666657"/>
+                                        <rect key="frame" x="16" y="140" width="361" height="33.666666666666657"/>
                                         <accessibility key="accessibilityConfiguration">
                                             <accessibilityTraits key="traits" staticText="YES" header="YES"/>
                                         </accessibility>
@@ -322,7 +324,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location Services are currently disabled. Openscape cannot work when Location Services are turned off." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vOC-0w-niP" userLabel="Description">
-                                        <rect key="frame" x="20" y="193.66666666666666" width="560" height="42.333333333333343"/>
+                                        <rect key="frame" x="16" y="193.66666666666669" width="361" height="64.333333333333314"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -331,7 +333,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bNY-SV-DMH" userLabel="Instructions">
-                                        <rect key="frame" x="20" y="255.66666666666669" width="560" height="130.33333333333331"/>
+                                        <rect key="frame" x="16" y="277.66666666666669" width="361" height="152.33333333333331"/>
                                         <string key="text">Turn Location Services On in the Settings app to continue.
 1. Press Open Settings
 2. Press the back button (titled Setting)
@@ -357,8 +359,8 @@
                                     <constraint firstItem="fds-X1-n1L" firstAttribute="leading" secondItem="AOg-a4-zp2" secondAttribute="leading" id="u9Y-GQ-T0S"/>
                                 </constraints>
                             </scrollView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H9U-Iu-rkZ" customClass="RoundedSolidButton" customModule="Soundscape" customModuleProvider="target">
-                                <rect key="frame" x="20" y="510" width="560" height="50"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H9U-Iu-rkZ" customClass="RoundedSolidButton" customModule="Openscape" customModuleProvider="target">
+                                <rect key="frame" x="16" y="728" width="361" height="50"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="01y-KG-3sa"/>
@@ -383,7 +385,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="Open Settings" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jwn-Kz-9ly">
-                                <rect key="frame" x="32" y="522" width="536" height="26"/>
+                                <rect key="frame" x="28" y="740" width="337" height="26"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <bool key="isElement" value="NO"/>
                                 </accessibility>
@@ -429,27 +431,27 @@
         <!--Enable Motion Fitness View Controller-->
         <scene sceneID="9bw-Bz-BRk">
             <objects>
-                <viewController storyboardIdentifier="enableMotionFitness" id="QwB-gc-J1o" customClass="EnableMotionFitnessViewController" customModule="Soundscape" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="enableMotionFitness" id="QwB-gc-J1o" customClass="EnableMotionFitnessViewController" customModule="Openscape" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="oc6-MY-NGn"/>
                         <viewControllerLayoutGuide type="bottom" id="z0j-Ta-sUe"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="weH-cJ-iig">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TwR-L5-PdH">
-                                <rect key="frame" x="0.0" y="20" width="600" height="470"/>
+                                <rect key="frame" x="0.0" y="79" width="393" height="629"/>
                                 <subviews>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" image="map-marker-radius" translatesAutoresizingMaskIntoConstraints="NO" id="3pn-m0-v3Y" userLabel="Icon">
-                                        <rect key="frame" x="250" y="20" width="100" height="100"/>
+                                        <rect key="frame" x="146.66666666666666" y="20" width="100" height="100"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="100" id="eh2-Sl-1HH"/>
                                             <constraint firstAttribute="width" constant="100" id="oz3-9G-ukD"/>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enable Motion &amp; Fitness Tracking" textAlignment="center" lineBreakMode="middleTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2b3-mC-CL2" userLabel="Title">
-                                        <rect key="frame" x="20" y="140" width="560" height="33.666666666666657"/>
+                                        <rect key="frame" x="16" y="140" width="361" height="67.666666666666686"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -458,7 +460,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Motion &amp; Fitness tracking is currently disabled. Openscape cannot work when Motion &amp; Fitness tracking is turned off." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r4G-D9-w4A" userLabel="Description">
-                                        <rect key="frame" x="20" y="193.66666666666666" width="560" height="42.333333333333343"/>
+                                        <rect key="frame" x="16" y="227.66666666666671" width="361" height="64.333333333333343"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -467,14 +469,14 @@
                                         </userDefinedRuntimeAttributes>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DHr-Gt-qhT" userLabel="Instructions">
-                                        <rect key="frame" x="20" y="255.66666666666669" width="560" height="152.33333333333331"/>
+                                        <rect key="frame" x="16" y="311.66666666666669" width="361" height="174.33333333333331"/>
                                         <string key="text">Turn On Fitness Tracking in the Settings app to continue.
 
 1. Press the Back button (titled Settings)
 2. Select Privacy
 3. Select Motion &amp; Fitness
 4. Turn on Fitness Tracking
-5. Restart Soundscape</string>
+5. Restart Openscape</string>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -494,8 +496,8 @@
                                     <constraint firstItem="3pn-m0-v3Y" firstAttribute="centerX" secondItem="TwR-L5-PdH" secondAttribute="centerX" id="yCV-id-vLp"/>
                                 </constraints>
                             </scrollView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c3z-4d-20Q" customClass="RoundedSolidButton" customModule="Soundscape" customModuleProvider="target">
-                                <rect key="frame" x="20" y="510" width="560" height="50"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c3z-4d-20Q" customClass="RoundedSolidButton" customModule="Openscape" customModuleProvider="target">
+                                <rect key="frame" x="16" y="728" width="361" height="50"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="G3c-fD-jyC"/>
@@ -520,7 +522,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="Open Settings" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OEy-tn-3IO">
-                                <rect key="frame" x="32" y="522" width="536" height="26"/>
+                                <rect key="frame" x="28" y="740" width="337" height="26"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <bool key="isElement" value="NO"/>
                                 </accessibility>
@@ -564,6 +566,20 @@
             <point key="canvasLocation" x="-762" y="-137"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="H9U-Iu-rkZ">
+            <size key="intrinsicContentSize" width="30" height="30"/>
+        </designable>
+        <designable name="a8A-YS-zSC">
+            <size key="intrinsicContentSize" width="30" height="30"/>
+        </designable>
+        <designable name="c3z-4d-20Q">
+            <size key="intrinsicContentSize" width="30" height="30"/>
+        </designable>
+        <designable name="fN9-1O-Mes">
+            <size key="intrinsicContentSize" width="30" height="30"/>
+        </designable>
+    </designables>
     <resources>
         <image name="map-marker-radius" width="100" height="100"/>
     </resources>

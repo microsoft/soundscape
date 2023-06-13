@@ -1,6 +1,6 @@
 //
 //  LogFormatter.swift
-//  Soundscape
+//  Openscape
 //
 //  Description:
 //

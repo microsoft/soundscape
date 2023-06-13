@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="7et-YF-5hx">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="7et-YF-5hx">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -11,7 +11,7 @@
         <!--Tour Card Container Hosting Controller-->
         <scene sceneID="RkX-4a-gQ9">
             <objects>
-                <hostingController storyboardIdentifier="TourCardContainerHost" id="MaB-gE-2Wh" customClass="TourCardContainerHostingController" customModule="Soundscape" customModuleProvider="target" sceneMemberID="viewController"/>
+                <hostingController storyboardIdentifier="TourCardContainerHost" id="MaB-gE-2Wh" customClass="TourCardContainerHostingController" customModule="Openscape" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PVT-Od-lbn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-2331" y="-1152"/>
@@ -19,7 +19,7 @@
         <!--Navigation Controller-->
         <scene sceneID="IvO-QN-Zls">
             <objects>
-                <navigationController modalTransitionStyle="crossDissolve" modalPresentationStyle="currentContext" id="7et-YF-5hx" customClass="NavigationController" customModule="Soundscape" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController modalTransitionStyle="crossDissolve" modalPresentationStyle="currentContext" id="7et-YF-5hx" customClass="NavigationController" customModule="Openscape" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" translucent="NO" id="cMv-KF-F6h">
                         <rect key="frame" x="0.0" y="48" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -99,7 +99,7 @@
         <!--Beacon View Hosting Controller-->
         <scene sceneID="VbI-NV-Cie">
             <objects>
-                <hostingController storyboardIdentifier="BeaconViewHostingController" id="Nlm-va-O9y" customClass="BeaconViewHostingController" customModule="Soundscape" customModuleProvider="target" sceneMemberID="viewController">
+                <hostingController storyboardIdentifier="BeaconViewHostingController" id="Nlm-va-O9y" customClass="BeaconViewHostingController" customModule="Openscape" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="lCz-T0-rRz"/>
                 </hostingController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wba-Pz-3Fb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -181,7 +181,7 @@
         <!--HomeViewController-->
         <scene sceneID="a4Q-mN-6WF">
             <objects>
-                <viewController title="Home" extendedLayoutIncludesOpaqueBars="YES" definesPresentationContext="YES" providesPresentationContextTransitionStyle="YES" modalTransitionStyle="crossDissolve" modalPresentationStyle="overFullScreen" id="PZ9-iU-l1C" userLabel="HomeViewController" customClass="HomeViewController" customModule="Soundscape" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Home" extendedLayoutIncludesOpaqueBars="YES" definesPresentationContext="YES" providesPresentationContextTransitionStyle="YES" modalTransitionStyle="crossDissolve" modalPresentationStyle="overFullScreen" id="PZ9-iU-l1C" userLabel="HomeViewController" customClass="HomeViewController" customModule="Openscape" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="XAW-SP-jg6"/>
                         <viewControllerLayoutGuide type="bottom" id="yRX-3D-ku0"/>
@@ -368,7 +368,7 @@
         <!--Callout Button Panel View Controller-->
         <scene sceneID="JJV-st-uvX">
             <objects>
-                <viewController storyboardIdentifier="CalloutButtonPanel" id="gdB-jw-QN3" customClass="CalloutButtonPanelViewController" customModule="Soundscape" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CalloutButtonPanel" id="gdB-jw-QN3" customClass="CalloutButtonPanelViewController" customModule="Openscape" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Zed-1y-3sF"/>
                         <viewControllerLayoutGuide type="bottom" id="hQv-3m-1zO"/>
@@ -378,7 +378,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HEAR YOUR SURROUNDINGS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bv2-gk-7I4">
-                                <rect key="frame" x="20" y="60" width="374" height="9.5"/>
+                                <rect key="frame" x="20" y="60" width="374" height="0.0"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" staticText="YES" header="YES"/>
                                 </accessibility>
@@ -387,16 +387,16 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="8ZC-jq-auw">
-                                <rect key="frame" x="0.0" y="69.5" width="414" height="71.5"/>
+                                <rect key="frame" x="0.0" y="60" width="414" height="47"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RdK-M8-lhi">
-                                        <rect key="frame" x="0.0" y="0.0" width="103.5" height="71.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="103.5" height="47"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NK6-TR-1BY">
-                                                <rect key="frame" x="8" y="4" width="87.5" height="63.5"/>
+                                                <rect key="frame" x="8" y="4" width="87.5" height="39"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gjV-vm-fas" customClass="NVActivityIndicatorView" customModule="NVActivityIndicatorView">
-                                                        <rect key="frame" x="30" y="-1" width="28" height="28"/>
+                                                        <rect key="frame" x="30" y="-13.5" width="28" height="28"/>
                                                         <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <accessibility key="accessibilityConfiguration">
                                                             <accessibilityTraits key="traits" notEnabled="YES"/>
@@ -413,10 +413,10 @@
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="750" verticalCompressionResistancePriority="250" image="my_location_32px" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="p25-O6-Ar8">
-                                                        <rect key="frame" x="28" y="0.0" width="32" height="25.5"/>
+                                                        <rect key="frame" x="28" y="0.0" width="32" height="1"/>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="1000" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Avc-F7-TC9">
-                                                        <rect key="frame" x="0.0" y="29.5" width="87.5" height="34"/>
+                                                        <rect key="frame" x="0.0" y="5" width="87.5" height="34"/>
                                                         <accessibility key="accessibilityConfiguration">
                                                             <bool key="isElement" value="NO"/>
                                                         </accessibility>
@@ -443,7 +443,7 @@ Location</string>
                                                 </constraints>
                                             </view>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cPB-bG-Vj7">
-                                                <rect key="frame" x="8" y="8" width="87.5" height="55.5"/>
+                                                <rect key="frame" x="8" y="8" width="87.5" height="31"/>
                                                 <accessibility key="accessibilityConfiguration" hint="Double tap to hear about your current location" label="My Location"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
                                                 <inset key="titleEdgeInsets" minX="0.0" minY="30" maxX="20" maxY="0.0"/>
@@ -475,13 +475,13 @@ Location</string>
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UKd-Ki-dcf">
-                                        <rect key="frame" x="103.5" y="0.0" width="103.5" height="71.5"/>
+                                        <rect key="frame" x="103.5" y="0.0" width="103.5" height="47"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ovj-Lu-zOc">
-                                                <rect key="frame" x="8" y="4" width="87.5" height="63.5"/>
+                                                <rect key="frame" x="8" y="4" width="87.5" height="39"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6YQ-kO-BLz" customClass="NVActivityIndicatorView" customModule="NVActivityIndicatorView">
-                                                        <rect key="frame" x="30" y="-1" width="28" height="28"/>
+                                                        <rect key="frame" x="30" y="-13.5" width="28" height="28"/>
                                                         <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <accessibility key="accessibilityConfiguration">
                                                             <accessibilityTraits key="traits" notEnabled="YES"/>
@@ -498,10 +498,10 @@ Location</string>
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="750" verticalCompressionResistancePriority="250" image="ic_open_with_white_new" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uiw-WT-Go0">
-                                                        <rect key="frame" x="28" y="0.0" width="32" height="25.5"/>
+                                                        <rect key="frame" x="28" y="0.0" width="32" height="1"/>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="1000" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1N3-RH-hv1">
-                                                        <rect key="frame" x="0.0" y="29.5" width="87.5" height="34"/>
+                                                        <rect key="frame" x="0.0" y="5" width="87.5" height="34"/>
                                                         <accessibility key="accessibilityConfiguration">
                                                             <bool key="isElement" value="NO"/>
                                                         </accessibility>
@@ -528,7 +528,7 @@ Me</string>
                                                 </constraints>
                                             </view>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gIk-4T-xgf">
-                                                <rect key="frame" x="8" y="8" width="87.5" height="55.5"/>
+                                                <rect key="frame" x="8" y="8" width="87.5" height="31"/>
                                                 <accessibility key="accessibilityConfiguration" hint="Double tap to hear about places in the four quadrants around you." label="Around Me"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
                                                 <inset key="titleEdgeInsets" minX="0.0" minY="30" maxX="20" maxY="0.0"/>
@@ -557,13 +557,13 @@ Me</string>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4fB-Dj-Wtg">
-                                        <rect key="frame" x="207" y="0.0" width="103.5" height="71.5"/>
+                                        <rect key="frame" x="207" y="0.0" width="103.5" height="47"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sbB-h2-dNE">
-                                                <rect key="frame" x="8" y="4" width="87.5" height="63.5"/>
+                                                <rect key="frame" x="8" y="4" width="87.5" height="39"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dQ2-UL-xMh" customClass="NVActivityIndicatorView" customModule="NVActivityIndicatorView">
-                                                        <rect key="frame" x="30" y="-1" width="28" height="28"/>
+                                                        <rect key="frame" x="30" y="-13.5" width="28" height="28"/>
                                                         <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <accessibility key="accessibilityConfiguration">
                                                             <accessibilityTraits key="traits" notEnabled="YES"/>
@@ -580,10 +580,10 @@ Me</string>
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="750" verticalCompressionResistancePriority="250" image="ic_track_changes_white_new" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WUf-wB-XPV">
-                                                        <rect key="frame" x="28" y="0.0" width="32" height="25.5"/>
+                                                        <rect key="frame" x="28" y="0.0" width="32" height="1"/>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="1000" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FSa-zt-Zut">
-                                                        <rect key="frame" x="0.0" y="29.5" width="87.5" height="34"/>
+                                                        <rect key="frame" x="0.0" y="5" width="87.5" height="34"/>
                                                         <accessibility key="accessibilityConfiguration">
                                                             <bool key="isElement" value="NO"/>
                                                         </accessibility>
@@ -610,7 +610,7 @@ of Me</string>
                                                 </constraints>
                                             </view>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iot-Tk-VNv">
-                                                <rect key="frame" x="8" y="8" width="87.5" height="55.5"/>
+                                                <rect key="frame" x="8" y="8" width="87.5" height="31"/>
                                                 <accessibility key="accessibilityConfiguration" hint="Double tap to hear about places in front of you." label="Ahead of Me"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
                                                 <inset key="titleEdgeInsets" minX="0.0" minY="30" maxX="20" maxY="0.0"/>
@@ -639,13 +639,13 @@ of Me</string>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gaq-jA-En0">
-                                        <rect key="frame" x="310.5" y="0.0" width="103.5" height="71.5"/>
+                                        <rect key="frame" x="310.5" y="0.0" width="103.5" height="47"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gpl-Q1-A4f">
-                                                <rect key="frame" x="8" y="4" width="87.5" height="63.5"/>
+                                                <rect key="frame" x="8" y="4" width="87.5" height="39"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sLx-Ze-jHo" customClass="NVActivityIndicatorView" customModule="NVActivityIndicatorView">
-                                                        <rect key="frame" x="30" y="-1" width="28" height="28"/>
+                                                        <rect key="frame" x="30" y="-13.5" width="28" height="28"/>
                                                         <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <accessibility key="accessibilityConfiguration">
                                                             <accessibilityTraits key="traits" notEnabled="YES"/>
@@ -662,10 +662,10 @@ of Me</string>
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="750" verticalCompressionResistancePriority="250" image="ic_markers_32px" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Fpf-he-sxQ">
-                                                        <rect key="frame" x="28" y="0.0" width="32" height="25.5"/>
+                                                        <rect key="frame" x="28" y="0.0" width="32" height="1"/>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="1000" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ZV-33-75O">
-                                                        <rect key="frame" x="0.0" y="29.5" width="87.5" height="34"/>
+                                                        <rect key="frame" x="0.0" y="5" width="87.5" height="34"/>
                                                         <accessibility key="accessibilityConfiguration">
                                                             <bool key="isElement" value="NO"/>
                                                         </accessibility>
@@ -692,7 +692,7 @@ Markers</string>
                                                 </constraints>
                                             </view>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AZx-Ls-lTi">
-                                                <rect key="frame" x="8" y="8" width="87.5" height="55.5"/>
+                                                <rect key="frame" x="8" y="8" width="87.5" height="31"/>
                                                 <accessibility key="accessibilityConfiguration" hint="Double tap to hear about nearby places that you have marked" label="Nearby Markers"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
                                                 <inset key="titleEdgeInsets" minX="0.0" minY="30" maxX="20" maxY="0.0"/>
@@ -778,7 +778,7 @@ Markers</string>
         <!--Recommender View Hosting Controller-->
         <scene sceneID="dm0-SK-ao6">
             <objects>
-                <hostingController storyboardIdentifier="RecommenderViewHostingController" id="TfH-hk-ad7" customClass="RecommenderViewHostingController" customModule="Soundscape" customModuleProvider="target" sceneMemberID="viewController"/>
+                <hostingController storyboardIdentifier="RecommenderViewHostingController" id="TfH-hk-ad7" customClass="RecommenderViewHostingController" customModule="Openscape" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BiG-Ok-qv4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1122" y="-413"/>
@@ -786,7 +786,7 @@ Markers</string>
         <!--Standby View Controller-->
         <scene sceneID="Gyc-vz-1kH">
             <objects>
-                <viewController id="Grr-Cc-oJv" customClass="StandbyViewController" customModule="Soundscape" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Grr-Cc-oJv" customClass="StandbyViewController" customModule="Openscape" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="oYc-rm-ce7"/>
                         <viewControllerLayoutGuide type="bottom" id="Q0m-aY-2hH"/>
@@ -799,7 +799,7 @@ Markers</string>
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G2q-RI-ugv">
-                                <rect key="frame" x="0.0" y="48" width="414" height="814"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="750" text="Sleeping" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Yi-Jt-Qe2">
                                         <rect key="frame" x="20" y="40" width="374" height="33.5"/>
@@ -821,7 +821,7 @@ Markers</string>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aCK-aV-ziP">
                                         <rect key="frame" x="32" y="316.5" width="350" height="130.5"/>
-                                        <string key="text">Soundscape is currently sleeping. This prevents Soundscape from using your location information or downloading data. This conserves battery when you are not using Soundscape. Tap the button below to wake Soundscape up.</string>
+                                        <string key="text">Openscape is currently sleeping. This prevents openscape from using your location information or downloading data. This conserves battery when you are not using Soundscape. Tap the button below to wake  openscape up.</string>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -1021,7 +1021,7 @@ Markers</string>
         <!--Card State View Controller-->
         <scene sceneID="DvE-uS-xgF">
             <objects>
-                <viewController storyboardIdentifier="CardStateViewController" id="a2C-Hp-NQk" customClass="CardStateViewController" customModule="Soundscape" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CardStateViewController" id="a2C-Hp-NQk" customClass="CardStateViewController" customModule="Openscape" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="a6m-3z-awb"/>
                         <viewControllerLayoutGuide type="bottom" id="qGZ-K2-Eea"/>

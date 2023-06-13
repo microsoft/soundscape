@@ -1,6 +1,6 @@
 //
 //  GeneratorUpdateFilter.swift
-//  Soundscape
+//  Openscape
 //
 //  Copyright (c) Microsoft Corporation.
 //  Licensed under the MIT License.
@@ -10,7 +10,7 @@ import Foundation
 import CoreLocation
 
 /// This class acts as a filter for throttling the frequency of computation which is
-/// initiated by various state change updates in Soundscape (e.g. geolocation updates).
+/// initiated by various state change updates in openscape (e.g. geolocation updates).
 /// With code that is dependent on location updates it is often unnecessary to run the code as
 /// often state changes occur. For instance, it is unnecessary to make requests to the service
 /// layer for new tiles every time a location update is delivered by iOS. For situations

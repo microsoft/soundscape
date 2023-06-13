@@ -1,6 +1,6 @@
 //
 //  OfflineContext.swift
-//  Soundscape
+//  Openscape
 //
 //  Copyright (c) Microsoft Corporation.
 //  Licensed under the MIT License.
@@ -13,11 +13,11 @@ extension Notification.Name {
 }
 
 ///
-/// Soundscape is offline when the device is not connected to the internet
+/// openscape is offline when the device is not connected to the internet
 /// (see `Reachability` code in `UIDeviceManager`) or when it fails to download
-/// tile data from the Soundscape services (see `SpatialDataState` in `SpatialDataContext`).
+/// tile data from the openscape services (see `SpatialDataState` in `SpatialDataContext`).
 ///
-/// This class tracks whether Soundscape is offline and notifies observers when a change in
+/// This class tracks whether openscape is offline and notifies observers when a change in
 /// state occurs.
 ///
 class OfflineContext {
@@ -40,7 +40,7 @@ class OfflineContext {
             }
             
             if oldValue == false, isServicesAvailable == true {
-                // Soundscape is no longer offline
+                // openscape is no longer offline
                 // `enteringOnline` state
                 state = .enteringOnline
             } else if isNetworkConnectionAvailable == false {
@@ -56,7 +56,7 @@ class OfflineContext {
             }
             
             if oldValue == false, isNetworkConnectionAvailable == true {
-                // Soundscape is no longer offline
+                // openscape is no longer offline
                 // `enteringOnline` state
                 state = .enteringOnline
             } else if isServicesAvailable == false {
@@ -125,7 +125,7 @@ class OfflineContext {
         
         if state == .error {
             // A service request failed
-            // Soundscape services not available
+            // openscape services not available
             self.isServicesAvailable = false
         } else if self.isServicesAvailable == false, state == .ready {
             // After an `.error` state, services are not considered available

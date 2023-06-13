@@ -1,6 +1,6 @@
 //
 //  UIDevice+Extensions.swift
-//  Soundscape
+//  Openscape
 //
 //  Copyright (c) Microsoft Corporation.
 //  Licensed under the MIT License.

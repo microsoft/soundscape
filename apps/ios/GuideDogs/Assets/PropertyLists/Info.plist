@@ -10,7 +10,7 @@
 	<array>
 		<dict>
 			<key>CFBundleTypeName</key>
-			<string>Soundscape Document</string>
+			<string>Openscape Document</string>
 			<key>LSHandlerRank</key>
 			<string>Owner</string>
 			<key>LSItemContentTypes</key>
@@ -170,7 +170,7 @@
 				<string>public.content</string>
 			</array>
 			<key>UTTypeDescription</key>
-			<string>Soundscape</string>
+			<string>Openscape</string>
 			<key>UTTypeIconFiles</key>
 			<array/>
 			<key>UTTypeIdentifier</key>
@@ -179,7 +179,7 @@
 			<dict>
 				<key>public.filename-extension</key>
 				<array>
-					<string>soundscape</string>
+					<string>openscape</string>
 				</array>
 			</dict>
 		</dict>

@@ -1,6 +1,6 @@
 //
 //  AudioEngine.swift
-//  Soundscape
+//  Openscape
 //
 //  Copyright (c) Microsoft Corporation.
 //  Licensed under the MIT License.
@@ -44,7 +44,7 @@ extension Notification.Name {
 /// started. Discrete audio players are removed from the engine when they are done playing. Continuous
 /// audio players are removed from the engine when `stop(_:)` is called with the id for the continuous
 /// audio player. The audio engine has no knowledge of the implementation details of the various types
-/// of audio in Soundscape as those details are fully encapsulated in the objects that implement
+/// of audio in openscape as those details are fully encapsulated in the objects that implement
 /// `AudioEngineAsset`, `Sound` (for discrete sounds), and/or `DynamicAudioEngineAsset` (for continuous
 /// sounds) . See examples of this in `ClassicBeacon.swift`, `V2Beacon.swift`, `ContinuousTrack`, `WandAsset.swift`,
 /// `GlyphSound.swift`, `TTSSound.swift`, and `GenericSound.swift`.
@@ -150,7 +150,7 @@ class AudioEngine: AudioEngineProtocol {
     /// This property is `true` when the output format of the engine only has one channel (e.g.
     /// the audio route is the iPhone speakers instead of stereo headphones), or when the mono audio
     /// accessibility setting is enabled. While it is not currently implemented, this could also be exposed
-    /// as a user setting within Soundscape as well.
+    /// as a user setting within openscape as well.
     private(set) var isInMonoMode: Bool = false
     
     /// Computed property that is `true` when there is currently discrete audio playing
@@ -518,7 +518,7 @@ class AudioEngine: AudioEngineProtocol {
         
         // Don't allow starting the engine if there is a call in progress and the app is not in an active state
         if AppContext.shared.callManager.callInProgress && AppContext.appState != .active {
-            GDLogAudioVerbose("Audio engine does not need to be started (a call is in progress and Soundscape isn't active)")
+            GDLogAudioVerbose("Audio engine does not need to be started (a call is in progress and openscape isn't active)")
             return false
         }
         

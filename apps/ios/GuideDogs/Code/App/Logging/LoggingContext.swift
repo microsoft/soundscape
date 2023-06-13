@@ -1,6 +1,6 @@
 //
 //  LoggingContext.swift
-//  Soundscape
+//  Openscape
 //
 //  Description:
 //

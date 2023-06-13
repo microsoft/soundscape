@@ -1,6 +1,6 @@
 //
 //  DeviceManager.swift
-//  Soundscape
+//  Openscape
 //
 //  Copyright (c) Microsoft Corporation.
 //  Licensed under the MIT License.
@@ -68,7 +68,7 @@ class DeviceManager: DeviceManagerProtocol {
     func add(device: Device) {
         if FirstUseExperience.didComplete(.addDevice(device: device.type)) == false {
             // User defaults tracks which devices have been previously
-            // connected to Soundscape
+            // connected to Openscape
             FirstUseExperience.setDidComplete(for: .addDevice(device: device.type))
         }
         

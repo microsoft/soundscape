@@ -1,6 +1,6 @@
 //
 //  AppDelegate+Extensions.swift
-//  Soundscape
+//  Openscape
 //
 //  Copyright (c) Microsoft Corporation.
 //  Licensed under the MIT License.
@@ -12,7 +12,7 @@ import RealmSwift
 /// A class of static methods used for making the Realm migration code more modular
 class RealmMigrationTools {
     
-    /// Migrates the Realm databases used by Soundscape to the most recent schema versions. Upon
+    /// Migrates the Realm databases used by openscape to the most recent schema versions. Upon
     /// changing any Realm objects in Soundscape, a migration must be written and the schema version
     /// must be incremented. If there is no actual migration code is needed (e.g. you only deleted a type
     /// but made no other changes) you must still increment to the schema version to acknowledge the change

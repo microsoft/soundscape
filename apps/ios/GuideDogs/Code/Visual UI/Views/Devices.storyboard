@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xFP-CC-VXd">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xFP-CC-VXd">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -18,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" indicatorStyle="white" translatesAutoresizingMaskIntoConstraints="NO" id="dBj-mn-c8v">
-                                <rect key="frame" x="0.0" y="47" width="375" height="599"/>
+                                <rect key="frame" x="0.0" y="50" width="375" height="596"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NoDevice" translatesAutoresizingMaskIntoConstraints="NO" id="MfV-QW-HWZ">
                                         <rect key="frame" x="0.0" y="12" width="375" height="350"/>
@@ -58,7 +57,7 @@
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8JZ-Yh-2fH">
                                         <rect key="frame" x="12" y="374" width="351" height="152.33333333333337"/>
-                                        <string key="text">Augmented reality headsets are special Bluetooth headphones that tell Soundscape about where you are looking. This helps Soundscape to improve your audio experience as you move around.
+                                        <string key="text">Augmented reality headsets are special Bluetooth headphones that tell openscape about where you are looking. This helps  openscape to improve your audio experience as you move around.
 
 Tap the button below to connect to a device.</string>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
@@ -197,7 +196,7 @@ Tap the button below to connect to a device.</string>
             <objects>
                 <tableViewController storyboardIdentifier="troubleshooting" id="y4e-vK-RHp" customClass="StatusTableViewController" customModule="Soundscape" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" indicatorStyle="white" dataMode="prototypes" style="grouped" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="fjd-Qo-aqS">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="721"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" name="Background Base"/>
                         <prototypes>
@@ -257,7 +256,7 @@ Tap the button below to connect to a device.</string>
                                 <color key="color" name="Foreground 1"/>
                             </activityIndicatorView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading Message..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fPm-1h-yCu">
-                                <rect key="frame" x="0.0" y="424.66666666666674" width="375" height="353.33333333333326"/>
+                                <rect key="frame" x="0.0" y="424.66666666666674" width="375" height="387.33333333333326"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
                                 <color key="textColor" name="Foreground 1"/>
                                 <nil key="highlightedColor"/>
@@ -284,14 +283,6 @@ Tap the button below to connect to a device.</string>
             <point key="canvasLocation" x="2820" y="166.99507389162562"/>
         </scene>
     </scenes>
-    <designables>
-        <designable name="AAv-p0-FLS">
-            <size key="intrinsicContentSize" width="30" height="30"/>
-        </designable>
-        <designable name="a8P-EO-E8X">
-            <size key="intrinsicContentSize" width="30" height="30"/>
-        </designable>
-    </designables>
     <resources>
         <image name="NoDevice" width="375" height="280"/>
         <namedColor name="Background 1">

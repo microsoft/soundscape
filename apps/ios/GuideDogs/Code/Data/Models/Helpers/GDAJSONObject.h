@@ -1,6 +1,6 @@
 //
 //  GDAJSONObject.h
-//  Soundscape
+//  Openscape
 //
 //  Copyright (c) Microsoft Corporation.
 //  Licensed under the MIT License.

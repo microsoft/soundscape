@@ -1,6 +1,6 @@
 //
 //  NotificationController.swift
-//  Soundscape
+//  Openscape
 //
 //  Copyright (c) Microsoft Corporation.
 //  Licensed under the MIT License.
@@ -10,7 +10,7 @@ import Foundation
 
 ///
 /// The `NotificationController` listens for changes that might require we show a notification (e.g. a new page
-/// is shown, Soundscape goes offline, a behavior is activated). When the controller detects a change
+/// is shown, openscape goes offline, a behavior is activated). When the controller detects a change
 /// it requests notifications for the current view controller from the notification servers (`BannerServer` and `AlertServer`)
 /// If the servers return a notification, then the controller requests that the current view controller display the
 /// notification.

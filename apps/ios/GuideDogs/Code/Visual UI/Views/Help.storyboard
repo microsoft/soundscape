@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="HeB-TC-6m6">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="HeB-TC-6m6">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -11,9 +11,9 @@
         <!--Help-->
         <scene sceneID="GeS-UV-Bv4">
             <objects>
-                <tableViewController title="Help" id="HeB-TC-6m6" customClass="HelpViewController" customModule="Soundscape" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController title="Help" id="HeB-TC-6m6" customClass="HelpViewController" customModule="Openscape" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" indicatorStyle="white" dataMode="prototypes" style="grouped" separatorStyle="default" sectionIndexMinimumDisplayRowCount="1" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="t4e-Vh-8vY">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="804"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" name="Background Base"/>
                         <color key="tintColor" name="Foreground 1"/>
@@ -25,15 +25,15 @@
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         </view>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="defaultCell" textLabel="ePu-bo-0ov" style="IBUITableViewCellStyleDefault" id="FsP-kc-bCW" customClass="CustomDisclosureTableViewCell" customModule="Soundscape" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="49.5" width="414" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="defaultCell" textLabel="ePu-bo-0ov" style="IBUITableViewCellStyleDefault" id="FsP-kc-bCW" customClass="CustomDisclosureTableViewCell" customModule="Openscape" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="55.5" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="FsP-kc-bCW" id="1RK-0u-BtO">
-                                    <rect key="frame" x="0.0" y="0.0" width="385.5" height="44"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="383.5" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Help Item Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" id="ePu-bo-0ov">
-                                            <rect key="frame" x="20" y="0.0" width="357.5" height="44"/>
+                                            <rect key="frame" x="20" y="0.0" width="355.5" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -92,13 +92,13 @@
         <!--Help Page Title-->
         <scene sceneID="b9X-Os-024">
             <objects>
-                <viewController title="Help Page Title" id="deu-ZT-efG" customClass="HelpPageViewController" customModule="Soundscape" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Help Page Title" id="deu-ZT-efG" customClass="HelpPageViewController" customModule="Openscape" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="CTH-mC-PVD"/>
                         <viewControllerLayoutGuide type="bottom" id="8hb-5S-yk6"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="XeJ-YA-4K3">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="804"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hkx-hy-TaF">
@@ -108,13 +108,13 @@
                                 </constraints>
                             </view>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" indicatorStyle="white" translatesAutoresizingMaskIntoConstraints="NO" id="HvH-ia-mn8">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="804"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GQn-AA-uCp" userLabel="Content View">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="424"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="454"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is it?" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qlE-Ir-eDJ">
-                                                <rect key="frame" x="10" y="20" width="384" height="23"/>
+                                                <rect key="frame" x="10" y="20" width="384" height="26.5"/>
                                                 <accessibility key="accessibilityConfiguration">
                                                     <accessibilityTraits key="traits" staticText="YES" header="YES"/>
                                                 </accessibility>
@@ -126,10 +126,10 @@
                                                 </userDefinedRuntimeAttributes>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="KFE-7L-YQT">
-                                                <rect key="frame" x="30" y="57.5" width="364" height="36"/>
+                                                <rect key="frame" x="30" y="61" width="364" height="42.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This text should provide a high level overview of what this feature is and what it does." textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M6J-qP-c6o" userLabel="What Stub Label">
-                                                        <rect key="frame" x="0.0" y="0.0" width="364" height="36"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="364" height="42.5"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -137,14 +137,14 @@
                                                 </subviews>
                                             </stackView>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xgG-Pq-ClD" userLabel="Separator Line">
-                                                <rect key="frame" x="10" y="113.5" width="394" height="1"/>
+                                                <rect key="frame" x="10" y="123.5" width="394" height="1"/>
                                                 <color key="backgroundColor" red="0.14117647059999999" green="0.2274509804" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="1" id="5Dn-sf-s4e"/>
                                                 </constraints>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="When would I use it?" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kax-XJ-S5m">
-                                                <rect key="frame" x="10" y="134.5" width="384" height="20.5"/>
+                                                <rect key="frame" x="10" y="144.5" width="384" height="24"/>
                                                 <accessibility key="accessibilityConfiguration">
                                                     <accessibilityTraits key="traits" staticText="YES" header="YES"/>
                                                 </accessibility>
@@ -156,10 +156,10 @@
                                                 </userDefinedRuntimeAttributes>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="QuV-Mr-QD7" userLabel="When Stack View">
-                                                <rect key="frame" x="30" y="169" width="364" height="36"/>
+                                                <rect key="frame" x="30" y="182.5" width="364" height="42.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This text should describe the situations in which this feature would be useful." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gu9-yI-3lp" userLabel="When Stub Label">
-                                                        <rect key="frame" x="0.0" y="0.0" width="364" height="36"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="364" height="42.5"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -167,14 +167,14 @@
                                                 </subviews>
                                             </stackView>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="83Z-bh-JBG" userLabel="Separator Line">
-                                                <rect key="frame" x="10" y="225" width="394" height="1"/>
+                                                <rect key="frame" x="10" y="245" width="394" height="1"/>
                                                 <color key="backgroundColor" red="0.14117647059999999" green="0.2274509804" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="1" id="jLO-jE-1e1"/>
                                                 </constraints>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How does it work?" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="loz-UM-78t">
-                                                <rect key="frame" x="10" y="246" width="384" height="23"/>
+                                                <rect key="frame" x="10" y="266" width="384" height="26.5"/>
                                                 <accessibility key="accessibilityConfiguration">
                                                     <accessibilityTraits key="traits" staticText="YES" header="YES"/>
                                                 </accessibility>
@@ -186,10 +186,10 @@
                                                 </userDefinedRuntimeAttributes>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="S0U-9Q-cDP">
-                                                <rect key="frame" x="30" y="283" width="364" height="36"/>
+                                                <rect key="frame" x="30" y="306.5" width="364" height="42.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This text should provide step-by-step instructions for using the feature." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0jO-Pp-s5C">
-                                                        <rect key="frame" x="0.0" y="0.0" width="364" height="36"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="364" height="42.5"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -197,14 +197,14 @@
                                                 </subviews>
                                             </stackView>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7na-3e-6qR" userLabel="Separator Line">
-                                                <rect key="frame" x="10" y="339" width="394" height="1"/>
+                                                <rect key="frame" x="10" y="369" width="394" height="1"/>
                                                 <color key="backgroundColor" red="0.14117647059999999" green="0.2274509804" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="1" id="9Mp-wi-oyg"/>
                                                 </constraints>
                                             </view>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mof-7h-wre">
-                                                <rect key="frame" x="141.5" y="360" width="131" height="44"/>
+                                                <rect key="frame" x="132" y="390" width="150" height="44"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="44" id="Sbh-cN-apo"/>
                                                 </constraints>
@@ -300,23 +300,23 @@
         <!--Frequently Asked Questions-->
         <scene sceneID="yGU-eg-QjF">
             <objects>
-                <tableViewController title="Frequently Asked Questions" id="ID7-Dj-jiD" customClass="HelpPageFAQListTableViewController" customModule="Soundscape" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController title="Frequently Asked Questions" id="ID7-Dj-jiD" customClass="HelpPageFAQListTableViewController" customModule="Openscape" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" indicatorStyle="white" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="7Vz-89-W9g">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="804"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" name="Background Base"/>
                         <color key="tintColor" name="Foreground 1"/>
                         <color key="separatorColor" name="Background 3"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="QuestionCell" textLabel="toJ-XF-oW2" style="IBUITableViewCellStyleDefault" id="nEw-lc-Q1V" customClass="CustomDisclosureTableViewCell" customModule="Soundscape" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="49.5" width="414" height="43.5"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="QuestionCell" textLabel="toJ-XF-oW2" style="IBUITableViewCellStyleDefault" id="nEw-lc-Q1V" customClass="CustomDisclosureTableViewCell" customModule="Openscape" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="55.5" width="414" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="nEw-lc-Q1V" id="agb-Eh-ecJ">
-                                    <rect key="frame" x="0.0" y="0.0" width="385.5" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="383.5" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Question?" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" id="toJ-XF-oW2">
-                                            <rect key="frame" x="20" y="0.0" width="357.5" height="43.5"/>
+                                            <rect key="frame" x="20" y="0.0" width="355.5" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -346,13 +346,13 @@
         <!--FAQ Title-->
         <scene sceneID="k3m-OY-845">
             <objects>
-                <viewController title="FAQ Title" id="vsj-yu-qxK" customClass="HelpPageFAQViewController" customModule="Soundscape" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="FAQ Title" id="vsj-yu-qxK" customClass="HelpPageFAQViewController" customModule="Openscape" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="tTn-jS-EFt"/>
                         <viewControllerLayoutGuide type="bottom" id="2N7-Xr-Jku"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="3Pb-Bp-xo1">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="804"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K41-M6-sjj">
@@ -362,13 +362,13 @@
                                 </constraints>
                             </view>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" indicatorStyle="white" translatesAutoresizingMaskIntoConstraints="NO" id="drw-MG-7tO">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="804"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TFH-o4-bTm" userLabel="Content View">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="94.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="123.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question?" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HhO-Mm-DNf">
-                                                <rect key="frame" x="10" y="20" width="384" height="23"/>
+                                                <rect key="frame" x="10" y="20" width="384" height="26.5"/>
                                                 <accessibility key="accessibilityConfiguration">
                                                     <accessibilityTraits key="traits" staticText="YES" header="YES"/>
                                                 </accessibility>
@@ -377,10 +377,10 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="rVL-Py-bqy">
-                                                <rect key="frame" x="30" y="57.5" width="364" height="17"/>
+                                                <rect key="frame" x="30" y="61" width="364" height="42.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This text should provide an answer to the question..." textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d0g-2w-VkF" userLabel="Answer Stub Label">
-                                                        <rect key="frame" x="0.0" y="0.0" width="364" height="17"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="364" height="42.5"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -439,13 +439,13 @@
         <!--Help Page Title-->
         <scene sceneID="8be-hX-vJJ">
             <objects>
-                <viewController title="Help Page Title" id="DA9-qa-U77" customClass="HelpPageGenericViewController" customModule="Soundscape" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Help Page Title" id="DA9-qa-U77" customClass="HelpPageGenericViewController" customModule="Openscape" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="lE1-v5-AV0"/>
                         <viewControllerLayoutGuide type="bottom" id="D2P-Y7-Z3H"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="7lj-s4-e1J">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="804"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z0B-HI-Fzh">
@@ -455,13 +455,13 @@
                                 </constraints>
                             </view>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LM1-Xq-EmW">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="804"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="VcY-4v-tCL">
-                                        <rect key="frame" x="20" y="20" width="374" height="36"/>
+                                        <rect key="frame" x="20" y="20" width="374" height="42.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This text should provide a high level overview of what this feature is and what it does." textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9a9-eY-uBJ" userLabel="What Stub Label">
-                                                <rect key="frame" x="0.0" y="0.0" width="374" height="36"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="42.5"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -508,13 +508,13 @@
         <!--Offline Help Page View Controller-->
         <scene sceneID="0wU-1u-cqr">
             <objects>
-                <viewController storyboardIdentifier="OfflinePage" id="GdR-lA-crN" customClass="OfflineHelpPageViewController" customModule="Soundscape" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="OfflinePage" id="GdR-lA-crN" customClass="OfflineHelpPageViewController" customModule="Openscape" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="oIR-Td-9KM"/>
                         <viewControllerLayoutGuide type="bottom" id="XcH-2u-yG7"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="ZZb-v9-ykh">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="804"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0bt-tB-UnY">
@@ -524,13 +524,13 @@
                                 </constraints>
                             </view>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" indicatorStyle="white" translatesAutoresizingMaskIntoConstraints="NO" id="D2f-i7-Hnq">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="804"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OaO-er-sRF" userLabel="Content View">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="366"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="396"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Why is Soundscape working offline?" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="udP-cU-tcg">
-                                                <rect key="frame" x="24" y="20" width="366" height="61"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Why is openscape working offline?" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="udP-cU-tcg">
+                                                <rect key="frame" x="24" y="20" width="366" height="67.5"/>
                                                 <accessibility key="accessibilityConfiguration">
                                                     <accessibilityTraits key="traits" staticText="YES" header="YES"/>
                                                 </accessibility>
@@ -542,10 +542,10 @@
                                                 </userDefinedRuntimeAttributes>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="fWS-fI-tRW">
-                                                <rect key="frame" x="24" y="101" width="366" height="36"/>
+                                                <rect key="frame" x="24" y="107.5" width="366" height="42.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This text should provide a high level overview of what this feature is and what it does." textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jY5-c1-6Du" userLabel="What Stub Label">
-                                                        <rect key="frame" x="0.0" y="0.0" width="366" height="36"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="366" height="42.5"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -556,14 +556,14 @@
                                                 </subviews>
                                             </stackView>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f2k-mQ-8vq" userLabel="Separator Line">
-                                                <rect key="frame" x="34" y="157" width="346" height="1"/>
+                                                <rect key="frame" x="34" y="170" width="346" height="1"/>
                                                 <color key="backgroundColor" red="0.14117647059999999" green="0.2274509804" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="1" id="IYv-SY-cT0"/>
                                                 </constraints>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Limitations" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vLK-qk-Ysn">
-                                                <rect key="frame" x="24" y="178" width="366" height="23"/>
+                                                <rect key="frame" x="24" y="191" width="366" height="26.5"/>
                                                 <accessibility key="accessibilityConfiguration">
                                                     <accessibilityTraits key="traits" staticText="YES" header="YES"/>
                                                 </accessibility>
@@ -575,10 +575,10 @@
                                                 </userDefinedRuntimeAttributes>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="dHz-mp-9Un">
-                                                <rect key="frame" x="24" y="215" width="366" height="17"/>
+                                                <rect key="frame" x="24" y="231.5" width="366" height="20.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description of limitations" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Ee-eS-eMM" userLabel="When Stub Label">
-                                                        <rect key="frame" x="0.0" y="0.0" width="366" height="17"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="366" height="20.5"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -589,14 +589,14 @@
                                                 </subviews>
                                             </stackView>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jyO-23-oYQ" userLabel="Separator Line">
-                                                <rect key="frame" x="34" y="252" width="346" height="1"/>
+                                                <rect key="frame" x="34" y="272" width="346" height="1"/>
                                                 <color key="backgroundColor" red="0.14117647059999999" green="0.2274509804" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="1" id="eex-1C-QAp"/>
                                                 </constraints>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What can you do?" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kQD-AA-W12">
-                                                <rect key="frame" x="24" y="273" width="366" height="23"/>
+                                                <rect key="frame" x="24" y="293" width="366" height="26.5"/>
                                                 <accessibility key="accessibilityConfiguration">
                                                     <accessibilityTraits key="traits" staticText="YES" header="YES"/>
                                                 </accessibility>
@@ -608,10 +608,10 @@
                                                 </userDefinedRuntimeAttributes>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="xUT-D0-aNg">
-                                                <rect key="frame" x="24" y="310" width="366" height="36"/>
+                                                <rect key="frame" x="24" y="333.5" width="366" height="42.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This text should provide step-by-step instructions for using the feature." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sfc-po-tDp">
-                                                        <rect key="frame" x="0.0" y="0.0" width="366" height="36"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="366" height="42.5"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>

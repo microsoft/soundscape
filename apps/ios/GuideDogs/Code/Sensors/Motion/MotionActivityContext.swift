@@ -1,6 +1,6 @@
 //
 //  MotionActivityContext.swift
-//  Soundscape
+//  Openscape
 //
 //  Copyright (c) Microsoft Corporation.
 //  Licensed under the MIT License.
@@ -42,7 +42,7 @@ class MotionActivityContext {
     }
     
     /// While `CMMotionActivity` activities are not mutually exclusive,
-    /// Soundscape only uses one current activity type.
+    /// openscape only uses one current activity type.
     /// This is why we use the `ActivityType` as the public interface for activity state.
     var currentActivity: ActivityType {
         return gpxSimulatedActivity ?? activityType
