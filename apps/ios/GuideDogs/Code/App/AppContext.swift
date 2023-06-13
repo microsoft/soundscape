@@ -383,7 +383,7 @@ extension AppContext {
             return URL(string: "https://mur.org.uk/")!
         }
     
-        static let companySupportURL = URL(string: "https://mur.org.uk/")!
+        static let companySupportURL = URL(string: "https://discord.gg/egqwNSm7")!
         
         static let accessibilityFrance = URL(string: "https://mur.org.uk/")!
     }
