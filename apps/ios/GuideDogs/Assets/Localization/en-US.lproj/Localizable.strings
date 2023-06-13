@@ -2761,13 +2761,13 @@
 "terms_of_use.accept_checkbox.off.acc_value" = "Unchecked";
 
 /* App's medical device and safety disclaimer, "(1)" and (2)" are used for an inline, numbered list */
-"terms_of_use.medical_safety_disclaimer" = "You acknowledge that Openscape (1) is not designed, intended, or made available as a medical device, and (2) is not designed or intended to be a substitute for professional medical advice, diagnosis, treatment, or judgment and should not be used to replace or as a substitute for professional medical advice, diagnosis, treatment, or judgment.\n\nSafety Notice\nSoundscape is a navigation aid and should not be used in lieu of mobility skills, being aware of your surroundings, and good judgement. Use caution when navigating your environment as the mapping data incorporated into the Openscape program is captured from a third-party program, and therefore, there may be limitations with the accuracy of the information presented.";
+"terms_of_use.medical_safety_disclaimer" = "You acknowledge that Openscape (1) is not designed, intended, or made available as a medical device, and (2) is not designed or intended to be a substitute for professional medical advice, diagnosis, treatment, or judgment and should not be used to replace or as a substitute for professional medical advice, diagnosis, treatment, or judgment.\n\nSafety Notice\nOpenscape is a navigation aid and should not be used in lieu of mobility skills, being aware of your surroundings, and good judgement. Use caution when navigating your environment as the mapping data incorporated into the Openscape program is captured from a third-party program, and therefore, there may be limitations with the accuracy of the information presented.";
 
 /* Label for the accept button that will be displayed as a new feature annoucement to existing users */
 "terms_of_use.accept.new_features" = "Accept";
 
 /* Accessibility hint for the accept button that will be displayed as a new feature annoucement to existing users */
-"terms_of_use.accept.new_features.accessibility_hint" = "Double tap to accept and close annoucements";
+"terms_of_use.accept.new_features.accessibility_hint" = "Double tap to accept and close announcements";
 
 //------------------------------------------------------------------------------
 // MARK: - First Launch
@@ -2785,10 +2785,10 @@
 /* Notification, Permission is required */
 "first_launch.permission_required" = "This permission is required.";
 
-/* Notification, Soundscap Language {NumberedPlaceholder="Openscape"} */
+/* Notification, Openscape Language {NumberedPlaceholder="Openscape"} */
 "first_launch.soundscape_language" = "openscape Language";
 
-/* Notification, introductuction to Soundscap Language {NumberedPlaceholder="Openscape"} */
+/* Notification, introductuction to Soundscape Language {NumberedPlaceholder="Openscape"} */
 "first_launch.soundscape_language.text" = "Select the language you would like Openscape to use. You can always change your selection in the app settings.";
 
 /* Notification, Introduction to app location information {NumberedPlaceholder="Openscape"} */
