@@ -38,7 +38,7 @@
 		281CB8812016B4650059B8C4 /* LocationCallout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281CB8802016B4650059B8C4 /* LocationCallout.swift */; };
 		281CB8842017B4A70059B8C4 /* InsideLocationCallout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281CB8832017B4A70059B8C4 /* InsideLocationCallout.swift */; };
 		281CB8862017B9810059B8C4 /* AlongRoadLocationCallout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281CB8852017B9810059B8C4 /* AlongRoadLocationCallout.swift */; };
-		281D59D11F4765160090F23A /* BuildFile in Sources */ = {isa = PBXBuildFile; };
+		281D59D11F4765160090F23A /* (null) in Sources */ = {isa = PBXBuildFile; };
 		281D59D31F4765880090F23A /* FirstLaunchTermsStepViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281D59D21F4765880090F23A /* FirstLaunchTermsStepViewController.swift */; };
 		28211F22284E620F001A64A4 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28211F21284E620F001A64A4 /* NetworkClient.swift */; };
 		2821F61B220A6D1600D15EFF /* AuthoredActivityLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2821F61A220A6D1600D15EFF /* AuthoredActivityLoader.swift */; };
@@ -604,8 +604,8 @@
 		62A61232243F9542008A8174 /* MPEditAnnotationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A61231243F9542008A8174 /* MPEditAnnotationTableViewCell.swift */; };
 		62B11A3727ACAAC50094FE66 /* RoundedBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B11A3627ACAAC50094FE66 /* RoundedBackground.swift */; };
 		62B11A5927B337650094FE66 /* OnboardingTextStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B11A5827B337650094FE66 /* OnboardingTextStyle.swift */; };
-		62B11A5C27B3398C0094FE66 /* BuildFile in Sources */ = {isa = PBXBuildFile; };
-		62B11A5E27B43CFA0094FE66 /* BuildFile in Sources */ = {isa = PBXBuildFile; };
+		62B11A5C27B3398C0094FE66 /* (null) in Sources */ = {isa = PBXBuildFile; };
+		62B11A5E27B43CFA0094FE66 /* (null) in Sources */ = {isa = PBXBuildFile; };
 		62B11A6827B46C4B0094FE66 /* BeaconOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B11A6727B46C4B0094FE66 /* BeaconOption.swift */; };
 		62B11A6A27B46F6E0094FE66 /* BeaconOption+Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B11A6927B46F6E0094FE66 /* BeaconOption+Style.swift */; };
 		62B11A6C27B46F820094FE66 /* BeaconOption+Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B11A6B27B46F820094FE66 /* BeaconOption+Strings.swift */; };
@@ -834,7 +834,7 @@
 		C3B331242011615A00CD20F9 /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B331232011615A00CD20F9 /* Address.swift */; };
 		C3B3312A2012B8C600CD20F9 /* Address+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B331292012B8C600CD20F9 /* Address+Extensions.swift */; };
 		C3BB6C121EE08FC500C8D66D /* Launch-Dynamic.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3BB6C111EE08FC500C8D66D /* Launch-Dynamic.storyboard */; };
-		C3BC95D3231F053600B78903 /* BuildFile in Sources */ = {isa = PBXBuildFile; };
+		C3BC95D3231F053600B78903 /* (null) in Sources */ = {isa = PBXBuildFile; };
 		C3BC95D5231F054F00B78903 /* HeadingType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3BC95D4231F054F00B78903 /* HeadingType.swift */; };
 		C3BC95DB2321DA6A00B78903 /* HeadingValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3BC95DA2321DA6A00B78903 /* HeadingValue.swift */; };
 		C3BC95DD2322D6F600B78903 /* RawCourseProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3BC95DC2322D6F600B78903 /* RawCourseProvider.swift */; };
@@ -856,7 +856,7 @@
 		C3F4E4B422EB5F92009C5E70 /* SignificantChangeMonitoringOrigin.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F4E4B322EB5F92009C5E70 /* SignificantChangeMonitoringOrigin.swift */; };
 		C3F6A58C226F746C00C922F7 /* TableViewDataSourcePrefetching.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F6A58B226F746C00C922F7 /* TableViewDataSourcePrefetching.swift */; };
 		C3F6A590226F8DD300C922F7 /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F6A58F226F8DD300C922F7 /* Token.swift */; };
-		C3F93CBF22D40A53009EF801 /* BuildFile in Sources */ = {isa = PBXBuildFile; };
+		C3F93CBF22D40A53009EF801 /* (null) in Sources */ = {isa = PBXBuildFile; };
 		C3F93CFD22D7CA05009EF801 /* GeolocationManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F93CFC22D7CA05009EF801 /* GeolocationManagerProtocol.swift */; };
 		C3FA2EFB236A3A3700ADB8BC /* NotificationContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FA2EFA236A3A3700ADB8BC /* NotificationContainer.swift */; };
 		C3FA2EFD236A3A6A00ADB8BC /* BannerContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FA2EFC236A3A6A00ADB8BC /* BannerContainer.swift */; };
@@ -5217,7 +5217,7 @@
 				286F409B2624FF6000C3F80B /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */,
 				2866A7BF2625013400EBA2D8 /* XCRemoteSwiftPackageReference "DZNEmptyDataSet" */,
 				2866A7C52625020600EBA2D8 /* XCRemoteSwiftPackageReference "AppCenter-SDK-Apple" */,
-				2866A7CD2625028600EBA2D8 /* XCRemoteSwiftPackageReference "Reachability.swift" */,
+				2866A7CD2625028600EBA2D8 /* XCRemoteSwiftPackageReference "Reachability" */,
 				2866A7D3262502D500EBA2D8 /* XCRemoteSwiftPackageReference "CocoaLumberjack" */,
 				28F1ECE0262505DC00E964C0 /* XCRemoteSwiftPackageReference "realm-cocoa" */,
 				286145E92625099F000E5525 /* XCRemoteSwiftPackageReference "SDWebImage" */,
@@ -5636,7 +5636,7 @@
 				284C9AF623886D3E00CBA392 /* StaticAudioEngineAsset.swift in Sources */,
 				C3FA2EFD236A3A6A00ADB8BC /* BannerContainer.swift in Sources */,
 				C30DDADF2255796B00104085 /* NotificationProtocol.swift in Sources */,
-				281D59D11F4765160090F23A /* BuildFile in Sources */,
+				281D59D11F4765160090F23A /* (null) in Sources */,
 				C34333A6221C8FF500D9CECD /* StaticTableViewDataSource.swift in Sources */,
 				C30DBD2023A2C19400082B27 /* SearchResultsUpdater.swift in Sources */,
 				28DC34C626B8A8D500ADA3C3 /* Samplable.swift in Sources */,
@@ -5711,7 +5711,7 @@
 				B93629B21FCF1C3000BAF3A6 /* GeometryUtils.swift in Sources */,
 				28BCD0C028529FBA00FD2F7D /* GuidedTourWaypointAudioStore.swift in Sources */,
 				627004EC26055A5500FBF5E5 /* HeadphoneMotionReachabilityWrapper.swift in Sources */,
-				62B11A5E27B43CFA0094FE66 /* BuildFile in Sources */,
+				62B11A5E27B43CFA0094FE66 /* (null) in Sources */,
 				620118D124AABB87004B0380 /* LocationDetailLocalizedLabel.swift in Sources */,
 				629F53DB26C724B600796B23 /* TitleTextFieldItem.swift in Sources */,
 				284D48592658291A009001AB /* ViewNavigationHelper.swift in Sources */,
@@ -5767,7 +5767,7 @@
 				6281B51D27110C370092F162 /* WaypointAddListViewModel.swift in Sources */,
 				6249501627068B5F008D842B /* RouteParametersHandler.swift in Sources */,
 				C34333A0221773C600D9CECD /* POITableViewCellConfigurator.swift in Sources */,
-				62B11A5C27B3398C0094FE66 /* BuildFile in Sources */,
+				62B11A5C27B3398C0094FE66 /* (null) in Sources */,
 				C3F06A911FFC41FF00EDDB42 /* Geocoder.swift in Sources */,
 				621628912853EF9900B1FF5B /* DateComponentsFormatter+Extension.swift in Sources */,
 				C324BBED22A1E97B00C83439 /* SuperCategoryPredicate.swift in Sources */,
@@ -5783,7 +5783,7 @@
 				28EB441626B4A27600D5BBE4 /* MarkerCell.swift in Sources */,
 				D30355D31B61401D00E1DDED /* GDAJSONObject.m in Sources */,
 				C30DDAEC2256935F00104085 /* Typeable.swift in Sources */,
-				C3F93CBF22D40A53009EF801 /* BuildFile in Sources */,
+				C3F93CBF22D40A53009EF801 /* (null) in Sources */,
 				C34333AE221CDB2F00D9CECD /* FilterTableViewHeaderView.swift in Sources */,
 				6201428424BF986400F003D5 /* NearbyFilterTableViewController.swift in Sources */,
 				C31BEE252215EA1B00EE9284 /* TableViewDelegate.swift in Sources */,
@@ -6131,7 +6131,7 @@
 				624DF66827BC61DB000A634C /* OnboardingCalloutButton.swift in Sources */,
 				28BA4A7A2655A13F00E1D273 /* Star.swift in Sources */,
 				620118CC24AAB489004B0380 /* LocationActionAlert.swift in Sources */,
-				C3BC95D3231F053600B78903 /* BuildFile in Sources */,
+				C3BC95D3231F053600B78903 /* (null) in Sources */,
 				2872D14C26D83B36000BE465 /* HapticWandBeacon.swift in Sources */,
 				2872D14E26D89C14000BE465 /* HapticBeacon.swift in Sources */,
 				284C9AF923886DA600CBA392 /* AudioEngineAsset.swift in Sources */,
@@ -6296,7 +6296,7 @@
 				CODE_SIGN_ENTITLEMENTS = GuideDogs/Assets/PropertyLists/SoundscapeDF.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = "";
 				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = YES;
 				ENABLE_BITCODE = NO;
@@ -6487,7 +6487,7 @@
 				CODE_SIGN_ENTITLEMENTS = GuideDogs/Assets/PropertyLists/Soundscape.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 3;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_TEAM = F3AZTWNYRT;
 				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = YES;
@@ -6549,7 +6549,7 @@
 				CODE_SIGN_ENTITLEMENTS = GuideDogs/Assets/PropertyLists/Soundscape.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = F3AZTWNYRT;
 				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = YES;
 				ENABLE_BITCODE = NO;
@@ -6663,7 +6663,7 @@
 				minimumVersion = 4.4.3;
 			};
 		};
-		2866A7CD2625028600EBA2D8 /* XCRemoteSwiftPackageReference "Reachability.swift" */ = {
+		2866A7CD2625028600EBA2D8 /* XCRemoteSwiftPackageReference "Reachability" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/ashleymills/Reachability.swift";
 			requirement = {
@@ -6735,7 +6735,7 @@
 		};
 		2866A7CE2625028600EBA2D8 /* Reachability */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 2866A7CD2625028600EBA2D8 /* XCRemoteSwiftPackageReference "Reachability.swift" */;
+			package = 2866A7CD2625028600EBA2D8 /* XCRemoteSwiftPackageReference "Reachability" */;
 			productName = Reachability;
 		};
 		2866A7D4262502D500EBA2D8 /* CocoaLumberjackSwift */ = {
