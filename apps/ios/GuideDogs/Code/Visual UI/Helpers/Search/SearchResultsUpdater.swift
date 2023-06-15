@@ -171,16 +171,14 @@ extension SearchResultsUpdater: UISearchBarDelegate {
         search.start(completionHandler: searchWithTextCallback)
     }
     
-    private func searchWithTextCallback(response: MKLocalSearch.Response?, error: Error?) {
-(response, error) in
-            guard error == nil else {
-                return
-            }
-            var pois: [POI] = []
-            for result in response?.mapItems ?? [] {
-                        let poi = GenericLocation(lat: result.placemark.location?.coordinate.latitude?, lon: result.placemark.location?.coordinate.longitude?, name: result.name?)
-                pois.append(poi)
-            }
+    private func searchWithTextCallback(response: MKLocalSearch.Response?, error: Error?) -> Void {
+        guard error == nil else {
+            return
+        }
+        var pois: [POI] = []
+        for result in response?.mapItems ?? [] {
+            pois.append(GenericLocation(lat: result.placemark.location?.coordinate.latitude?, lon: result.placemark.location?.coordinate.longitude?, name: result.name?))
+        }
         delegate?.searchResultsDidUpdate(pois, searchLocation: self.location?)
     }
 }
