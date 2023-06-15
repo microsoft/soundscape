@@ -122,9 +122,12 @@ extension SearchResultsUpdater: UISearchResultsUpdating {
         // Fetch autosuggest results with new search text
         //
 
-        ///FIXME leaving this empty for now
-        /// We can limit the load on the API server by only executing searches when typing is done.
-        /// When "enter" is pressed, the searchWithText method below executes the query.
+        let request = MKLocalSearch.Request()
+        request.naturalLanguageQuery = searchText
+        let coordinate = self.location!.coordinate
+        request.region = MKCoordinateRegion(center: coordinate, latitudinalMeters: 75000, longitudinalMeters: 75000)
+        let search = MKLocalSearch(request: request)
+        search.start(completionHandler: searchWithTextCallback)
     }
 }
 
