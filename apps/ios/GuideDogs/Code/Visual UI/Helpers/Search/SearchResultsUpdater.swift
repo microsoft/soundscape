@@ -184,7 +184,7 @@ extension SearchResultsUpdater: UISearchBarDelegate {
             for result in mapItems {
                 let lat = result.placemark.location?.coordinate.latitude
                 let long = result.placemark.location?.coordinate.longitude
-                pois.append(GenericLocation(lat: lat!, lon: long!, name: result.name!))
+                pois.append(GenericLocation(lat: lat!, lon: long!, name: result.name!, address: result.placemark.name))
             }
         }
         delegate?.searchResultsDidUpdate(pois, searchLocation: self.location)
