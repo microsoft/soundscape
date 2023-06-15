@@ -166,7 +166,8 @@ extension SearchResultsUpdater: UISearchBarDelegate {
         
         let request = MKLocalSearch.Request()
         request.naturalLanguageQuery = searchText
-        request.region = MKCoordinateRegion(center: self.location?.coordinate?, latitudinalMeters: 75000, longitudinalMeters: 75000)
+        let coordinate = self.location!.coordinate
+        request.region = MKCoordinateRegion(center: coordinate, latitudinalMeters: 75000, longitudinalMeters: 75000)
         let search = MKLocalSearch(request: request)
         search.start(completionHandler: searchWithTextCallback)
     }
@@ -176,9 +177,14 @@ extension SearchResultsUpdater: UISearchBarDelegate {
             return
         }
         var pois: [POI] = []
-        for result: MKMapItem in response?.mapItems {
-            pois.append(GenericLocation(lat: result.placemark.location?.coordinate.latitude?, lon: result.placemark.location?.coordinate.longitude?, name: result.name?))
+        if let mapItems = response?.mapItems {
+            for result in mapItems {
+                let lat = result.placemark.location?.coordinate.latitude
+                let long = result.placemark.location?.coordinate.longitude
+                pois.append(GenericLocation(lat: lat!, lon: long!, name: result.name!))
+            }
         }
         delegate?.searchResultsDidUpdate(pois, searchLocation: self.location)
     }
+    
 }
