@@ -8,6 +8,7 @@
 
 import Foundation
 import CoreLocation
+import MapKit
 
 protocol SearchResultsUpdaterDelegate: AnyObject {
     func searchResultsDidStartUpdating()
@@ -162,60 +163,24 @@ extension SearchResultsUpdater: UISearchBarDelegate {
         //
         // Fetch search results given search text
         //
-
-        // construct URL like https://photon.komoot.io/api/?q=foo&lat=38.896&lon=-77.0223&limit=7
-        var searchUrl = URLComponents()
-        searchUrl.scheme = "https"
-        searchUrl.host = "photon.komoot.io"
-        searchUrl.path = "/api"
-        let baseParams = [
-            URLQueryItem(name: "q", value: searchText),
-            //URLQueryItem(name: "limit", value: "7")
-        ]
-        if let location = self.location {
-            searchUrl.queryItems = baseParams + [
-                URLQueryItem(name: "lat", value: String(format: "%.4f", location.coordinate.latitude)),
-                URLQueryItem(name: "lon", value: String(format: "%.4f", location.coordinate.longitude)),
-            ]
-        } else {
-            searchUrl.queryItems = baseParams
-        }
-
-        OSMServiceModel().getDynamicData(dynamicURL: searchUrl.string!, callback: searchWithTextCallback)
+        
+        let request = MKLocalSearch.Request()
+        request.naturalLanguageQuery = searchText
+        request.region = MKCoordinateRegion(center: self.location?.coordinate?, latitudinalMeters: 75000, longitudinalMeters: 75000)
+        let search = MKLocalSearch(request: request)
+        search.start(completionHandler: searchWithTextCallback)
     }
-
-    private func searchWithTextCallback(status: HTTPStatusCode, text: String?, error: Error?) {
-        // for fetching JSON data, see Code/Data/Services/OSM/OSMServiceModel
-        if status != HTTPStatusCode.success {
-            return
-        } //FIXME display error on failure?
-
-        var pois: [POI] = []
-        if let text = text,
-           let data = text.data(using: .utf8),
-           let json = try? JSONSerialization.jsonObject(with: data) as? [String: Any],
-           let features = json["features"] as? [[String: Any]] {
-            for feature in features {
-                guard let properties = feature["properties"] as? [String: Any],
-                      let name = properties["name"] as? String,
-                      let geometry = feature["geometry"] as? [String: Any],
-                      let coordinates = geometry["coordinates"] as? [Double] else {
-                    // Skip any results that don't have at least a name and lat/lon
-                    continue
-                }
-
-                // Include as specific an address as we can get for this POI
-                var addressParts: [String] = []
-                for key in ["street", "city", "state", "country"] {
-                    if let value = properties[key] as? String {
-                        addressParts.append(value)
-                    }
-                }
-
-                pois.append(GenericLocation(lat: CLLocationDegrees(floatLiteral: coordinates[1]), lon: CLLocationDegrees(floatLiteral: coordinates[0]), name: name, address: addressParts.joined(separator: ", ")))
+    
+    private func searchWithTextCallback(response: MKLocalSearch.Response?, error: Error?) {
+(response, error) in
+            guard error == nil else {
+                return
             }
-        }
-
-        delegate?.searchResultsDidUpdate(pois, searchLocation: location)
+            var pois: [POI] = []
+            for result in response?.mapItems ?? [] {
+                        let poi = GenericLocation(lat: result.placemark.location?.coordinate.latitude?, lon: result.placemark.location?.coordinate.longitude?, name: result.name?)
+                pois.append(poi)
+            }
+        delegate?.searchResultsDidUpdate(pois, searchLocation: self.location?)
     }
 }
