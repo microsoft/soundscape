@@ -1847,15 +1847,7 @@
 
 
 /*  */
-"filter.food_drink" = "Mad og drikke";
-
-
-/*  */
 "filter.things_to_do" = "Ting, der skal gøres";
-
-
-/*  */
-"filter.groceries" = "Dagligvarer og nærbutikker";
 
 
 /*  */
@@ -4123,15 +4115,7 @@
 
 
 /*  */
-"faq.section.what_is" = "Hvad er Soundscape, og hvordan skal jeg bruge det?";
-
-
-/*  */
 "faq.when_to_use.question" = "Hvornår skal jeg bruge Soundscape?";
-
-
-/*  */
-"faq.when_to_use.answer" = "Soundscape har funktioner og fordele, der spænder over en række scenarier og tidsskalaer. Desuden kan værdien for dig af openscape udvikle sig over tid, så hvordan du bruger det i dag, kan afvige fra, hvordan du vil bruge det om tre måneder. Folk tænker ofte på apps i form af \"hvilket problem er denne app god til at løse?\". openscape kan bestemt bruges fra sag til sag, når du har et specifikt informationsbehov - f.eks. holde styr på en destination, mens du er på vej derhen, hjælpe dig med at orientere dig, når du kommer ud fra en metrostation, hente oplysninger om din retning, når du forlader en bil, eller finde gadenavnene for eller afstanden til det næste kryds. Men filosofien bag openscape er en at \"kaste lys over din verden med lyd\", og det er designet til at blive brugt, når som helst du er ude, og ved at give bevidsthed om dine omgivelser, f.eks. gøre dig opmærksom på navnene på de gader, du er på, den retning, du er på vej i, samt navnene på virksomheder, du passerer. I denne brugstilstand har vores brugere omtalt openscape som en \"dejlig ledsagerapp\", som understøtter \"lykketræf\", til at \"udfylde hullerne i dit mentale kort\" og give dig mere \"selvtillid, når du går\". Her er nogle andre eksempler på, hvordan vores brugere indarbejder openscape i deres liv:\n\n\"Soundscape hjalp mig med at komme tilbage på sporet, efter at jeg kom ud af bussen og gik i den forkerte retning.\"\n\n\"Selv i den by, hvor jeg har boet i 3 år, har jeg opbygget et forbedret billede af, hvad der er omkring mig, [med Soundscape].\"\n\n\"3D-lyden forbedrer min oplevelse på en tur, så jeg føler mig mere forbundet med mit miljø…Jeg er mere tilbøjelige til at prøve en ny rute nu, hvor jeg kan bruge appen.\"\n\n\"Jeg savner lykketræffet ved at gå rundt og lægge mærke til ting. Det er rart at have openscape – det kræver ingen indsats at høre om ting omkring mig. Relationsoplysningerne er nyttige, og det er en fantastisk app til at give situationsfornemmelse og til at udforske kommercielle korridorer.\"\n\n\"[Jeg brugte Soundscape] til at finde en pub midt i York. [Jeg] brugte en række af dets muligheder til først at lokalisere den og derefter faktisk finde den. Det førte mig inden for 3 meter fra døren - strålende!\"";
 
 
 /*  */
@@ -4232,10 +4216,6 @@
 
 /*  */
 "faq.miss_a_callout.answer" = "Soundscape har en liste over dine seneste lydbeskeder, så du kan se på de lydbeskeder, du måske er gået glip af. Du kan finde den ved at trykke på søgelinjen på Soundscape-startskærmen. Nederst på denne side er der en sektion for \"Seneste lydbeskeder\", hvor den lydbesked, du gik glip af, vises.";
-
-
-/*  */
-"faq.section.how_works" = "Hvordan fungerer Soundscape?";
 
 
 /*  */
@@ -4380,5 +4360,6 @@
 
 /*  */
 "faq.tip.two_finger_double_tap" = "Hvis du trykker på skærmen to gange med to fingre, lukkes der for alle aktive lydbeskeder.";
+
 
 

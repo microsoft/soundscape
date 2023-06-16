@@ -1847,15 +1847,7 @@
 
 
 /*  */
-"filter.food_drink" = "Mat och dryck";
-
-
-/*  */
 "filter.things_to_do" = "Saker att göra";
-
-
-/*  */
-"filter.groceries" = "Livsmedelsbutiker och närbutiker";
 
 
 /*  */
@@ -4123,15 +4115,7 @@
 
 
 /*  */
-"faq.section.what_is" = "Vad är openscape och hur använder jag appen?";
-
-
-/*  */
 "faq.when_to_use.question" = "När bör jag använda Soundscape?";
-
-
-/*  */
-"faq.when_to_use.answer" = "Soundscape innehåller funktioner för en mängd olika scenarier. Hur användbart du tycker openscape är kan också utvecklas med tiden – du kanske använder appen på ett annat sätt om tre månader. En apps värde kan mätas i vilket problem den löser. openscape kan självklart användas då och då när du har ett specifikt informationsbehov – till exempel ta dig fram till ett mål, hjälpa dig att orientera dig när du kommer upp från en tunnelbanestation, hitta rätt när du kliver ur en bil eller hitta avståndet till nästa vägkorsning och få reda på vilka vägar det handlar om. Filosofin bakom openscape handlar dock om \"upplysning genom ljud\". Du kan använda appen varje gång du går ut för att bli medveten om omgivningarna, som att få information om namnen på gatorna du går på, vilken riktning du går i och namnen på företagen du passerar. Våra användare kallar ofta openscape för en \"trevlig färdkamrat\", som \"fyller i luckorna i din mentala karta\" och gör dig tryggare när du går. Nedan finns några exempel på hur våra användare drar nytta av openscape i sina liv:\n\n\"Soundscape har hjälpt mig att komma på rätt spår efter att jag klivit av bussen och börjat gå i fel riktning.\"\n\n\"Jag har bott i den här staden i tre år, men jag har fått en mycket bättre bild av vad som finns runt omkring med [med Soundscape].\"\n\n\"3D-ljudet förbättrar upplevelsen medan jag går, och jag känner mig tryggare i miljön … Jag vågar testa nya vägar nu när jag har appen.\"\n\n\"Jag saknar nyfikenheten i att kunna gå omkring och upptäcka nya saker. Det blir enklare med openscape – jag behöver inte anstränga mig för att höra ljuden runt omkring mig. Informationen är användbar och med appen blir jag medveten om omgivningen och kan hitta nya butiker.\"\n\n\"[Jag använde Soundscape] för att hitta till en pub mitt i York. [Jag] använde flera av funktionerna för att först lokalisera puben och sedan faktiskt hitta dit. Jag hamnade tre meter från dörren – otroligt!\"";
 
 
 /*  */
@@ -4232,10 +4216,6 @@
 
 /*  */
 "faq.miss_a_callout.answer" = "Soundscape innehåller en lista över dina senaste informationsljud så att du kan besöka informationsljud du har missat igen. Du hittar listan genom att trycka på sökfältet på startskärmen i Soundscape. Längst ned på sidan finns avsnittet \"Senaste informationsljud\" där informationsljudet som du missade visas.";
-
-
-/*  */
-"faq.section.how_works" = "Hur fungerar Soundscape?";
 
 
 /*  */
@@ -4380,5 +4360,6 @@
 
 /*  */
 "faq.tip.two_finger_double_tap" = "Tryck på skärmen med två fingrar om du vill tysta alla aktiva informationsljud.";
+
 
 
