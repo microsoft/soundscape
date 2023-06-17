@@ -1847,15 +1847,7 @@
 
 
 /*  */
-"filter.food_drink" = "Food & Drink";
-
-
-/*  */
 "filter.things_to_do" = "Things to do";
-
-
-/*  */
-"filter.groceries" = "Groceries & Convenience Stores";
 
 
 /*  */
@@ -4119,15 +4111,7 @@
 
 
 /*  */
-"faq.section.what_is" = "What is openscape and how should I use it?";
-
-
-/*  */
 "faq.when_to_use.question" = "When should I use Soundscape?";
-
-
-/*  */
-"faq.when_to_use.answer" = "Soundscape has features and benefits that span a variety of scenarios and time scales. Furthermore, Soundscape’s value to you may evolve over time so how you use it today may differ from how you will use it in three months. People often think about apps in terms of \"what problem is this app good at solving?\" openscape certainly can be used on a case by case basis when you have a specific information need – such as keeping track of a destination as you make your way there, helping to orient yourself when you emerge from a metro station, getting your bearings when exiting a car, or finding the street names for, or distance to, the next intersection. However, the philosophy behind openscape is one of \"lighting up your world with sound\", designed to be used anytime you are out and about to provide ambient awareness of your surroundings, such as keeping you aware of the names of the streets you are on, the direction you are heading, and the names of businesses you are passing. In this use mode, our users have referred to openscape as a \"nice companion app\", which supports \"serendipity\", to \"fill in the gaps in your mental map\" and provide more \"confidence when walking\". Here are some other examples of how our users are incorporating openscape into their life:\n\n\"Soundscape helped me get back on track after I got off the bus and headed off in the wrong direction.\"\n\n\"Even in the town where I have lived for 3 years, I have built an improved picture of what is around me [with Soundscape].\"\n\n\"The 3D sound enhances my experience of a walk, as I feel more connected to my environment…I am more likely to try a new route now that I have the app to use.\"\n\n\"I miss the serendipity of walking around and noticing things. Having openscape is nice – it requires no effort to hear about things around me. The relational information is useful and is a great app for situational awareness and exploring commercial corridors.\"\n\n\"[I used Soundscape] to locate a pub in the middle of York. [I] used a range of its options to first locate and then actually find it. It took me to within 3 metres of the door – brilliant!\"";
 
 
 /*  */
@@ -4228,10 +4212,6 @@
 
 /*  */
 "faq.miss_a_callout.answer" = "Soundscape has a list of your recent callouts so that you can revisit callouts that you might have missed. To find this, tap on the search bar on the openscape home screen. At the bottom of this page, there is a section for \"Recent Callouts\" where the callout you missed will be listed.";
-
-
-/*  */
-"faq.section.how_works" = "How does openscape work?";
 
 
 /*  */
@@ -4376,5 +4356,6 @@
 
 /*  */
 "faq.tip.two_finger_double_tap" = "Tapping the screen twice with two fingers will silence any active callouts.";
+
 
 

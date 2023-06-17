@@ -1847,15 +1847,7 @@
 
 
 /*  */
-"filter.food_drink" = "Gastronomia";
-
-
-/*  */
 "filter.things_to_do" = "Atividades";
-
-
-/*  */
-"filter.groceries" = "Mercearias e Lojas de Conveniência";
 
 
 /*  */
@@ -4122,15 +4114,7 @@
 
 
 /*  */
-"faq.section.what_is" = "O que é o openscape e como devo utilizá-lo?";
-
-
-/*  */
 "faq.when_to_use.question" = "Quando devo utilizar o Soundscape?";
-
-
-/*  */
-"faq.when_to_use.answer" = "O openscape tem funcionalidades e vantagens que abrangem uma vasta gama de cenários e intervalos temporais. Além disso, a utilidade do openscape para si pode evoluir ao longo do tempo, pelo que a forma como o utiliza hoje poderá ser diferente da forma como o irá utilizar daqui a três meses. Frequentemente, as pessoas pensam nas aplicações em termos de \"que problema é que esta aplicação resolve?\" O openscape pode certamente ser utilizado numa base caso a caso quando tem uma necessidade informativa específica – como monitorizar um destino à medida que se desloca para este, para se orientar quando sai de uma estação de metro ou de um carro, para saber os nomes das ruas ou a distância até ao próximo cruzamento. No entanto, a filosofia subjacente ao openscape é \"iluminar o seu mundo com som\", tendo sido concebido para ser utilizado sempre nas suas deslocações para fornecer informações sobre o ambiente que o rodeia, como informá-lo sobre os nomes das ruas em que se encontra, a direção em que está virado e os nomes das empresas pelas quais passa. Neste modo de utilização, os utilizadores referiram-se ao openscape como uma \"aplicação complementar excelente\", que suporta \"serendipidade\", para \"preencher lacunas no seu mapa mental\" e proporcionar mais \"confiança ao caminhar\". Eis outros exemplos da forma como os nossos utilizadores estão a incorporar o openscape nas suas vidas:\n\n\"O openscape ajudou-me a voltar ao caminho certo quando saí do autocarro e comecei a andar na direção errada.\"\n\n\"Mesmo na cidade em que vivo há 3 anos, fiquei com uma ideia mais completa do que me rodeia [com o Soundscape].\"\n\n\"O som 3D melhora as minhas caminhadas, sentindo uma maior ligação com o ambiente que me rodeia… Agora que tenho uma aplicação para utilizar, é mais provável que experimente caminhos novos.\"\n\n\"Tenho saudades da serendipidade de andar ao acaso e reparar em coisas. O openscape é útil, não requer qualquer esforço para ouvi informações sobe o que me rodeia. As informações relacionais são úteis e esta é uma aplicação excelente para deteção situacional e explorar áreas comerciais.\"\n\n\"[Utilizei o Soundscape] para localizar um pub no meio de York. [Eu] utilizei um conjunto de opções da aplicação primeiro para encontrar a aplicação e depois para chegar lá. Deixou-me a 3 metros da porta – brilhante!\"";
 
 
 /*  */
@@ -4231,10 +4215,6 @@
 
 /*  */
 "faq.miss_a_callout.answer" = "O openscape tem uma lista dos avisos recentes, para que possa rever avisos que tenha perdido. Para os encontrar, toque na barra de pesquisa existente no ecrã principal do Soundscape. Na parte inferior desta página, existe uma secção chamada \"Avisos Recentes\", onde estará listado o aviso que perdeu.";
-
-
-/*  */
-"faq.section.how_works" = "Como funciona o Soundscape?";
 
 
 /*  */
@@ -4379,5 +4359,6 @@
 
 /*  */
 "faq.tip.two_finger_double_tap" = "Tocar no ecrã duas vezes com dois dedos irá silenciar todos os avisos ativos.";
+
 
 

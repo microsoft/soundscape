@@ -131,7 +131,7 @@
 
 
 /*  */
-"general.loading.almost_ready" = "Bijna klaar...";
+"general.loading.almost_ready" = "Bijna klaar…";
 
 
 /*  */
@@ -367,7 +367,7 @@
 
 
 /*  */
-"settings.clear_cache.markers.alert_message" = "Kies Verwijderen om markeringen, bakens en routes te wissen of Behouden om alleen kaartgegevens te verwijderen. Met Verwijderen wordt de app teruggezet naar de installatiestatus. Dit kan niet ongedaan worden gemaakt.";
+"settings.clear_cache.markers.alert_message" = "Kies Verwijderen om markeringen, bakens en routes te wissen of Behouden om alleen kaartgegevens te verwijderen. Met Verwijderen wordt de app teruggezet naar de installatiestatus. Dit kan niet ongedaan worden gemaakt!";
 
 
 /*  */
@@ -559,7 +559,7 @@
 
 
 /*  */
-"voice.settings.enhanced_available.title" = "Verbeterde stem beschikbaar.";
+"voice.settings.enhanced_available.title" = "Verbeterde stem beschikbaar!";
 
 
 /*  */
@@ -651,7 +651,7 @@
 
 
 /*  */
-"settings.about.title.whats_new" = "Nieuwe functies";
+"settings.about.title.whats_new" = "Wat is er nieuw?";
 
 
 /*  */
@@ -791,7 +791,7 @@
 
 
 /*  */
-"beacon.action.mute_unmute_beacon.acc_hint" = "Dubbeltik om het audiobaken te dempen of het dempen op te heffen.";
+"beacon.action.mute_unmute_beacon.acc_hint" = "Dubbeltik om het audiobaken te dempen of het dempen op te heffen";
 
 
 /*  */
@@ -1611,7 +1611,7 @@
 
 
 /*  */
-"routes.callout.complete" = "Route voltooid";
+"routes.callout.complete" = "Route voltooid!";
 
 
 /*  */
@@ -1779,7 +1779,7 @@
 
 
 /*  */
-"search.searching_with_punctuation" = "Zoeken...";
+"search.searching_with_punctuation" = "Zoeken…";
 
 
 /*  */
@@ -1844,18 +1844,6 @@
 
 /*  */
 "filter.transit" = "Openbaar vervoer";
-
-
-/*  */
-"filter.food_drink" = "Eten en drinken";
-
-
-/*  */
-"filter.things_to_do" = "Dingen om te doen";
-
-
-/*  */
-"filter.groceries" = "Supermarkten en buurtwinkels";
 
 
 /*  */
@@ -2895,7 +2883,7 @@
 
 
 /*  */
-"behavior.experiences.reset.confirmation" = "Activiteit opnieuw instellen";
+"behavior.experiences.reset.confirmation" = "Activiteit opnieuw ingesteld";
 
 
 /*  */
@@ -2955,7 +2943,7 @@
 
 
 /*  */
-"behavior.scavenger_hunt.callout.started" = "Activiteit gestart.";
+"behavior.scavenger_hunt.callout.started" = "Activiteit gestart!";
 
 
 /*  */
@@ -3051,7 +3039,7 @@
 
 
 /*  */
-"text.coming_soon" = "Binnenkort beschikbaar...";
+"text.coming_soon" = "Binnenkort beschikbaar…";
 
 
 /*  */
@@ -3227,7 +3215,7 @@
 
 
 /*  */
-"tutorial.beacons.text.BeaconInBounds" = "Als u goed luistert, hoort u dat het geluid aan de rechterkant vóór u wordt afgespeeld en dat er een beltoon klinkt samen met het normale bakengeluid. Dit komt doordat u recht naar uw @!destination!! kijkt.";
+"tutorial.beacons.text.BeaconInBounds" = "Als u goed luistert, hoort u dat het geluid aan de rechterkant vóór u wordt afgespeeld en dat er een beltoon klinkt samen met het normale bakengeluid. Dit komt doordat u recht naar uw @!destination! kijkt!";
 
 
 /*  */
@@ -3483,7 +3471,7 @@
 
 
 /*  */
-"first_launch.welcome.title" = "Welkom";
+"first_launch.welcome.title" = "Welkom!";
 
 
 /*  */
@@ -4123,18 +4111,6 @@
 
 
 /*  */
-"faq.section.what_is" = "Wat is openscape en hoe moet ik het gebruiken?";
-
-
-/*  */
-"faq.when_to_use.question" = "Wanneer kan ik openscape het beste gebruiken?";
-
-
-/*  */
-"faq.when_to_use.answer" = "Soundscape heeft voorzieningen en voordelen voor allerlei verschillende scenario’s en momenten. Bovendien kan de waarde van openscape voor u in de loop der tijd veranderen doordat u het over drie maanden misschien anders gebruikt dan nu. Mensen proberen vaak te bedenken \"waarvoor kan deze app goed worden gebruikt?\" U kunt openscape incidenteel gebruiken, wanneer u specifieke informatie zoekt, zoals het bijhouden van de voortgang naar uw bestemming, voor oriëntatie als u uit de metro komt, het bepalen van uw positie wanneer u uit de auto stapt, het zoeken naar straatnamen of het bepalen van de afstand tot het volgende kruispunt. openscape is echter gebaseerd op de filosofie \"de wereld verlichten met geluid \", en ontworpen voor wanneer u onderweg bent, om u meer bewust te maken van uw omgeving, zoals de namen van de straat waarin u loopt, de richting waarin u gaat en de namen van de bedrijven die u passeert. Gebruikers beschrijven deze toepassing van openscape als volgt: \"fijne companion-app\" met \"meerwaarde\", om \"lacunes op te vullen in mijn mentale voorstelling\" en om met \"extra zelfvertrouwen te lopen\". Hier zijn nog een paar voorbeelden van hoe gebruikers openscape toepassen:\n\n\"Soundscape hielp me om de juiste route terug te vinden toen ik na het uitstappen uit de bus de verkeerde kant op liep.\\n\n\Zelfs in de stad waar ik al 3 jaar woon, heb ik [met Soundscape] een beter beeld gekregen van wat er Om me heen is.\\n\n\Het 3D-geluid geeft een betere beleving bij het lopen en ik voel meer verbinding met mijn omgeving… Ik zal met deze app nu eerder een nieuwe route uitproberen.\\n\n\Als je gewoon rondloopt, weet je veel dingen niet en mis je van alles. Met openscape hoef je geen moeite te doen om van alles te horen over je omgeving. De relationele informatie is nuttig en het is een geweldige app om je bewust te worden van je situatie en het ontdekken van winkelstraten.\"\n\n\"[Ik heb openscape gebruikt] om een pub te zoeken midden in York. Met allerlei opties heb ik eerst de pub geselecteerd en daarna de route gevolgd. De app bracht me tot 3 meter voor de deur. Geweldig!\"";
-
-
-/*  */
 "faq.markers_function.question" = "Wat zijn markeringen en hoe kan ik die het beste gebruiken?";
 
 
@@ -4227,15 +4203,11 @@
 
 
 /*  */
-"faq.miss_a_callout.question" = "Wat moet ik doen als ik een waarschuwing niet begrijp of niet hoor vanwege omgevingsgeluid";
+"faq.miss_a_callout.question" = "Wat moet ik doen als ik een waarschuwing niet begrijp of niet hoor vanwege omgevingsgeluid?";
 
 
 /*  */
 "faq.miss_a_callout.answer" = "Openscape bevat een lijst met uw recente waarschuwingen zodat u deze kunt bekijken als u ze hebt gemist. Tik hiervoor op de zoekbalk op het startscherm van Openscape. Onderaan deze pagina ziet u de sectie Recente waarschuwingen waarin de waarschuwing die u hebt gemist, wordt vermeld.";
-
-
-/*  */
-"faq.section.how_works" = "Hoe werkt Soundscape?";
 
 
 /*  */

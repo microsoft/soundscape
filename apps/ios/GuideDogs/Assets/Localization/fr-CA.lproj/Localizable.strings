@@ -1847,15 +1847,7 @@
 
 
 /*  */
-"filter.food_drink" = "Alimentation et boissons";
-
-
-/*  */
 "filter.things_to_do" = "Choses à faire";
-
-
-/*  */
-"filter.groceries" = "Épiceries et dépanneurs";
 
 
 /*  */
@@ -4123,15 +4115,7 @@
 
 
 /*  */
-"faq.section.what_is" = "Qu’est-ce que openscape et comment l’utiliser?";
-
-
-/*  */
 "faq.when_to_use.question" = "Quand dois-je utiliser Soundscape?";
-
-
-/*  */
-"faq.when_to_use.answer" = "Soundscape offre des fonctionnalités et des avantages qui couvrent une variété de scénarios et de délais. En outre, la valeur que vous accordez à openscape peut évoluer dans le temps. Ainsi, la façon de l’utiliser aujourd’hui peut être différente dans trois mois. Souvent, lorsque les gens pensent aux applis, ils se demandent « quel problème cette application peut-elle résoudre? ». openscape peut certainement être utilisé au cas par cas lorsque vous avez besoin d’informations spécifiques, comme suivre une destination vers laquelle vous vous dirigez, vous aider à vous orienter lorsque vous émergez d’une station de métro, vous repérer lorsque vous quittez une voiture, ou rechercher les noms des rues ou la distance jusqu’à l’intersection suivante. Toutefois, la philosophie à la base de openscape consiste à « vous permettre de vous diriger grâce au son ». Il est conçu pour être utilisé chaque fois que vous êtes en déplacement et sur le point de découvrir votre environnement, par exemple en vous informant des noms des rues dans lesquelles vous vous trouvez, de la direction dans laquelle vous vous dirigez et des noms des entreprises devant lesquelles vous passez. Dans ce mode d’utilisation, les utilisateurs considèrent openscape comme une « application compagne intéressante », qui prend en charge les « heureux hasards » pour « combler les lacunes de votre carte mentale » et offrir davantage de « confiance lorsque vous marchez ». Voici d’autres exemples de la manière dont nos utilisateurs intègrent openscape dans leur vie :\n\n« openscape m’a aidé à revenir sur la bonne voie une fois que je suis descendu du bus et que j’ai pris la mauvais direction. »\n\n« Même dans la ville où j’ai vécu pendant 3 ans, j’ai créé une image améliorée de ce qui m’entoure [avec Soundscape]. »\n\n« Le son 3D améliore mon expérience de marche, car je me sens davantage connecté à mon environnement... J’ai plus tendance à essayer un nouvel itinéraire maintenant que je peux utiliser l’application. »\n\n« Cela me manque, de ne plus me promener en observant les choses. openscape est intéressant : il ne nécessite aucun effort pour connaître ce qui m’entoure. Les informations sur l’environnement sont utiles et c’est une excellente application pour découvrir la situation et explorer les axes. »\n\n« [J’ai utilisé Soundscape] pour localiser un pub au centre de York. [J’ai utilisé] toute une série de ses options pour d’abord le localiser, puis le trouver réellement. Il m’a emmené à 3 mètres de la porte, excellent! »";
 
 
 /*  */
@@ -4232,10 +4216,6 @@
 
 /*  */
 "faq.miss_a_callout.answer" = "Soundscape dispose d’une liste de vos récentes notifications activées afin que vous puissiez consulter celles que vous pourriez avoir manquées. Pour cela, appuyez sur la barre de recherche de l’écran d’accueil de Soundscape. Au bas de cette page, vous trouverez une section intitulée « Notifications activées récentes », présentant une liste des notifications activées manquées.";
-
-
-/*  */
-"faq.section.how_works" = "Comment openscape fonctionne-t-il?";
 
 
 /*  */
@@ -4380,5 +4360,6 @@
 
 /*  */
 "faq.tip.two_finger_double_tap" = "Appuyer sur l’écran à deux reprises avec deux doigts désactive le son de toutes les notifications actives.";
+
 
 

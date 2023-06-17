@@ -1847,15 +1847,7 @@
 
 
 /*  */
-"filter.food_drink" = "Ruoka ja juoma";
-
-
-/*  */
 "filter.things_to_do" = "Tekemistä";
-
-
-/*  */
-"filter.groceries" = "Ostokset ja päivittäistavarakaupat";
 
 
 /*  */
@@ -4123,15 +4115,7 @@
 
 
 /*  */
-"faq.section.what_is" = "Mikä on openscape ja kuinka minun tulisi käyttää sitä?";
-
-
-/*  */
 "faq.when_to_use.question" = "Milloin minun kannattaa käyttää Soundscapea?";
-
-
-/*  */
-"faq.when_to_use.answer" = "Soundscapella on ominaisuuksia ja hyötyjä monissa erilaisissa skenaarioissa ja aikajaksoilla. Kokemasi Soundscapen hyödyllisyys voi myös kehittyä ajan myötä, joten saatat käyttää sitä tänään eri tavalla kuin kolmen kuukauden päästä. Sovelluksista ajatellaan usein: \"Minkä ongelman tämä sovellus ratkaisee hyvin?\" Soundscapea voidaan käyttää tapauskohtaisesti erityisten tietotarpeiden täyttämiseen, kuten päämäärän seurantaan matkalla sinne, suunnistamisen helpottamiseen metroasemalta poistuttaessa, sijainnin ymmärtämiseen autosta poistuttaessa tai seuraavan risteyksen kadunnimien tai etäisyyden selvittämiseen. Soundscapen filosofia on kuitenkin \"valaisee maailmasi äänellä\", ja se on suunniteltu käytettäväksi joka kerta, kun olet ulkona tarjoamaan tietoisuutta ympäristöstä, kuten pysymään ajan tasalla kaduista, joilla liikut, kulkusuunnastasi ja niiden yritysten nimistä, joiden ohi kävelet. Käyttäjämme ovat kutsuneet Soundscapea tässä käyttötilassa \"kivaksi seuralaissovellukseksi\", joka tukee \"intuitiivista näkemystä\" \"mielikuvakartan aukkojen täyttämisestä\" ja tarjoaa parempaa \"itseluottamusta kävellessä\". Tässä on lisää esimerkintöjä siitä, kuinka käyttäjämme sisällyttävät Soundscapen elämäänsä:\n\n\"Soundscape auttoi minut takaisin oikealle reitille, kun poistuin linja-autosta ja lähdin väärään suuntaan.\"\n\n\Jopa kaupungissa, jossa olen asunut kolme vuotta, olen rakentanut paremman kuvan siitä, mitä ympärilläni on [Soundscapen avulla].\"\n\n\"3D-ääni parantaa kävelykokemustani, koska tunnen olevani paremmassa yhteydessä ympäristööni…kokeilen todennäköisemmin uutta reittiä, kun sovellus on käytössäni.\"\n\n\"Kaipaan intuitiivista kokemusta ympäriinsä kävelystä ja asioiden huomaamisesta. Soundscapen käyttö on mukavaa, sillä ympäristöni asioista kuuleminen on vaivatonta. Tiedot suhteista ovat hyödyllisiä ja se on mahtava sovellus ympäristötietoisuuden kehittämiseksi ja kauppakäytävien tutkimiseen.\"\n\n\"[Käytin Soundscapea] löytääkseni pubin keskellä Yorkia. [Käytin] useita sovelluksen toimintoja selvittääkseni ensin sen sijainnin ja sitten löytääkseni sen. Sovellus toi minut kolmen metrin päähän ovesta, upeaa!\"";
 
 
 /*  */
@@ -4232,10 +4216,6 @@
 
 /*  */
 "faq.miss_a_callout.answer" = "Soundscapella on luettelo viimeisimmistä ilmoituksistasi, jotta voit palata ilmoituksiin, jotka olet saattanut jättää huomiotta. Löydät tämän napauttamalla Soundscapen aloitusnäytön hakupalkkia. Tämän sivun alareunassa on osa \"Viimeaikaiset ilmoitukset\", jonka luettelossa ohittamasi ilmoitus on.";
-
-
-/*  */
-"faq.section.how_works" = "Kuinka openscape toimii?";
 
 
 /*  */
@@ -4380,5 +4360,6 @@
 
 /*  */
 "faq.tip.two_finger_double_tap" = "Näytön napauttaminen kahdesti kahdella sormella hiljentää mahdolliset aktiiviset ilmoitukset.";
+
 
 
