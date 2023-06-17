@@ -1847,10 +1847,6 @@
 
 
 /*  */
-"filter.things_to_do" = "Tarefas pendentes";
-
-
-/*  */
 "filter.banks" = "Bancos e Caixas Eletrônicos";
 
 
@@ -4360,6 +4356,7 @@
 
 /*  */
 "faq.tip.two_finger_double_tap" = "Tocar na tela duas vezes com dois dedos silenciará todas as notificações ativas.";
+
 
 
 

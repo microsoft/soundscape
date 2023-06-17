@@ -1847,10 +1847,6 @@
 
 
 /*  */
-"filter.things_to_do" = "Cosas que hacer";
-
-
-/*  */
 "filter.banks" = "Bancos y cajeros automáticos";
 
 
@@ -4360,6 +4356,7 @@
 
 /*  */
 "faq.tip.two_finger_double_tap" = "Para silenciar los avisos activos, pulse la pantalla dos veces con dos dedos.";
+
 
 
 

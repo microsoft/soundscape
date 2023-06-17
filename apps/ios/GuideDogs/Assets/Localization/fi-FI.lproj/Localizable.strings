@@ -1847,10 +1847,6 @@
 
 
 /*  */
-"filter.things_to_do" = "Tekemistä";
-
-
-/*  */
 "filter.banks" = "Pankit ja pankkiautomaatit";
 
 
@@ -4115,10 +4111,6 @@
 
 
 /*  */
-"faq.when_to_use.question" = "Milloin minun kannattaa käyttää Soundscapea?";
-
-
-/*  */
 "faq.markers_function.question" = "Mitä ovat merkinnät ja kuinka saan niistä parhaan hyödyn?";
 
 
@@ -4360,6 +4352,7 @@
 
 /*  */
 "faq.tip.two_finger_double_tap" = "Näytön napauttaminen kahdesti kahdella sormella hiljentää mahdolliset aktiiviset ilmoitukset.";
+
 
 
 

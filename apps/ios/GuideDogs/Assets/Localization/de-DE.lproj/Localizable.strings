@@ -1847,10 +1847,6 @@
 
 
 /*  */
-"filter.things_to_do" = "Kultur & Sehenswürdigkeiten";
-
-
-/*  */
 "filter.banks" = "Banken und Geldautomaten";
 
 
@@ -4115,10 +4111,6 @@
 
 
 /*  */
-"faq.when_to_use.question" = "Wann sollte ich openscape verwenden?";
-
-
-/*  */
 "faq.markers_function.question" = "Was sind Markierungen, und wie nutze ich sie optimal?";
 
 
@@ -4360,6 +4352,7 @@
 
 /*  */
 "faq.tip.two_finger_double_tap" = "Wenn Sie mit zwei Fingern zweimal auf den Bildschirm tippen, werden alle aktiven Hinweise stummgeschaltet.";
+
 
 
 
