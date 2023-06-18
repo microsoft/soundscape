@@ -1847,10 +1847,6 @@
 
 
 /*  */
-"filter.banks" = "Bancos y cajeros automáticos";
-
-
-/*  */
 "filter.selected" = "%@ (seleccionado)";
 
 
@@ -4360,3 +4356,20 @@
 
 
 
+
+
+// MARK: What is Soundscape?
+
+/* Soundscape - The app that explores the use of innovative audio-based technology to enable people, particularly those with blindness or low vision, to build a richer awareness of their surroundings, thus becoming more confident and empowered to get around by using 3D audio cues to enrich ambient awareness and provide a new way to relate to the environment. {NumberedPlaceholder="Soundscape"} */
+"faq.section.what_is_soundscape" = "¿Qué es Soundscape y cómo tengo que utilizarlo?";
+
+/* Soundscape - The app that explores the use of innovative audio-based technology to enable people, particularly those with blindness or low vision, to build a richer awareness of their surroundings, thus becoming more confident and empowered to get around by using 3D audio cues to enrich ambient awareness and provide a new way to relate to the environment. ’Lighting up your way with sound’ is a marketing tagline for the app. Intersection - A junction where two or more roads meet or cross. 3D sound is where the audio through your headphones sounds as though it is coming from a given direction, as if it was actually coming from a speaker. Quotes written as \" {NumberedPlaceholder="Soundscape"} */
+"faq.when_to_use_soundscape.answer" = "Soundscape tiene características y ventajas que abarcan una gran variedad de escenarios y escalas temporales. Además, el valor de Soundscape para ti puede evolucionar con el tiempo, de modo en que el uso que le doy hoy puede diferir del que le doy dentro de tres meses. La gente suele pensar en las aplicaciones en términos de \"¿qué problema resuelve bien esta aplicación?\". No cabe duda de que Soundscape puede utilizarse caso por caso cuando se tiene una necesidad de información específica, como seguir la pista de un destino mientras se avanza hacia él, ayudar a orientarse al salir de una estación de metro, orientarse al salir del coche o encontrar los nombres de las calles o la distancia hasta el siguiente cruce. Sin embargo, la filosofía de Soundscape es la de \"iluminar tu mundo con sonidos\", y está diseñado para que puedas utilizarlo en cualquier momento para conocer tu entorno, por ejemplo, para que sepas los nombres de las calles por las que pasas, la dirección a la que te diriges y los nombres de los comercios por los que pasas. De este forma de uso, nuestros usuarios se han referido a Soundscape como una \"agradable aplicación de compañía\", que apoya la \"serendipia\", para \"rellenar los huecos de tu mapa mental\" y proporcionar más \"confianza al caminar\". He aquí otros ejemplos de cómo nuestros usuarios incorporan Soundscape a su vida:\n\n\"Soundscape me ayudó a retomar el camino después de bajarme del autobús y tomar la dirección equivocada\".\n\n\"Incluso en la ciudad en la que vivo desde hace 3 años, he construido una imagen mejorada de lo que me rodea [con Soundscape]\".\n\n\"El sonido 3D mejora mi experiencia de paseo, ya que me siento más conectado con mi entorno... Es más probable que pruebe una nueva ruta ahora que puedo usar la aplicación\".\n\n\"Echo de menos la serendipia de pasear y fijarme en las cosas. Tener Soundscape es agradable, no requiere ningún esfuerzo escuchar las cosas que me rodean. La información relacional es útil y es una gran aplicación para el conocimiento de la situación y la exploración de los corredores comerciales\".\n\n\"[Utilicé Soundscape] para localizar un pub en el centro de York. [Utilicé varias opciones para localizarlo primero y encontrarlo después. Me llevó a 3 metros de la puerta, ¡brillante!\"";
+
+// MARK: How Soundscape Works
+
+/* Soundscape - The app that explores the use of innovative audio-based technology to enable people, particularly those with blindness or low vision, to build a richer awareness of their surroundings, thus becoming more confident and empowered to get around by using 3D audio cues to enrich ambient awareness and provide a new way to relate to the environment. {NumberedPlaceholder="Soundscape"} */
+"faq.section.how_soundscape_works" = "¿Cómo funciona Soundscape?";
+
+/* Soundscape - The app that explores the use of innovative audio-based technology to enable people, particularly those with blindness or low vision, to build a richer awareness of their surroundings, thus becoming more confident and empowered to get around by using 3D audio cues to enrich ambient awareness and provide a new way to relate to the environment. {NumberedPlaceholder="Soundscape"} */
+"faq.when_to_use_soundscape.question" = "¿Cuándo tengo que utilizar Soundscape?";
