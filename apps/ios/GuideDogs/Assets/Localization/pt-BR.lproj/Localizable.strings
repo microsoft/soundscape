@@ -1847,10 +1847,6 @@
 
 
 /*  */
-"filter.banks" = "Bancos e Caixas Eletrônicos";
-
-
-/*  */
 "filter.selected" = "%@ (selecionado)";
 
 
@@ -4356,6 +4352,7 @@
 
 /*  */
 "faq.tip.two_finger_double_tap" = "Tocar na tela duas vezes com dois dedos silenciará todas as notificações ativas.";
+
 
 
 
