@@ -11,6 +11,8 @@ import sys
 import psycopg2
 from psycopg2.extras import NamedTupleCursor
 
+import bz2
+
 tile_query = """
     SELECT * from soundscape_tile(%(zoom)s, %(tile_x)s, %(tile_y)s)
 """
@@ -43,11 +45,11 @@ if __name__ == "__main__":
         x, y, z = line.strip().split(",")
         tile_dir = args.output_dir / z / x
         tile_dir.mkdir(parents=True, exist_ok=True)
-        tile_path = tile_dir / f"{y}.json"
+        tile_path = tile_dir / f"{y}.json.bz2"
         output = tile(cursor, x, y, z)
         if output:
             nonempty_tiles += 1
-            with open(tile_path, "w") as f:
+            with bz2.open(tile_path, "w") as f:
                 f.write(output)
 
     print(f"Tiles in region: {total_tiles}")
