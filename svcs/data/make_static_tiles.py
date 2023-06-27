@@ -21,6 +21,8 @@ def tile(cursor, x, y, zoom):
         'type': 'FeatureCollection',
         'features': list(map(lambda x: x._asdict(), value))
     }
+    if len(obj["features"]) == 0:
+        return None
     return json.dumps(obj, sort_keys=True)
 
 
@@ -33,11 +35,19 @@ if __name__ == "__main__":
     conn = psycopg2.connect(args.postgres_dsn)
     cursor = conn.cursor(cursor_factory=NamedTupleCursor)
 
+    total_tiles = 0
+    nonempty_tiles = 0
     for line in sys.stdin:
+        total_tiles += 1
         x, y, z = line.strip()[1:-1].split(", ")
         tile_dir = args.output_dir / z / x
         tile_dir.mkdir(parents=True, exist_ok=True)
         tile_path = tile_dir / f"{y}.json"
-        print(tile_path)
         with open(tile_path, "w") as f:
-            f.write(tile(cursor, x, y, z))
+            output = tile(cursor, x, y, z)
+            if output:
+                nonempty_tiles += 1
+                f.write(output)
+
+    print(f"Tiles in region: {total_tiles}")
+    print(f"Tiles with features: {nonempty_tiles}")
