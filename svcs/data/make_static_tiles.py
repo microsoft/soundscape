@@ -39,7 +39,7 @@ if __name__ == "__main__":
     nonempty_tiles = 0
     for line in sys.stdin:
         total_tiles += 1
-        x, y, z = line.strip()[1:-1].split(", ")
+        x, y, z = line.strip().split(",")
         tile_dir = args.output_dir / z / x
         tile_dir.mkdir(parents=True, exist_ok=True)
         tile_path = tile_dir / f"{y}.json"
