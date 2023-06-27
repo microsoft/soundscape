@@ -50,7 +50,7 @@ if __name__ == "__main__":
         if output:
             nonempty_tiles += 1
             with bz2.open(tile_path, "w") as f:
-                f.write(output)
+                f.write(output.encode())
 
     print(f"Tiles in region: {total_tiles}")
     print(f"Tiles with features: {nonempty_tiles}")
