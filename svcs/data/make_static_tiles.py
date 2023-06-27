@@ -44,10 +44,10 @@ if __name__ == "__main__":
         tile_dir = args.output_dir / z / x
         tile_dir.mkdir(parents=True, exist_ok=True)
         tile_path = tile_dir / f"{y}.json"
-        with open(tile_path, "w") as f:
-            output = tile(cursor, x, y, z)
-            if output:
-                nonempty_tiles += 1
+        output = tile(cursor, x, y, z)
+        if output:
+            nonempty_tiles += 1
+            with open(tile_path, "w") as f:
                 f.write(output)
 
     print(f"Tiles in region: {total_tiles}")
