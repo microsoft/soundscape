@@ -46,6 +46,8 @@ if __name__ == "__main__":
         tile_dir = args.output_dir / z / x
         tile_dir.mkdir(parents=True, exist_ok=True)
         tile_path = tile_dir / f"{y}.json.bz2"
+        if tile_path.exists():
+            continue
         output = tile(cursor, x, y, z)
         if output:
             nonempty_tiles += 1
