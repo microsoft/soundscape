@@ -1275,7 +1275,7 @@
 "url_resource.alert.route.import.title" = "You've received a route: \"%@\"";
 
 /* Message for alert that is displayed when importing a route */
-"url_resource.alert.route.import.message" = "You should only use routes from someone you trust. Routes are not created, shared with or reviewed by CompanyName and may contain errors.";
+"url_resource.alert.route.import.message" = "You should only use routes from someone you trust. Routes may contain errors.";
 
 /* Title for alert that is displayed when importing an existing route. */
 "url_resource.alert.route.import_existing.title" = "Route already exists";
@@ -2743,7 +2743,7 @@
 "terms_of_use.message.prompt" = "Please check the box below to agree and continue.";
 
 /* Title of the link to the Company Services Agreement. This value will be used in the placeholder %@ that appears in the terms_of_use.message string */
-"terms_of_use.service_agreement" = "CompanyName Services Agreement";
+"terms_of_use.service_agreement" = "Openscape Services Agreement";
 
 /* Terms of use checkbox accessibility label */
 "terms_of_use.accept_checkbox.acc_label" = "Accept Terms of Use";
