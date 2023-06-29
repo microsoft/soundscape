@@ -15,7 +15,7 @@
 			<string>Owner</string>
 			<key>LSItemContentTypes</key>
 			<array>
-				<string>${PRODUCT_BUNDLE_IDENTIFIER}.doc</string>
+				<string>io.openscape.doc</string>
 			</array>
 		</dict>
 
@@ -26,7 +26,7 @@
 			<string>Default</string>
 			<key>LSItemContentTypes</key>
 			<array>
-				<string>Soundscape.doc</string>
+				<string>soundscape.doc</string>
 			</array>
 			<key>NSExportableTypes</key>
 			<array>
@@ -191,7 +191,7 @@
 			<key>UTTypeIconFiles</key>
 			<array/>
 			<key>UTTypeIdentifier</key>
-			<string>Soundscape.doc</string>
+			<string>soundscape.doc</string>
 			<key>UTTypeTagSpecification</key>
 			<dict>
 				<key>public.filename-extension</key>
