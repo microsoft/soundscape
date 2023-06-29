@@ -559,7 +559,7 @@
 "settings.about.title.whats_new" = "What's New?";
 
 /* Settings About Title, Privacy and Cookies */
-"settings.about.title.privacy" = "CompanyName Privacy Statement";
+"settings.about.title.privacy" = "Openscape Privacy Statement";
 
 /* Settings About Title, Service Agreement */
 "settings.about.title.service_agreement" = "Services Agreement";
@@ -2727,7 +2727,7 @@
 "help.more_help.section_title" = "More Help";
 
 /* Help Tutorial, Link to the Company Support website */
-"help.support" = "CompanyName Support";
+"help.support" = "Openscape Support";
 
 //------------------------------------------------------------------------------
 // MARK: - Terms of Use
