@@ -18,6 +18,21 @@
 				<string>${PRODUCT_BUNDLE_IDENTIFIER}.doc</string>
 			</array>
 		</dict>
+
+		<dict>
+			<key>CFBundleTypeName</key>
+			<string>Soundscape Document</string>
+			<key>LSHandlerRank</key>
+			<string>Alternate</string>
+			<key>LSItemContentTypes</key>
+			<array>
+				<string>Soundscape.doc</string>
+			</array>
+			<key>NSExportableTypes</key>
+			<array>
+				<string>Openscape.doc</string>
+			</array>
+		</dict>
 	</array>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
@@ -176,7 +191,7 @@
 			<key>UTTypeIconFiles</key>
 			<array/>
 			<key>UTTypeIdentifier</key>
-			<string>soundscape.doc</string>
+			<string>Soundscape.doc</string>
 			<key>UTTypeTagSpecification</key>
 			<dict>
 				<key>public.filename-extension</key>
