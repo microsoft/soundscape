@@ -12,7 +12,7 @@ struct UniversalLinkComponents {
     
     // MARK: Properties
     
-    private static let host = "https://soundscape.mur.org.uk"
+    private static let host = "https://share.openscape.io"
 
     let pathComponents: UniversalLinkPathComponents
     let queryItems: [URLQueryItem]?
