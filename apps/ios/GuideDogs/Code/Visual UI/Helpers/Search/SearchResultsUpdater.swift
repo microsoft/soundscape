@@ -8,6 +8,7 @@
 
 import Foundation
 import CoreLocation
+import MapKit
 
 protocol SearchResultsUpdaterDelegate: AnyObject {
     func searchResultsDidStartUpdating()
@@ -121,9 +122,12 @@ extension SearchResultsUpdater: UISearchResultsUpdating {
         // Fetch autosuggest results with new search text
         //
 
-        ///FIXME leaving this empty for now
-        /// We can limit the load on the API server by only executing searches when typing is done.
-        /// When "enter" is pressed, the searchWithText method below executes the query.
+        let request = MKLocalSearch.Request()
+        request.naturalLanguageQuery = searchText
+        let coordinate = self.location!.coordinate
+        request.region = MKCoordinateRegion(center: coordinate, latitudinalMeters: 75000, longitudinalMeters: 75000)
+        let search = MKLocalSearch(request: request)
+        search.start(completionHandler: searchWithTextCallback)
     }
 }
 
@@ -162,60 +166,48 @@ extension SearchResultsUpdater: UISearchBarDelegate {
         //
         // Fetch search results given search text
         //
-
-        // construct URL like https://photon.komoot.io/api/?q=foo&lat=38.896&lon=-77.0223&limit=7
-        var searchUrl = URLComponents()
-        searchUrl.scheme = "https"
-        searchUrl.host = "photon.komoot.io"
-        searchUrl.path = "/api"
-        let baseParams = [
-            URLQueryItem(name: "q", value: searchText),
-            //URLQueryItem(name: "limit", value: "7")
-        ]
-        if let location = self.location {
-            searchUrl.queryItems = baseParams + [
-                URLQueryItem(name: "lat", value: String(format: "%.4f", location.coordinate.latitude)),
-                URLQueryItem(name: "lon", value: String(format: "%.4f", location.coordinate.longitude)),
-            ]
-        } else {
-            searchUrl.queryItems = baseParams
-        }
-
-        OSMServiceModel().getDynamicData(dynamicURL: searchUrl.string!, callback: searchWithTextCallback)
+        
+        let request = MKLocalSearch.Request()
+        request.naturalLanguageQuery = searchText
+        let coordinate = self.location!.coordinate
+        request.region = MKCoordinateRegion(center: coordinate, latitudinalMeters: 75000, longitudinalMeters: 75000)
+        let search = MKLocalSearch(request: request)
+        search.start(completionHandler: searchWithTextCallback)
     }
-
-    private func searchWithTextCallback(status: HTTPStatusCode, text: String?, error: Error?) {
-        // for fetching JSON data, see Code/Data/Services/OSM/OSMServiceModel
-        if status != HTTPStatusCode.success {
+    
+    private func searchWithTextCallback(using response: MKLocalSearch.Response?, error: Error?) -> Void {
+        guard error == nil else {
             return
-        } //FIXME display error on failure?
-
+        }
         var pois: [POI] = []
-        if let text = text,
-           let data = text.data(using: .utf8),
-           let json = try? JSONSerialization.jsonObject(with: data) as? [String: Any],
-           let features = json["features"] as? [[String: Any]] {
-            for feature in features {
-                guard let properties = feature["properties"] as? [String: Any],
-                      let name = properties["name"] as? String,
-                      let geometry = feature["geometry"] as? [String: Any],
-                      let coordinates = geometry["coordinates"] as? [Double] else {
-                    // Skip any results that don't have at least a name and lat/lon
-                    continue
-                }
-
-                // Include as specific an address as we can get for this POI
+        if let mapItems = response?.mapItems {
+            for result in mapItems {
+                let lat = result.placemark.location?.coordinate.latitude
+                let long = result.placemark.location?.coordinate.longitude
                 var addressParts: [String] = []
-                for key in ["street", "city", "state", "country"] {
-                    if let value = properties[key] as? String {
-                        addressParts.append(value)
-                    }
+                if let substreet = result.placemark.subThoroughfare {
+                    addressParts.append(substreet)
                 }
-
-                pois.append(GenericLocation(lat: CLLocationDegrees(floatLiteral: coordinates[1]), lon: CLLocationDegrees(floatLiteral: coordinates[0]), name: name, address: addressParts.joined(separator: ", ")))
+                if let street = result.placemark.thoroughfare {
+                    addressParts.append(street + ",")
+                }
+                if let city = result.placemark.locality {
+                    addressParts.append(city)
+                }
+                if let state = result.placemark.administrativeArea {
+                    addressParts.append(state + ",")
+                }
+                if let postalCode = result.placemark.postalCode {
+                    addressParts.append(postalCode + ",")
+                }
+                if let country = result.placemark.country {
+                    addressParts.append(country)
+                }
+                let address = addressParts.joined(separator: " ")
+                pois.append(GenericLocation(lat: lat!, lon: long!, name: result.name!, address: address))
             }
         }
-
-        delegate?.searchResultsDidUpdate(pois, searchLocation: location)
+        delegate?.searchResultsDidUpdate(pois, searchLocation: self.location)
     }
+    
 }
