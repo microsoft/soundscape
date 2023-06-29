@@ -184,7 +184,27 @@ extension SearchResultsUpdater: UISearchBarDelegate {
             for result in mapItems {
                 let lat = result.placemark.location?.coordinate.latitude
                 let long = result.placemark.location?.coordinate.longitude
-                pois.append(GenericLocation(lat: lat!, lon: long!, name: result.name!, address: result.placemark.name))
+                var addressParts: [String] = []
+                if let substreet = result.placemark.subThoroughfare {
+                    addressParts.append(substreet)
+                }
+                if let street = result.placemark.thoroughfare {
+                    addressParts.append(street + ",")
+                }
+                if let city = result.placemark.locality {
+                    addressParts.append(city)
+                }
+                if let state = result.placemark.administrativeArea {
+                    addressParts.append(state + ",")
+                }
+                if let postalCode = result.placemark.postalCode {
+                    addressParts.append(postalCode + ",")
+                }
+                if let country = result.placemark.country {
+                    addressParts.append(country)
+                }
+                let address = addressParts.joined(separator: " ")
+                pois.append(GenericLocation(lat: lat!, lon: long!, name: result.name!, address: address))
             }
         }
         delegate?.searchResultsDidUpdate(pois, searchLocation: self.location)
