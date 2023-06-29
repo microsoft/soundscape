@@ -33,13 +33,15 @@ class ServiceModel {
     /// String for identifying errors that originate from Realm
     static let errorRealm = "GDAHTTPErrorRealm"
     
+    /// Domain name to resolve for production services
     private static let productionServicesHostName = "https://prod0.openscape.io"
-	    private static let productionAssestsHostName = "https://yourstaticblobstore"
+    /// Domain part of the URL for learning resources
+    private static let productionAssestsHostName = "https://openscape.io"
     // Do not change `productionVoicesHostName`!
     private static let productionVoicesHostName = "https://yourstaticblobstore"
     
     static var learningResourcesWebpage: URL {
-        return URL(string: productionAssestsHostName + "/externalcontent/soundscape_learning_resources.html")!
+        return URL(string: productionAssestsHostName + "/learning_resources.html")!
     }
 
     static var servicesHostName: String {
