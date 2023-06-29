@@ -380,12 +380,12 @@ extension AppContext {
         }
         
         static func servicesAgreementURL(for locale: Locale) -> URL {
-            return URL(string: "https://mur.org.uk/")!
+            return URL(string: "https://openscape.io/services-agreement.html")!
         }
     
         static let companySupportURL = URL(string: "https://discord.gg/egqwNSm7")!
         
-        static let accessibilityFrance = URL(string: "https://mur.org.uk/")!
+        static let accessibilityFrance = URL(string: "https://openscape.io")!
     }
     
 }
