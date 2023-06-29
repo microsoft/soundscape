@@ -30,7 +30,7 @@
 			</array>
 			<key>NSExportableTypes</key>
 			<array>
-				<string>Openscape.doc</string>
+				<string>io.openscape.doc</string>
 			</array>
 		</dict>
 	</array>
@@ -214,7 +214,7 @@
 			<key>UTTypeIconFiles</key>
 			<array/>
 			<key>UTTypeIdentifier</key>
-			<string>${PRODUCT_BUNDLE_IDENTIFIER}.doc</string>
+			<string>io.openscape.doc</string>
 			<key>UTTypeTagSpecification</key>
 			<dict>
 				<key>public.filename-extension</key>
