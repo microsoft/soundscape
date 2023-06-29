@@ -155,7 +155,7 @@
 
 
 /*  */
-"general.alert.offline_default.message" = "Soundscape on offline-tilassa. openscape jatkaa kuitenkin toimintaansa, mutta jotkin toiminnot voivat olla rajoitettuja.";
+"general.alert.offline_default.message" = "Openscape on offline-tilassa. openscape jatkaa kuitenkin toimintaansa, mutta jotkin toiminnot voivat olla rajoitettuja.";
 
 
 /*  */
@@ -279,7 +279,7 @@
 
 
 /*  */
-"general.error.heading" = "Soundscape ei ole varma, mihin suuntaan olet kääntyneenä. Pitele puhelintasi vaakatasossa tai ala kävellä ja yritä uudelleen.";
+"general.error.heading" = "Openscape ei ole varma, mihin suuntaan olet kääntyneenä. Pitele puhelintasi vaakatasossa tai ala kävellä ja yritä uudelleen.";
 
 
 /*  */
@@ -375,7 +375,7 @@
 
 
 /*  */
-"settings.clear_cache.no_service.message" = "Soundscape ei saa yhteyttä Internetiin. Internet-yhteys vaaditaan tallennettujen karttatietojen tyhjentämiseen, jotta karttatiedot voidaan päivittää.";
+"settings.clear_cache.no_service.message" = "Openscape ei saa yhteyttä Internetiin. Internet-yhteys vaaditaan tallennettujen karttatietojen tyhjentämiseen, jotta karttatiedot voidaan päivittää.";
 
 
 /*  */
@@ -647,7 +647,7 @@
 
 
 /*  */
-"troubleshooting.cache.explanation" = "Soundscape lataa karttatietoja kävellessäsi, jotta se voi kertoa sinulle lähiympäristösi kohteista ja paikoista. Jos sinulla on ongelmia Soundscapen kanssa tai se käyttää liikaa muistia, voit tyhjentää tallennetut karttatiedot, ja Soundcape lataa ainoastaan nykyisen lähiympäristösi karttatiedot.";
+"troubleshooting.cache.explanation" = "Openscape lataa karttatietoja kävellessäsi, jotta se voi kertoa sinulle lähiympäristösi kohteista ja paikoista. Jos sinulla on ongelmia Soundscapen kanssa tai se käyttää liikaa muistia, voit tyhjentää tallennetut karttatiedot, ja Soundcape lataa ainoastaan nykyisen lähiympäristösi karttatiedot.";
 
 
 /*  */
@@ -815,7 +815,7 @@
 
 
 /*  */
-"preview.title" = "Soundscape Street Preview";
+"preview.title" = "Openscape Street Preview";
 
 
 /*  */
@@ -883,7 +883,7 @@
 
 
 /*  */
-"preview.callout.end" = "Soundscape Street Preview -toiminnon päättäminen";
+"preview.callout.end" = "Openscape Street Preview -toiminnon päättäminen";
 
 
 /*  */
@@ -999,7 +999,7 @@
 
 
 /*  */
-"preview.tutorial.content.3" = "Voit käyttää puhelinta uudelleen kussakin risteyksessä valitaksesi, mitä tietä jatkaa, tai voit tarkastella lähiympäristöäsi näytön alareunan tuttujen Soundscape-painikkeiden avulla. Voit napauttaa \"Haku\" käynnistääksesi äänimajakan missä tahansa kiinnostavassa kohteessa, muuttaa sijaintiasi tai vain tarkastella aluetta yksityiskohtaisemmin.";
+"preview.tutorial.content.3" = "Voit käyttää puhelinta uudelleen kussakin risteyksessä valitaksesi, mitä tietä jatkaa, tai voit tarkastella lähiympäristöäsi näytön alareunan tuttujen Openscape-painikkeiden avulla. Voit napauttaa \"Haku\" käynnistääksesi äänimajakan missä tahansa kiinnostavassa kohteessa, muuttaa sijaintiasi tai vain tarkastella aluetta yksityiskohtaisemmin.";
 
 
 /*  */
@@ -1459,7 +1459,7 @@
 
 
 /*  */
-"first_use_experience.share.alert.message" = "Kun jaat Soundscape-merkinnän tai reitin, jaat sijainnit, jotka on liitetty kyseiseen merkintään tai reittiin. Sinun tulisi jakaa näitä vain henkilöille, joihin luotat.";
+"first_use_experience.share.alert.message" = "Kun jaat Openscape-merkinnän tai reitin, jaat sijainnit, jotka on liitetty kyseiseen merkintään tai reittiin. Sinun tulisi jakaa näitä vain henkilöille, joihin luotat.";
 
 
 /*  */
@@ -1499,7 +1499,7 @@
 
 
 /*  */
-"universal_links.marker.share.message" = "Jaoin Soundscape-merkinnän kanssasi! \"%@\"";
+"universal_links.marker.share.message" = "Jaoin Openscape-merkinnän kanssasi! \"%@\"";
 
 
 /*  */
@@ -1543,7 +1543,7 @@
 
 
 /*  */
-"url_resource.alert.route.share.message" = "Jaoin Soundscape-reitin kanssasi! \"%@\"";
+"url_resource.alert.route.share.message" = "Jaoin Openscape-reitin kanssasi! \"%@\"";
 
 
 /*  */
@@ -1971,11 +1971,11 @@
 
 
 /*  */
-"sleep.snoozing.message" = "Soundscape on odotustilassa. Kun lähdet nykyisestä sijainnistasi, openscape herää automaattisesti. Tämä käyttää sijaintipalveluita akunsäästötilassa säästääkseen puhelimesi akkua. Napauta alla olevaa painiketta herättääksesi nyt.";
+"sleep.snoozing.message" = "Openscape on odotustilassa. Kun lähdet nykyisestä sijainnistasi, openscape herää automaattisesti. Tämä käyttää sijaintipalveluita akunsäästötilassa säästääkseen puhelimesi akkua. Napauta alla olevaa painiketta herättääksesi nyt.";
 
 
 /*  */
-"sleep.sleeping.message" = "Soundscape on lepotilassa. Tämä estää Soundscapea käyttämästä sijaintipalveluita tai lataamasta tietoja. Tämä säästää akkua, kun et käytä Soundscapea. Napauta alla olevaa painiketta herättääksesi Soundscapen.";
+"sleep.sleeping.message" = "Openscape on lepotilassa. Tämä estää Soundscapea käyttämästä sijaintipalveluita tai lataamasta tietoja. Tämä säästää akkua, kun et käytä Soundscapea. Napauta alla olevaa painiketta herättääksesi Soundscapen.";
 
 
 /*  */
@@ -2711,7 +2711,7 @@
 
 
 /*  */
-"devices.explain_ar.connecting" = "Soundscape muodostaa yhteyttä %@ -kuulokkeisiisi. Pieni hetki...";
+"devices.explain_ar.connecting" = "Openscape muodostaa yhteyttä %@ -kuulokkeisiisi. Pieni hetki...";
 
 
 /*  */
@@ -2735,7 +2735,7 @@
 
 
 /*  */
-"devices.connect_headset.failed" = "Soundscape ei voinut yhdistää kuulokkeisiisi. Yritä myöhemmin uudelleen.";
+"devices.connect_headset.failed" = "Openscape ei voinut yhdistää kuulokkeisiisi. Yritä myöhemmin uudelleen.";
 
 
 /*  */
@@ -2823,7 +2823,7 @@
 
 
 /*  */
-"devices.callouts.check_audio.airpods.disconnected" = "Soundscape etsii AirPods-kuulokkeitasi. Varmista, että ne on yhdistetty puhelimeesi.";
+"devices.callouts.check_audio.airpods.disconnected" = "Openscape etsii AirPods-kuulokkeitasi. Varmista, että ne on yhdistetty puhelimeesi.";
 
 
 /*  */
@@ -2907,15 +2907,15 @@
 
 
 /*  */
-"behavior.experiences.no_events.title" = "Soundscape-vapaa-ajankokemukset (Beta)";
+"behavior.experiences.no_events.title" = "Openscape-vapaa-ajankokemukset (Beta)";
 
 
 /*  */
-"behavior.experiences.no_events.caption.1" = "Voittoa tavoittelemattomat organisaatiot, yritykset ja paikallishallinnot voivat luoda omia Soundscape-kokemuksiaan. Näitä voivat olla esimerkiksi sopeutuvat urheiluohjelmat ja tapahtumat, aarteenetsintäaktiviteetit, valikoidut reitit, valikoidut kaupunkiopastukset ja monet muut.";
+"behavior.experiences.no_events.caption.1" = "Voittoa tavoittelemattomat organisaatiot, yritykset ja paikallishallinnot voivat luoda omia Openscape-kokemuksiaan. Näitä voivat olla esimerkiksi sopeutuvat urheiluohjelmat ja tapahtumat, aarteenetsintäaktiviteetit, valikoidut reitit, valikoidut kaupunkiopastukset ja monet muut.";
 
 
 /*  */
-"behavior.experiences.no_events.caption.2" = "Lähetä meille sähköpostia osoitteeseen email@address.com, jos haluat lisätietoja tai jos organisaatiosi on kiinnostunut luomaan mukautettuja Soundscape-kokemuksia";
+"behavior.experiences.no_events.caption.2" = "Lähetä meille sähköpostia osoitteeseen email@address.com, jos haluat lisätietoja tai jos organisaatiosi on kiinnostunut luomaan mukautettuja Openscape-kokemuksia";
 
 
 /*  */
@@ -2935,7 +2935,7 @@
 
 
 /*  */
-"behavior.scavenger_hunt.callout.pausing_hunt" = "Palataan tavalliseen Soundscape-kokemukseen.";
+"behavior.scavenger_hunt.callout.pausing_hunt" = "Palataan tavalliseen Openscape-kokemukseen.";
 
 
 /*  */
@@ -3283,7 +3283,7 @@
 
 
 /*  */
-"help.config.voices.content" = "Soundscape voi käyttää mitä tahansa iOS:in asetuksissa lataamiasi puheääniä, paitsi Siri-puheääniä, jotka eivät olet Soundscapen käytössä. Suosittelemme valitsemaan jonkin \"Paremmista\" puheäänistä, koska niiden äänen laatu on paljon parempi, mutta sitä varten sinun on ensin ladattava parempi ääni. Voit ladata puheääniä iOS:in Asetukset-sovelluksella siirtymällä kohtaan Käyttöapu > Puhuttu sisältö > Puheäänet ja napauttamalla ääntä. Voit valita Soundscape-sovelluksessa haluamasi äänen siirtymällä päävalikosta kohtaan Asetukset ja valitsemalla asetuksen \"Puhe\".";
+"help.config.voices.content" = "Openscape voi käyttää mitä tahansa iOS:in asetuksissa lataamiasi puheääniä, paitsi Siri-puheääniä, jotka eivät olet Soundscapen käytössä. Suosittelemme valitsemaan jonkin \"Paremmista\" puheäänistä, koska niiden äänen laatu on paljon parempi, mutta sitä varten sinun on ensin ladattava parempi ääni. Voit ladata puheääniä iOS:in Asetukset-sovelluksella siirtymällä kohtaan Käyttöapu > Puhuttu sisältö > Puheäänet ja napauttamalla ääntä. Voit valita Openscape-sovelluksessa haluamasi äänen siirtymällä päävalikosta kohtaan Asetukset ja valitsemalla asetuksen \"Puhe\".";
 
 
 /*  */
@@ -3291,7 +3291,7 @@
 
 
 /*  */
-"help.offline.description" = "Kun Internet-yhteyttä ei ole, tai Soundscape-palveluissa on häiriö, openscape siirtyy offline-tilaan. openscape toimii siitä huolimatta, mutta jotkin toiminnot voivat olla rajoitettuja.";
+"help.offline.description" = "Kun Internet-yhteyttä ei ole, tai Openscape-palveluissa on häiriö, openscape siirtyy offline-tilaan. openscape toimii siitä huolimatta, mutta jotkin toiminnot voivat olla rajoitettuja.";
 
 
 /*  */
@@ -3307,7 +3307,7 @@
 
 
 /*  */
-"help.offline.troubleshooting_description" = "Soundscape yrittää palata normaaliin toimintaan, kun puhelimesi on yhdistetty langattomaan verkkoon tai mobiilidata on käytössä, ja olet alueella, jolla on hyvä yhteys. Jos puhelimellasi on hyvä Internet-yhteys, mutta openscape ei palaudu normaaliin toimintaan, Soundscape-palveluissa voi olla katkos.";
+"help.offline.troubleshooting_description" = "Openscape yrittää palata normaaliin toimintaan, kun puhelimesi on yhdistetty langattomaan verkkoon tai mobiilidata on käytössä, ja olet alueella, jolla on hyvä yhteys. Jos puhelimellasi on hyvä Internet-yhteys, mutta openscape ei palaudu normaaliin toimintaan, Openscape-palveluissa voi olla katkos.";
 
 
 /*  */
@@ -3447,7 +3447,7 @@
 
 
 /*  */
-"first_launch.lighting_way_with_sound.text_alt" = "Soundscape käyttää 3D-ääntä ilmoittaakseen, mitä ympärilläsi on. Jos esimerkiksi määränpääsi on oikealla puolellasi, kuulet äänen, joka tulee siitä suunnasta, tai jos kahvila on vasemmalla puolellasi, kuulet ilmoituksen siitä suunnasta.";
+"first_launch.lighting_way_with_sound.text_alt" = "Openscape käyttää 3D-ääntä ilmoittaakseen, mitä ympärilläsi on. Jos esimerkiksi määränpääsi on oikealla puolellasi, kuulet äänen, joka tulee siitä suunnasta, tai jos kahvila on vasemmalla puolellasi, kuulet ilmoituksen siitä suunnasta.";
 
 
 /*  */
@@ -3495,7 +3495,7 @@
 
 
 /*  */
-"first_launch.headphones.message.1" = "Soundscape toimii hyvin kaikkien kuulokkeiden kanssa. Jos haluat käyttää kuulokkeita, ota ne nyt käyttöön.";
+"first_launch.headphones.message.1" = "Openscape toimii hyvin kaikkien kuulokkeiden kanssa. Jos haluat käyttää kuulokkeita, ota ne nyt käyttöön.";
 
 
 /*  */
@@ -3507,7 +3507,7 @@
 
 
 /*  */
-"first_launch.callouts.message" = "Soundscape auttaa sinua pysymään tietoisena siitä, missä olet ja mihin olet menossa. Se mainitsee tiet, risteykset ja kiinnostavat kohteet kun lähestyt niitä.";
+"first_launch.callouts.message" = "Openscape auttaa sinua pysymään tietoisena siitä, missä olet ja mihin olet menossa. Se mainitsee tiet, risteykset ja kiinnostavat kohteet kun lähestyt niitä.";
 
 
 /*  */
@@ -3643,7 +3643,7 @@
 
 
 /*  */
-"help.text.automatic_callouts.what" = "Soundscape voi ilmoittaa lähiympäristösi kohteita, kun lähestyt niitä ilmoittamalla niiden nimen siitä suunnasta, jossa ne sijaitsevat. Sovellus tekee tämän automaattisesti kaikenlaisille kohteille, kuten linja-autoille, linja-autopysäkeille ja jopa risteyksille. Voit määrittää, mitä sovellus ilmoittaa automaattisesti \"Hallitse ilmoituksia\" -osassa \"Asetukset\"-näytöllä, ja voit ottaa kaikki ilmoitukset pois käytöstä, kun haluat sovelluksen olevan hiljaa.";
+"help.text.automatic_callouts.what" = "Openscape voi ilmoittaa lähiympäristösi kohteita, kun lähestyt niitä ilmoittamalla niiden nimen siitä suunnasta, jossa ne sijaitsevat. Sovellus tekee tämän automaattisesti kaikenlaisille kohteille, kuten linja-autoille, linja-autopysäkeille ja jopa risteyksille. Voit määrittää, mitä sovellus ilmoittaa automaattisesti \"Hallitse ilmoituksia\" -osassa \"Asetukset\"-näytöllä, ja voit ottaa kaikki ilmoitukset pois käytöstä, kun haluat sovelluksen olevan hiljaa.";
 
 
 /*  */
@@ -3735,7 +3735,7 @@
 
 
 /*  */
-"help.text.markers.content.3" = "Soundscape ilmoittaa automaattisesti merkityt paikat luodakseen niistä kokemuksen, kun kävelet niiden ohi tai lähestyt niitä. Voit myös käyttää Merkinnät -painiketta Soundscapen aloitusnäytön alaosassa kuullaksesi tilaääni-ilmoitukset ympärilläsi olevista merkityistä paikoista. LIsäksi on mahdollista määrittää äänimajakka mihin tahansa merkittyyn paikkaan. Kun teet tämän, Soundscapen äänimajakka, jonka tunnet, kuuluu ja voit käyttää sitä tavalliseen tapaan.";
+"help.text.markers.content.3" = "Openscape ilmoittaa automaattisesti merkityt paikat luodakseen niistä kokemuksen, kun kävelet niiden ohi tai lähestyt niitä. Voit myös käyttää Merkinnät -painiketta Soundscapen aloitusnäytön alaosassa kuullaksesi tilaääni-ilmoitukset ympärilläsi olevista merkityistä paikoista. LIsäksi on mahdollista määrittää äänimajakka mihin tahansa merkittyyn paikkaan. Kun teet tämän, Soundscapen äänimajakka, jonka tunnet, kuuluu ja voit käyttää sitä tavalliseen tapaan.";
 
 
 /*  */
@@ -3775,19 +3775,19 @@
 
 
 /*  */
-"help.using_headsets.airpods.what" = "Soundscape tukee tilaääntä dynaamisella pään seurannalla, kun käytössä on yhteensopivat AirPods-kuulokkeet. Kun ne on yhdistetty Soundscapeen, AirPods-kuulokkeiden tunnistimet kertovat Soundscapelle, mihin suuntaan pääsi on kääntyneenä. Tämä auttaa Soundscapea parantamaan äänikokemustasi tekemällä siitä luonnollisemman, kun liikut paikasta toiseen maailmassa. Kun käytät Soundscapea yhdistettynä AirPods-kuulokkeisiin, sinun ei tarvitse pidellä puhelintasi, jotta openscape toimisi oikein.";
+"help.using_headsets.airpods.what" = "Openscape tukee tilaääntä dynaamisella pään seurannalla, kun käytössä on yhteensopivat AirPods-kuulokkeet. Kun ne on yhdistetty Soundscapeen, AirPods-kuulokkeiden tunnistimet kertovat Soundscapelle, mihin suuntaan pääsi on kääntyneenä. Tämä auttaa Soundscapea parantamaan äänikokemustasi tekemällä siitä luonnollisemman, kun liikut paikasta toiseen maailmassa. Kun käytät Soundscapea yhdistettynä AirPods-kuulokkeisiin, sinun ei tarvitse pidellä puhelintasi, jotta openscape toimisi oikein.";
 
 
 /*  */
-"help.using_headsets.airpods.when" = "Voit käyttää AirPods-kuulokkeita Soundscapen kanssa aina, kun tavallisesti käyttäisit Soundscapea. AirPods-kuulokkeiden käyttö tarjoaa korkealaatuisen äänen ja sallii kädet vapauttavamman Soundscape-käyttökokemuksen.";
+"help.using_headsets.airpods.when" = "Voit käyttää AirPods-kuulokkeita Soundscapen kanssa aina, kun tavallisesti käyttäisit Soundscapea. AirPods-kuulokkeiden käyttö tarjoaa korkealaatuisen äänen ja sallii kädet vapauttavamman Openscape-käyttökokemuksen.";
 
 
 /*  */
-"help.using_headsets.airpods.how.1" = "<b>Laitteen yhdistäminen</b>:<br/> Siirry kohtaan \"Päätä seuraavat kuulokkeet\" Soundscape-valikossa yhdistääksesi AirPods-kuulokkeesi ja seuraa näytön ohjeita. Huomaa, että sinun on yhdistettävä AirPods-kuulokkeesi puhelimeesi Bluetooth-asetuksissa ennen niiden yhdistämistä Soundscapeen.";
+"help.using_headsets.airpods.how.1" = "<b>Laitteen yhdistäminen</b>:<br/> Siirry kohtaan \"Päätä seuraavat kuulokkeet\" Openscape-valikossa yhdistääksesi AirPods-kuulokkeesi ja seuraa näytön ohjeita. Huomaa, että sinun on yhdistettävä AirPods-kuulokkeesi puhelimeesi Bluetooth-asetuksissa ennen niiden yhdistämistä Soundscapeen.";
 
 
 /*  */
-"help.using_headsets.airpods.how.2" = "<b>Kuulokkeidesi mediasäädinten käyttö</b>:<br/> Kun mediasäätimet on otettu käyttöön Soundscape-asetuksissa, voit käyttää AirPods-kuulokkeidesi mediasäätimiä majakan ja sijaintisi ilmoituksen hiljentämiseen tai hiljentämisen poistoon tai viimeisimmän ilmoituksen toistamiseen. LIsätietoja on ohjeen osassa \"Mediaohjaimien käyttö\".";
+"help.using_headsets.airpods.how.2" = "<b>Kuulokkeidesi mediasäädinten käyttö</b>:<br/> Kun mediasäätimet on otettu käyttöön Openscape-asetuksissa, voit käyttää AirPods-kuulokkeidesi mediasäätimiä majakan ja sijaintisi ilmoituksen hiljentämiseen tai hiljentämisen poistoon tai viimeisimmän ilmoituksen toistamiseen. LIsätietoja on ohjeen osassa \"Mediaohjaimien käyttö\".";
 
 
 /*  */
@@ -4051,19 +4051,19 @@
 
 
 /*  */
-"banner.offline_default.message" = "Soundscape toimii offline-tilassa. Lisätietoja";
+"banner.offline_default.message" = "Openscape toimii offline-tilassa. Lisätietoja";
 
 
 /*  */
-"banner.offline_help.message" = "Soundscape toimii offline-tilassa.";
+"banner.offline_help.message" = "Openscape toimii offline-tilassa.";
 
 
 /*  */
-"banner.offline_search.message" = "Soundscape toimii offline-tilassa. Sijainnit on rajoitettu paikkoihin, joiden ohi olet jo aiemmin kävellyt tai jotka on jo merkitty. Lisätietoja";
+"banner.offline_search.message" = "Openscape toimii offline-tilassa. Sijainnit on rajoitettu paikkoihin, joiden ohi olet jo aiemmin kävellyt tai jotka on jo merkitty. Lisätietoja";
 
 
 /*  */
-"banner.online.message" = "Soundscape on jälleen online-tilassa";
+"banner.online.message" = "Openscape on jälleen online-tilassa";
 
 
 /*  */
@@ -4167,7 +4167,7 @@
 
 
 /*  */
-"faq.beacon_on_home.answer" = "Soundscape tukee majakoiden määrittämistä osoitteisiin. Voit määrittää majakan kotiisi tai mihin tahansa muuhun osoitteeseen etsimällä sijaintia Soundscapen päänäytöltä. Napauta \"Sijainnin tiedot\" -näytöllä \"Käynnistä äänimajakka\" -painiketta.";
+"faq.beacon_on_home.answer" = "Openscape tukee majakoiden määrittämistä osoitteisiin. Voit määrittää majakan kotiisi tai mihin tahansa muuhun osoitteeseen etsimällä sijaintia Soundscapen päänäytöltä. Napauta \"Sijainnin tiedot\" -näytöllä \"Käynnistä äänimajakka\" -painiketta.";
 
 
 /*  */
@@ -4175,7 +4175,7 @@
 
 
 /*  */
-"faq.how_close_to_destination.answer" = "Soundscape voi tunnistaa määränpääsi paikan muutamien metrien etäisyydellä, mutta ei sitä lähempänä. Kun openscape päättelee, että olet lähellä määränpäätäsi, kuulet viimeisen ilmoituksen siitä, että määränpääsi on lähellä, ja majakka poistuu käytöstä.";
+"faq.how_close_to_destination.answer" = "Openscape voi tunnistaa määränpääsi paikan muutamien metrien etäisyydellä, mutta ei sitä lähempänä. Kun openscape päättelee, että olet lähellä määränpäätäsi, kuulet viimeisen ilmoituksen siitä, että määränpääsi on lähellä, ja majakka poistuu käytöstä.";
 
 
 /*  */
@@ -4191,7 +4191,7 @@
 
 
 /*  */
-"faq.road_names.answer" = "Soundscape kuvailee risteyksiä tiesegmentteinä, jotka lähtevät yhteisestä pisteestä mahdollistaakseen useita erilaisia risteysten muotoja. openscape käyttää tilaääntä osoittamaan vasemmalle lähtevän tien nimen, sen tien nimen, joka jatkuu suoraan eteenpäin ja sen tien nimen, joka lähtee oikealle, tässä järjestyksessä. Jos risteyksen kuvaus alkaa tiellä, jolla olet, eikä vasemmanpuoleisella tiellä, kyseessä on T-risteys, jossa tie, jolla olet, kulkee eteenpäin ja toinen tie risteää oikealta. Samoin jos kuvaus sisältää vain vasemmalle ja oikealle lähtevät tiet, tiedät, että tie, jolla olet, päättyy edessä olevassa T-risteyksessä. Tämä risteysten kuvailumenetelmä tukee myös tilannetta, jossa tien nimi muuttuu risteyksessä.";
+"faq.road_names.answer" = "Openscape kuvailee risteyksiä tiesegmentteinä, jotka lähtevät yhteisestä pisteestä mahdollistaakseen useita erilaisia risteysten muotoja. openscape käyttää tilaääntä osoittamaan vasemmalle lähtevän tien nimen, sen tien nimen, joka jatkuu suoraan eteenpäin ja sen tien nimen, joka lähtee oikealle, tässä järjestyksessä. Jos risteyksen kuvaus alkaa tiellä, jolla olet, eikä vasemmanpuoleisella tiellä, kyseessä on T-risteys, jossa tie, jolla olet, kulkee eteenpäin ja toinen tie risteää oikealta. Samoin jos kuvaus sisältää vain vasemmalle ja oikealle lähtevät tiet, tiedät, että tie, jolla olet, päättyy edessä olevassa T-risteyksessä. Tämä risteysten kuvailumenetelmä tukee myös tilannetta, jossa tien nimi muuttuu risteyksessä.";
 
 
 /*  */
@@ -4199,7 +4199,7 @@
 
 
 /*  */
-"faq.why_not_every_business.answer" = "Soundscape on suunniteltu olemaan puhumatta liikaa. Se käyttää myös Open Street Map -karttapalvelua taustatietolähteenään. Open Street Map (OSM, https://www.openstreetmap.org/) on yhteisön kehittämä ja muokkaama maailmankartta, joka on riippuvainen yksilöistä, jotka syöttävät ja valikoivat tietoja. Jos openscape ei ilmoita yritystä tai kiinnostavaa kohdetta, todennäköisin syy siihen on, että OSM-yhteisön jäsen ei ole lisännyt, tai joissakin tapauksissa päivittänyt, yritystä.";
+"faq.why_not_every_business.answer" = "Openscape on suunniteltu olemaan puhumatta liikaa. Se käyttää myös Open Street Map -karttapalvelua taustatietolähteenään. Open Street Map (OSM, https://www.openstreetmap.org/) on yhteisön kehittämä ja muokkaama maailmankartta, joka on riippuvainen yksilöistä, jotka syöttävät ja valikoivat tietoja. Jos openscape ei ilmoita yritystä tai kiinnostavaa kohdetta, todennäköisin syy siihen on, että OSM-yhteisön jäsen ei ole lisännyt, tai joissakin tapauksissa päivittänyt, yritystä.";
 
 
 /*  */
@@ -4223,7 +4223,7 @@
 
 
 /*  */
-"faq.supported_phones.answer" = "Soundscape on saatavilla Apple iOS -käyttöjärjestelmälle laitteilla iPhone SE, iPhone 6S ja uudemmat.";
+"faq.supported_phones.answer" = "Openscape on saatavilla Apple iOS -käyttöjärjestelmälle laitteilla iPhone SE, iPhone 6S ja uudemmat.";
 
 
 /*  */
@@ -4271,7 +4271,7 @@
 
 
 /*  */
-"faq.background_battery_impact.answer" = "Soundscape on sijaintiin perustuva sovellus, ja se käyttää sijaintipalveluita määrittääkseen sijaintisi. Testeissämme openscape ei ole käyttänyt enempää akkua kuin keskimääräinen karttasovellus, mutta jos olet huolissasi akun kulutuksesta, kun käytät puhelintasi, seuraavat vinkit auttavat vähentämään kulutusta:\n\n1. Ota näyttö pois käytöstä niin usein kuin mahdollista, kun et käytä sovellusta.\n2. Kun et käytä sovellusta, sulje se. openscape käyttää jatkuvasti sijaintipalveluita, kun se on päällä, joten se tietää aina sijaintisi, jopa silloin, kun et liiku. Älä unohda käynnistää sovellusta uudestaan, kun jatkat matkaasi.\n3. Pidä puhelimesi lämpimänä kylmällä säällä, sillä akkujen suorituskyky on alhaisempi kylmissä lämpötiloissa.";
+"faq.background_battery_impact.answer" = "Openscape on sijaintiin perustuva sovellus, ja se käyttää sijaintipalveluita määrittääkseen sijaintisi. Testeissämme openscape ei ole käyttänyt enempää akkua kuin keskimääräinen karttasovellus, mutta jos olet huolissasi akun kulutuksesta, kun käytät puhelintasi, seuraavat vinkit auttavat vähentämään kulutusta:\n\n1. Ota näyttö pois käytöstä niin usein kuin mahdollista, kun et käytä sovellusta.\n2. Kun et käytä sovellusta, sulje se. openscape käyttää jatkuvasti sijaintipalveluita, kun se on päällä, joten se tietää aina sijaintisi, jopa silloin, kun et liiku. Älä unohda käynnistää sovellusta uudestaan, kun jatkat matkaasi.\n3. Pidä puhelimesi lämpimänä kylmällä säällä, sillä akkujen suorituskyky on alhaisempi kylmissä lämpötiloissa.";
 
 
 /*  */
@@ -4287,7 +4287,7 @@
 
 
 /*  */
-"faq.difference_from_map_apps.answer" = "Soundscape tarjoaa ympäristön kuvauksen auttaakseen sen tutkimista ja reitin löytämistä. openscape käyttää tilaääntä ilmoittaakseen kiinnostavia kohteita, puistoja, teitä ja risteyksiä siitä suunnasta, jossa ne fyysisesti sijaitsevat lähiympäristössäsi samalla, kun kävelet. Jos esimerkiksi ohitat oikealla puolellasi olevan kaupan, kuulet kaupan nimen oikealta puoleltasi. Kun lähestyt risteystä, kuulet kunkin tien nimen siitä suunnasta, johon se lähtee, ensin vasemmalta puoleltasi, sitten edestä ja seuraavaksi oikealta.\n\nToisin kuin muut kääntymisohjeita antavat karttasovellukset, openscape toistaa majakkaääntä määränpääsi suunnasta antaen sinulle mahdollisuuden löytää reitti sinne omaehtoisesti käyttämällä lisääntynyttä tietoisuutta ympäristöstäsi ja määränpääsi sijainnista. openscape on suunniteltu toimimaan taustalla, mikä mahdollistaa kääntymisohjeita antavan sovelluksen käytön samalla, kun se tarjoaa tietoisuutta ympäristöstä, kun kuljet kohti määränpäätäsi.";
+"faq.difference_from_map_apps.answer" = "Openscape tarjoaa ympäristön kuvauksen auttaakseen sen tutkimista ja reitin löytämistä. openscape käyttää tilaääntä ilmoittaakseen kiinnostavia kohteita, puistoja, teitä ja risteyksiä siitä suunnasta, jossa ne fyysisesti sijaitsevat lähiympäristössäsi samalla, kun kävelet. Jos esimerkiksi ohitat oikealla puolellasi olevan kaupan, kuulet kaupan nimen oikealta puoleltasi. Kun lähestyt risteystä, kuulet kunkin tien nimen siitä suunnasta, johon se lähtee, ensin vasemmalta puoleltasi, sitten edestä ja seuraavaksi oikealta.\n\nToisin kuin muut kääntymisohjeita antavat karttasovellukset, openscape toistaa majakkaääntä määränpääsi suunnasta antaen sinulle mahdollisuuden löytää reitti sinne omaehtoisesti käyttämällä lisääntynyttä tietoisuutta ympäristöstäsi ja määränpääsi sijainnista. openscape on suunniteltu toimimaan taustalla, mikä mahdollistaa kääntymisohjeita antavan sovelluksen käytön samalla, kun se tarjoaa tietoisuutta ympäristöstä, kun kuljet kohti määränpäätäsi.";
 
 
 /*  */
@@ -4295,7 +4295,7 @@
 
 
 /*  */
-"faq.use_with_wayfinding_apps.answer" = "Soundscape on suunniteltu parantamaan tietoisuutta ympäristöstäsi ja antamaan lisätietoja sen yksityiskohdista, joita et ehkä muuten huomaisi. Sitä ei ole suunniteltu kääntymisohjeita antavaksi navigointisovellukseksi, mutta sitä voidaan käyttää sellaisten rinnalla antamaan täydentäviä tietoja. Jos haluat käyttää Soundscapea näiden sovellusten rinnalla, käynnistä ensin navigointisovellus. Siirry sitten Soundscapeen ja määritä äänimajakka samaan määränpäähän kuin navigointisovelluksessa. Tässä vaiheessa molemmat sovellukset ovat käynnissä ja kuulet kävelyohjeita navigointisovelluksestasi samalla, kun saat päivityksiä mielenkiintoisista kohteista, risteyksistä ja etäisyydestäsi määränpäähän Soundscapesta.";
+"faq.use_with_wayfinding_apps.answer" = "Openscape on suunniteltu parantamaan tietoisuutta ympäristöstäsi ja antamaan lisätietoja sen yksityiskohdista, joita et ehkä muuten huomaisi. Sitä ei ole suunniteltu kääntymisohjeita antavaksi navigointisovellukseksi, mutta sitä voidaan käyttää sellaisten rinnalla antamaan täydentäviä tietoja. Jos haluat käyttää Soundscapea näiden sovellusten rinnalla, käynnistä ensin navigointisovellus. Siirry sitten Soundscapeen ja määritä äänimajakka samaan määränpäähän kuin navigointisovelluksessa. Tässä vaiheessa molemmat sovellukset ovat käynnissä ja kuulet kävelyohjeita navigointisovelluksestasi samalla, kun saat päivityksiä mielenkiintoisista kohteista, risteyksistä ja etäisyydestäsi määränpäähän Soundscapesta.";
 
 
 /*  */
@@ -4303,7 +4303,7 @@
 
 
 /*  */
-"faq.controlling_what_you_hear.answer" = "Soundscape tarjoaa useita tapoja hallita, mitä kuulet ja milloin:\n\n1. Pysäytä kaikki äänet välittömästi: Kaksoisnapauta näyttöä kahdella sormella pysäyttääksesi kaikki äänet välittömästi, mukaan lukien sillä hetkellä toistettavat ilmoitukset ja majakka, jos se on päällä. Ilmoitukset kuuluvat jälleen, kun lähestyt seuraavaa risteystä tai mielenkiintoista kohdetta, mutta äänimajakka ei. Valitse \"poista majakan hiljennys -painike\" aloitusnäytöltä kuullaksesi majakan jälleen.\n2. Pysäytä automaattiset ilmoitukset: Kun et ole matkalla tai olet saavuttanut määränpääsi, et luultavasti tarvitse Soundscapen jatkuvia ilmoituksia ympäristösi asioista. Sovelluksesta poistumisen sijaan voit asettaa Soundscapen odotustilaan, ja se herää uudelleen, kun lähdet, tai voit asettaa Soundscapen lepotilaan ja se pysyy pois päältä, kunnes päätät laittaa sen jälleen päälle. Vaihtoehtoisesti voit valita \"Asetukset\" valikosta ja ottaa kaikki ilmoitukset pois päältä \"Hallitse ilmoituksia\" -osassa.\n3. Pysäytä majakka: On useita skenaarioita, joissa saatat asettaa määränpään, mutta et tarvitse äänimajakkaa. Saatat esimerkiksi tietää täsmälleen, kuinka päästä määränpäähäsi, mutta haluat automaattisia päivityksiä siitä, kuinka kaukana määränpäästäsi olet. Vaihtoehtoisesti saatat tietää osapuilleen, kuinka päästä määränpäähäsi, ja tarvitset äänimajakkaa vain lähestyessäsi määränpäätäsi. Joka tapauksessa voit valita, milloin kuulet majakan käyttämällä \"hiljennä majakka\"/\"poista majakan hiljennys\" -painiketta aloitusnäytöllä.";
+"faq.controlling_what_you_hear.answer" = "Openscape tarjoaa useita tapoja hallita, mitä kuulet ja milloin:\n\n1. Pysäytä kaikki äänet välittömästi: Kaksoisnapauta näyttöä kahdella sormella pysäyttääksesi kaikki äänet välittömästi, mukaan lukien sillä hetkellä toistettavat ilmoitukset ja majakka, jos se on päällä. Ilmoitukset kuuluvat jälleen, kun lähestyt seuraavaa risteystä tai mielenkiintoista kohdetta, mutta äänimajakka ei. Valitse \"poista majakan hiljennys -painike\" aloitusnäytöltä kuullaksesi majakan jälleen.\n2. Pysäytä automaattiset ilmoitukset: Kun et ole matkalla tai olet saavuttanut määränpääsi, et luultavasti tarvitse Soundscapen jatkuvia ilmoituksia ympäristösi asioista. Sovelluksesta poistumisen sijaan voit asettaa Soundscapen odotustilaan, ja se herää uudelleen, kun lähdet, tai voit asettaa Soundscapen lepotilaan ja se pysyy pois päältä, kunnes päätät laittaa sen jälleen päälle. Vaihtoehtoisesti voit valita \"Asetukset\" valikosta ja ottaa kaikki ilmoitukset pois päältä \"Hallitse ilmoituksia\" -osassa.\n3. Pysäytä majakka: On useita skenaarioita, joissa saatat asettaa määränpään, mutta et tarvitse äänimajakkaa. Saatat esimerkiksi tietää täsmälleen, kuinka päästä määränpäähäsi, mutta haluat automaattisia päivityksiä siitä, kuinka kaukana määränpäästäsi olet. Vaihtoehtoisesti saatat tietää osapuilleen, kuinka päästä määränpäähäsi, ja tarvitset äänimajakkaa vain lähestyessäsi määränpäätäsi. Joka tapauksessa voit valita, milloin kuulet majakan käyttämällä \"hiljennä majakka\"/\"poista majakan hiljennys\" -painiketta aloitusnäytöllä.";
 
 
 /*  */
@@ -4315,11 +4315,11 @@
 
 
 /*  */
-"faq.personalize_experience.question" = "Miten voin mukauttaa Soundscape-kokemustani?";
+"faq.personalize_experience.question" = "Miten voin mukauttaa Openscape-kokemustani?";
 
 
 /*  */
-"faq.personalize_experience.answer" = "Soundscape antaa mahdollisen mukauttaa kolmea kävellessä kuultavien ilmoitusten ominaisuutta:\n\n1. Puhe: Voit valita, mitä iOS:in tarjoamia puheääniä haluat Soundscapen käyttävän, samoin kuin ilmoitusten puhenopeuden. Valitse valikosta Asetukset ja sen jälkeen Puhe mukauttaaksesi Puhenopeus- ja Puhe-asetuksia. Lisää puheääniä ja parempia puheääniä, joiden laatu on parempi, on ladattavissa iOS:in Asetukset-sovelluksen kohdassa at Asetukset > Käyttöapu > Puhuttu sisältö > Puheäänet. \n2. Etäisyyden yksikkö: openscape mahdollistaa etäisyyksien kuulemisen jalkoina tai metreinä. Valitse valikosta Asetukset. Mittayksiköt-osa mahdollistaa vaihtamisen kahden asetuksen välillä: Imperiaalinen (jalkaa) ja Metrinen (metriä).\n3. Merkinnät: Voit merkitä maailmaasi mitä tahansa sinulle tärkeää. Voit merkitä henkilökohtaisesti tärkeitä asioita, kuten toimistosi ja lempiruokakauppasi. openscape ilmoittaa silloin automaattisesti merkityt paikat, kun kävelet niiden ohi tai lähestyt niitä, tai voit myös käyttää Merkinnät-painiketta Soundscapen aloitusnäytöllä kuullaksesi tila-ilmoituksen lähiympäristösi paikoista. Nämä merkinnät ovat henkilökohtaisia, eikä niitä kerrota muille.\n\nEdellisten lisäksi seuraavat VoiceOver-asetukset voivat vaikuttaa siihen, kuinka openscape käyttäytyy:\n\n1. VoiceOver-vihjeet: Kun VoiceOver-vihjeet ovat PÄÄLLÄ, kuulet lisätietoja kaikista painikkeista Soundscapen päänäytössä. Voit ottaa VoiceOver-vihjeet käyttöön siirtymällä iOS:in Asetukset-sovellukseen ja siellä kohtaan Käyttöapu > VoiceOver- > Monisanaisuus, ja ottamalla käyttöön asetuksen Puhevihjeet.\n2. Äänen vaimennus: openscape on suunniteltu toimimaan Äänen vaimennus -asetus POIS. Kun Äänen vaimennus on käytössä, automaattisia ilmoituksia voi olla vaikea kuulla, jos VoiceOver-toimintoa käytetään samaan aikaan. Suosittelemme Äänen vaimennuksen poistamista käytöstä, jotta automaattiset ilmoitukset olisi helpompi kuulla, kun vuorovaikutat puhelimen kanssa. Äänen vaimennuksen voi ottaa pois käytöstä VoiceOver-asetuksissa VoiceOver-kääntöasetuksen avulla.\n3. Touch ID tai Face ID lukituksen poistamiseksi: Puhelimen määrittäminen käyttämään Touch ID:tä tai Face ID:tä lukituksen poistamiseksi tekee lukituksen poistamisesta nopeaa ja helppoa ja mahdollistaa Oma sijaintini -, Lähiympäristö- ja Edessäpäin-painikkeiden mahdollisimman nopean käytön matkallasi. Määritä lukituksen poisto Touch ID:n tai Face ID:n avulla iOS:in Asetukset-sovelluksesta.";
+"faq.personalize_experience.answer" = "Openscape antaa mahdollisen mukauttaa kolmea kävellessä kuultavien ilmoitusten ominaisuutta:\n\n1. Puhe: Voit valita, mitä iOS:in tarjoamia puheääniä haluat Soundscapen käyttävän, samoin kuin ilmoitusten puhenopeuden. Valitse valikosta Asetukset ja sen jälkeen Puhe mukauttaaksesi Puhenopeus- ja Puhe-asetuksia. Lisää puheääniä ja parempia puheääniä, joiden laatu on parempi, on ladattavissa iOS:in Asetukset-sovelluksen kohdassa at Asetukset > Käyttöapu > Puhuttu sisältö > Puheäänet. \n2. Etäisyyden yksikkö: openscape mahdollistaa etäisyyksien kuulemisen jalkoina tai metreinä. Valitse valikosta Asetukset. Mittayksiköt-osa mahdollistaa vaihtamisen kahden asetuksen välillä: Imperiaalinen (jalkaa) ja Metrinen (metriä).\n3. Merkinnät: Voit merkitä maailmaasi mitä tahansa sinulle tärkeää. Voit merkitä henkilökohtaisesti tärkeitä asioita, kuten toimistosi ja lempiruokakauppasi. openscape ilmoittaa silloin automaattisesti merkityt paikat, kun kävelet niiden ohi tai lähestyt niitä, tai voit myös käyttää Merkinnät-painiketta Soundscapen aloitusnäytöllä kuullaksesi tila-ilmoituksen lähiympäristösi paikoista. Nämä merkinnät ovat henkilökohtaisia, eikä niitä kerrota muille.\n\nEdellisten lisäksi seuraavat VoiceOver-asetukset voivat vaikuttaa siihen, kuinka openscape käyttäytyy:\n\n1. VoiceOver-vihjeet: Kun VoiceOver-vihjeet ovat PÄÄLLÄ, kuulet lisätietoja kaikista painikkeista Soundscapen päänäytössä. Voit ottaa VoiceOver-vihjeet käyttöön siirtymällä iOS:in Asetukset-sovellukseen ja siellä kohtaan Käyttöapu > VoiceOver- > Monisanaisuus, ja ottamalla käyttöön asetuksen Puhevihjeet.\n2. Äänen vaimennus: openscape on suunniteltu toimimaan Äänen vaimennus -asetus POIS. Kun Äänen vaimennus on käytössä, automaattisia ilmoituksia voi olla vaikea kuulla, jos VoiceOver-toimintoa käytetään samaan aikaan. Suosittelemme Äänen vaimennuksen poistamista käytöstä, jotta automaattiset ilmoitukset olisi helpompi kuulla, kun vuorovaikutat puhelimen kanssa. Äänen vaimennuksen voi ottaa pois käytöstä VoiceOver-asetuksissa VoiceOver-kääntöasetuksen avulla.\n3. Touch ID tai Face ID lukituksen poistamiseksi: Puhelimen määrittäminen käyttämään Touch ID:tä tai Face ID:tä lukituksen poistamiseksi tekee lukituksen poistamisesta nopeaa ja helppoa ja mahdollistaa Oma sijaintini -, Lähiympäristö- ja Edessäpäin-painikkeiden mahdollisimman nopean käytön matkallasi. Määritä lukituksen poisto Touch ID:n tai Face ID:n avulla iOS:in Asetukset-sovelluksesta.";
 
 
 /*  */
@@ -4327,7 +4327,7 @@
 
 
 /*  */
-"faq.what_is_osm.answer" = "Soundscape käyttää maantieteellisiä karttatietoja antaakseen tietoja sovelluksen ilmoituksissa. Tärkein käyttämämme lähde on Open Street Map (www.openstreetmap.org), joka on rikas yhteisön luoma kartta-alusta, joka antaa organisaatioille ja yksilöille mahdollisuuden parantaa annettujen tietojen laatua ja tarkkuutta sekä tilojen saavutettavuutta Open Street Map -karttojen luontityökalujen avulla.";
+"faq.what_is_osm.answer" = "Openscape käyttää maantieteellisiä karttatietoja antaakseen tietoja sovelluksen ilmoituksissa. Tärkein käyttämämme lähde on Open Street Map (www.openstreetmap.org), joka on rikas yhteisön luoma kartta-alusta, joka antaa organisaatioille ja yksilöille mahdollisuuden parantaa annettujen tietojen laatua ja tarkkuutta sekä tilojen saavutettavuutta Open Street Map -karttojen luontityökalujen avulla.";
 
 
 /*  */
@@ -4351,7 +4351,7 @@
 
 
 /*  */
-"faq.tip.hold_phone_flat" = "Soundscape toimii parhaiten, kun pitelet puhelinta vaakatasossa siten, että sen näyttö osoittaa taivaalle ja puhelimen yläosa osoittaa sinusta poispäin.";
+"faq.tip.hold_phone_flat" = "Openscape toimii parhaiten, kun pitelet puhelinta vaakatasossa siten, että sen näyttö osoittaa taivaalle ja puhelimen yläosa osoittaa sinusta poispäin.";
 
 
 /*  */

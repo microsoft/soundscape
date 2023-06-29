@@ -155,7 +155,7 @@
 
 
 /*  */
-"general.alert.offline_default.message" = "Soundscape kjører i frakoblet modus. openscape fungerer fremdeles, men noen funksjoner kan være begrenset.";
+"general.alert.offline_default.message" = "Openscape kjører i frakoblet modus. openscape fungerer fremdeles, men noen funksjoner kan være begrenset.";
 
 
 /*  */
@@ -279,7 +279,7 @@
 
 
 /*  */
-"general.error.heading" = "Soundscape er ikke sikker på hvilken retning du er vendt mot. Hold telefonen flatt eller begynn å gå igjen, og prøv på nytt";
+"general.error.heading" = "Openscape er ikke sikker på hvilken retning du er vendt mot. Hold telefonen flatt eller begynn å gå igjen, og prøv på nytt";
 
 
 /*  */
@@ -375,7 +375,7 @@
 
 
 /*  */
-"settings.clear_cache.no_service.message" = "Soundscape kan for øyeblikket ikke koble til Internett. En Internett-tilkobling er nødvendig når du fjerner lagrede kartdata slik at kartdataene kan oppdateres på nytt.";
+"settings.clear_cache.no_service.message" = "Openscape kan for øyeblikket ikke koble til Internett. En Internett-tilkobling er nødvendig når du fjerner lagrede kartdata slik at kartdataene kan oppdateres på nytt.";
 
 
 /*  */
@@ -631,11 +631,11 @@
 
 
 /*  */
-"troubleshooting.check_audio.hint" = "Dobbelttrykk for å sjekke statusen til hodetelefonene du bruker med Soundscape.";
+"troubleshooting.check_audio.hint" = "Dobbelttrykk for å sjekke statusen til hodetelefonene du bruker med Openscape.";
 
 
 /*  */
-"troubleshooting.check_audio.explanation" = "Trykk på denne knappen for å høre statusen til hodetelefonene du bruker med Soundscape.";
+"troubleshooting.check_audio.explanation" = "Trykk på denne knappen for å høre statusen til hodetelefonene du bruker med Openscape.";
 
 
 /*  */
@@ -647,7 +647,7 @@
 
 
 /*  */
-"troubleshooting.cache.explanation" = "Soundscape laster ned kartdata mens du går slik at den kan fortelle deg om tingene og stedene rundt deg. Hvis du har problemer med Soundscape, eller hvis den bruker for mye minne, kan du fjerne lagrede kartdata, så laster openscape bare ned kartdata i nærheten av nåværende posisjon.";
+"troubleshooting.cache.explanation" = "Openscape laster ned kartdata mens du går slik at den kan fortelle deg om tingene og stedene rundt deg. Hvis du har problemer med Openscape, eller hvis den bruker for mye minne, kan du fjerne lagrede kartdata, så laster openscape bare ned kartdata i nærheten av nåværende posisjon.";
 
 
 /*  */
@@ -815,7 +815,7 @@
 
 
 /*  */
-"preview.title" = "Soundscape Street Preview";
+"preview.title" = "Openscape Street Preview";
 
 
 /*  */
@@ -999,7 +999,7 @@
 
 
 /*  */
-"preview.tutorial.content.3" = "Ved hvert veikryss kan du bruke telefonen igjen til å velge hvilken vei du vil gå, eller du kan utforske omgivelsene i nærheten ved å bruke de kjente Soundscape-knappene nederst på skjermen. Du kan trykke på Søk for å starte lydsignalet ved et interessepunkt, endre posisjonen eller bare for å utforske området nærmere.";
+"preview.tutorial.content.3" = "Ved hvert veikryss kan du bruke telefonen igjen til å velge hvilken vei du vil gå, eller du kan utforske omgivelsene i nærheten ved å bruke de kjente Openscape-knappene nederst på skjermen. Du kan trykke på Søk for å starte lydsignalet ved et interessepunkt, endre posisjonen eller bare for å utforske området nærmere.";
 
 
 /*  */
@@ -1455,11 +1455,11 @@
 
 
 /*  */
-"first_use_experience.share.alert.title" = "Deling i Soundscape";
+"first_use_experience.share.alert.title" = "Deling i Openscape";
 
 
 /*  */
-"first_use_experience.share.alert.message" = "Når du deler en Soundscape-markør eller -rute, deler du posisjonene som er tilknyttet markøren eller ruten. Du må bare dele med personer du stoler på.";
+"first_use_experience.share.alert.message" = "Når du deler en Openscape-markør eller -rute, deler du posisjonene som er tilknyttet markøren eller ruten. Du må bare dele med personer du stoler på.";
 
 
 /*  */
@@ -1499,7 +1499,7 @@
 
 
 /*  */
-"universal_links.marker.share.message" = "Jeg har delt en Soundscape-markør med deg. %@";
+"universal_links.marker.share.message" = "Jeg har delt en Openscape-markør med deg. %@";
 
 
 /*  */
@@ -1531,7 +1531,7 @@
 
 
 /*  */
-"user_activity.search.title" = "Søk i Soundscape";
+"user_activity.search.title" = "Søk i Openscape";
 
 
 /*  */
@@ -1543,7 +1543,7 @@
 
 
 /*  */
-"url_resource.alert.route.share.message" = "Jeg har delt en Soundscape-rute med deg. %@";
+"url_resource.alert.route.share.message" = "Jeg har delt en Openscape-rute med deg. %@";
 
 
 /*  */
@@ -1591,7 +1591,7 @@
 
 
 /*  */
-"routes.no_routes.hint.2" = "Når du er på ruten med Soundscape, får du beskjed når du kommer til hvert veipunkt, og lydsignalet går automatisk videre til neste veipunkt.";
+"routes.no_routes.hint.2" = "Når du er på ruten med Openscape, får du beskjed når du kommer til hvert veipunkt, og lydsignalet går automatisk videre til neste veipunkt.";
 
 
 /*  */
@@ -1607,7 +1607,7 @@
 
 
 /*  */
-"routes.tutorial.details" = "Du kommer nå tilbake til Soundscape-startsiden og et lydsignal plasseres på det første veipunktet. Når du kommer til veipunktet, går lydsignalet videre til neste veipunkt på ruten.";
+"routes.tutorial.details" = "Du kommer nå tilbake til Openscape-startsiden og et lydsignal plasseres på det første veipunktet. Når du kommer til veipunktet, går lydsignalet videre til neste veipunkt på ruten.";
 
 
 /*  */
@@ -1971,11 +1971,11 @@
 
 
 /*  */
-"sleep.snoozing.message" = "Soundscape er for øyeblikket i pausemodus. Når du forlater nåværende posisjon, vekkes openscape automatisk. Dette bruker stedstjenester i strømsparingsmodus for å spare telefonens batteri. Trykk på knappen nedenfor for å aktivere den nå.";
+"sleep.snoozing.message" = "Openscape er for øyeblikket i pausemodus. Når du forlater nåværende posisjon, vekkes openscape automatisk. Dette bruker stedstjenester i strømsparingsmodus for å spare telefonens batteri. Trykk på knappen nedenfor for å aktivere den nå.";
 
 
 /*  */
-"sleep.sleeping.message" = "Soundscape er for øyeblikket i dvalemodus. Det hindrer openscape i å bruke stedstjenester eller å laste ned data. Dette sparer batteri når du ikke bruker Soundscape. Trykk på knappen nedenfor for å vekke Soundscape.";
+"sleep.sleeping.message" = "Openscape er for øyeblikket i dvalemodus. Det hindrer openscape i å bruke stedstjenester eller å laste ned data. Dette sparer batteri når du ikke bruker Openscape. Trykk på knappen nedenfor for å vekke Openscape.";
 
 
 /*  */
@@ -2611,7 +2611,7 @@
 
 
 /*  */
-"menu.learning_resources" = "Soundscape-blogg";
+"menu.learning_resources" = "Openscape-blogg";
 
 
 /*  */
@@ -2707,11 +2707,11 @@
 
 
 /*  */
-"devices.explain_ar.paired" = "Soundscape er for øyeblikket ikke koblet til %@. Pass på at hodetelefonene er slått på og i nærheten av telefonen.";
+"devices.explain_ar.paired" = "Openscape er for øyeblikket ikke koblet til %@. Pass på at hodetelefonene er slått på og i nærheten av telefonen.";
 
 
 /*  */
-"devices.explain_ar.connecting" = "Soundscape kobler seg til %@. Vent litt ...";
+"devices.explain_ar.connecting" = "Openscape kobler seg til %@. Vent litt ...";
 
 
 /*  */
@@ -2723,7 +2723,7 @@
 
 
 /*  */
-"devices.connect_headset.calibrate.explanation" = "Hodetelefonene er koblet til Soundscape, men de må kalibreres før bruk. openscape varsler deg når det er nødvendig å kalibrere hodetelefonene, for eksempel hver gang du slår dem på.";
+"devices.connect_headset.calibrate.explanation" = "Hodetelefonene er koblet til Openscape, men de må kalibreres før bruk. openscape varsler deg når det er nødvendig å kalibrere hodetelefonene, for eksempel hver gang du slår dem på.";
 
 
 /*  */
@@ -2731,11 +2731,11 @@
 
 
 /*  */
-"devices.connect_headset.unsupported_firmware" = "AR Headphones må oppdateres før de kan kobles til Soundscape. Gå til Cortana-appen for å oppdatere hodetelefonene.";
+"devices.connect_headset.unsupported_firmware" = "AR Headphones må oppdateres før de kan kobles til Openscape. Gå til Cortana-appen for å oppdatere hodetelefonene.";
 
 
 /*  */
-"devices.connect_headset.failed" = "Soundscape kan ikke koble seg til hodetelefonene. Prøv på nytt senere.";
+"devices.connect_headset.failed" = "Openscape kan ikke koble seg til hodetelefonene. Prøv på nytt senere.";
 
 
 /*  */
@@ -2747,7 +2747,7 @@
 
 
 /*  */
-"devices.connect_headset.audio" = "Før du kobler hodetelefonene til Soundscape, må du passe på at de er parkoblet med telefonen. Hvis de ikke er parkoblet ennå, går du til Bluetooth-delen i iOS-appen Innstillinger for å parkoble dem med enheten og går deretter tilbake til Soundscape.";
+"devices.connect_headset.audio" = "Før du kobler hodetelefonene til Openscape, må du passe på at de er parkoblet med telefonen. Hvis de ikke er parkoblet ennå, går du til Bluetooth-delen i iOS-appen Innstillinger for å parkoble dem med enheten og går deretter tilbake til Openscape.";
 
 
 /*  */
@@ -2779,7 +2779,7 @@
 
 
 /*  */
-"devices.test_headset.continue" = "Gå tilbake til Soundscape";
+"devices.test_headset.continue" = "Gå tilbake til Openscape";
 
 
 /*  */
@@ -2791,7 +2791,7 @@
 
 
 /*  */
-"devices.forget_headset.prompt.explanation" = "Dette kobler hodetelefonene fra Soundscape. Du kan koble deg til openscape på nytt herfra.";
+"devices.forget_headset.prompt.explanation" = "Dette kobler hodetelefonene fra Openscape. Du kan koble deg til openscape på nytt herfra.";
 
 
 /*  */
@@ -2823,7 +2823,7 @@
 
 
 /*  */
-"devices.callouts.check_audio.airpods.disconnected" = "Soundscape søker etter AirPods. Pass på at de er koblet til telefonen.";
+"devices.callouts.check_audio.airpods.disconnected" = "Openscape søker etter AirPods. Pass på at de er koblet til telefonen.";
 
 
 /*  */
@@ -2911,11 +2911,11 @@
 
 
 /*  */
-"behavior.experiences.no_events.caption.1" = "Veldedige organisasjoner, virksomheter og lokale myndigheter kan opprette sine egne Soundscape-baserte opplevelser. Eksempler på dette omfatter adaptive sportsprogrammer og -arrangementer, skattejaktaktiviteter, organiserte stier, organiserte byomvisninger med mer.";
+"behavior.experiences.no_events.caption.1" = "Veldedige organisasjoner, virksomheter og lokale myndigheter kan opprette sine egne Openscape-baserte opplevelser. Eksempler på dette omfatter adaptive sportsprogrammer og -arrangementer, skattejaktaktiviteter, organiserte stier, organiserte byomvisninger med mer.";
 
 
 /*  */
-"behavior.experiences.no_events.caption.2" = "Hvis du vil finne ut mer eller si ifra om organisasjonens interesse i å opprette tilpassede Soundscape-opplevelser, kan du skrive til oss på email@address.com";
+"behavior.experiences.no_events.caption.2" = "Hvis du vil finne ut mer eller si ifra om organisasjonens interesse i å opprette tilpassede Openscape-opplevelser, kan du skrive til oss på email@address.com";
 
 
 /*  */
@@ -2935,7 +2935,7 @@
 
 
 /*  */
-"behavior.scavenger_hunt.callout.pausing_hunt" = "Går tilbake til den vanlige Soundscape-opplevelsen.";
+"behavior.scavenger_hunt.callout.pausing_hunt" = "Går tilbake til den vanlige Openscape-opplevelsen.";
 
 
 /*  */
@@ -3023,7 +3023,7 @@
 
 
 /*  */
-"icloud.kv_store.quota_violation_alert.title" = "Soundscape iCloud-lagringen er full";
+"icloud.kv_store.quota_violation_alert.title" = "Openscape iCloud-lagringen er full";
 
 
 /*  */
@@ -3179,7 +3179,7 @@
 
 
 /*  */
-"tutorial.beacons.text.OrientationAirPods" = "AirPods er koblet til Soundscape. Når AirPods er koblet til Soundscape, spiller det ingen rolle hvordan du holder telefonen. Du kan til og med legge den i lomma eller i veska.";
+"tutorial.beacons.text.OrientationAirPods" = "AirPods er koblet til Openscape. Når AirPods er koblet til Openscape, spiller det ingen rolle hvordan du holder telefonen. Du kan til og med legge den i lomma eller i veska.";
 
 
 /*  */
@@ -3263,7 +3263,7 @@
 
 
 /*  */
-"help.configuration.section.title" = "Konfigurer Soundscape";
+"help.configuration.section.title" = "Konfigurer Openscape";
 
 
 /*  */
@@ -3283,7 +3283,7 @@
 
 
 /*  */
-"help.config.voices.content" = "Soundscape kan bare bruke stemmer som du har lastet ned i iOS Innstillinger-appen, med unntak av Siri-stemmer som ikke er tilgjengelige i Soundscape. Vi anbefaler at du velger en av stemmene i høyere kvalitet siden de har mye bedre stemmekvalitet, men for å gjøre det må du først laste ned en stemme i høyere kvalitet. Du kan laste ned stemmer i iOS Innstillinger-appen ved å gå til Tilgjengelighet > Opplest innhold > Stemmer og trykke på en stemme. I Soundscape-appen kan du velge stemmen du vil bruke, ved å gå til Innstillinger fra hovedmenyen og deretter velge Stemme.";
+"help.config.voices.content" = "Openscape kan bare bruke stemmer som du har lastet ned i iOS Innstillinger-appen, med unntak av Siri-stemmer som ikke er tilgjengelige i Openscape. Vi anbefaler at du velger en av stemmene i høyere kvalitet siden de har mye bedre stemmekvalitet, men for å gjøre det må du først laste ned en stemme i høyere kvalitet. Du kan laste ned stemmer i iOS Innstillinger-appen ved å gå til Tilgjengelighet > Opplest innhold > Stemmer og trykke på en stemme. I Openscape-appen kan du velge stemmen du vil bruke, ved å gå til Innstillinger fra hovedmenyen og deretter velge Stemme.";
 
 
 /*  */
@@ -3291,7 +3291,7 @@
 
 
 /*  */
-"help.offline.description" = "Når det ikke er noen Internett-tilkobling eller det er et avbrudd i Soundscape-tjenestene, går openscape over til frakoblet modus. openscape fungerer fremdeles, men enkelte funksjoner kan være begrenset.";
+"help.offline.description" = "Når det ikke er noen Internett-tilkobling eller det er et avbrudd i Openscape-tjenestene, går openscape over til frakoblet modus. openscape fungerer fremdeles, men enkelte funksjoner kan være begrenset.";
 
 
 /*  */
@@ -3307,7 +3307,7 @@
 
 
 /*  */
-"help.offline.troubleshooting_description" = "Soundscape prøver å gjenoppta normal drift når telefonen kobler seg til Wi-Fi, eller når mobildata aktiveres og du er i et område med bra signal. Hvis telefonen har god Internett-tilkobling, men openscape ikke gjenopptar normal drift, kan det være et avbrudd i Soundscape-tjenestene.";
+"help.offline.troubleshooting_description" = "Openscape prøver å gjenoppta normal drift når telefonen kobler seg til Wi-Fi, eller når mobildata aktiveres og du er i et område med bra signal. Hvis telefonen har god Internett-tilkobling, men openscape ikke gjenopptar normal drift, kan det være et avbrudd i Openscape-tjenestene.";
 
 
 /*  */
@@ -3419,7 +3419,7 @@
 
 
 /*  */
-"first_launch.soundscape_language" = "Soundscape-språk";
+"first_launch.soundscape_language" = "Openscape-språk";
 
 
 /*  */
@@ -3447,7 +3447,7 @@
 
 
 /*  */
-"first_launch.lighting_way_with_sound.text_alt" = "Soundscape bruker 3D-lyd til å gi deg beskjed om hva som er rundt deg. Hvis destinasjonen for eksempel ligger til høyre for deg, hører du lyd fra den retningen, eller hvis det ligger en kafé til venstre for deg, hører du en melding fra den retningen.";
+"first_launch.lighting_way_with_sound.text_alt" = "Openscape bruker 3D-lyd til å gi deg beskjed om hva som er rundt deg. Hvis destinasjonen for eksempel ligger til høyre for deg, hører du lyd fra den retningen, eller hvis det ligger en kafé til venstre for deg, hører du en melding fra den retningen.";
 
 
 /*  */
@@ -3483,7 +3483,7 @@
 
 
 /*  */
-"first_launch.welcome.description" = "Naviger med selvtillit ved å bruke romlig lyd i Soundscape";
+"first_launch.welcome.description" = "Naviger med selvtillit ved å bruke romlig lyd i Openscape";
 
 
 /*  */
@@ -3491,11 +3491,11 @@
 
 
 /*  */
-"first_launch.headphones.title" = "Lytt til Soundscape";
+"first_launch.headphones.title" = "Lytt til Openscape";
 
 
 /*  */
-"first_launch.headphones.message.1" = "Soundscape fungerer bra med et hvilket som helst par med hodetelefoner. Hvis du vil bruke hodetelefoner, kan du finne dem nå.";
+"first_launch.headphones.message.1" = "Openscape fungerer bra med et hvilket som helst par med hodetelefoner. Hvis du vil bruke hodetelefoner, kan du finne dem nå.";
 
 
 /*  */
@@ -3507,7 +3507,7 @@
 
 
 /*  */
-"first_launch.callouts.message" = "Soundscape hjelper deg med å være bevisst på hvor du er og hvor du er på vei ved å lese opp veier, veikryss og interessepunkter når du nærmer deg dem.";
+"first_launch.callouts.message" = "Openscape hjelper deg med å være bevisst på hvor du er og hvor du er på vei ved å lese opp veier, veikryss og interessepunkter når du nærmer deg dem.";
 
 
 /*  */
@@ -3535,11 +3535,11 @@
 
 
 /*  */
-"first_launch.permissions.title" = "Naviger med Soundscape";
+"first_launch.permissions.title" = "Naviger med Openscape";
 
 
 /*  */
-"first_launch.permissions.message" = "Når du navigerer med Soundscape, blir du veiledet av et lydsignal. For å gjøre dette må du gi openscape følgende tillatelser:";
+"first_launch.permissions.message" = "Når du navigerer med Openscape, blir du veiledet av et lydsignal. For å gjøre dette må du gi openscape følgende tillatelser:";
 
 
 /*  */
@@ -3559,7 +3559,7 @@
 
 
 /*  */
-"first_launch.beacon.message.1" = "Når du navigerer med Soundscape, hører du lydsignalet i retningen til destinasjonen din. Ved å følge lyden vet du alltid hvilken vei du skal gå.";
+"first_launch.beacon.message.1" = "Når du navigerer med Openscape, hører du lydsignalet i retningen til destinasjonen din. Ved å følge lyden vet du alltid hvilken vei du skal gå.";
 
 
 /*  */
@@ -3611,7 +3611,7 @@
 
 
 /*  */
-"first_launch.prompt.message" = "Du er klar for din første tur med Soundscape. Hvis du vil prøve det nå, velger du en destinasjon i nærheten og starter lydsignalet. Du hører da signalet i retningen til destinasjonen din.";
+"first_launch.prompt.message" = "Du er klar for din første tur med Openscape. Hvis du vil prøve det nå, velger du en destinasjon i nærheten og starter lydsignalet. Du hører da signalet i retningen til destinasjonen din.";
 
 
 /*  */
@@ -3643,7 +3643,7 @@
 
 
 /*  */
-"help.text.automatic_callouts.what" = "Soundscape kan fortelle deg om ting rundt deg når du nærmer deg dem ved å lese opp navnet fra retningen de er plassert i. Appen gjør dette automatisk for alle typer ting som virksomheter, busstopp og veikryss. Du kan konfigurere hva appen automatisk leser opp, i delen Administrer meldinger på skjermen Innstillinger, og du kan slå av alle meldinger når du vil at appen skal være lydløs.";
+"help.text.automatic_callouts.what" = "Openscape kan fortelle deg om ting rundt deg når du nærmer deg dem ved å lese opp navnet fra retningen de er plassert i. Appen gjør dette automatisk for alle typer ting som virksomheter, busstopp og veikryss. Du kan konfigurere hva appen automatisk leser opp, i delen Administrer meldinger på skjermen Innstillinger, og du kan slå av alle meldinger når du vil at appen skal være lydløs.";
 
 
 /*  */
@@ -3719,7 +3719,7 @@
 
 
 /*  */
-"help.text.remote_control.when" = "Du kan bruke hodetelefonenes mediekontroller mens openscape kjører. Dette gjelder enten du for øyeblikket er i Soundscape, eller bruker openscape i bakgrunnen og selv om enheten er låst. Vær imidlertid oppmerksom på at mediekontrollknappene ikke fungerer med openscape hvis du spiller av lyd som musikk, podkaster eller videoer med en annen app.";
+"help.text.remote_control.when" = "Du kan bruke hodetelefonenes mediekontroller mens openscape kjører. Dette gjelder enten du for øyeblikket er i Openscape, eller bruker openscape i bakgrunnen og selv om enheten er låst. Vær imidlertid oppmerksom på at mediekontrollknappene ikke fungerer med openscape hvis du spiller av lyd som musikk, podkaster eller videoer med en annen app.";
 
 
 /*  */
@@ -3735,11 +3735,11 @@
 
 
 /*  */
-"help.text.markers.content.3" = "Hvis du vil bruke markerte steder, leser openscape automatisk opp markerte steder når du går forbi eller nærmer deg. Du kan også bruke knappen Markører i nærheten nederst på startskjermen til openscape til å høre en romlig melding av markerte steder rundt deg. Du har også muligheten til å angi et lydsignal på et markert sted. Når du gjør dette, høres Soundscape-lydsignalet du er vant med og du kan bruke det som vanlig.";
+"help.text.markers.content.3" = "Hvis du vil bruke markerte steder, leser openscape automatisk opp markerte steder når du går forbi eller nærmer deg. Du kan også bruke knappen Markører i nærheten nederst på startskjermen til openscape til å høre en romlig melding av markerte steder rundt deg. Du har også muligheten til å angi et lydsignal på et markert sted. Når du gjør dette, høres Openscape-lydsignalet du er vant med og du kan bruke det som vanlig.";
 
 
 /*  */
-"help.text.creating_markers.content.1" = "Du kan opprette markører på tre måter: søk etter stedet du vil lagre ved å bruke søkefeltet, finn et sted ved å bruke knappen Steder i nærheten eller bruk knappen Bruk nåværende posisjon. Du finner disse på startskjermen til Soundscape. Når du har funnet et sted, kommer du til siden Posisjonsinformasjon hvis du velger det. På denne siden velger du knappen som heter Lagre markør.";
+"help.text.creating_markers.content.1" = "Du kan opprette markører på tre måter: søk etter stedet du vil lagre ved å bruke søkefeltet, finn et sted ved å bruke knappen Steder i nærheten eller bruk knappen Bruk nåværende posisjon. Du finner disse på startskjermen til Openscape. Når du har funnet et sted, kommer du til siden Posisjonsinformasjon hvis du velger det. På denne siden velger du knappen som heter Lagre markør.";
 
 
 /*  */
@@ -3775,19 +3775,19 @@
 
 
 /*  */
-"help.using_headsets.airpods.what" = "Soundscape støtter romlig lyd med dynamisk hodesporing når du bruker kompatible AirPods. Når de er koblet til Soundscape, forteller sensorene i AirPods openscape retningen du er vendt mot. Dette hjelper openscape med å forbedre lydopplevelsen og gjøre den mer naturlig mens du beveger deg rundt i verden. Når du bruker openscape med AirPods tilkoblet, trenger du ikke å holde telefonen for at openscape skal fungere på riktig måte.";
+"help.using_headsets.airpods.what" = "Openscape støtter romlig lyd med dynamisk hodesporing når du bruker kompatible AirPods. Når de er koblet til Openscape, forteller sensorene i AirPods openscape retningen du er vendt mot. Dette hjelper openscape med å forbedre lydopplevelsen og gjøre den mer naturlig mens du beveger deg rundt i verden. Når du bruker openscape med AirPods tilkoblet, trenger du ikke å holde telefonen for at openscape skal fungere på riktig måte.";
 
 
 /*  */
-"help.using_headsets.airpods.when" = "Du kan bruke AirPods med openscape når du vanligvis ville brukt Soundscape. Ved å bruke AirPods får du høykvalitetslyd og du får en enda mer håndfri opplevelse med Soundscape.";
+"help.using_headsets.airpods.when" = "Du kan bruke AirPods med openscape når du vanligvis ville brukt Openscape. Ved å bruke AirPods får du høykvalitetslyd og du får en enda mer håndfri opplevelse med Openscape.";
 
 
 /*  */
-"help.using_headsets.airpods.how.1" = "<b>Koble til en enhet</b>:<br/> Gå til elementet Hodetelefoner med hodesporing på Soundscape-menyen for å koble til AirPods, og følg instruksjonene på skjermen. Vær oppmerksom på at du må parkoble AirPods til telefonen i Bluetooth-innstillinger før du kobler dem til i Soundscape.";
+"help.using_headsets.airpods.how.1" = "<b>Koble til en enhet</b>:<br/> Gå til elementet Hodetelefoner med hodesporing på Openscape-menyen for å koble til AirPods, og følg instruksjonene på skjermen. Vær oppmerksom på at du må parkoble AirPods til telefonen i Bluetooth-innstillinger før du kobler dem til i Openscape.";
 
 
 /*  */
-"help.using_headsets.airpods.how.2" = "<b>Bruk mediekontrollene på hodetelefonene</b>:<br/> Når mediekontroller er aktivert i Soundscape-innstillingene, kan du bruke mediekontrollene på AirPods til å slå av og på lydsignalet, lese opp posisjonen eller til å gjenta den siste meldingen. Hvis du vil ha mer informasjon, kan du se hjelpedelen Bruk mediekontroller.";
+"help.using_headsets.airpods.how.2" = "<b>Bruk mediekontrollene på hodetelefonene</b>:<br/> Når mediekontroller er aktivert i Openscape-innstillingene, kan du bruke mediekontrollene på AirPods til å slå av og på lydsignalet, lese opp posisjonen eller til å gjenta den siste meldingen. Hvis du vil ha mer informasjon, kan du se hjelpedelen Bruk mediekontroller.";
 
 
 /*  */
@@ -4051,19 +4051,19 @@
 
 
 /*  */
-"banner.offline_default.message" = "Soundscape fungerer i frakoblet modus. Finn ut mer";
+"banner.offline_default.message" = "Openscape fungerer i frakoblet modus. Finn ut mer";
 
 
 /*  */
-"banner.offline_help.message" = "Soundscape fungerer i frakoblet modus.";
+"banner.offline_help.message" = "Openscape fungerer i frakoblet modus.";
 
 
 /*  */
-"banner.offline_search.message" = "Soundscape fungerer i frakoblet modus. Lokasjoner er begrenset til stedene du har gått forbi før eller allerede har markert. Finn ut mer";
+"banner.offline_search.message" = "Openscape fungerer i frakoblet modus. Lokasjoner er begrenset til stedene du har gått forbi før eller allerede har markert. Finn ut mer";
 
 
 /*  */
-"banner.online.message" = "Soundscape er tilkoblet igjen";
+"banner.online.message" = "Openscape er tilkoblet igjen";
 
 
 /*  */
@@ -4071,15 +4071,15 @@
 
 
 /*  */
-"share.prompt.title" = "Liker du Soundscape?";
+"share.prompt.title" = "Liker du Openscape?";
 
 
 /*  */
-"share.prompt.message" = "Fortell venner og familie om Soundscape";
+"share.prompt.message" = "Fortell venner og familie om Openscape";
 
 
 /*  */
-"share.action.message" = "Prøv Soundscape, en app jeg liker å bruke for å finne frem, med 3D-lyd:";
+"share.action.message" = "Prøv Openscape, en app jeg liker å bruke for å finne frem, med 3D-lyd:";
 
 
 /*  */
@@ -4115,7 +4115,7 @@
 
 
 /*  */
-"faq.when_to_use.question" = "Når bør jeg bruke Soundscape?";
+"faq.when_to_use.question" = "Når bør jeg bruke Openscape?";
 
 
 /*  */
@@ -4123,11 +4123,11 @@
 
 
 /*  */
-"faq.markers_function.answer" = "Markører er steder du har lagret. Det kan være steder som du finner i appen, eller det kan være helt nye steder som du har lagt til selv. Du kan lagre nåværende posisjon som en markør ved å velge knappen Bruk nåværende posisjon på startskjermen og deretter velge Lagre som markør. Du kan lagre andre steder som en markør ved å søke etter stedet du vil lagre, ved å bruke søkefeltet eller finne et sted ved å bruke knappen Steder i nærheten. Du finner disse på startskjermen til Soundscape. Når du har funnet et sted og velger det, kommer du til siden Posisjonsinformasjon. Velg knappen Lagre som markør på denne siden.";
+"faq.markers_function.answer" = "Markører er steder du har lagret. Det kan være steder som du finner i appen, eller det kan være helt nye steder som du har lagt til selv. Du kan lagre nåværende posisjon som en markør ved å velge knappen Bruk nåværende posisjon på startskjermen og deretter velge Lagre som markør. Du kan lagre andre steder som en markør ved å søke etter stedet du vil lagre, ved å bruke søkefeltet eller finne et sted ved å bruke knappen Steder i nærheten. Du finner disse på startskjermen til Openscape. Når du har funnet et sted og velger det, kommer du til siden Posisjonsinformasjon. Velg knappen Lagre som markør på denne siden.";
 
 
 /*  */
-"faq.section.getting_the_best_experience" = "Hvordan får jeg det beste ut av Soundscape?";
+"faq.section.getting_the_best_experience" = "Hvordan får jeg det beste ut av Openscape?";
 
 
 /*  */
@@ -4167,15 +4167,15 @@
 
 
 /*  */
-"faq.beacon_on_home.answer" = "Med openscape kan du angi lydsignaler på adresser. Hvis du vil angi et lydsignal på hjemmet ditt eller andre adresser, kan du søke etter en posisjon fra Soundscape-hovedskjermen. Trykk på knappen Start lydsignal på skjermen Posisjonsinformasjon.";
+"faq.beacon_on_home.answer" = "Med openscape kan du angi lydsignaler på adresser. Hvis du vil angi et lydsignal på hjemmet ditt eller andre adresser, kan du søke etter en posisjon fra Openscape-hovedskjermen. Trykk på knappen Start lydsignal på skjermen Posisjonsinformasjon.";
 
 
 /*  */
-"faq.how_close_to_destination.question" = "Når jeg angir et lydsignal på en destinasjon, hvor nærme kommer jeg destinasjonen med Soundscape? ";
+"faq.how_close_to_destination.question" = "Når jeg angir et lydsignal på en destinasjon, hvor nærme kommer jeg destinasjonen med Openscape? ";
 
 
 /*  */
-"faq.how_close_to_destination.answer" = "Soundscape kan fastslå posisjonen til destinasjonen din inntil flere meter, men ikke mindre. Når openscape fastslår at du nærmer deg destinasjonen, hører du en siste melding om at destinasjonen er i nærheten, og lydsignalet slås av.";
+"faq.how_close_to_destination.answer" = "Openscape kan fastslå posisjonen til destinasjonen din inntil flere meter, men ikke mindre. Når openscape fastslår at du nærmer deg destinasjonen, hører du en siste melding om at destinasjonen er i nærheten, og lydsignalet slås av.";
 
 
 /*  */
@@ -4199,7 +4199,7 @@
 
 
 /*  */
-"faq.why_not_every_business.answer" = "Soundscape er laget slik at den ikke snakker for mye. I tillegg bruker den Open Street Map som serverdatakilde. Open Street Map (OSM, https://www.openstreetmap.org/) er et fellesskapsutviklet og redigert kart over verden som er avhengig av enkeltpersoner for å angi og samle inn data. Hvis en virksomhet eller et interessepunkt ikke kunngjøres av Soundscape, er det antakelig fordi virksomheten ikke er lagt til eller i noen tilfeller oppdatert av et medlem i OSM-fellesskapet ennå.";
+"faq.why_not_every_business.answer" = "Openscape er laget slik at den ikke snakker for mye. I tillegg bruker den Open Street Map som serverdatakilde. Open Street Map (OSM, https://www.openstreetmap.org/) er et fellesskapsutviklet og redigert kart over verden som er avhengig av enkeltpersoner for å angi og samle inn data. Hvis en virksomhet eller et interessepunkt ikke kunngjøres av Openscape, er det antakelig fordi virksomheten ikke er lagt til eller i noen tilfeller oppdatert av et medlem i OSM-fellesskapet ennå.";
 
 
 /*  */
@@ -4215,23 +4215,23 @@
 
 
 /*  */
-"faq.miss_a_callout.answer" = "Soundscape har en liste over nylige meldinger slik at du kan se meldinger du kanskje har gått glipp av. Du finner listen ved å trykke på søkefeltet på startskjermen til Soundscape. Nederst på denne siden finner du delen Nylige meldinger der meldingen du har gått glipp av, er oppført.";
+"faq.miss_a_callout.answer" = "Openscape har en liste over nylige meldinger slik at du kan se meldinger du kanskje har gått glipp av. Du finner listen ved å trykke på søkefeltet på startskjermen til Openscape. Nederst på denne siden finner du delen Nylige meldinger der meldingen du har gått glipp av, er oppført.";
 
 
 /*  */
-"faq.supported_phones.question" = "Hvilken telefon støtter Soundscape?";
+"faq.supported_phones.question" = "Hvilken telefon støtter Openscape?";
 
 
 /*  */
-"faq.supported_phones.answer" = "Soundscape er for øyeblikket tilgjengelig for Apple iOS, som kjøres på iPhone SE, iPhone 6S og nyere.";
+"faq.supported_phones.answer" = "Openscape er for øyeblikket tilgjengelig for Apple iOS, som kjøres på iPhone SE, iPhone 6S og nyere.";
 
 
 /*  */
-"faq.supported_headsets.question" = "Hvilke hodetelefoner bør jeg bruke med Soundscape?";
+"faq.supported_headsets.question" = "Hvilke hodetelefoner bør jeg bruke med Openscape?";
 
 
 /*  */
-"faq.supported_headsets.answer" = "Hvilke hodetelefoner du bruker med Soundscape, er helt opp til deg, og hvert alternativ kommer med fordeler og ulemper. Det eneste bestemte kravet er å bruke stereohodetelefoner slik at du kan dra nytte av Soundscapes 3D-meldinger med romlig lyd.";
+"faq.supported_headsets.answer" = "Hvilke hodetelefoner du bruker med Openscape, er helt opp til deg, og hvert alternativ kommer med fordeler og ulemper. Det eneste bestemte kravet er å bruke stereohodetelefoner slik at du kan dra nytte av Soundscapes 3D-meldinger med romlig lyd.";
 
 
 /*  */
@@ -4271,15 +4271,15 @@
 
 
 /*  */
-"faq.background_battery_impact.answer" = "Soundscape er en posisjonsbasert app og bruker stedstjenester til å fastslå posisjonen din. I testene våre bruker ikke openscape mer batteri enn en vanlig kartapp. Hvis du imidlertid er bekymret for batteriforbruket når du bruker telefonen, finner du noen tips nedenfor som bidrar til å redusere batteriforbruket:\n\n1. Slå av skjermen så mye som mulig når du ikke samhandler med appen.\n2. Når du ikke bruker appen, kan du lukke den. openscape bruker kontinuerlig stedstjenester når den kjører slik at den alltid vet posisjonen din, selv om du ikke beveger deg. Ikke glem å starte appen på nytt når du gjenopptar reisen.\n3. I kaldt vær må du holde telefonen varm siden batteriet yter dårligere i kaldere temperaturer.";
+"faq.background_battery_impact.answer" = "Openscape er en posisjonsbasert app og bruker stedstjenester til å fastslå posisjonen din. I testene våre bruker ikke openscape mer batteri enn en vanlig kartapp. Hvis du imidlertid er bekymret for batteriforbruket når du bruker telefonen, finner du noen tips nedenfor som bidrar til å redusere batteriforbruket:\n\n1. Slå av skjermen så mye som mulig når du ikke samhandler med appen.\n2. Når du ikke bruker appen, kan du lukke den. openscape bruker kontinuerlig stedstjenester når den kjører slik at den alltid vet posisjonen din, selv om du ikke beveger deg. Ikke glem å starte appen på nytt når du gjenopptar reisen.\n3. I kaldt vær må du holde telefonen varm siden batteriet yter dårligere i kaldere temperaturer.";
 
 
 /*  */
-"faq.mobile_data_use.question" = "Hvor mye mobildata bruker Soundscape?";
+"faq.mobile_data_use.question" = "Hvor mye mobildata bruker Openscape?";
 
 
 /*  */
-"faq.mobile_data_use.answer" = "Mengden mobildata som brukes, avhenger av hvordan du bruker Soundscape. Vi har laget openscape slik at den bare bruker en liten mengde data når du bruker den ved å gjøre ting som å lagre punkter mens du går, slik at du ikke trenger å laste dem ned på nytt hver gang du går tilbake til et sted du allerede har vært. Hvis du vil redusere mengden mobildata du bruker, må du sørge for at du er koblet til Wi-Fi når det er mulig, særlig for å laste ned appen. Når du ikke bruker Soundscape, bør du bruke knappen Sett i dvalemodus for å sette openscape i dvalemodus eller tvangslukke appen.";
+"faq.mobile_data_use.answer" = "Mengden mobildata som brukes, avhenger av hvordan du bruker Openscape. Vi har laget openscape slik at den bare bruker en liten mengde data når du bruker den ved å gjøre ting som å lagre punkter mens du går, slik at du ikke trenger å laste dem ned på nytt hver gang du går tilbake til et sted du allerede har vært. Hvis du vil redusere mengden mobildata du bruker, må du sørge for at du er koblet til Wi-Fi når det er mulig, særlig for å laste ned appen. Når du ikke bruker Openscape, bør du bruke knappen Sett i dvalemodus for å sette openscape i dvalemodus eller tvangslukke appen.";
 
 
 /*  */
@@ -4287,7 +4287,7 @@
 
 
 /*  */
-"faq.difference_from_map_apps.answer" = "Soundscape gir deg en beskrivelse av omgivelsene dine for å hjelpe deg med å utforske og finne veien. Ved å bruke romlig lyd leser openscape opp interessepunkter, parker, veier og veikryss fra retningen de fysisk ligger i, i omgivelsene rundt deg mens du går. Hvis du for eksempel går forbi en butikk på høyre side, hører du navnet på butikken fra høyre. Når du nærmer deg et veikryss, hører du navnet på hver vei fra retningen veien går i, med start fra venstre, foran deg og så til høyre.\n\nI stedet for veibeskrivelser som ofte gis av andre kartapper, spiller openscape av lydsignalet i retningen til destinasjonen. Da kan du komme deg dit på dine egne vilkår samtidig som du blir oppmerksom på omgivelsene og posisjonen til destinasjonen. openscape ligger i bakgrunnen slik at du kan bruke en app med veibeskrivelser og samtidig være bevisst på omgivelsene mens du finner veien til destinasjonen.";
+"faq.difference_from_map_apps.answer" = "Openscape gir deg en beskrivelse av omgivelsene dine for å hjelpe deg med å utforske og finne veien. Ved å bruke romlig lyd leser openscape opp interessepunkter, parker, veier og veikryss fra retningen de fysisk ligger i, i omgivelsene rundt deg mens du går. Hvis du for eksempel går forbi en butikk på høyre side, hører du navnet på butikken fra høyre. Når du nærmer deg et veikryss, hører du navnet på hver vei fra retningen veien går i, med start fra venstre, foran deg og så til høyre.\n\nI stedet for veibeskrivelser som ofte gis av andre kartapper, spiller openscape av lydsignalet i retningen til destinasjonen. Da kan du komme deg dit på dine egne vilkår samtidig som du blir oppmerksom på omgivelsene og posisjonen til destinasjonen. openscape ligger i bakgrunnen slik at du kan bruke en app med veibeskrivelser og samtidig være bevisst på omgivelsene mens du finner veien til destinasjonen.";
 
 
 /*  */
@@ -4295,15 +4295,15 @@
 
 
 /*  */
-"faq.use_with_wayfinding_apps.answer" = "Soundscape er laget som en bevissthetsapp for å hjelpe til med å fylle inn informasjon om omgivelsene som du ellers kanskje ikke ville vært klar over. Selv om den ikke er laget som en navigasjonsapp med veibeskrivelser, kan den brukes sammen med slike apper for å gi tilleggsinformasjon. Hvis du vil bruke openscape med disse appene, starter du navigasjonsappen først. Deretter går du til openscape og angir et lydsignal på den samme destinasjonen som i navigasjonsappen. På dette tidspunktet kjører begge appene og du hører veibeskrivelser fra navigasjonsappen mens du får oppdateringer om interessepunkter, veikryss og avstanden til destinasjonen fra Soundscape.";
+"faq.use_with_wayfinding_apps.answer" = "Openscape er laget som en bevissthetsapp for å hjelpe til med å fylle inn informasjon om omgivelsene som du ellers kanskje ikke ville vært klar over. Selv om den ikke er laget som en navigasjonsapp med veibeskrivelser, kan den brukes sammen med slike apper for å gi tilleggsinformasjon. Hvis du vil bruke openscape med disse appene, starter du navigasjonsappen først. Deretter går du til openscape og angir et lydsignal på den samme destinasjonen som i navigasjonsappen. På dette tidspunktet kjører begge appene og du hører veibeskrivelser fra navigasjonsappen mens du får oppdateringer om interessepunkter, veikryss og avstanden til destinasjonen fra Openscape.";
 
 
 /*  */
-"faq.controlling_what_you_hear.question" = "Hvordan styrer jeg hva jeg hører og når jeg hører det i Soundscape?";
+"faq.controlling_what_you_hear.question" = "Hvordan styrer jeg hva jeg hører og når jeg hører det i Openscape?";
 
 
 /*  */
-"faq.controlling_what_you_hear.answer" = "Det finner flere måter for å styre det du hører og når du hører det, i Soundscape:\n\n1. Stopp umiddelbart all lyd: Dobbelttrykk på skjermen med to fingre for å slå av all lyd umiddelbart, deriblant meldinger som for øyeblikket spilles av og lydsignalet hvis det er på. Meldinger gjenopptas automatisk når du nærmer deg neste veikryss eller interessepunkt, men lydsignalet gjenopptas ikke. Velg knappen Slå på lydsignal på hovedskjermen for å høre lydsignalet igjen.\n2. Stopp automatiske meldinger: Når du ikke beveger deg, eller når du har nådd en destinasjon, er det kanskje ikke nødvendig at openscape fortsetter å varsle deg om ting rundt deg. I stedet for å avslutte appen kan du sette openscape i pausemodus og vekke den igjen når du forlater stedet, eller du kan sette openscape i dvalemodus. Den forblir av til du velger å slå den på igjen. Du kan også velge Innstillinger fra menyen og velge å slå av alle meldinger i delen Administrer meldinger.\n3. Stopp lydsignalet: Det finnes flere tilfeller der du kanskje vil angi en destinasjon, men ikke trenger å ha lydsignalet på. Du vet for eksempel nøyaktig hvordan du kommer deg til destinasjonen, men ønsker å få automatiske oppdateringer om hvor langt unna destinasjonen du er. Det kan hende at du også vil vite sånn cirka hvordan du kommer deg til destinasjonen, og at du bare trenger lydsignalet når du nærmer deg destinasjonen. Du kan uansett velge når du hører lydsignalet ved å trykke på knappen for å slå av og på lydsignalet på hovedskjermen.";
+"faq.controlling_what_you_hear.answer" = "Det finner flere måter for å styre det du hører og når du hører det, i Openscape:\n\n1. Stopp umiddelbart all lyd: Dobbelttrykk på skjermen med to fingre for å slå av all lyd umiddelbart, deriblant meldinger som for øyeblikket spilles av og lydsignalet hvis det er på. Meldinger gjenopptas automatisk når du nærmer deg neste veikryss eller interessepunkt, men lydsignalet gjenopptas ikke. Velg knappen Slå på lydsignal på hovedskjermen for å høre lydsignalet igjen.\n2. Stopp automatiske meldinger: Når du ikke beveger deg, eller når du har nådd en destinasjon, er det kanskje ikke nødvendig at openscape fortsetter å varsle deg om ting rundt deg. I stedet for å avslutte appen kan du sette openscape i pausemodus og vekke den igjen når du forlater stedet, eller du kan sette openscape i dvalemodus. Den forblir av til du velger å slå den på igjen. Du kan også velge Innstillinger fra menyen og velge å slå av alle meldinger i delen Administrer meldinger.\n3. Stopp lydsignalet: Det finnes flere tilfeller der du kanskje vil angi en destinasjon, men ikke trenger å ha lydsignalet på. Du vet for eksempel nøyaktig hvordan du kommer deg til destinasjonen, men ønsker å få automatiske oppdateringer om hvor langt unna destinasjonen du er. Det kan hende at du også vil vite sånn cirka hvordan du kommer deg til destinasjonen, og at du bare trenger lydsignalet når du nærmer deg destinasjonen. Du kan uansett velge når du hører lydsignalet ved å trykke på knappen for å slå av og på lydsignalet på hovedskjermen.";
 
 
 /*  */
@@ -4315,19 +4315,19 @@
 
 
 /*  */
-"faq.personalize_experience.question" = "På hvilke måter kan jeg tilpasse Soundscape-opplevelsen min?";
+"faq.personalize_experience.question" = "På hvilke måter kan jeg tilpasse Openscape-opplevelsen min?";
 
 
 /*  */
-"faq.personalize_experience.answer" = "Med openscape kan du tilpasse tre elementer ved meldingene du hører når du går:\n\n1. Stemme: Du kan velge hvilken av de tilgjengelige stemmene i iOS du vil bruke for Soundscape, samt hastigheten som meldingene leses opp i. Fra menyen velger du Innstillinger og deretter Stemme for å justere talehastigheten og stemmeinnstillingene. Du kan laste ned flere stemmer og stemmer i høyere kvalitet i iOS Innstillinger-appen under Innstillinger > Tilgjengelighet > Opplest innhold > Stemmer. \n2. Avstandsmåleenhet: Med openscape kan du høre alle avstander i fot eller meter. Velg Innstillinger fra menyen. Med delen Måleenheter kan du veksle mellom to alternativer: britisk (fot) og metrisk (meter).\n3. Markører: Du kan markere din verden med alt du bryr deg om. Du kan markere ting som er personlige og relevante for deg, som hjem, kontor og foretrukket dagligvarebutikk. openscape leser deretter opp markerte steder mens du går eller nærmer deg dem, eller du kan bruke knappen Markører i nærheten nederst på Soundscape-startskjermen for å høre en romlig melding om markerte steder rundt deg. Disse markørene er personlige for deg, og ingen andre kan se dem.\n\nI tillegg til det ovenfor kan følgende VoiceOver-innstillinger påvirke hvordan openscape fungerer:\n\n1. VoiceOver-tips: Når VoiceOver-tips er slått på, hører du informasjon om alle knappene på hovedskjermen til Soundscape. Du kan slå på VoiceOver-tips ved å gå til iOS Innstillinger-appen og gå til Tilgjengelighet > VoiceOver > Detaljnivå og slå på Les opp hint-innstillingen.\n2. Lyddemping: openscape er laget for å fungere med lyddemping slått av. Når lyddemping er på, kan det være vanskelig å høre automatiske meldinger hvis VoiceOver brukes samtidig. Vi anbefaler at du slår av lyddemping for å gjøre det enklere å høre alle automatiske meldinger som kommer når du samhandler med telefonen. Du kan slå av lyddemping i VoiceOver-innstillinger eller via VoiceOver-rotoren.\n3. Touch ID eller Face ID for å låse opp: Hvis du angir at telefonen låses opp med Touch ID eller Face ID, er det raskt og enkelt å låse opp telefonen. Da får du tilgang til knappene Min posisjon, Rundt meg og Foran meg så raskt som mulig når du er på farten. Konfigurer opplåsing med Touch ID eller Face ID i iOS Innstillinger-appen.";
+"faq.personalize_experience.answer" = "Med openscape kan du tilpasse tre elementer ved meldingene du hører når du går:\n\n1. Stemme: Du kan velge hvilken av de tilgjengelige stemmene i iOS du vil bruke for Openscape, samt hastigheten som meldingene leses opp i. Fra menyen velger du Innstillinger og deretter Stemme for å justere talehastigheten og stemmeinnstillingene. Du kan laste ned flere stemmer og stemmer i høyere kvalitet i iOS Innstillinger-appen under Innstillinger > Tilgjengelighet > Opplest innhold > Stemmer. \n2. Avstandsmåleenhet: Med openscape kan du høre alle avstander i fot eller meter. Velg Innstillinger fra menyen. Med delen Måleenheter kan du veksle mellom to alternativer: britisk (fot) og metrisk (meter).\n3. Markører: Du kan markere din verden med alt du bryr deg om. Du kan markere ting som er personlige og relevante for deg, som hjem, kontor og foretrukket dagligvarebutikk. openscape leser deretter opp markerte steder mens du går eller nærmer deg dem, eller du kan bruke knappen Markører i nærheten nederst på Openscape-startskjermen for å høre en romlig melding om markerte steder rundt deg. Disse markørene er personlige for deg, og ingen andre kan se dem.\n\nI tillegg til det ovenfor kan følgende VoiceOver-innstillinger påvirke hvordan openscape fungerer:\n\n1. VoiceOver-tips: Når VoiceOver-tips er slått på, hører du informasjon om alle knappene på hovedskjermen til Openscape. Du kan slå på VoiceOver-tips ved å gå til iOS Innstillinger-appen og gå til Tilgjengelighet > VoiceOver > Detaljnivå og slå på Les opp hint-innstillingen.\n2. Lyddemping: openscape er laget for å fungere med lyddemping slått av. Når lyddemping er på, kan det være vanskelig å høre automatiske meldinger hvis VoiceOver brukes samtidig. Vi anbefaler at du slår av lyddemping for å gjøre det enklere å høre alle automatiske meldinger som kommer når du samhandler med telefonen. Du kan slå av lyddemping i VoiceOver-innstillinger eller via VoiceOver-rotoren.\n3. Touch ID eller Face ID for å låse opp: Hvis du angir at telefonen låses opp med Touch ID eller Face ID, er det raskt og enkelt å låse opp telefonen. Da får du tilgang til knappene Min posisjon, Rundt meg og Foran meg så raskt som mulig når du er på farten. Konfigurer opplåsing med Touch ID eller Face ID i iOS Innstillinger-appen.";
 
 
 /*  */
-"faq.what_is_osm.question" = "Hva er Open Street Map og hvorfor bruker vi det for Soundscape?";
+"faq.what_is_osm.question" = "Hva er Open Street Map og hvorfor bruker vi det for Openscape?";
 
 
 /*  */
-"faq.what_is_osm.answer" = "Soundscape tegner geografiske kartdata for å gi informasjonsmeldinger i appen. Vi bruker Open Street Map (www.openstreetmap.org) som hovedkartkilde, som er en omfattende fellesskapsgenerert kartplattform. Den gjør det mulig for organisasjoner og enkeltpersoner å forbedre kvaliteten og detaljnivået på informasjonen som leveres, og tilgjengeligheten til områdene ved å bruke Open Street Map-kartredigeringsverktøy.";
+"faq.what_is_osm.answer" = "Openscape tegner geografiske kartdata for å gi informasjonsmeldinger i appen. Vi bruker Open Street Map (www.openstreetmap.org) som hovedkartkilde, som er en omfattende fellesskapsgenerert kartplattform. Den gjør det mulig for organisasjoner og enkeltpersoner å forbedre kvaliteten og detaljnivået på informasjonen som leveres, og tilgjengeligheten til områdene ved å bruke Open Street Map-kartredigeringsverktøy.";
 
 
 /*  */
@@ -4335,7 +4335,7 @@
 
 
 /*  */
-"faq.tip.setting_beacon_on_address" = "Du kan angi et lydsignal på en hvilken som helst adresse. Søk etter adressen fra hovedskjermen til Soundscape. Etter at du har valgt adressen i søkeresultatene, vises skjermen Posisjonsinformasjon. Der finner du alternativet Start lydsignal på adressen. På denne måten kan du angi et lydsignal på virksomheter, steder, interessepunkter og boligområder som ikke er i Open Street Maps.";
+"faq.tip.setting_beacon_on_address" = "Du kan angi et lydsignal på en hvilken som helst adresse. Søk etter adressen fra hovedskjermen til Openscape. Etter at du har valgt adressen i søkeresultatene, vises skjermen Posisjonsinformasjon. Der finner du alternativet Start lydsignal på adressen. På denne måten kan du angi et lydsignal på virksomheter, steder, interessepunkter og boligområder som ikke er i Open Street Maps.";
 
 
 /*  */
@@ -4347,11 +4347,11 @@
 
 
 /*  */
-"faq.tip.turning_off_auto_callouts" = "Hvis du fremdeles vil samhandle med Soundscape, men ikke vil høre automatiske meldinger, kan du slå av meldinger ved å gå til delen Administrer meldinger på siden Innstillinger fra menyen. Hvis du ikke kommer til å bruke Soundscape, kan du sette appen i dvale- eller pausemodus ved å bruke knappen Sett i dvalemodus på startskjermen.";
+"faq.tip.turning_off_auto_callouts" = "Hvis du fremdeles vil samhandle med Openscape, men ikke vil høre automatiske meldinger, kan du slå av meldinger ved å gå til delen Administrer meldinger på siden Innstillinger fra menyen. Hvis du ikke kommer til å bruke Openscape, kan du sette appen i dvale- eller pausemodus ved å bruke knappen Sett i dvalemodus på startskjermen.";
 
 
 /*  */
-"faq.tip.hold_phone_flat" = "Soundscape fungerer best når du holder telefonen flatt med skjermen mot himmelen og toppen av telefonen pekende vekk fra deg.";
+"faq.tip.hold_phone_flat" = "Openscape fungerer best når du holder telefonen flatt med skjermen mot himmelen og toppen av telefonen pekende vekk fra deg.";
 
 
 /*  */

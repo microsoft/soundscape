@@ -299,7 +299,7 @@
 
 
 /*  */
-"general.error.network_connection_required.deleting_data" = "É necessária uma ligação de rede para eliminar e recarregar dados do mapa do Soundscape. Verifique se o telemóvel não está em modo de voo.";
+"general.error.network_connection_required.deleting_data" = "É necessária uma ligação de rede para eliminar e recarregar dados do mapa do Openscape. Verifique se o telemóvel não está em modo de voo.";
 
 
 /*  */
@@ -335,7 +335,7 @@
 
 
 /*  */
-"device_motion.enable.instructions" = "Ative Seguimento do Movimento e fitness na aplicação Definições para continuar.\n\n1. Prima Abrir Definições\n2. Prima o botão Anterior (chamado Definições)\n3. Selecione Privacidade\n4. Selecione Movimento e fitness\n5. Ative Controlo de fitness\n6. Reinicie o Soundscape";
+"device_motion.enable.instructions" = "Ative Seguimento do Movimento e fitness na aplicação Definições para continuar.\n\n1. Prima Abrir Definições\n2. Prima o botão Anterior (chamado Definições)\n3. Selecione Privacidade\n4. Selecione Movimento e fitness\n5. Ative Controlo de fitness\n6. Reinicie o Openscape";
 
 
 /*  */
@@ -631,11 +631,11 @@
 
 
 /*  */
-"troubleshooting.check_audio.hint" = "Faça duplo toque para verificar o estado dos auscultadores que está a utilizar com o Soundscape.";
+"troubleshooting.check_audio.hint" = "Faça duplo toque para verificar o estado dos auscultadores que está a utilizar com o Openscape.";
 
 
 /*  */
-"troubleshooting.check_audio.explanation" = "Toque neste botão para ouvir informações sobre o estado dos auscultadores que está a utilizar com o Soundscape.";
+"troubleshooting.check_audio.explanation" = "Toque neste botão para ouvir informações sobre o estado dos auscultadores que está a utilizar com o Openscape.";
 
 
 /*  */
@@ -647,7 +647,7 @@
 
 
 /*  */
-"troubleshooting.cache.explanation" = "O openscape transfere dados do mapa à medida que caminha, para poder informá-lo sobre os pontos e os locais em seu redor. Se tiver problemas com o Soundscape, ou se este estiver a utilizar demasiada memória, poderá limpar os dados do mapa armazenados; o openscape só voltará a transferir os dados do mapa perto da sua localização atual.";
+"troubleshooting.cache.explanation" = "O openscape transfere dados do mapa à medida que caminha, para poder informá-lo sobre os pontos e os locais em seu redor. Se tiver problemas com o Openscape, ou se este estiver a utilizar demasiada memória, poderá limpar os dados do mapa armazenados; o openscape só voltará a transferir os dados do mapa perto da sua localização atual.";
 
 
 /*  */
@@ -815,7 +815,7 @@
 
 
 /*  */
-"preview.title" = "Soundscape Street Preview";
+"preview.title" = "Openscape Street Preview";
 
 
 /*  */
@@ -999,7 +999,7 @@
 
 
 /*  */
-"preview.tutorial.content.3" = "Em cada cruzamento, pode utilizar o telemóvel novamente para escolher a rua por onde pretende seguir; alternativamente, pode explorar as imediações utilizando os familiares botões do Soundscape, localizados na parte inferior do ecrã. Pode tocar em \"Procurar\" para iniciar o sinal de áudio em qualquer ponto de interesse, alterar a localização ou apenas explorar a área mais detalhadamente.";
+"preview.tutorial.content.3" = "Em cada cruzamento, pode utilizar o telemóvel novamente para escolher a rua por onde pretende seguir; alternativamente, pode explorar as imediações utilizando os familiares botões do Openscape, localizados na parte inferior do ecrã. Pode tocar em \"Procurar\" para iniciar o sinal de áudio em qualquer ponto de interesse, alterar a localização ou apenas explorar a área mais detalhadamente.";
 
 
 /*  */
@@ -1455,11 +1455,11 @@
 
 
 /*  */
-"first_use_experience.share.alert.title" = "Partilhar no Soundscape";
+"first_use_experience.share.alert.title" = "Partilhar no Openscape";
 
 
 /*  */
-"first_use_experience.share.alert.message" = "Quando partilhar um marco ou uma rota do Soundscape, está a partilhar as localizações associadas a esse marco ou rota. Só deve partilhar com pessoas em quem confia.";
+"first_use_experience.share.alert.message" = "Quando partilhar um marco ou uma rota do Openscape, está a partilhar as localizações associadas a esse marco ou rota. Só deve partilhar com pessoas em quem confia.";
 
 
 /*  */
@@ -1531,7 +1531,7 @@
 
 
 /*  */
-"user_activity.search.title" = "Procurar no Soundscape";
+"user_activity.search.title" = "Procurar no Openscape";
 
 
 /*  */
@@ -1591,7 +1591,7 @@
 
 
 /*  */
-"routes.no_routes.hint.2" = "Enquanto estiver a percorrer a sua rota com o Soundscape, será informado quando chegar a cada ponto de passagem e o Sinal de Áudio avançará automaticamente para o ponto de passagem seguinte.";
+"routes.no_routes.hint.2" = "Enquanto estiver a percorrer a sua rota com o Openscape, será informado quando chegar a cada ponto de passagem e o Sinal de Áudio avançará automaticamente para o ponto de passagem seguinte.";
 
 
 /*  */
@@ -1975,11 +1975,11 @@
 
 
 /*  */
-"sleep.sleeping.message" = "O openscape está atualmente em modo de suspensão. Isto impede que o openscape utilize os Serviços de localização ou transfira dados. Isto poupa a bateria quando não estiver a utilizar o Soundscape. Toque no botão abaixo para reativar o Soundscape.";
+"sleep.sleeping.message" = "O openscape está atualmente em modo de suspensão. Isto impede que o openscape utilize os Serviços de localização ou transfira dados. Isto poupa a bateria quando não estiver a utilizar o Openscape. Toque no botão abaixo para reativar o Openscape.";
 
 
 /*  */
-"sleep.sleep.acc_hint" = "Faça duplo toque para suspender o Soundscape";
+"sleep.sleep.acc_hint" = "Faça duplo toque para suspender o Openscape";
 
 
 /*  */
@@ -2611,7 +2611,7 @@
 
 
 /*  */
-"menu.learning_resources" = "Blogue do Soundscape";
+"menu.learning_resources" = "Blogue do Openscape";
 
 
 /*  */
@@ -2731,7 +2731,7 @@
 
 
 /*  */
-"devices.connect_headset.unsupported_firmware" = "Os AR Headphones têm de ser atualizados para que possam ser ligados ao Soundscape. Aceda à aplicação Cortana para atualizar os auscultadores.";
+"devices.connect_headset.unsupported_firmware" = "Os AR Headphones têm de ser atualizados para que possam ser ligados ao Openscape. Aceda à aplicação Cortana para atualizar os auscultadores.";
 
 
 /*  */
@@ -2747,7 +2747,7 @@
 
 
 /*  */
-"devices.connect_headset.audio" = "Antes de ligar os auscultadores ao Soundscape, certifique-se de que estão emparelhados com o seu telemóvel. Se ainda não estiverem, aceda à secção Bluetooth da aplicação Definições do iOS para emparelhar o dispositivo e, em seguida, volte ao Soundscape.";
+"devices.connect_headset.audio" = "Antes de ligar os auscultadores ao Openscape, certifique-se de que estão emparelhados com o seu telemóvel. Se ainda não estiverem, aceda à secção Bluetooth da aplicação Definições do iOS para emparelhar o dispositivo e, em seguida, volte ao Openscape.";
 
 
 /*  */
@@ -2779,7 +2779,7 @@
 
 
 /*  */
-"devices.test_headset.continue" = "Voltar ao Soundscape";
+"devices.test_headset.continue" = "Voltar ao Openscape";
 
 
 /*  */
@@ -2791,7 +2791,7 @@
 
 
 /*  */
-"devices.forget_headset.prompt.explanation" = "Esta ação irá desligar os auscultadores do Soundscape. Poderá voltar a ligá-los ao openscape aqui.";
+"devices.forget_headset.prompt.explanation" = "Esta ação irá desligar os auscultadores do Openscape. Poderá voltar a ligá-los ao openscape aqui.";
 
 
 /*  */
@@ -2911,7 +2911,7 @@
 
 
 /*  */
-"behavior.experiences.no_events.caption.1" = "Organizações sem fins lucrativos, empresas e administrações regionais poderão criar as suas próprias experiências baseadas no Soundscape. Os exemplos incluem programas e eventos desportivos adaptáveis, atividades de caça ao tesouro, percursos organizados, guias de cidades organizados e muito mais.";
+"behavior.experiences.no_events.caption.1" = "Organizações sem fins lucrativos, empresas e administrações regionais poderão criar as suas próprias experiências baseadas no Openscape. Os exemplos incluem programas e eventos desportivos adaptáveis, atividades de caça ao tesouro, percursos organizados, guias de cidades organizados e muito mais.";
 
 
 /*  */
@@ -2935,7 +2935,7 @@
 
 
 /*  */
-"behavior.scavenger_hunt.callout.pausing_hunt" = "A voltar à experiência de utilização normal do Soundscape.";
+"behavior.scavenger_hunt.callout.pausing_hunt" = "A voltar à experiência de utilização normal do Openscape.";
 
 
 /*  */
@@ -3178,7 +3178,7 @@
 
 
 /*  */
-"tutorial.beacons.text.OrientationAirPods" = "Os AirPods estão ligados ao Soundscape. Quando os AirPods estão ligados ao Soundscape, não interessa a forma como segura no telemóvel. Poderá mesmo guardá-lo num bolso ou numa mala.";
+"tutorial.beacons.text.OrientationAirPods" = "Os AirPods estão ligados ao Openscape. Quando os AirPods estão ligados ao Openscape, não interessa a forma como segura no telemóvel. Poderá mesmo guardá-lo num bolso ou numa mala.";
 
 
 /*  */
@@ -3262,7 +3262,7 @@
 
 
 /*  */
-"help.configuration.section.title" = "Configurar o Soundscape";
+"help.configuration.section.title" = "Configurar o Openscape";
 
 
 /*  */
@@ -3282,7 +3282,7 @@
 
 
 /*  */
-"help.config.voices.content" = "O openscape pode utilizar qualquer uma das vozes que transferiu na aplicação Definições do iOS, exceto as vozes da Siri que não estão disponíveis para o Soundscape. Recomendamos que escolha uma das vozes \"Melhoradas\" porque estas têm uma qualidade muito superior. No entanto, para o fazer, necessita de transferir primeiro uma voz melhorada. Pode transferir vozes na aplicação Definições do iOS acedendo a Acessibilidade > Conteúdo enunciado > Vozes e tocando numa voz. Com a aplicação Soundscape, pode selecionar a voz que pretende utilizar acedendo a Definições no menu principal e, em seguida, selecionando \"Voz\".";
+"help.config.voices.content" = "O openscape pode utilizar qualquer uma das vozes que transferiu na aplicação Definições do iOS, exceto as vozes da Siri que não estão disponíveis para o Openscape. Recomendamos que escolha uma das vozes \"Melhoradas\" porque estas têm uma qualidade muito superior. No entanto, para o fazer, necessita de transferir primeiro uma voz melhorada. Pode transferir vozes na aplicação Definições do iOS acedendo a Acessibilidade > Conteúdo enunciado > Vozes e tocando numa voz. Com a aplicação Openscape, pode selecionar a voz que pretende utilizar acedendo a Definições no menu principal e, em seguida, selecionando \"Voz\".";
 
 
 /*  */
@@ -3290,7 +3290,7 @@
 
 
 /*  */
-"help.offline.description" = "Quando não existe ligação à Internet, ou quando ocorre uma falha nos serviços do Soundscape, o openscape passa para um modo offline. O openscape continuará a funcionar, mas algumas funções poderão estar limitadas.";
+"help.offline.description" = "Quando não existe ligação à Internet, ou quando ocorre uma falha nos serviços do Openscape, o openscape passa para um modo offline. O openscape continuará a funcionar, mas algumas funções poderão estar limitadas.";
 
 
 /*  */
@@ -3306,7 +3306,7 @@
 
 
 /*  */
-"help.offline.troubleshooting_description" = "O openscape tentará retomar o funcionamento normal quando o telemóvel estiver ligado a uma rede Wi-Fi ou os dados móveis estiverem ativados e estiver numa rede com bom sinal. Se o telemóvel tiver uma boa ligação à Internet e o openscape não retomar o funcionamento normal, é possível que exista uma falha nos serviços do Soundscape.";
+"help.offline.troubleshooting_description" = "O openscape tentará retomar o funcionamento normal quando o telemóvel estiver ligado a uma rede Wi-Fi ou os dados móveis estiverem ativados e estiver numa rede com bom sinal. Se o telemóvel tiver uma boa ligação à Internet e o openscape não retomar o funcionamento normal, é possível que exista uma falha nos serviços do Openscape.";
 
 
 /*  */
@@ -3418,7 +3418,7 @@
 
 
 /*  */
-"first_launch.soundscape_language" = "Idioma do Soundscape";
+"first_launch.soundscape_language" = "Idioma do Openscape";
 
 
 /*  */
@@ -3482,7 +3482,7 @@
 
 
 /*  */
-"first_launch.welcome.description" = "Navegue com confiança utilizando o áudio espacial do Soundscape";
+"first_launch.welcome.description" = "Navegue com confiança utilizando o áudio espacial do Openscape";
 
 
 /*  */
@@ -3490,7 +3490,7 @@
 
 
 /*  */
-"first_launch.headphones.title" = "Ouvir o Soundscape";
+"first_launch.headphones.title" = "Ouvir o Openscape";
 
 
 /*  */
@@ -3534,11 +3534,11 @@
 
 
 /*  */
-"first_launch.permissions.title" = "Navegar com o Soundscape";
+"first_launch.permissions.title" = "Navegar com o Openscape";
 
 
 /*  */
-"first_launch.permissions.message" = "Quando navegar com o Soundscape, será orientado por um sinal de áudio. Para tal, o openscape necessita que ative as permissões seguintes:";
+"first_launch.permissions.message" = "Quando navegar com o Openscape, será orientado por um sinal de áudio. Para tal, o openscape necessita que ative as permissões seguintes:";
 
 
 /*  */
@@ -3558,7 +3558,7 @@
 
 
 /*  */
-"first_launch.beacon.message.1" = "Quando navegar com o Soundscape, irá ouvir o sinal de áudio na direção do seu destino. Seguindo o som, saberá sempre em que direção deve dirigir-se.";
+"first_launch.beacon.message.1" = "Quando navegar com o Openscape, irá ouvir o sinal de áudio na direção do seu destino. Seguindo o som, saberá sempre em que direção deve dirigir-se.";
 
 
 /*  */
@@ -3610,7 +3610,7 @@
 
 
 /*  */
-"first_launch.prompt.message" = "Está pronto para a primeira caminhada com o Soundscape. Para o experimentar agora, escolha um destino nas proximidades e inicie o sinal de áudio para o ouvir vindo da direção do destino.";
+"first_launch.prompt.message" = "Está pronto para a primeira caminhada com o Openscape. Para o experimentar agora, escolha um destino nas proximidades e inicie o sinal de áudio para o ouvir vindo da direção do destino.";
 
 
 /*  */
@@ -3734,11 +3734,11 @@
 
 
 /*  */
-"help.text.markers.content.3" = "O openscape irá emitir automaticamente avisos sobre os locais marcados enquanto passa por eles ou se aproxima deles. Também é possível utilizar o botão Marcos nas proximidades, localizado na parte inferior do ecrã principal do Soundscape, para ouvir um aviso espacial dos locais marcados em seu redor. Além disso, tem a capacidade de definir um sinal de áudio em qualquer local marcado. Quando o fizer, o sinal de áudio do openscape com o qual está familiarizado será emitido e poderá utilizá-lo como habitualmente.";
+"help.text.markers.content.3" = "O openscape irá emitir automaticamente avisos sobre os locais marcados enquanto passa por eles ou se aproxima deles. Também é possível utilizar o botão Marcos nas proximidades, localizado na parte inferior do ecrã principal do Openscape, para ouvir um aviso espacial dos locais marcados em seu redor. Além disso, tem a capacidade de definir um sinal de áudio em qualquer local marcado. Quando o fizer, o sinal de áudio do openscape com o qual está familiarizado será emitido e poderá utilizá-lo como habitualmente.";
 
 
 /*  */
-"help.text.creating_markers.content.1" = "É possível criar marcos de três formas: procurar o local que pretende guardar utilizando a barra de pesquisa, procurando um local utilizando o botão \"Locais nas Proximidades\" ou utilizando o botão \"Utilizar Localização Atual\". Todos estes itens podem ser encontrados no ecrã principal do Soundscape. Depois de ter encontrado o local pretendido, se o selecionar será apresentada a página \"Detalhes da Localização\". Nesta página, selecione o botão \"Guardar Marco\".";
+"help.text.creating_markers.content.1" = "É possível criar marcos de três formas: procurar o local que pretende guardar utilizando a barra de pesquisa, procurando um local utilizando o botão \"Locais nas Proximidades\" ou utilizando o botão \"Utilizar Localização Atual\". Todos estes itens podem ser encontrados no ecrã principal do Openscape. Depois de ter encontrado o local pretendido, se o selecionar será apresentada a página \"Detalhes da Localização\". Nesta página, selecione o botão \"Guardar Marco\".";
 
 
 /*  */
@@ -3774,7 +3774,7 @@
 
 
 /*  */
-"help.using_headsets.airpods.what" = "O openscape suporta áudio espacial com deteção dinâmica do movimento da cabeça quando são utilizados AirPods compatíveis. Quando ligados ao Soundscape, os sensores existentes nos AirPods indicam ao openscape a direção em que a sua cabeça está virada. Isto ajuda o openscape a melhorar a experiência de áudio, tornando-a mais natural à medida que se desloca. Quando utilizar o openscape com AirPods ligados, não necessita de segurar no telemóvel para que o openscape funcione corretamente.";
+"help.using_headsets.airpods.what" = "O openscape suporta áudio espacial com deteção dinâmica do movimento da cabeça quando são utilizados AirPods compatíveis. Quando ligados ao Openscape, os sensores existentes nos AirPods indicam ao openscape a direção em que a sua cabeça está virada. Isto ajuda o openscape a melhorar a experiência de áudio, tornando-a mais natural à medida que se desloca. Quando utilizar o openscape com AirPods ligados, não necessita de segurar no telemóvel para que o openscape funcione corretamente.";
 
 
 /*  */
@@ -3782,11 +3782,11 @@
 
 
 /*  */
-"help.using_headsets.airpods.how.1" = "<b>Estabelecer Ligação a um Dispositivo</b>:<br/> Aceda ao item \"Auscultadores com Deteção do Movimento da Cabeça\" do menu do openscape para estabelecer ligação aos AirPods e siga as instruções apresentadas no ecrã. Note que terá de emparelhar os AirPods com o telemóvel nas definições de Bluetooth antes de lhes estabelecer ligação no Soundscape.";
+"help.using_headsets.airpods.how.1" = "<b>Estabelecer Ligação a um Dispositivo</b>:<br/> Aceda ao item \"Auscultadores com Deteção do Movimento da Cabeça\" do menu do openscape para estabelecer ligação aos AirPods e siga as instruções apresentadas no ecrã. Note que terá de emparelhar os AirPods com o telemóvel nas definições de Bluetooth antes de lhes estabelecer ligação no Openscape.";
 
 
 /*  */
-"help.using_headsets.airpods.how.2" = "<b>Utilizar os Controlos Multimédia dos Auscultadores</b>:<br/> Quando os controlos multimédia estão ativados nas definições do Soundscape, é possível utilizar os controlos multimédia dos AirPods para desativar ou ativar o sinal, emitir um aviso de localização ou repetir o último aviso. Para mais informações, consulte a secção \"Utilizar Controlos Multimédia\" da ajuda.";
+"help.using_headsets.airpods.how.2" = "<b>Utilizar os Controlos Multimédia dos Auscultadores</b>:<br/> Quando os controlos multimédia estão ativados nas definições do Openscape, é possível utilizar os controlos multimédia dos AirPods para desativar ou ativar o sinal, emitir um aviso de localização ou repetir o último aviso. Para mais informações, consulte a secção \"Utilizar Controlos Multimédia\" da ajuda.";
 
 
 /*  */
@@ -4070,7 +4070,7 @@
 
 
 /*  */
-"share.prompt.title" = "Está a gostar do Soundscape?";
+"share.prompt.title" = "Está a gostar do Openscape?";
 
 
 /*  */
@@ -4078,7 +4078,7 @@
 
 
 /*  */
-"share.action.message" = "Experimente o Soundscape, uma aplicação que gosto de utilizar para navegação com som 3D:";
+"share.action.message" = "Experimente o Openscape, uma aplicação que gosto de utilizar para navegação com som 3D:";
 
 
 /*  */
@@ -4114,7 +4114,7 @@
 
 
 /*  */
-"faq.when_to_use.question" = "Quando devo utilizar o Soundscape?";
+"faq.when_to_use.question" = "Quando devo utilizar o Openscape?";
 
 
 /*  */
@@ -4122,11 +4122,11 @@
 
 
 /*  */
-"faq.markers_function.answer" = "Os marcos são locais que guardou. Podem ser locais detetáveis pela aplicação ou locais completamente novos adicionados por si. Pode guardar a sua localização atual como um marco selecionando o botão \"Utilizar Localização Atual\" no ecrã principal e, em seguida, selecionando \"Guardar como Marco\". Pode guardar outras localizações como marcos procurando o local que pretende guardar utilizando a barra de pesquisa ou utilizando o botão \"Locais nas Proximidades\", ambos localizados no ecrã principal do Soundscape. Depois de encontrar o local pretendido, quando o selecionar será apresentada a página \"Detalhes da Localização\". Nesta página, selecione o botão chamado \"Guardar como Marco\".";
+"faq.markers_function.answer" = "Os marcos são locais que guardou. Podem ser locais detetáveis pela aplicação ou locais completamente novos adicionados por si. Pode guardar a sua localização atual como um marco selecionando o botão \"Utilizar Localização Atual\" no ecrã principal e, em seguida, selecionando \"Guardar como Marco\". Pode guardar outras localizações como marcos procurando o local que pretende guardar utilizando a barra de pesquisa ou utilizando o botão \"Locais nas Proximidades\", ambos localizados no ecrã principal do Openscape. Depois de encontrar o local pretendido, quando o selecionar será apresentada a página \"Detalhes da Localização\". Nesta página, selecione o botão chamado \"Guardar como Marco\".";
 
 
 /*  */
-"faq.section.getting_the_best_experience" = "Como posso tirar o máximo partido do Soundscape?";
+"faq.section.getting_the_best_experience" = "Como posso tirar o máximo partido do Openscape?";
 
 
 /*  */
@@ -4166,7 +4166,7 @@
 
 
 /*  */
-"faq.beacon_on_home.answer" = "O openscape suporta a definição de sinais em endereços. Para definir um sinal em sua casa, ou em qualquer outro endereço, procure uma localização no ecrã principal do Soundscape. No ecrã \"Detalhes da Localização\", toque no botão \"Iniciar Sinal de Áudio\".";
+"faq.beacon_on_home.answer" = "O openscape suporta a definição de sinais em endereços. Para definir um sinal em sua casa, ou em qualquer outro endereço, procure uma localização no ecrã principal do Openscape. No ecrã \"Detalhes da Localização\", toque no botão \"Iniciar Sinal de Áudio\".";
 
 
 /*  */
@@ -4198,7 +4198,7 @@
 
 
 /*  */
-"faq.why_not_every_business.answer" = "O openscape foi concebido para não ser demasiado ruidoso. Além disso, utiliza o Open Street Map como origem de dados de back-end. O Open Street Map (OSM, https://www.openstreetmap.org/) é um mapa do mundo desenvolvido e editado pela comunidade, cujos dados são introduzidos e organizados por pessoas individuais. Se uma empresa ou um ponto de interesse não for anunciada pelo Soundscape, a razão mais provável é que ainda não tenha sido adicionada (ou, em alguns casos, atualizada) por um membro da comunidade do OSM.";
+"faq.why_not_every_business.answer" = "O openscape foi concebido para não ser demasiado ruidoso. Além disso, utiliza o Open Street Map como origem de dados de back-end. O Open Street Map (OSM, https://www.openstreetmap.org/) é um mapa do mundo desenvolvido e editado pela comunidade, cujos dados são introduzidos e organizados por pessoas individuais. Se uma empresa ou um ponto de interesse não for anunciada pelo Openscape, a razão mais provável é que ainda não tenha sido adicionada (ou, em alguns casos, atualizada) por um membro da comunidade do OSM.";
 
 
 /*  */
@@ -4214,11 +4214,11 @@
 
 
 /*  */
-"faq.miss_a_callout.answer" = "O openscape tem uma lista dos avisos recentes, para que possa rever avisos que tenha perdido. Para os encontrar, toque na barra de pesquisa existente no ecrã principal do Soundscape. Na parte inferior desta página, existe uma secção chamada \"Avisos Recentes\", onde estará listado o aviso que perdeu.";
+"faq.miss_a_callout.answer" = "O openscape tem uma lista dos avisos recentes, para que possa rever avisos que tenha perdido. Para os encontrar, toque na barra de pesquisa existente no ecrã principal do Openscape. Na parte inferior desta página, existe uma secção chamada \"Avisos Recentes\", onde estará listado o aviso que perdeu.";
 
 
 /*  */
-"faq.supported_phones.question" = "Que telemóveis são compatíveis com o Soundscape?";
+"faq.supported_phones.question" = "Que telemóveis são compatíveis com o Openscape?";
 
 
 /*  */
@@ -4226,11 +4226,11 @@
 
 
 /*  */
-"faq.supported_headsets.question" = "Que auscultadores devo utilizar com o Soundscape?";
+"faq.supported_headsets.question" = "Que auscultadores devo utilizar com o Openscape?";
 
 
 /*  */
-"faq.supported_headsets.answer" = "Os auscultadores que utilizar com o openscape são uma preferência pessoal e cada opção tem vantagens e compromissos. O único requisito específico é utilizar auscultadores estéreo para poder tirar partido dos avisos em áudio espacial 3D do Soundscape.";
+"faq.supported_headsets.answer" = "Os auscultadores que utilizar com o openscape são uma preferência pessoal e cada opção tem vantagens e compromissos. O único requisito específico é utilizar auscultadores estéreo para poder tirar partido dos avisos em áudio espacial 3D do Openscape.";
 
 
 /*  */
@@ -4274,11 +4274,11 @@
 
 
 /*  */
-"faq.mobile_data_use.question" = "Que quantidade de dados móveis utiliza o Soundscape?";
+"faq.mobile_data_use.question" = "Que quantidade de dados móveis utiliza o Openscape?";
 
 
 /*  */
-"faq.mobile_data_use.answer" = "A quantidade de dados móveis utilizada depende da forma como utiliza o Soundscape. Concebemos o openscape para utilizar apenas uma pequena quantidade de dados quando efetua tarefas como guardar pontos à medida que caminha, para que não tenha de os transferir novamente sempre que voltar a um local onde já tenha estado. Para reduzir a quantidade de dados móveis utilizada, certifique-se de que está ligado a uma rede Wi-Fi sempre que possível, especialmente para transferir a aplicação. Quando não estiver a utilizar o Soundscape, deverá utilizar o botão \"Suspender\" parar colocar o openscape em modo de suspensão; alternativamente, feche a aplicação.";
+"faq.mobile_data_use.answer" = "A quantidade de dados móveis utilizada depende da forma como utiliza o Openscape. Concebemos o openscape para utilizar apenas uma pequena quantidade de dados quando efetua tarefas como guardar pontos à medida que caminha, para que não tenha de os transferir novamente sempre que voltar a um local onde já tenha estado. Para reduzir a quantidade de dados móveis utilizada, certifique-se de que está ligado a uma rede Wi-Fi sempre que possível, especialmente para transferir a aplicação. Quando não estiver a utilizar o Openscape, deverá utilizar o botão \"Suspender\" parar colocar o openscape em modo de suspensão; alternativamente, feche a aplicação.";
 
 
 /*  */
@@ -4294,11 +4294,11 @@
 
 
 /*  */
-"faq.use_with_wayfinding_apps.answer" = "O openscape foi concebido como uma aplicação de localização para ajudar a fornecer detalhes que poderá não conhecer sobre o ambiente que o rodeia. Embora não tenha sido concebido como uma aplicação de navegação curva-a-curva, pode ser utilizado juntamente com aplicações deste tipo para fornecer informações complementares. Para utilizar o openscape com estas aplicações, inicie primeiro a aplicação de navegação. Em seguida, passe para o openscape e defina um sinal no mesmo destino que a aplicação de navegação. Neste momento, ambas as aplicações estarão em execução e ouvirá direções de percurso da aplicação de navegação enquanto recebe atualizações sobre pontos de interesse, cruzamentos e a distância a que se encontra do destino provenientes do Soundscape.";
+"faq.use_with_wayfinding_apps.answer" = "O openscape foi concebido como uma aplicação de localização para ajudar a fornecer detalhes que poderá não conhecer sobre o ambiente que o rodeia. Embora não tenha sido concebido como uma aplicação de navegação curva-a-curva, pode ser utilizado juntamente com aplicações deste tipo para fornecer informações complementares. Para utilizar o openscape com estas aplicações, inicie primeiro a aplicação de navegação. Em seguida, passe para o openscape e defina um sinal no mesmo destino que a aplicação de navegação. Neste momento, ambas as aplicações estarão em execução e ouvirá direções de percurso da aplicação de navegação enquanto recebe atualizações sobre pontos de interesse, cruzamentos e a distância a que se encontra do destino provenientes do Openscape.";
 
 
 /*  */
-"faq.controlling_what_you_hear.question" = "Como posso controlar o que oiço e quando o oiço no Soundscape?";
+"faq.controlling_what_you_hear.question" = "Como posso controlar o que oiço e quando o oiço no Openscape?";
 
 
 /*  */
@@ -4314,15 +4314,15 @@
 
 
 /*  */
-"faq.personalize_experience.question" = "De que formas posso personalizar a minha experiência de utilização do Soundscape?";
+"faq.personalize_experience.question" = "De que formas posso personalizar a minha experiência de utilização do Openscape?";
 
 
 /*  */
-"faq.personalize_experience.answer" = "O openscape permite-lhe personalizar três aspetos chave dos avisos que ouve enquanto caminha:\n\n1. Voz: pode escolher qual das vozes disponíveis no iOS pretende utilizar no Soundscape, bem como a velocidade a que os avisos são lidos. No Menu, selecione Definições e, em seguida, Voz, para ajudar as definições de Velocidade de enunciação e Voz. É possível transferir vozes adicionais e vozes melhoradas com uma qualidade superior na aplicação Definições do iOS, em Definições > Acessibilidade > Conteúdo enunciado > Vozes. \n2. Distância Métrica: o openscape permite-lhe ouvir todas as distâncias em pés ou metros. No Menu, selecione Definições. A secção Unidades de medida permite-lhe alternar entre duas opções: Imperial (pés) e Métrica (metros).\n3. Marcos: pode criar marcos para qualquer coisa que seja importante para si; por exemplo, a sua casa, o seu escritório e a sua mercearia favorita. Em seguida, o openscape irá avisá-lo automaticamente dos locais marcados à medida que caminha ou se aproxima destes. Também poderá utiliza o botão Marcos nas Proximidades, localizado na parte inferior do ecrã principal do Soundscape, para ouvir um aviso espacial sobre os locais marcados perto de si. Estes marcos são pessoais e não estarão disponíveis para mais ninguém.\n\nAlém das definições indicadas acima, as seguintes definições do VoiceOver podem influenciar o comportamento do Soundscape:\n\n1. Sugestões do VoiceOver: quando as sugestões do VoiceOver estão ativadas, irá ouvir mais informações sobre todos os botões existentes no ecrã principal do Soundscape. Pode ativar as sugestões do VoiceOver navegando para a aplicação Definições do iOS, acedendo a Acessibilidade > VoiceOver > Verbosidade e ativando a definição Enunciar dicas.\n2. Redução de nível de áudio: o openscape foi concebido para funcionar com a Redução de nível de áudio desativada. Quando a Redução de nível de áudio está ativada, poderá ser difícil ouvir os avisos automáticos se o VoiceOver for utilizado em simultâneo. Recomendamos que desative a Redução de nível de áudio para facilitar a audição dos avisos automáticos que ocorram enquanto está a interagir com o telemóvel. É possível desativar a Redução de nível de áudio nas definições do VoiceOver ou através do rotor do VoiceOver.\n3. Touch ID ou Face ID para Desbloquear: definir o desbloqueio do telemóvel através do Touch ID ou do Face ID permitirá desbloquear o telemóvel de forma rápida e fácil, o que, por sua vez, permitirá aceder o mais rapidamente possível aos botões A Minha Localização, Em Meu Redor e À Minha Frente enquanto se desloca. Configure o desbloqueio com o Touch ID ou Face ID na aplicação Definições do iOS.";
+"faq.personalize_experience.answer" = "O openscape permite-lhe personalizar três aspetos chave dos avisos que ouve enquanto caminha:\n\n1. Voz: pode escolher qual das vozes disponíveis no iOS pretende utilizar no Openscape, bem como a velocidade a que os avisos são lidos. No Menu, selecione Definições e, em seguida, Voz, para ajudar as definições de Velocidade de enunciação e Voz. É possível transferir vozes adicionais e vozes melhoradas com uma qualidade superior na aplicação Definições do iOS, em Definições > Acessibilidade > Conteúdo enunciado > Vozes. \n2. Distância Métrica: o openscape permite-lhe ouvir todas as distâncias em pés ou metros. No Menu, selecione Definições. A secção Unidades de medida permite-lhe alternar entre duas opções: Imperial (pés) e Métrica (metros).\n3. Marcos: pode criar marcos para qualquer coisa que seja importante para si; por exemplo, a sua casa, o seu escritório e a sua mercearia favorita. Em seguida, o openscape irá avisá-lo automaticamente dos locais marcados à medida que caminha ou se aproxima destes. Também poderá utiliza o botão Marcos nas Proximidades, localizado na parte inferior do ecrã principal do Openscape, para ouvir um aviso espacial sobre os locais marcados perto de si. Estes marcos são pessoais e não estarão disponíveis para mais ninguém.\n\nAlém das definições indicadas acima, as seguintes definições do VoiceOver podem influenciar o comportamento do Openscape:\n\n1. Sugestões do VoiceOver: quando as sugestões do VoiceOver estão ativadas, irá ouvir mais informações sobre todos os botões existentes no ecrã principal do Openscape. Pode ativar as sugestões do VoiceOver navegando para a aplicação Definições do iOS, acedendo a Acessibilidade > VoiceOver > Verbosidade e ativando a definição Enunciar dicas.\n2. Redução de nível de áudio: o openscape foi concebido para funcionar com a Redução de nível de áudio desativada. Quando a Redução de nível de áudio está ativada, poderá ser difícil ouvir os avisos automáticos se o VoiceOver for utilizado em simultâneo. Recomendamos que desative a Redução de nível de áudio para facilitar a audição dos avisos automáticos que ocorram enquanto está a interagir com o telemóvel. É possível desativar a Redução de nível de áudio nas definições do VoiceOver ou através do rotor do VoiceOver.\n3. Touch ID ou Face ID para Desbloquear: definir o desbloqueio do telemóvel através do Touch ID ou do Face ID permitirá desbloquear o telemóvel de forma rápida e fácil, o que, por sua vez, permitirá aceder o mais rapidamente possível aos botões A Minha Localização, Em Meu Redor e À Minha Frente enquanto se desloca. Configure o desbloqueio com o Touch ID ou Face ID na aplicação Definições do iOS.";
 
 
 /*  */
-"faq.what_is_osm.question" = "O que é o Open Street Map e por que motivo é utilizado no Soundscape?";
+"faq.what_is_osm.question" = "O que é o Open Street Map e por que motivo é utilizado no Openscape?";
 
 
 /*  */
@@ -4334,7 +4334,7 @@
 
 
 /*  */
-"faq.tip.setting_beacon_on_address" = "Pode definir um sinal em qualquer endereço. Procure o endereço no ecrã principal do Soundscape. Depois de selecionar o endereço nos resultados da pesquisa, será mostrado um ecrã \"Detalhes da Localização\" com uma opção para \"Iniciar Sinal de Áudio\" no endereço. Isto permite-lhe definir um sinal em empresas, locais, pontos de interesse e residências que não se encontrem no Open Street Maps.";
+"faq.tip.setting_beacon_on_address" = "Pode definir um sinal em qualquer endereço. Procure o endereço no ecrã principal do Openscape. Depois de selecionar o endereço nos resultados da pesquisa, será mostrado um ecrã \"Detalhes da Localização\" com uma opção para \"Iniciar Sinal de Áudio\" no endereço. Isto permite-lhe definir um sinal em empresas, locais, pontos de interesse e residências que não se encontrem no Open Street Maps.";
 
 
 /*  */
@@ -4346,7 +4346,7 @@
 
 
 /*  */
-"faq.tip.turning_off_auto_callouts" = "Se pretender interagir com o openscape mas não pretender ouvir os avisos automáticos, pode desativá-los acedendo à secção \"Gerir Avisos\" da página \"Definições\" a partir do menu. Alternativamente, se não for utilizar o Soundscape, poderá colocá-lo em Modo de suspensão ou pausa utilizando o botão \"Suspender\" no menu principal.";
+"faq.tip.turning_off_auto_callouts" = "Se pretender interagir com o openscape mas não pretender ouvir os avisos automáticos, pode desativá-los acedendo à secção \"Gerir Avisos\" da página \"Definições\" a partir do menu. Alternativamente, se não for utilizar o Openscape, poderá colocá-lo em Modo de suspensão ou pausa utilizando o botão \"Suspender\" no menu principal.";
 
 
 /*  */

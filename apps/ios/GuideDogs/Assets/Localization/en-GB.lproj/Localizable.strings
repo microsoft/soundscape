@@ -155,7 +155,7 @@
 
 
 /*  */
-"general.alert.offline_default.message" = "Soundscape is working offline. Nevertheless, openscape will continue to work, but some functions may be limited.";
+"general.alert.offline_default.message" = "Openscape is working offline. Nevertheless, openscape will continue to work, but some functions may be limited.";
 
 
 /*  */
@@ -279,7 +279,7 @@
 
 
 /*  */
-"general.error.heading" = "Soundscape is not sure which direction you are facing. Please hold your phone flat or begin walking and try again";
+"general.error.heading" = "Openscape is not sure which direction you are facing. Please hold your phone flat or begin walking and try again";
 
 
 /*  */
@@ -299,7 +299,7 @@
 
 
 /*  */
-"general.error.network_connection_required.deleting_data" = "A network connection is required when deleting and reloading Soundscape's map data. Check that your phone is not in airplane mode.";
+"general.error.network_connection_required.deleting_data" = "A network connection is required when deleting and reloading Openscape's map data. Check that your phone is not in airplane mode.";
 
 
 /*  */
@@ -335,7 +335,7 @@
 
 
 /*  */
-"device_motion.enable.instructions" = "Turn On Fitness Tracking in the Settings app to continue.\n\n1. Press Open Settings\n2. Press the Back button (titled Settings)\n3. Select Privacy\n4. Select Motion & Fitness\n5. Turn on Fitness Tracking\n6. Restart Soundscape";
+"device_motion.enable.instructions" = "Turn On Fitness Tracking in the Settings app to continue.\n\n1. Press Open Settings\n2. Press the Back button (titled Settings)\n3. Select Privacy\n4. Select Motion & Fitness\n5. Turn on Fitness Tracking\n6. Restart Openscape";
 
 
 /*  */
@@ -375,7 +375,7 @@
 
 
 /*  */
-"settings.clear_cache.no_service.message" = "Soundscape is currently unable to connect to the internet. An internet connection is required when clearing the stored map data so that the map data can be refreshed.";
+"settings.clear_cache.no_service.message" = "Openscape is currently unable to connect to the internet. An internet connection is required when clearing the stored map data so that the map data can be refreshed.";
 
 
 /*  */
@@ -491,7 +491,7 @@
 
 
 /*  */
-"setting.audio.mix_with_others.confirmation" = "Turning this setting on will cause Soundscape's callouts and other audio to pause whenever you start using a different media app. You can return to openscape to resume callouts.";
+"setting.audio.mix_with_others.confirmation" = "Turning this setting on will cause Openscape's callouts and other audio to pause whenever you start using a different media app. You can return to openscape to resume callouts.";
 
 
 /*  */
@@ -631,11 +631,11 @@
 
 
 /*  */
-"troubleshooting.check_audio.hint" = "Double tap to check the status of the headphones you are using with Soundscape.";
+"troubleshooting.check_audio.hint" = "Double tap to check the status of the headphones you are using with Openscape.";
 
 
 /*  */
-"troubleshooting.check_audio.explanation" = "Tap this button to hear about the status of the headphones you are using with Soundscape.";
+"troubleshooting.check_audio.explanation" = "Tap this button to hear about the status of the headphones you are using with Openscape.";
 
 
 /*  */
@@ -647,7 +647,7 @@
 
 
 /*  */
-"troubleshooting.cache.explanation" = "Soundscape downloads map data as you walk around so that it can tell you about the things and places around you. If you are having issues with openscape or it is using too much memory, you can clear the stored map data and openscape will only redownload the map data near your current location.";
+"troubleshooting.cache.explanation" = "Openscape downloads map data as you walk around so that it can tell you about the things and places around you. If you are having issues with openscape or it is using too much memory, you can clear the stored map data and openscape will only redownload the map data near your current location.";
 
 
 /*  */
@@ -815,7 +815,7 @@
 
 
 /*  */
-"preview.title" = "Soundscape Street Preview";
+"preview.title" = "Openscape Street Preview";
 
 
 /*  */
@@ -1455,7 +1455,7 @@
 
 
 /*  */
-"first_use_experience.share.alert.title" = "Sharing in Soundscape";
+"first_use_experience.share.alert.title" = "Sharing in Openscape";
 
 
 /*  */
@@ -1531,7 +1531,7 @@
 
 
 /*  */
-"user_activity.search.title" = "Search in Soundscape";
+"user_activity.search.title" = "Search in Openscape";
 
 
 /*  */
@@ -1591,7 +1591,7 @@
 
 
 /*  */
-"routes.no_routes.hint.2" = "While out on your route with Soundscape, you will be informed on arrival to each waypoint, and the Audio Beacon will automatically advance to the next waypoint.";
+"routes.no_routes.hint.2" = "While out on your route with Openscape, you will be informed on arrival to each waypoint, and the Audio Beacon will automatically advance to the next waypoint.";
 
 
 /*  */
@@ -1971,11 +1971,11 @@
 
 
 /*  */
-"sleep.snoozing.message" = "Soundscape is currently snoozing. When you leave your current location, openscape will automatically wake up. This uses Location Services in a low power mode to conserve your phone's battery. Tap the button below to wake up now.";
+"sleep.snoozing.message" = "Openscape is currently snoozing. When you leave your current location, openscape will automatically wake up. This uses Location Services in a low power mode to conserve your phone's battery. Tap the button below to wake up now.";
 
 
 /*  */
-"sleep.sleeping.message" = "Soundscape is currently sleeping. This prevents openscape from using Location Services or downloading data. This conserves battery when you are not using Soundscape. Tap the button below to wake up Soundscape.";
+"sleep.sleeping.message" = "Openscape is currently sleeping. This prevents openscape from using Location Services or downloading data. This conserves battery when you are not using Openscape. Tap the button below to wake up Openscape.";
 
 
 /*  */
@@ -2611,7 +2611,7 @@
 
 
 /*  */
-"menu.learning_resources" = "Soundscape Blog";
+"menu.learning_resources" = "Openscape Blog";
 
 
 /*  */
@@ -2707,11 +2707,11 @@
 
 
 /*  */
-"devices.explain_ar.paired" = "Soundscape is not currently connected to your %@. Please ensure your headphones are turned on and near your phone.";
+"devices.explain_ar.paired" = "Openscape is not currently connected to your %@. Please ensure your headphones are turned on and near your phone.";
 
 
 /*  */
-"devices.explain_ar.connecting" = "Soundscape is connecting to your %@. One moment...";
+"devices.explain_ar.connecting" = "Openscape is connecting to your %@. One moment...";
 
 
 /*  */
@@ -2731,11 +2731,11 @@
 
 
 /*  */
-"devices.connect_headset.unsupported_firmware" = "Your AR Headphones need to be updated before they can connect to Soundscape. Go to the Cortana app to update your headphones.";
+"devices.connect_headset.unsupported_firmware" = "Your AR Headphones need to be updated before they can connect to Openscape. Go to the Cortana app to update your headphones.";
 
 
 /*  */
-"devices.connect_headset.failed" = "Soundscape was unable to connect to your headphones. Please try again later.";
+"devices.connect_headset.failed" = "Openscape was unable to connect to your headphones. Please try again later.";
 
 
 /*  */
@@ -2747,7 +2747,7 @@
 
 
 /*  */
-"devices.connect_headset.audio" = "Before connecting your headphones to Soundscape, make sure it is paired to your phone. If it is not yet paired, go to the Bluetooth section in the iOS Settings app to pair your device and then return to Soundscape.";
+"devices.connect_headset.audio" = "Before connecting your headphones to Openscape, make sure it is paired to your phone. If it is not yet paired, go to the Bluetooth section in the iOS Settings app to pair your device and then return to Openscape.";
 
 
 /*  */
@@ -2775,11 +2775,11 @@
 
 
 /*  */
-"devices.test_headset.explanation" = "We've placed an audio beacon to your right. Listen where it is, and turn your head towards it. Notice how you can do this even when your phone is in your pocket. When you are done, Tap the button below to return to Soundscape, and enjoy your next walk with your new head tracking headphones.";
+"devices.test_headset.explanation" = "We've placed an audio beacon to your right. Listen where it is, and turn your head towards it. Notice how you can do this even when your phone is in your pocket. When you are done, Tap the button below to return to Openscape, and enjoy your next walk with your new head tracking headphones.";
 
 
 /*  */
-"devices.test_headset.continue" = "Return to Soundscape";
+"devices.test_headset.continue" = "Return to Openscape";
 
 
 /*  */
@@ -2791,7 +2791,7 @@
 
 
 /*  */
-"devices.forget_headset.prompt.explanation" = "This will disconnect your headphones from Soundscape. You can connect to openscape again in the future from here.";
+"devices.forget_headset.prompt.explanation" = "This will disconnect your headphones from Openscape. You can connect to openscape again in the future from here.";
 
 
 /*  */
@@ -2823,7 +2823,7 @@
 
 
 /*  */
-"devices.callouts.check_audio.airpods.disconnected" = "Soundscape is searching for your AirPods. Ensure they are connected to your phone.";
+"devices.callouts.check_audio.airpods.disconnected" = "Openscape is searching for your AirPods. Ensure they are connected to your phone.";
 
 
 /*  */
@@ -2907,11 +2907,11 @@
 
 
 /*  */
-"behavior.experiences.no_events.title" = "Soundscape Recreational Activities (Beta)";
+"behavior.experiences.no_events.title" = "Openscape Recreational Activities (Beta)";
 
 
 /*  */
-"behavior.experiences.no_events.caption.1" = "Non-profit organisations, businesses, and local governments may create their own Soundscape-based experiences. Examples include adaptive sporting programmes and events, treasure hunt activities, curated trails, curated city guides and more.";
+"behavior.experiences.no_events.caption.1" = "Non-profit organisations, businesses, and local governments may create their own Openscape-based experiences. Examples include adaptive sporting programmes and events, treasure hunt activities, curated trails, curated city guides and more.";
 
 
 /*  */
@@ -3023,7 +3023,7 @@
 
 
 /*  */
-"icloud.kv_store.quota_violation_alert.title" = "Soundscape iCloud Storage Full";
+"icloud.kv_store.quota_violation_alert.title" = "Openscape iCloud Storage Full";
 
 
 /*  */
@@ -3103,7 +3103,7 @@
 
 
 /*  */
-"tutorial.markers.text.Intro" = "With Soundscape, you can mark anything around that you care about. For example, you can mark your home, your bus stop, or even just the spot where you are.\nLet's give it a try. Press the Add Marker button below and select as an example a nearby place or address to mark.";
+"tutorial.markers.text.Intro" = "With Openscape, you can mark anything around that you care about. For example, you can mark your home, your bus stop, or even just the spot where you are.\nLet's give it a try. Press the Add Marker button below and select as an example a nearby place or address to mark.";
 
 
 /*  */
@@ -3179,7 +3179,7 @@
 
 
 /*  */
-"tutorial.beacons.text.OrientationAirPods" = "Your AirPods are connected to Soundscape. When your AirPods are connected to Soundscape, it doesn't matter how you hold your phone. It can even go in your pocket or bag.";
+"tutorial.beacons.text.OrientationAirPods" = "Your AirPods are connected to Openscape. When your AirPods are connected to Openscape, it doesn't matter how you hold your phone. It can even go in your pocket or bag.";
 
 
 /*  */
@@ -3263,7 +3263,7 @@
 
 
 /*  */
-"help.configuration.section.title" = "Configuring Soundscape";
+"help.configuration.section.title" = "Configuring Openscape";
 
 
 /*  */
@@ -3283,7 +3283,7 @@
 
 
 /*  */
-"help.config.voices.content" = "Soundscape can use any of the voices you have downloaded in the iOS Settings app except for the Siri voices which are not available to Soundscape. We recommend choosing one of the \"Enhanced\" voices as they have a much higher voice quality, but in order to do so, you will first need to download an enhanced voice. You can download voices in the iOS Settings app by going to Accessibility > Spoken Content > Voices and tapping on a voice. Within the openscape app, you can select the voice you want to use by going to Settings from the main menu and then selecting \"Voice\".";
+"help.config.voices.content" = "Openscape can use any of the voices you have downloaded in the iOS Settings app except for the Siri voices which are not available to Openscape. We recommend choosing one of the \"Enhanced\" voices as they have a much higher voice quality, but in order to do so, you will first need to download an enhanced voice. You can download voices in the iOS Settings app by going to Accessibility > Spoken Content > Voices and tapping on a voice. Within the openscape app, you can select the voice you want to use by going to Settings from the main menu and then selecting \"Voice\".";
 
 
 /*  */
@@ -3307,7 +3307,7 @@
 
 
 /*  */
-"help.offline.troubleshooting_description" = "Soundscape will try to resume normal operation when your phone is connected to Wi-Fi or mobile data is enabled and you are in an area with good signal. If your phone does have a good internet connection, but openscape does not resume normal operation, then there may be an outage in the openscape services.";
+"help.offline.troubleshooting_description" = "Openscape will try to resume normal operation when your phone is connected to Wi-Fi or mobile data is enabled and you are in an area with good signal. If your phone does have a good internet connection, but openscape does not resume normal operation, then there may be an outage in the openscape services.";
 
 
 /*  */
@@ -3419,7 +3419,7 @@
 
 
 /*  */
-"first_launch.soundscape_language" = "Soundscape Language";
+"first_launch.soundscape_language" = "Openscape Language";
 
 
 /*  */
@@ -3447,7 +3447,7 @@
 
 
 /*  */
-"first_launch.lighting_way_with_sound.text_alt" = "Soundscape uses 3D sound to let you know what’s around you. For example, if your destination is on your right, you will hear sound coming from that direction, or if a coffee shop is on your left, you will hear a callout from that direction.";
+"first_launch.lighting_way_with_sound.text_alt" = "Openscape uses 3D sound to let you know what’s around you. For example, if your destination is on your right, you will hear sound coming from that direction, or if a coffee shop is on your left, you will hear a callout from that direction.";
 
 
 /*  */
@@ -3491,11 +3491,11 @@
 
 
 /*  */
-"first_launch.headphones.title" = "Listening to Soundscape";
+"first_launch.headphones.title" = "Listening to Openscape";
 
 
 /*  */
-"first_launch.headphones.message.1" = "Soundscape works great with any pair of headphones. If you would like to use headphones, grab them now.";
+"first_launch.headphones.message.1" = "Openscape works great with any pair of headphones. If you would like to use headphones, grab them now.";
 
 
 /*  */
@@ -3507,7 +3507,7 @@
 
 
 /*  */
-"first_launch.callouts.message" = "Soundscape helps you stay aware of where you are and where you're going by calling out roads, intersections and points of interest as you approach them.";
+"first_launch.callouts.message" = "Openscape helps you stay aware of where you are and where you're going by calling out roads, intersections and points of interest as you approach them.";
 
 
 /*  */
@@ -3535,7 +3535,7 @@
 
 
 /*  */
-"first_launch.permissions.title" = "Navigating with Soundscape";
+"first_launch.permissions.title" = "Navigating with Openscape";
 
 
 /*  */
@@ -3555,7 +3555,7 @@
 
 
 /*  */
-"first_launch.beacon.message.1" = "When navigating with Soundscape, you will hear the audio beacon in the direction of your destination. By following its sound, you will always know which way to go.";
+"first_launch.beacon.message.1" = "When navigating with Openscape, you will hear the audio beacon in the direction of your destination. By following its sound, you will always know which way to go.";
 
 
 /*  */
@@ -3607,7 +3607,7 @@
 
 
 /*  */
-"first_launch.prompt.message" = "You are ready for your first walk with Soundscape. To try it now, just choose a nearby destination, start the audio beacon, and you’ll hear it in the direction of your destination.";
+"first_launch.prompt.message" = "You are ready for your first walk with Openscape. To try it now, just choose a nearby destination, start the audio beacon, and you’ll hear it in the direction of your destination.";
 
 
 /*  */
@@ -3639,7 +3639,7 @@
 
 
 /*  */
-"help.text.automatic_callouts.what" = "Soundscape can tell you about things around you as you approach them by calling out their name from the direction they are located in. The app will do this automatically for all sorts of things like businesses, bus stops, and even intersections. You can configure what the app automatically calls out in the \"Manage Callouts\" section of the \"Settings\" screen, and you can turn all callouts off when you want the app to be silent.";
+"help.text.automatic_callouts.what" = "Openscape can tell you about things around you as you approach them by calling out their name from the direction they are located in. The app will do this automatically for all sorts of things like businesses, bus stops, and even intersections. You can configure what the app automatically calls out in the \"Manage Callouts\" section of the \"Settings\" screen, and you can turn all callouts off when you want the app to be silent.";
 
 
 /*  */
@@ -3723,7 +3723,7 @@
 
 
 /*  */
-"help.text.markers.content.1" = "With Soundscape, you can mark your world and anything you care about.";
+"help.text.markers.content.1" = "With Openscape, you can mark your world and anything you care about.";
 
 
 /*  */
@@ -3771,15 +3771,15 @@
 
 
 /*  */
-"help.using_headsets.airpods.what" = "Soundscape supports spatial audio with dynamic head tracking when using compatible AirPods. When connected to Soundscape, sensors in the AirPods tell openscape the direction your head is facing. This helps openscape to improve your audio experience making it more natural as you move around in the world. When you use openscape with AirPods connected, you do not need to hold your phone for openscape to work correctly.";
+"help.using_headsets.airpods.what" = "Openscape supports spatial audio with dynamic head tracking when using compatible AirPods. When connected to Openscape, sensors in the AirPods tell openscape the direction your head is facing. This helps openscape to improve your audio experience making it more natural as you move around in the world. When you use openscape with AirPods connected, you do not need to hold your phone for openscape to work correctly.";
 
 
 /*  */
-"help.using_headsets.airpods.when" = "You can use AirPods with openscape anytime you would normally use Soundscape. Using AirPods provides you with high quality audio and allows you to have a more hands-free experience with Soundscape.";
+"help.using_headsets.airpods.when" = "You can use AirPods with openscape anytime you would normally use Openscape. Using AirPods provides you with high quality audio and allows you to have a more hands-free experience with Openscape.";
 
 
 /*  */
-"help.using_headsets.airpods.how.1" = "<b>Connecting a Device</b>:<br/> Go to the \"Head Tracking Headphones\" item in the openscape menu to connect your AirPods and follow the instructions on screen. Note that you will need to pair your AirPods to your phone in the Bluetooth settings before connecting them in Soundscape.";
+"help.using_headsets.airpods.how.1" = "<b>Connecting a Device</b>:<br/> Go to the \"Head Tracking Headphones\" item in the openscape menu to connect your AirPods and follow the instructions on screen. Note that you will need to pair your AirPods to your phone in the Bluetooth settings before connecting them in Openscape.";
 
 
 /*  */
@@ -4047,19 +4047,19 @@
 
 
 /*  */
-"banner.offline_default.message" = "Soundscape is working offline. Learn more";
+"banner.offline_default.message" = "Openscape is working offline. Learn more";
 
 
 /*  */
-"banner.offline_help.message" = "Soundscape is working offline.";
+"banner.offline_help.message" = "Openscape is working offline.";
 
 
 /*  */
-"banner.offline_search.message" = "Soundscape is working offline. Locations are limited to places you have walked by before or have already marked. Learn more";
+"banner.offline_search.message" = "Openscape is working offline. Locations are limited to places you have walked by before or have already marked. Learn more";
 
 
 /*  */
-"banner.online.message" = "Soundscape is back online";
+"banner.online.message" = "Openscape is back online";
 
 
 /*  */
@@ -4067,15 +4067,15 @@
 
 
 /*  */
-"share.prompt.title" = "Enjoying Soundscape?";
+"share.prompt.title" = "Enjoying Openscape?";
 
 
 /*  */
-"share.prompt.message" = "Tell your friends and family about Soundscape";
+"share.prompt.message" = "Tell your friends and family about Openscape";
 
 
 /*  */
-"share.action.message" = "Try Soundscape, an app I enjoy using for navigation with 3D sound:";
+"share.action.message" = "Try Openscape, an app I enjoy using for navigation with 3D sound:";
 
 
 /*  */
@@ -4111,7 +4111,7 @@
 
 
 /*  */
-"faq.when_to_use.question" = "When should I use Soundscape?";
+"faq.when_to_use.question" = "When should I use Openscape?";
 
 
 /*  */
@@ -4123,7 +4123,7 @@
 
 
 /*  */
-"faq.section.getting_the_best_experience" = "How do I get the best out of Soundscape?";
+"faq.section.getting_the_best_experience" = "How do I get the best out of Openscape?";
 
 
 /*  */
@@ -4147,7 +4147,7 @@
 
 
 /*  */
-"faq.why_does_beacon_disappear.answer" = "Soundscape’s audible beacon is fundamentally a directional cue, telling you where your destination is relative to the direction you are facing. When openscape is uncertain about what direction you are facing, it lowers the volume of the beacon. Most often this occurs if you have been walking with the phone stored in a pocket or bag, and you stop moving, such as to cross a street. The beacon will get louder once you start moving again, or if you hold the phone flat and point it in the direction you are facing.";
+"faq.why_does_beacon_disappear.answer" = "Openscape’s audible beacon is fundamentally a directional cue, telling you where your destination is relative to the direction you are facing. When openscape is uncertain about what direction you are facing, it lowers the volume of the beacon. Most often this occurs if you have been walking with the phone stored in a pocket or bag, and you stop moving, such as to cross a street. The beacon will get louder once you start moving again, or if you hold the phone flat and point it in the direction you are facing.";
 
 
 /*  */
@@ -4163,7 +4163,7 @@
 
 
 /*  */
-"faq.beacon_on_home.answer" = "Soundscape supports setting beacons on addresses. To set a beacon on your home, or any other address, search for a location from the main openscape screen. On the \"Location Details\" screen, tap the \"Start Audio Beacon\" button.";
+"faq.beacon_on_home.answer" = "Openscape supports setting beacons on addresses. To set a beacon on your home, or any other address, search for a location from the main openscape screen. On the \"Location Details\" screen, tap the \"Start Audio Beacon\" button.";
 
 
 /*  */
@@ -4171,7 +4171,7 @@
 
 
 /*  */
-"faq.how_close_to_destination.answer" = "Soundscape can determine the location of your destination to within several metres, but not less. When openscape determines that you are close to your destination, you will hear a final callout that your destination is nearby, and the beacon will turn off.";
+"faq.how_close_to_destination.answer" = "Openscape can determine the location of your destination to within several metres, but not less. When openscape determines that you are close to your destination, you will hear a final callout that your destination is nearby, and the beacon will turn off.";
 
 
 /*  */
@@ -4195,7 +4195,7 @@
 
 
 /*  */
-"faq.why_not_every_business.answer" = "Soundscape is designed not to be too chatty. In addition, it uses Open Street Map as its back-end data source. Open Street Map (OSM, https://www.openstreetmap.org/) is a community-developed and edited map of the world, relying on individuals, to enter and curate the data. If a business or point of interest is not announced by Soundscape, the most probable reason is that the business has not been added, or in some cases updated, by a member of the OSM community yet.";
+"faq.why_not_every_business.answer" = "Openscape is designed not to be too chatty. In addition, it uses Open Street Map as its back-end data source. Open Street Map (OSM, https://www.openstreetmap.org/) is a community-developed and edited map of the world, relying on individuals, to enter and curate the data. If a business or point of interest is not announced by Openscape, the most probable reason is that the business has not been added, or in some cases updated, by a member of the OSM community yet.";
 
 
 /*  */
@@ -4211,7 +4211,7 @@
 
 
 /*  */
-"faq.miss_a_callout.answer" = "Soundscape has a list of your recent callouts so that you can revisit callouts that you might have missed. To find this, tap on the search bar on the openscape home screen. At the bottom of this page, there is a section for \"Recent Callouts\" where the callout you missed will be listed.";
+"faq.miss_a_callout.answer" = "Openscape has a list of your recent callouts so that you can revisit callouts that you might have missed. To find this, tap on the search bar on the openscape home screen. At the bottom of this page, there is a section for \"Recent Callouts\" where the callout you missed will be listed.";
 
 
 /*  */
@@ -4219,15 +4219,15 @@
 
 
 /*  */
-"faq.supported_phones.answer" = "Soundscape is currently available for Apple iOS, running on iPhone SE, iPhone 6S and later.";
+"faq.supported_phones.answer" = "Openscape is currently available for Apple iOS, running on iPhone SE, iPhone 6S and later.";
 
 
 /*  */
-"faq.supported_headsets.question" = "What headphones should I use with Soundscape?";
+"faq.supported_headsets.question" = "What headphones should I use with Openscape?";
 
 
 /*  */
-"faq.supported_headsets.answer" = "Which headphones you use with openscape is a matter of personal preference, and each option comes with benefits and trade-offs. The only specific requirement is to use a pair of stereo headphones so that you can take advantage of Soundscape’s 3D spatial audio callouts.";
+"faq.supported_headsets.answer" = "Which headphones you use with openscape is a matter of personal preference, and each option comes with benefits and trade-offs. The only specific requirement is to use a pair of stereo headphones so that you can take advantage of Openscape’s 3D spatial audio callouts.";
 
 
 /*  */
@@ -4235,11 +4235,11 @@
 
 
 /*  */
-"faq.battery_impact.answer" = "Battery life varies significantly depending on which iPhone you own and how old it is. The biggest drain on your battery is having the screen on, so to maximise the battery life of your phone you should keep the screen locked whenever possible. To help minimise the impact on your iPhone battery openscape now has a Sleep Mode and a Snooze Mode. To further reduce the amount of battery you use, when you aren’t using Soundscape, you should force close it via your iPhone’s App Switcher. ";
+"faq.battery_impact.answer" = "Battery life varies significantly depending on which iPhone you own and how old it is. The biggest drain on your battery is having the screen on, so to maximise the battery life of your phone you should keep the screen locked whenever possible. To help minimise the impact on your iPhone battery openscape now has a Sleep Mode and a Snooze Mode. To further reduce the amount of battery you use, when you aren’t using Openscape, you should force close it via your iPhone’s App Switcher. ";
 
 
 /*  */
-"faq.sleep_mode_battery.question" = "How do I use Sleep Mode to minimise Soundscape’s impact on my phone battery?";
+"faq.sleep_mode_battery.question" = "How do I use Sleep Mode to minimise Openscape’s impact on my phone battery?";
 
 
 /*  */
@@ -4247,11 +4247,11 @@
 
 
 /*  */
-"faq.snooze_mode_battery.question" = "How do I use Snooze mode to minimise Soundscape’s impact on my phone battery?";
+"faq.snooze_mode_battery.question" = "How do I use Snooze mode to minimise Openscape’s impact on my phone battery?";
 
 
 /*  */
-"faq.snooze_mode_battery.answer" = "To put openscape in to Snooze Mode select the \"Sleep\" button in the top right hand corner of the screen. Once Soundscape’s in Sleep mode, select the \"Wake up when I leave\" button and openscape will go in to a low power state until you leave your current location.";
+"faq.snooze_mode_battery.answer" = "To put openscape in to Snooze Mode select the \"Sleep\" button in the top right hand corner of the screen. Once Openscape’s in Sleep mode, select the \"Wake up when I leave\" button and openscape will go in to a low power state until you leave your current location.";
 
 
 /*  */
@@ -4267,7 +4267,7 @@
 
 
 /*  */
-"faq.background_battery_impact.answer" = "Soundscape is a location-based app and uses Location Services to determine your location. In our tests, openscape does not consume any more battery than the average map application; but if you are concerned about battery consumption when using your phone, the following are a few tips which will help lower usage:\n\n1. Turn the screen display off as much as possible when you are not interacting with the app.\n2. When not using the app, close it down. openscape uses location services continually when it is running so that it always knows your location, even when you are not moving. Don’t forget to restart the app when you resume your journey.\n3. In cold weather, keep your phone warm as batteries perform more poorly in colder temperatures.";
+"faq.background_battery_impact.answer" = "Openscape is a location-based app and uses Location Services to determine your location. In our tests, openscape does not consume any more battery than the average map application; but if you are concerned about battery consumption when using your phone, the following are a few tips which will help lower usage:\n\n1. Turn the screen display off as much as possible when you are not interacting with the app.\n2. When not using the app, close it down. openscape uses location services continually when it is running so that it always knows your location, even when you are not moving. Don’t forget to restart the app when you resume your journey.\n3. In cold weather, keep your phone warm as batteries perform more poorly in colder temperatures.";
 
 
 /*  */
@@ -4275,7 +4275,7 @@
 
 
 /*  */
-"faq.mobile_data_use.answer" = "The amount of mobile data used depends on how you use Soundscape. We have designed openscape to use only a small amount of data when you’re out and about by doing things like saving points as you walk around so you don’t need to download them again every time you go back to somewhere you’ve already been. To reduce the amount of mobile data you use, make sure you are connected to Wi-Fi whenever possible, particularly to download the app. When you are not using Soundscape, you should use the \"Sleep\" button to put openscape to sleep or force close the app.";
+"faq.mobile_data_use.answer" = "The amount of mobile data used depends on how you use Openscape. We have designed openscape to use only a small amount of data when you’re out and about by doing things like saving points as you walk around so you don’t need to download them again every time you go back to somewhere you’ve already been. To reduce the amount of mobile data you use, make sure you are connected to Wi-Fi whenever possible, particularly to download the app. When you are not using Openscape, you should use the \"Sleep\" button to put openscape to sleep or force close the app.";
 
 
 /*  */
@@ -4283,7 +4283,7 @@
 
 
 /*  */
-"faq.difference_from_map_apps.answer" = "Soundscape provides an ambient description of your surroundings in aid of exploration and way-finding. Using spatial audio, openscape will call out points of interest, parks, roads, and intersections from the direction they physically are in your immediate environment as you walk. For example, if you pass a shop on your right, you will hear the name of the shop sounding from your right. As you approach an intersection, you will hear each road name sounding from the direction it goes in, beginning to your left, ahead and to the right.\n\nInstead of turn by turn directions as often provided by other map applications, openscape will play an audible beacon in the direction of your destination, empowering you to make your way there on your terms using your increased awareness of your surroundings and the location of your destination. openscape is designed to run in the background, enabling you to use a turn by turn directions app, all the while continuing to provide environmental awareness as you make your way to your destination.";
+"faq.difference_from_map_apps.answer" = "Openscape provides an ambient description of your surroundings in aid of exploration and way-finding. Using spatial audio, openscape will call out points of interest, parks, roads, and intersections from the direction they physically are in your immediate environment as you walk. For example, if you pass a shop on your right, you will hear the name of the shop sounding from your right. As you approach an intersection, you will hear each road name sounding from the direction it goes in, beginning to your left, ahead and to the right.\n\nInstead of turn by turn directions as often provided by other map applications, openscape will play an audible beacon in the direction of your destination, empowering you to make your way there on your terms using your increased awareness of your surroundings and the location of your destination. openscape is designed to run in the background, enabling you to use a turn by turn directions app, all the while continuing to provide environmental awareness as you make your way to your destination.";
 
 
 /*  */
@@ -4291,15 +4291,15 @@
 
 
 /*  */
-"faq.use_with_wayfinding_apps.answer" = "Soundscape is designed as an awareness app to help fill in details about your environment that you may not be aware of otherwise. While it is not designed as a turn-by-turn navigation app, it can be used alongside such apps to provide complementary information. To use openscape with these apps, start your navigation app first. Then, move over to openscape and set a beacon on the same destination as in the navigation app. At this point, both apps will be running and you will hear walking directions from your navigation app, while getting updates on points of interest, intersections, and your distance to your destination from Soundscape.";
+"faq.use_with_wayfinding_apps.answer" = "Openscape is designed as an awareness app to help fill in details about your environment that you may not be aware of otherwise. While it is not designed as a turn-by-turn navigation app, it can be used alongside such apps to provide complementary information. To use openscape with these apps, start your navigation app first. Then, move over to openscape and set a beacon on the same destination as in the navigation app. At this point, both apps will be running and you will hear walking directions from your navigation app, while getting updates on points of interest, intersections, and your distance to your destination from Openscape.";
 
 
 /*  */
-"faq.controlling_what_you_hear.question" = "How do I control what I hear and when I hear it in Soundscape?";
+"faq.controlling_what_you_hear.question" = "How do I control what I hear and when I hear it in Openscape?";
 
 
 /*  */
-"faq.controlling_what_you_hear.answer" = "Soundscape provides several ways to control what you hear and when:\n\n1. Immediately stop all audio: Double tap the screen with two fingers to immediately turn off all audio, including any callout that is currently playing and the beacon if it is on. Callouts will resume automatically when you approach the next intersection or point of interest, but the audible beacon will not. Select the \"unmute beacon button\" on the main screen to resume hearing the beacon.\n2. Stop automatic callouts: When you are not travelling or have reached a destination, you probably will not need openscape to continue to notify you of things around you. Instead of exiting the app, you can put openscape in to Snooze mode and it will wake up again when you leave, or you can put openscape into Sleep mode and it will stay off until you choose to turn it back on. Alternatively, you can select \"Settings\" from the menu and choose to turn all callouts off in the \"Manage Callouts\" section.\n3. Stop the beacon: There are several scenarios for which you might set a destination, but not need the audible beacon on. For example, you may know exactly how to get to your destination but want to get automatic updates about how far away you are from your destination. Or, you may know roughly how to get to your destination, and only need the audio beacon as you near your destination. Whatever the case, you can choose when to hear the beacon by toggling the \"mute beacon\"/\"unmute beacon\" button on the main screen.";
+"faq.controlling_what_you_hear.answer" = "Openscape provides several ways to control what you hear and when:\n\n1. Immediately stop all audio: Double tap the screen with two fingers to immediately turn off all audio, including any callout that is currently playing and the beacon if it is on. Callouts will resume automatically when you approach the next intersection or point of interest, but the audible beacon will not. Select the \"unmute beacon button\" on the main screen to resume hearing the beacon.\n2. Stop automatic callouts: When you are not travelling or have reached a destination, you probably will not need openscape to continue to notify you of things around you. Instead of exiting the app, you can put openscape in to Snooze mode and it will wake up again when you leave, or you can put openscape into Sleep mode and it will stay off until you choose to turn it back on. Alternatively, you can select \"Settings\" from the menu and choose to turn all callouts off in the \"Manage Callouts\" section.\n3. Stop the beacon: There are several scenarios for which you might set a destination, but not need the audible beacon on. For example, you may know exactly how to get to your destination but want to get automatic updates about how far away you are from your destination. Or, you may know roughly how to get to your destination, and only need the audio beacon as you near your destination. Whatever the case, you can choose when to hear the beacon by toggling the \"mute beacon\"/\"unmute beacon\" button on the main screen.";
 
 
 /*  */
@@ -4315,15 +4315,15 @@
 
 
 /*  */
-"faq.personalize_experience.answer" = "Soundscape allows you to customise three key aspects of the callouts you hear as you are walking:\n\n1. Voice: You can choose which of the available voices on iOS you would like openscape to use, as well as the speed at which callouts are spoken. From the Menu, select Settings, then Voice to adjust the Speaking Rate and Voice settings. Additional voices and enhanced voices with a higher quality can be downloaded in the iOS Settings app at Settings > Accessibility > Spoken Content > Voices. \n2. Distance Metric: openscape allows you to hear all distances in either feet or metres. From the Menu, select Settings. The Units of Measure section allows you to toggle between two options: Imperial (feet) and Metric (metres).\n3. Markers: You can mark your world with anything you care about. You can mark things that are personal and relevant to you like your home, your office and your preferred grocery store. Then openscape will automatically call out marked places as you walk by or approach them, or you can also use the Nearby Markers button at the bottom of the openscape home screen to hear a spatial callout of marked places around you. These markers will remain personal to you and will not be available to anyone else.\n\nIn addition to the above, the following VoiceOver settings can influence how openscape behaves:\n\n1. VoiceOver Tips: When VoiceOver tips are turned ON, you will hear more information about all the buttons on the primary openscape screen. You can turn on VoiceOver tips by navigating to the iOS Settings app and going to Accessibility > VoiceOver > Verbosity, and turning the Speak Hints setting on.\n2. Audio Ducking: openscape is designed to work with Audio Ducking turned OFF. When Audio Ducking is on, automatic callouts can be difficult to hear if VoiceOver is used simultaneously. We recommend turning Audio Ducking off to make it easier to hear all automatic callouts that occur as you are interacting with the phone. Audio ducking can be turned off in VoiceOver settings or via the VoiceOver rotor.\n3. Touch ID or Face ID to Unlock: Setting your phone to unlock using Touch ID or Face ID will make unlocking the phone fast and easy, and in turn, allow you to access the My Location, Around Me, and Ahead of Me buttons as quickly as possible when you are on the go. Set up Touch ID or Face ID unlocking in the iOS Settings app.";
+"faq.personalize_experience.answer" = "Openscape allows you to customise three key aspects of the callouts you hear as you are walking:\n\n1. Voice: You can choose which of the available voices on iOS you would like openscape to use, as well as the speed at which callouts are spoken. From the Menu, select Settings, then Voice to adjust the Speaking Rate and Voice settings. Additional voices and enhanced voices with a higher quality can be downloaded in the iOS Settings app at Settings > Accessibility > Spoken Content > Voices. \n2. Distance Metric: openscape allows you to hear all distances in either feet or metres. From the Menu, select Settings. The Units of Measure section allows you to toggle between two options: Imperial (feet) and Metric (metres).\n3. Markers: You can mark your world with anything you care about. You can mark things that are personal and relevant to you like your home, your office and your preferred grocery store. Then openscape will automatically call out marked places as you walk by or approach them, or you can also use the Nearby Markers button at the bottom of the openscape home screen to hear a spatial callout of marked places around you. These markers will remain personal to you and will not be available to anyone else.\n\nIn addition to the above, the following VoiceOver settings can influence how openscape behaves:\n\n1. VoiceOver Tips: When VoiceOver tips are turned ON, you will hear more information about all the buttons on the primary openscape screen. You can turn on VoiceOver tips by navigating to the iOS Settings app and going to Accessibility > VoiceOver > Verbosity, and turning the Speak Hints setting on.\n2. Audio Ducking: openscape is designed to work with Audio Ducking turned OFF. When Audio Ducking is on, automatic callouts can be difficult to hear if VoiceOver is used simultaneously. We recommend turning Audio Ducking off to make it easier to hear all automatic callouts that occur as you are interacting with the phone. Audio ducking can be turned off in VoiceOver settings or via the VoiceOver rotor.\n3. Touch ID or Face ID to Unlock: Setting your phone to unlock using Touch ID or Face ID will make unlocking the phone fast and easy, and in turn, allow you to access the My Location, Around Me, and Ahead of Me buttons as quickly as possible when you are on the go. Set up Touch ID or Face ID unlocking in the iOS Settings app.";
 
 
 /*  */
-"faq.what_is_osm.question" = "What is Open Street Map and why do we use it for Soundscape?";
+"faq.what_is_osm.question" = "What is Open Street Map and why do we use it for Openscape?";
 
 
 /*  */
-"faq.what_is_osm.answer" = "Soundscape draws on geographic map data to provide the information callouts in the app. The primary map source we use is Open Street Map (www.openstreetmap.org) which is a rich community generated mapping platform, that enables organisations and individuals to improve the quality and granularity of the information provided and the accessibility of their spaces using Open Street Map map authoring tools.";
+"faq.what_is_osm.answer" = "Openscape draws on geographic map data to provide the information callouts in the app. The primary map source we use is Open Street Map (www.openstreetmap.org) which is a rich community generated mapping platform, that enables organisations and individuals to improve the quality and granularity of the information provided and the accessibility of their spaces using Open Street Map map authoring tools.";
 
 
 /*  */
@@ -4347,7 +4347,7 @@
 
 
 /*  */
-"faq.tip.hold_phone_flat" = "Soundscape works best when you hold the phone flat with the screen facing the sky and the top of the phone pointing away from you.";
+"faq.tip.hold_phone_flat" = "Openscape works best when you hold the phone flat with the screen facing the sky and the top of the phone pointing away from you.";
 
 
 /*  */
