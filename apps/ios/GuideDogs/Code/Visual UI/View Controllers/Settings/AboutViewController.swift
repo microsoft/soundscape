@@ -49,8 +49,8 @@ class AboutApplicationViewController: BaseTableViewController {
     private var aboutLinks: [AboutLinkCellModel] {
         var links = [
             AboutLinkCellModel(localizedTitle: GDLocalizedString("settings.about.title.whats_new"), segue: "ShowVersionHistorySegue"),
-            AboutLinkCellModel(localizedTitle: GDLocalizationUnnecessary("LINK TO YOUR PRIVACY POLICY"), url: AppContext.Links.privacyPolicyURL(for: LocalizationContext.currentAppLocale), event: "about.privacy_policy"),
-            AboutLinkCellModel(localizedTitle: GDLocalizationUnnecessary("LINK TO YOUR SERVICES AGREEMENT"), url: AppContext.Links.servicesAgreementURL(for: LocalizationContext.currentAppLocale), event: "about.services_agreement"),
+            AboutLinkCellModel(localizedTitle: GDLocalizationUnnecessary("Privacy Policy"), url: AppContext.Links.privacyPolicyURL(for: LocalizationContext.currentAppLocale), event: "about.privacy_policy"),
+            AboutLinkCellModel(localizedTitle: GDLocalizationUnnecessary("Services Agreement"), url: AppContext.Links.servicesAgreementURL(for: LocalizationContext.currentAppLocale), event: "about.services_agreement"),
             AboutLinkCellModel(localizedTitle: GDLocalizedString("settings.about.title.third_party"), segue: "ShowThirdPartyNoticesSegue")
         ]
         
