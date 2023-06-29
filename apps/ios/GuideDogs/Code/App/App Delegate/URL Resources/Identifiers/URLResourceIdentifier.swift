@@ -16,5 +16,5 @@ enum URLResourceIdentifier: String {
      */
     case gpx = "com.topografix.gpx"
     case route = "io.openscape.doc"
-    case legacy_soundscape_route = "Soundscape.doc"
+    case legacy_soundscape_route = "soundscape.doc"
 }
