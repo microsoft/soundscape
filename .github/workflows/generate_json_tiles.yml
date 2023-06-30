@@ -1,11 +1,24 @@
 # based on https://medium.com/chrisrbailey/github-actions-using-postgres-postgis-and-psql-e920a2aea7e1
 name: Generate JSON tiles
+
 on:
   workflow_dispatch:
+    inputs:
+      pbf_url:
+        description: URL of OSM PBF file
+        required: true
+        default: http://download.geofabrik.de/north-america/us/district-of-columbia-latest.osm.pbf
+
+env:
+  PBF_LINK: ${{ github.event.inputs.pbf_url }}
+  PBF_PATH: /tmp/region.osm.pbf
+
 jobs:
   run:
     name: Generate JSON tiles
     runs-on: ubuntu-latest
+    env:
+      POSTGRES_DSN: postgresql://postgres:password@localhost/osm 
 
     services:
       postgres:
@@ -20,15 +33,30 @@ jobs:
         options: --health-cmd pg_isready --health-interval 10s --health-timeout 5s --health-retries 5
 
     steps:
+      - name: Checkout openscape
+        uses: actions/checkout@v3
       - name: Install dependencies
         run: |
-          sudo apt install osmium-tool
-          sudo mkdir -p /ingest/imposm3 && wget -q -O - https://github.com/omniscale/imposm3/releases/download/v0.11.1/imposm-0.11.1-linux-x86-64.tar.gz | tar -xz --strip-components=1 -C /ingest/imposm3
-          pip install pyrosm
-      - name: Download pbf
+          sudo mkdir -p /ingest/imposm3
+          sudo chmod -R a+rw /ingest
+          wget -q -O - https://github.com/omniscale/imposm3/releases/download/v0.11.1/imposm-0.11.1-linux-x86-64.tar.gz | \
+            tar -xz --strip-components=1 -C /ingest/imposm3
+          pip install psycopg2
+      - name: Download + import pbf
         run: |
-          python -c "from pyrosm import get_data; fp = get_data('Monaco'); print(fp)"
-          osmium fileinfo /tmp/pyrosm/Monaco.osm.pbf
-      - name: Import pbf
+          wget -q -O $PBF_PATH $PBF_LINK
+          psql -d $POSTGRES_DSN -c "CREATE EXTENSION IF NOT EXISTS hstore"
+          /ingest/imposm3/imposm import \
+            -mapping svcs/data/soundscape/other/mapping.yml \
+            -read $PBF_PATH -srid 4326 -dbschema-import="public" \
+            -write -connection postgis://postgres:password@localhost/osm  \
+      - name: Install PostGIS functions
         run: |
-          imposm import -mapping config.mapping -write -connection postgresql://postgres@localhost/osm -srid 4326 -cachedir cache/
+          wget -q -O - https://raw.githubusercontent.com/mapbox/postgis-vt-util/master/postgis-vt-util.sql | \
+            psql -d $POSTGRES_DSN
+          psql -d $POSTGRES_DSN -f svcs/data/tilefunc.sql
+          psql -d $POSTGRES_DSN -f svcs/data/getTiles.sql
+      - name: Generate tiles
+        run: |
+          psql -d $POSTGRES_DSN -t -A -F"," -c "select * from getAll16Tiles()" | \
+            python svcs/data/make_static_tiles.py /tmp/tiles/ $POSTGRES_DSN
