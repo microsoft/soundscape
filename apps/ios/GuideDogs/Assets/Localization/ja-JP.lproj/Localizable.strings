@@ -1847,14 +1847,6 @@
 
 
 /*  */
-"filter.things_to_do" = "施設・場所の種類";
-
-
-/*  */
-"filter.banks" = "銀行、ATM";
-
-
-/*  */
 "filter.selected" = "%@ (選択済み)";
 
 
@@ -4115,10 +4107,6 @@
 
 
 /*  */
-"faq.when_to_use.question" = "どのようなときに openscape を使用したらよいですか?";
-
-
-/*  */
 "faq.markers_function.question" = "マーカーとはどのようなもので、活用するにはどうしたらよいですか?";
 
 
@@ -4360,6 +4348,8 @@
 
 /*  */
 "faq.tip.two_finger_double_tap" = "画面を 2 本指で 2 回タップすると、アクティブなコールアウトがすべて停止されます。";
+
+
 
 
 

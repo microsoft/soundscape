@@ -1847,14 +1847,6 @@
 
 
 /*  */
-"filter.things_to_do" = "Choses à faire";
-
-
-/*  */
-"filter.banks" = "Banques et distributeurs de billets";
-
-
-/*  */
 "filter.selected" = "%@ (sélectionné)";
 
 
@@ -4116,10 +4108,6 @@
 
 
 /*  */
-"faq.when_to_use.question" = "Quand dois-je utiliser openscape ?";
-
-
-/*  */
 "faq.markers_function.question" = "Que sont les marqueurs et comment en tirer le meilleur parti ?";
 
 
@@ -4361,6 +4349,8 @@
 
 /*  */
 "faq.tip.two_finger_double_tap" = "Appuyer sur l’écran à deux reprises avec deux doigts désactive le son de toutes les notifications actives.";
+
+
 
 
 

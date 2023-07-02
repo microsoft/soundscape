@@ -1847,14 +1847,6 @@
 
 
 /*  */
-"filter.things_to_do" = "Things to do";
-
-
-/*  */
-"filter.banks" = "Banks & ATMs";
-
-
-/*  */
 "filter.selected" = "%@ (selected)";
 
 
@@ -4356,6 +4348,8 @@
 
 /*  */
 "faq.tip.two_finger_double_tap" = "Tapping the screen twice with two fingers will silence any active callouts.";
+
+
 
 
 

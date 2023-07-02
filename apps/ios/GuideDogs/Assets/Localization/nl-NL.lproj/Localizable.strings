@@ -1847,10 +1847,6 @@
 
 
 /*  */
-"filter.banks" = "Banken en geldautomaten";
-
-
-/*  */
 "filter.selected" = "%@ (geselecteerd)";
 
 

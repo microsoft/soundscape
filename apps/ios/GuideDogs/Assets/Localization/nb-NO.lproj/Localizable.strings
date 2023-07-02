@@ -1847,14 +1847,6 @@
 
 
 /*  */
-"filter.things_to_do" = "Ting å gjøre";
-
-
-/*  */
-"filter.banks" = "Banker og minibanker";
-
-
-/*  */
 "filter.selected" = "%@ (valgt)";
 
 
@@ -4363,3 +4355,19 @@
 
 
 
+
+
+
+
+// MARK: What is Soundscape?
+
+/* Soundscape - The app that explores the use of innovative audio-based technology to enable people, particularly those with blindness or low vision, to build a richer awareness of their surroundings, thus becoming more confident and empowered to get around by using 3D audio cues to enrich ambient awareness and provide a new way to relate to the environment. {NumberedPlaceholder="Soundscape"} */
+"faq.section.what_is_soundscape" = "Hva er Soundscape og hvordan bruker jeg det?";
+
+// MARK: How Soundscape Works
+
+/* Soundscape - The app that explores the use of innovative audio-based technology to enable people, particularly those with blindness or low vision, to build a richer awareness of their surroundings, thus becoming more confident and empowered to get around by using 3D audio cues to enrich ambient awareness and provide a new way to relate to the environment. {NumberedPlaceholder="Soundscape"} */
+"faq.section.how_soundscape_works" = "Hvordan virker Soundscape?";
+
+/* Soundscape - The app that explores the use of innovative audio-based technology to enable people, particularly those with blindness or low vision, to build a richer awareness of their surroundings, thus becoming more confident and empowered to get around by using 3D audio cues to enrich ambient awareness and provide a new way to relate to the environment. {NumberedPlaceholder="Soundscape"} */
+"faq.when_to_use_soundscape.question" = "Når bør jeg bruke Soundscape?";

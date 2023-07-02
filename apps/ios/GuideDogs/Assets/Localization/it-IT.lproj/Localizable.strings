@@ -1847,14 +1847,6 @@
 
 
 /*  */
-"filter.things_to_do" = "Cose da fare";
-
-
-/*  */
-"filter.banks" = "Banche e sportelli bancomat";
-
-
-/*  */
 "filter.selected" = "%@ (selezionato)";
 
 
@@ -4360,6 +4352,8 @@
 
 /*  */
 "faq.tip.two_finger_double_tap" = "Toccando due volte lo schermo con due dita si disattiva l'audio di tutte le notifiche attive.";
+
+
 
 
 
