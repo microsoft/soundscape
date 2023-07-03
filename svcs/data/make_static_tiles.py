@@ -44,12 +44,12 @@ if __name__ == "__main__":
         total_tiles += 1
         x, y, z = line.strip().split(",")
         tile_dir = args.output_dir / z / x
-        tile_dir.mkdir(parents=True, exist_ok=True)
         tile_path = tile_dir / f"{y}.json.bz2"
         if tile_path.exists():
             continue
         output = tile(cursor, x, y, z)
         if output:
+            tile_dir.mkdir(parents=True, exist_ok=True)
             nonempty_tiles += 1
             with bz2.open(tile_path, "w") as f:
                 f.write(output.encode())
