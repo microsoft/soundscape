@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
-"""Reads a stream of "[x, y, z]" lines from stdin, and generates z/x/y.json tile files
-to the specified output directory.
+"""Reads a stream of "x,y,z" lines from stdin (such as the output of
+enumerate_tiles.py), and generates z/x/y.json tile files to the specified
+output directory.
 """
 import argparse
 import json

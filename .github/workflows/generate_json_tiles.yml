@@ -8,10 +8,16 @@ on:
         description: URL of OSM PBF file
         required: true
         default: http://download.geofabrik.de/north-america/us/district-of-columbia-latest.osm.pbf
+      poly_url:
+        description: URL of OSM .poly file
+        required: true
+        default: https://download.geofabrik.de/north-america/us/district-of-columbia.poly
 
 env:
   PBF_LINK: ${{ github.event.inputs.pbf_url }}
   PBF_PATH: /tmp/region.osm.pbf
+  POLY_LINK: ${{ github.event.inputs.poly_url }}
+  POLY_PATH: /tmp/region.poly
 
 jobs:
   run:
@@ -41,9 +47,10 @@ jobs:
           sudo chmod -R a+rw /ingest
           wget -q -O - https://github.com/omniscale/imposm3/releases/download/v0.11.1/imposm-0.11.1-linux-x86-64.tar.gz | \
             tar -xz --strip-components=1 -C /ingest/imposm3
-          pip install psycopg2
+          pip install psycopg2 shapely
       - name: Download + import pbf
         run: |
+          wget -q -O $POLY_PATH $POLY_LINK
           wget -q -O $PBF_PATH $PBF_LINK
           psql -d $POSTGRES_DSN -c "CREATE EXTENSION IF NOT EXISTS hstore"
           /ingest/imposm3/imposm import \
@@ -55,8 +62,7 @@ jobs:
           wget -q -O - https://raw.githubusercontent.com/mapbox/postgis-vt-util/master/postgis-vt-util.sql | \
             psql -d $POSTGRES_DSN
           psql -d $POSTGRES_DSN -f svcs/data/tilefunc.sql
-          psql -d $POSTGRES_DSN -f svcs/data/getTiles.sql
       - name: Generate tiles
         run: |
-          psql -d $POSTGRES_DSN -t -A -F"," -c "select * from getAll16Tiles()" | \
+          python svcs/data/enumerate_tiles.py 16 $POLY_PATH | \
             python svcs/data/make_static_tiles.py /tmp/tiles/ $POSTGRES_DSN
