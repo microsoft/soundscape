@@ -1,6 +1,6 @@
 # Copyright (c) Microsoft Corporation.
 # Licensed under the MIT License.
 
-aiohttp==3.7.4
+aiohttp==3.8.5
 aiopg==1.2.1
 psycopg2-binary==2.9.3
