@@ -1,0 +1,155 @@
+# Copyright (c) Microsoft Corporation.
+# Licensed under the MIT License.
+
+tags:
+  load_all: true
+  exclude:
+  - created_by
+  - source
+  - "tiger:*"
+  - "gnis:*"
+  - "odbl"
+use_single_id_space: true
+tables:
+  places:
+    fields:
+    - name: osm_id
+      type: id
+    - name: geometry
+      type: geometry
+    - key: name
+      name: name
+      type: string
+    - name: feature_type
+      type: mapping_key
+    - name: feature_value
+      type: mapping_value
+    - name: properties
+      type: hstore_tags
+    type_mappings:
+      points:
+        amenity:
+        - __any__
+        building:
+        - __any__
+        entrance:
+        - __any__
+        highway:
+        - crossing
+        - bus_stop
+        - elevator
+        historic:
+        - __any__
+        indoormark:
+        - beacon
+        leisure:
+        - __any__
+        office:
+        - __any__
+        railway:
+        - station
+        - subway_entrance
+        - tram_stop
+        shop:
+        - __any__
+        tourism:
+        - __any__
+        zoo:
+        - enclosure
+      polygons:
+        amenity:
+        - __any__
+        building:
+        - __any__
+        historic:
+        - __any__
+        landuse:
+        - construction
+        leisure:
+        - pitch
+        - park
+        - garden
+        - playground
+        - sports_centre
+        - stadium
+        - golf_course
+        - marina
+        - water_park
+        office:
+        - __any__
+        railway:
+        - station
+        - subway_entrance
+        - tram_stop
+        shop:
+        - __any__
+        tourism:
+        - __any__
+        zoo:
+        - enclosure
+    type: geometry
+  roads:
+    fields:
+    - name: osm_id
+      type: id
+    - name: geometry
+      type: geometry
+    - key: name
+      name: name
+      type: string
+    - name: feature_type
+      type: mapping_key
+    - name: feature_value
+      type: mapping_value
+    - key: service
+      name: service
+      type: string
+    - name: properties
+      type: hstore_tags
+    mapping:
+      highway:
+      - bridleway
+      - bus_guideway
+      - crossing
+      - cycleway
+      - footway
+      - living_street
+      - motorway
+      - motorway_link
+      - path
+      - pedestrian
+      - primary
+      - primary_link
+      - residential
+      - residential_link
+      - road
+      - secondary
+      - secondary_link
+      - service
+      - steps
+      - tertiary
+      - tertiary_link
+      - trunk
+      - trunk_link
+      - unclassified
+    type: linestring
+  entrances:
+    fields:
+    - name: osm_id
+      type: id
+    - name: geometry
+      type: geometry
+    - key: name
+      name: name
+      type: string
+    - name: feature_type
+      type: mapping_key
+    - name: feature_value
+      type: mapping_value
+    - name: properties
+      type: hstore_tags
+    type_mappings:
+      points:
+        entrance:
+        - __any__
+    type: geometry

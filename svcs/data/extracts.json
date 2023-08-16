@@ -93,5 +93,10 @@
 	"name": "north-america",
 	"url": "http://download.geofabrik.de/north-america-latest.osm.pbf",
 	"bbox": [0.0, 0.0, 0.0, 0.0]
-    }
+    },
+	{
+	"name": "great-britain",
+	"url": "http://download.geofabrik.de/europe/great-britain-latest.osm.pbf",
+	"bbox" : []
+	}
 ]
