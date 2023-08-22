@@ -1,14 +1,14 @@
 # Copyright (c) Microsoft Corporation.
 # Licensed under the MIT License.
 
-FROM mcr.microsoft.com/cbl-mariner/base/core:2.0 as installer
+FROM --platform=linux/amd64  mcr.microsoft.com/cbl-mariner/base/core:2.0 as installer
 
 RUN tdnf -y update \
  && tdnf install -y dnf \
  && mkdir /staging \
  && dnf install -y --release=2.0 --installroot /staging prebuilt-ca-certificates wget python3 python3-pip python3-setuptools
 
-FROM mcr.microsoft.com/cbl-mariner/base/core:2.0 as imposm
+FROM --platform=linux/amd64  mcr.microsoft.com/cbl-mariner/base/core:2.0 as imposm
 
 ENV IMPOSM_BINARY_RELEASE=0.11.1
 
@@ -17,14 +17,16 @@ RUN tdnf -y update \
  && mkdir -p /ingest/imposm3 \
  && wget -q -O - https://github.com/omniscale/imposm3/releases/download/v$IMPOSM_BINARY_RELEASE/imposm-$IMPOSM_BINARY_RELEASE-linux-x86-64.tar.gz | tar -xz --strip-components=1 -C /ingest/imposm3
 
-FROM mcr.microsoft.com/cbl-mariner/distroless/base:2.0 as final
+FROM --platform=linux/amd64  mcr.microsoft.com/cbl-mariner/distroless/base:2.0 as final
 
 ENV PYTHONUNBUFFERED=true INGEST=/ingest TILES=/tiles MAPPING=/mapping UPDATE_FREQUENCY=minute
 
 COPY --from=imposm /ingest/ $INGEST/
 COPY --from=installer /staging/ /
 
-COPY requirements.txt requirements_kubernetes.txt ingest.py kubescape.py tileperf.py queryperf.py extracts.json postgis-vt-util.sql tilefunc.sql $INGEST/
+COPY requirements.txt requirements_kubernetes.txt ingest.py kubescape.py extracts.json tilefunc.sql postgis-vt-util.sql $INGEST/
+
+COPY mapping.yml $MAPPING/
 
 RUN /usr/bin/pip3 install -r $INGEST/requirements.txt -r $INGEST/requirements_kubernetes.txt
 

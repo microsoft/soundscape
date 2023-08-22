@@ -22,7 +22,6 @@ dsn_default = dsn_default_base + 'user=osm password=osm dbname=osm'
 
 parser = argparse.ArgumentParser(description='ingestion engine for Soundscape')
 
-# configuration of what the ingestion will do
 parser.add_argument('--skipimport', action='store_true', help='skips import task', default=False)
 parser.add_argument('--updatemodel', type=str, help='choose update model', choices=['imposmauto', 'importloop', 'none'], default='none')
 parser.add_argument('--sourceupdate', action='store_true', help='update source data', default=True)
@@ -30,7 +29,6 @@ parser.add_argument('--telemetry', action='store_true', help='generate telemetry
 
 parser.add_argument('--delay', type=int, help='loop delay time', default=60 * 60 * 8)
 
-# configuration of files, directories and necessary configuration
 parser.add_argument('--extracts', type=str, default='extracts.json', help='extracts file')
 parser.add_argument('--mapping', type=str, help='mapping file path', default='mapping.yml')
 parser.add_argument('--imposm', type=str, help='imposm executable', default='imposm')
@@ -292,7 +290,7 @@ def execute_kube_updatemodel(config):
     if config.dynamic_db:
         execute_kube_sync_database_services(config)
 
-    rescan_delay = 60
+    rescan_delay = 3600
     initial_import = True
     while True:
         fetch_delay = config.delay
