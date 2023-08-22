@@ -272,7 +272,14 @@ def main():
 
     args = parser.parse_args()
 
-    logging.basicConfig(format='%(asctime)s:%(levelname)s:%(message)s')
+    # if args.verbose:
+    #     loglevel = logging.INFO
+    # else:
+    #     loglevel = logging.WARNING
+    loglevel = logging.WARNING
+
+    logging.basicConfig(level=loglevel,
+                    format='%(asctime)s:%(levelname)s:%(message)s')
     logger = logging.getLogger()
     if args.telemetry:
         pass
