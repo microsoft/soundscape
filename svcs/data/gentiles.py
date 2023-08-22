@@ -332,7 +332,7 @@ def main():#This function parses command line arguments, sets up logging, initia
     #     loglevel = logging.INFO
     # else:
     #     loglevel = logging.WARNING
-    loglevel - logging.WARNING
+    loglevel = logging.WARNING
 
     logging.basicConfig(level=loglevel,
                     format='%(asctime)s:%(levelname)s:%(message)s')
